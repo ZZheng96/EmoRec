@@ -1,0 +1,12 @@
+{
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "spectral_dimensions": 150,
+  "temporal_dimensions": 450,
+  "filtered_subjects": 69,
+  "train_rows": 2760,
+  "public_rows": 80,
+  "excluded_subject": "HC43",
+  "features_use_labels": false,
+  "projection_fit_labels": "training rows in each outer fold only"
+}

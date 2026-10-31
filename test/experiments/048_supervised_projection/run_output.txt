@@ -1,0 +1,5 @@
+﻿                 run_name      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc
+         spectral_control 0.781214 0.711254           0.709903          0.768043 0.830517 0.677367
+spectral_temporal_control 0.792466 0.717839           0.717874          0.777186 0.841915 0.685275
+    supervised_projection 0.741685 0.674275           0.676751          0.734342 0.780963 0.669577
+elapsed_seconds=503.211

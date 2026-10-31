@@ -1,0 +1,15 @@
+{
+  "experiment_id": "048_supervised_projection",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "expected_train_rows": 2760,
+  "folds": 5,
+  "fixed_fold_seed": 2026,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "threshold": 0.5,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "projection": {"name": "StandardScaler+LDA", "n_components": 1, "solver": "lsqr", "shrinkage": "auto", "fit_only_training_fold_labels": true},
+  "methods": ["spectral_control", "spectral_temporal_control", "supervised_projection"]
+}
