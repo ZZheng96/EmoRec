@@ -1,0 +1,1 @@
+实验049专项协议测试：覆盖LaBraM/频谱缓存输入形状与HC43排除、被试折隔离、验证标签扰动不影响特征、冻结审计和指标、OOF/公开输出行数与格式。运行入口：pytest -q test/experiments/049_labram_adapter_mmd/test_protocol.py。

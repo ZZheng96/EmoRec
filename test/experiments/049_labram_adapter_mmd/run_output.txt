@@ -1,0 +1,145 @@
+﻿spectral_hgb_control seed=2026 fold=1/5
+spectral_hgb_control seed=2026 fold=2/5
+spectral_hgb_control seed=2026 fold=3/5
+spectral_hgb_control seed=2026 fold=4/5
+spectral_hgb_control seed=2026 fold=5/5
+frozen_labram_linear seed=2026 fold=1/5
+frozen_labram_linear seed=2026 fold=2/5
+frozen_labram_linear seed=2026 fold=3/5
+frozen_labram_linear seed=2026 fold=4/5
+frozen_labram_linear seed=2026 fold=5/5
+adapter seed=2026 fold=1/5
+adapter seed=2026 fold=2/5
+adapter seed=2026 fold=3/5
+adapter seed=2026 fold=4/5
+adapter seed=2026 fold=5/5
+adapter_mmd seed=2026 fold=1/5
+adapter_mmd seed=2026 fold=2/5
+adapter_mmd seed=2026 fold=3/5
+adapter_mmd seed=2026 fold=4/5
+adapter_mmd seed=2026 fold=5/5
+spectral_hgb_control seed=2027 fold=1/5
+spectral_hgb_control seed=2027 fold=2/5
+spectral_hgb_control seed=2027 fold=3/5
+spectral_hgb_control seed=2027 fold=4/5
+spectral_hgb_control seed=2027 fold=5/5
+frozen_labram_linear seed=2027 fold=1/5
+frozen_labram_linear seed=2027 fold=2/5
+frozen_labram_linear seed=2027 fold=3/5
+frozen_labram_linear seed=2027 fold=4/5
+frozen_labram_linear seed=2027 fold=5/5
+adapter seed=2027 fold=1/5
+adapter seed=2027 fold=2/5
+adapter seed=2027 fold=3/5
+adapter seed=2027 fold=4/5
+adapter seed=2027 fold=5/5
+adapter_mmd seed=2027 fold=1/5
+adapter_mmd seed=2027 fold=2/5
+adapter_mmd seed=2027 fold=3/5
+adapter_mmd seed=2027 fold=4/5
+adapter_mmd seed=2027 fold=5/5
+spectral_hgb_control seed=2028 fold=1/5
+spectral_hgb_control seed=2028 fold=2/5
+spectral_hgb_control seed=2028 fold=3/5
+spectral_hgb_control seed=2028 fold=4/5
+spectral_hgb_control seed=2028 fold=5/5
+frozen_labram_linear seed=2028 fold=1/5
+frozen_labram_linear seed=2028 fold=2/5
+frozen_labram_linear seed=2028 fold=3/5
+frozen_labram_linear seed=2028 fold=4/5
+frozen_labram_linear seed=2028 fold=5/5
+adapter seed=2028 fold=1/5
+adapter seed=2028 fold=2/5
+adapter seed=2028 fold=3/5
+adapter seed=2028 fold=4/5
+adapter seed=2028 fold=5/5
+adapter_mmd seed=2028 fold=1/5
+adapter_mmd seed=2028 fold=2/5
+adapter_mmd seed=2028 fold=3/5
+adapter_mmd seed=2028 fold=4/5
+adapter_mmd seed=2028 fold=5/5
+spectral_hgb_control seed=2029 fold=1/5
+spectral_hgb_control seed=2029 fold=2/5
+spectral_hgb_control seed=2029 fold=3/5
+spectral_hgb_control seed=2029 fold=4/5
+spectral_hgb_control seed=2029 fold=5/5
+frozen_labram_linear seed=2029 fold=1/5
+frozen_labram_linear seed=2029 fold=2/5
+frozen_labram_linear seed=2029 fold=3/5
+frozen_labram_linear seed=2029 fold=4/5
+frozen_labram_linear seed=2029 fold=5/5
+adapter seed=2029 fold=1/5
+adapter seed=2029 fold=2/5
+adapter seed=2029 fold=3/5
+adapter seed=2029 fold=4/5
+adapter seed=2029 fold=5/5
+adapter_mmd seed=2029 fold=1/5
+adapter_mmd seed=2029 fold=2/5
+adapter_mmd seed=2029 fold=3/5
+adapter_mmd seed=2029 fold=4/5
+adapter_mmd seed=2029 fold=5/5
+spectral_hgb_control seed=2030 fold=1/5
+spectral_hgb_control seed=2030 fold=2/5
+spectral_hgb_control seed=2030 fold=3/5
+spectral_hgb_control seed=2030 fold=4/5
+spectral_hgb_control seed=2030 fold=5/5
+frozen_labram_linear seed=2030 fold=1/5
+frozen_labram_linear seed=2030 fold=2/5
+frozen_labram_linear seed=2030 fold=3/5
+frozen_labram_linear seed=2030 fold=4/5
+frozen_labram_linear seed=2030 fold=5/5
+adapter seed=2030 fold=1/5
+adapter seed=2030 fold=2/5
+adapter seed=2030 fold=3/5
+adapter seed=2030 fold=4/5
+adapter seed=2030 fold=5/5
+adapter_mmd seed=2030 fold=1/5
+adapter_mmd seed=2030 fold=2/5
+adapter_mmd seed=2030 fold=3/5
+adapter_mmd seed=2030 fold=4/5
+adapter_mmd seed=2030 fold=5/5
+spectral_hgb_control seed=2031 fold=1/5
+spectral_hgb_control seed=2031 fold=2/5
+spectral_hgb_control seed=2031 fold=3/5
+spectral_hgb_control seed=2031 fold=4/5
+spectral_hgb_control seed=2031 fold=5/5
+frozen_labram_linear seed=2031 fold=1/5
+frozen_labram_linear seed=2031 fold=2/5
+frozen_labram_linear seed=2031 fold=3/5
+frozen_labram_linear seed=2031 fold=4/5
+frozen_labram_linear seed=2031 fold=5/5
+adapter seed=2031 fold=1/5
+adapter seed=2031 fold=2/5
+adapter seed=2031 fold=3/5
+adapter seed=2031 fold=4/5
+adapter seed=2031 fold=5/5
+adapter_mmd seed=2031 fold=1/5
+adapter_mmd seed=2031 fold=2/5
+adapter_mmd seed=2031 fold=3/5
+adapter_mmd seed=2031 fold=4/5
+adapter_mmd seed=2031 fold=5/5
+                     run_name  oof_auc   oof_f1  oof_bacc  subject_macro_auc   hc_auc  dep_auc
+spectral_hgb_control_seed2026 0.781800 0.717986  0.715942           0.768297 0.835843 0.670208
+frozen_labram_linear_seed2026 0.650859 0.612100  0.605072           0.671558 0.684561 0.588256
+             adapter_seed2026 0.642857 0.616762  0.612319           0.660000 0.668267 0.597272
+         adapter_mmd_seed2026 0.648520 0.607220  0.605797           0.667029 0.675743 0.598412
+spectral_hgb_control_seed2027 0.780751 0.705882  0.706522           0.763478 0.832530 0.671952
+frozen_labram_linear_seed2027 0.648541 0.597953  0.601449           0.669384 0.678449 0.590848
+             adapter_seed2027 0.637446 0.602392  0.602536           0.656486 0.666665 0.583364
+         adapter_mmd_seed2027 0.638924 0.597004  0.600362           0.654130 0.668470 0.582516
+spectral_hgb_control_seed2028 0.775451 0.712094  0.707609           0.764601 0.824607 0.672056
+frozen_labram_linear_seed2028 0.646403 0.601757  0.605797           0.666884 0.679509 0.586936
+             adapter_seed2028 0.632489 0.607117  0.600000           0.649420 0.646322 0.608780
+         adapter_mmd_seed2028 0.638879 0.603706  0.597101           0.659601 0.657501 0.603968
+spectral_hgb_control_seed2029 0.780665 0.714594  0.712319           0.768080 0.828399 0.680460
+frozen_labram_linear_seed2029 0.631423 0.588795  0.593116           0.655109 0.658131 0.585100
+             adapter_seed2029 0.629632 0.584604  0.595290           0.645254 0.652783 0.591508
+         adapter_mmd_seed2029 0.640393 0.587709  0.598913           0.662029 0.664923 0.598880
+spectral_hgb_control_seed2030 0.777520 0.710726  0.709783           0.763225 0.830133 0.667344
+frozen_labram_linear_seed2030 0.637941 0.597842  0.594928           0.662174 0.676129 0.574336
+             adapter_seed2030 0.622050 0.579310  0.580072           0.640725 0.647558 0.573236
+         adapter_mmd_seed2030 0.623239 0.583549  0.590942           0.639746 0.650532 0.568596
+spectral_hgb_control_seed2031 0.784560 0.713510  0.713406           0.771703 0.833222 0.682724
+frozen_labram_linear_seed2031 0.653754 0.611111  0.609420           0.671993 0.683442 0.601620
+             adapter_seed2031 0.644831 0.604099  0.601087           0.665471 0.665386 0.607780
+         adapter_mmd_seed2031 0.648638 0.606302  0.606159           0.670507 0.668042 0.614420

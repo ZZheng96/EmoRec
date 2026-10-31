@@ -1,0 +1,12 @@
+{
+  "experiment_id": "049_labram_adapter_mmd",
+  "random_seed": 2026,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "conditions": ["spectral_hgb_control", "frozen_labram_linear", "adapter", "adapter_mmd"],
+  "data": {"subjects": 69, "samples": 2760, "public_samples": 80, "excluded_subject": "HC43", "folds": 5},
+  "labram": {"source_experiment": "004_labram_frozen", "input_shape": [30, 10, 200], "embedding_dim": 200, "backbone_frozen": true, "adapter_dim": 32},
+  "mmd": {"enabled_for": "adapter_mmd", "weight": 0.05, "domain_batch_subjects": 8, "uses_validation": false},
+  "classifier": {"type": "torch_linear", "epochs": 25, "batch_size": 128, "lr": 0.001, "weight_decay": 0.0001},
+  "validation": {"scheme": "002 fixed subject-stratified five-fold; repeated seeds are independent OOF", "threshold": 0.5, "inner_tuning": false},
+  "public_labels_used": false
+}
