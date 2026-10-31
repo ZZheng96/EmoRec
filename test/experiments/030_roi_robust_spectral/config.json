@@ -1,0 +1,26 @@
+{
+  "experiment_id": "030_roi_robust_spectral",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "n_samples": 2760,
+  "outer_folds": 5,
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threads": 1,
+  "spectral_dimensions": 150,
+  "roi_channels": {
+    "frontal": ["FP1", "FP2", "F7", "F3", "FZ", "F4", "F8", "FT7", "FC3", "FCZ", "FC4", "FT8"],
+    "central": ["T3", "C3", "CZ", "C4", "T4", "TP7", "CP3", "CPZ", "CP4", "TP8"],
+    "parietal": ["T5", "P3", "PZ", "P4", "T6"],
+    "occipital": ["O1", "OZ", "O2"]
+  },
+  "frequency_bands": ["delta", "theta", "alpha", "beta", "gamma"],
+  "roi_statistics": ["mean", "std", "median"],
+  "robust_trial_deviation": ["mean_absolute_deviation", "median_centered_signed_deviation"],
+  "conditions": ["spectral_control", "roi_static", "robust_trial_deviation", "fusion_roi_temporal"],
+  "fusion_weight_roi": 0.5,
+  "protocol": "No labels are used for ROI or trial deviation construction; subject z-score is computed separately on train/public subjects. Robust features use each original trial's contiguous five windows and are repeated on those five rows."
+}
