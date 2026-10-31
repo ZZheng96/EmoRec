@@ -1,0 +1,60 @@
+{
+  "experiment_id": "003_relative_spectral_power",
+  "random_seed": 2026,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "source_feature_set": "log_bandpower",
+  "relative_transform": "relative_log_bandpower_b = log_bandpower_b - logsumexp(log_bandpower over 5 bands), independently per sample and channel",
+  "model": {
+    "name": "logistic_regression",
+    "C": 1.0,
+    "penalty": "l2",
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  },
+  "validation": {
+    "scheme": "subject-wise 5-fold, stratified by health group; folds generated on all 70 subjects before HC43 exclusion",
+    "n_splits": 5,
+    "inner_tuning": false,
+    "probability_threshold": 0.5
+  },
+  "normalization": {
+    "method": "zscore",
+    "mode": "transductive subject normalization after feature transformation; no labels are used",
+    "training_statistics": "per subject and feature using all training segments for that subject, including validation-fold segments",
+    "public_statistics": "per user and feature computed independently over that user's 8 trials",
+    "near_zero_std": 1e-12,
+    "excluded_subject": "HC43"
+  },
+  "conditions": [
+    {
+      "run_name": "absolute_log_bandpower",
+      "feature_set": "absolute",
+      "n_features": 150,
+      "exclude_hc43": true
+    },
+    {
+      "run_name": "relative_log_bandpower",
+      "feature_set": "relative",
+      "n_features": 150,
+      "exclude_hc43": true
+    },
+    {
+      "run_name": "absolute_plus_relative",
+      "feature_set": "absolute_plus_relative",
+      "n_features": 300,
+      "exclude_hc43": true
+    }
+  ],
+  "baseline_reference": {
+    "experiment_dir": "../002_subject_normalization",
+    "run_name": "subject_zscore_exclude_hc43",
+    "expected_oof_auc": 0.7647490023104391,
+    "require_exact_oof_probabilities": true,
+    "require_exact_metrics": true
+  },
+  "metrics": {
+    "primary": "pooled out-of-fold trial-level ROC AUC",
+    "secondary": "binary F1 for positive emotion at threshold 0.5, subject-macro ROC AUC, health-group pooled ROC AUC",
+    "diagnostics": "per-fold, per-subject and health-group pooled and subject-macro results"
+  }
+}

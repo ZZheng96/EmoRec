@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.integrate import trapezoid
 from scipy.signal import welch
+from scipy.special import logsumexp
 
 CHANNEL_NAMES = [
     "FP1", "FP2", "F7", "F3", "FZ", "F4", "F8", "FT7", "FC3", "FCZ",
@@ -21,6 +22,16 @@ ASYMMETRY_PAIRS = [
     ("FT7", "FT8"), ("T3", "T4"), ("C3", "C4"), ("TP7", "TP8"),
     ("CP3", "CP4"), ("T5", "T6"), ("P3", "P4"), ("O1", "O2"),
 ]
+
+
+def compute_relative_log_bandpower(log_bandpower: np.ndarray) -> np.ndarray:
+    """Convert log bandpower to log relative power along the last (band) axis."""
+    values = np.asarray(log_bandpower, dtype=np.float64)
+    if values.ndim == 0 or values.shape[-1] == 0:
+        raise ValueError("log_bandpower must have a non-empty band axis")
+    if not np.isfinite(values).all():
+        raise ValueError("log_bandpower must contain only finite values")
+    return values - logsumexp(values, axis=-1, keepdims=True)
 
 
 def extract_spectral_features(segments: np.ndarray, sampling_rate: int = 250) -> tuple[np.ndarray, list[str]]:
