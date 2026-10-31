@@ -1,0 +1,11 @@
+{
+  "experiment_id": "009_temporal_dynamics",
+  "random_seed": 2026,
+  "feature_cache": "cache/temporal_features.npz",
+  "baseline_cache": "../001_spectral_logpower/cache/features.npz",
+  "model": {"name": "logistic_regression", "C": 1.0, "penalty": "l2", "solver": "lbfgs", "max_iter": 2000},
+  "validation": {"n_splits": 5, "scheme": "all 70 subjects stratified by health with seed 2026, then exclude HC43", "probability_threshold": 0.5},
+  "conditions": ["baseline_zscore_exclude_hc43", "temporal_stats_raw_exclude_hc43", "temporal_stats_zscore_exclude_hc43"],
+  "temporal_features": {"subwindows": 5, "seconds_per_window": 2, "statistics": ["mean", "std", "slope"], "n_features": 450},
+  "metrics": {"primary": "pooled out-of-fold trial-level ROC AUC", "secondary": ["binary F1", "balanced accuracy"], "targets": {"auc": 0.764749, "f1": 0.700730}}
+}
