@@ -1,0 +1,858 @@
+{
+  "config": {
+    "experiment_id": "033_detrended_spectral_hgb",
+    "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+    "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+    "excluded_subject": "HC43",
+    "threshold": 0.5,
+    "fold_seed": "2026+fold",
+    "public_seed": 2026,
+    "welch": {
+      "fs": 250,
+      "nperseg": 500,
+      "noverlap": 250,
+      "detrend": "constant",
+      "scaling": "density",
+      "window": "hann"
+    },
+    "background": "OLS natural-log PSD on natural-log frequency, inclusive 1-45 Hz, PSD floor 1e-20; log trapezoid integral of exp(logPSD-fitted_background), half-open bands",
+    "bands": [
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        13,
+        30
+      ],
+      [
+        30,
+        45
+      ]
+    ],
+    "hgb": {
+      "max_iter": 200,
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0,
+      "early_stopping": false
+    }
+  },
+  "runs": {
+    "spectral_control": {
+      "overall": {
+        "auc": 0.7824159840369671,
+        "f1": 0.7186710003611412,
+        "balanced_accuracy": 0.7177536231884059
+      },
+      "health_groups": {
+        "HC": {
+          "auc": 0.8339320764462811,
+          "f1": 0.770962296004502,
+          "balanced_accuracy": 0.76875
+        },
+        "DEP": {
+          "auc": 0.6748559999999999,
+          "f1": 0.625,
+          "balanced_accuracy": 0.628
+        }
+      },
+      "folds": {
+        "0": {
+          "auc": 0.7553826530612244,
+          "f1": 0.6855123674911661,
+          "balanced_accuracy": 0.6821428571428572
+        },
+        "1": {
+          "auc": 0.745266272189349,
+          "f1": 0.6954887218045113,
+          "balanced_accuracy": 0.6884615384615385
+        },
+        "2": {
+          "auc": 0.789936224489796,
+          "f1": 0.7385159010600707,
+          "balanced_accuracy": 0.7357142857142858
+        },
+        "3": {
+          "auc": 0.7754464285714286,
+          "f1": 0.7023172905525846,
+          "balanced_accuracy": 0.7017857142857142
+        },
+        "4": {
+          "auc": 0.8435331632653061,
+          "f1": 0.7720588235294118,
+          "balanced_accuracy": 0.7785714285714286
+        }
+      },
+      "subjects": {
+        "DEP01": {
+          "auc": 0.5900000000000001,
+          "f1": 0.5714285714285714,
+          "balanced_accuracy": 0.55
+        },
+        "DEP02": {
+          "auc": 0.61,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP03": {
+          "auc": 0.45999999999999996,
+          "f1": 0.42857142857142855,
+          "balanced_accuracy": 0.4
+        },
+        "DEP04": {
+          "auc": 0.6325,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP05": {
+          "auc": 0.9525,
+          "f1": 0.8837209302325582,
+          "balanced_accuracy": 0.875
+        },
+        "DEP06": {
+          "auc": 0.9550000000000001,
+          "f1": 0.9,
+          "balanced_accuracy": 0.9
+        },
+        "DEP07": {
+          "auc": 0.7775,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.675
+        },
+        "DEP08": {
+          "auc": 0.76,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.675
+        },
+        "DEP09": {
+          "auc": 0.7275,
+          "f1": 0.65,
+          "balanced_accuracy": 0.65
+        },
+        "DEP10": {
+          "auc": 0.5625,
+          "f1": 0.5263157894736842,
+          "balanced_accuracy": 0.55
+        },
+        "DEP11": {
+          "auc": 0.6475,
+          "f1": 0.5853658536585366,
+          "balanced_accuracy": 0.575
+        },
+        "DEP12": {
+          "auc": 0.6000000000000001,
+          "f1": 0.5405405405405406,
+          "balanced_accuracy": 0.575
+        },
+        "DEP13": {
+          "auc": 0.75,
+          "f1": 0.6111111111111112,
+          "balanced_accuracy": 0.65
+        },
+        "DEP14": {
+          "auc": 0.6799999999999999,
+          "f1": 0.5945945945945946,
+          "balanced_accuracy": 0.625
+        },
+        "DEP15": {
+          "auc": 0.7675000000000001,
+          "f1": 0.7222222222222222,
+          "balanced_accuracy": 0.75
+        },
+        "DEP16": {
+          "auc": 0.7,
+          "f1": 0.7,
+          "balanced_accuracy": 0.7
+        },
+        "DEP17": {
+          "auc": 0.4025,
+          "f1": 0.46153846153846156,
+          "balanced_accuracy": 0.475
+        },
+        "DEP18": {
+          "auc": 0.8925000000000001,
+          "f1": 0.8372093023255814,
+          "balanced_accuracy": 0.825
+        },
+        "DEP19": {
+          "auc": 0.74,
+          "f1": 0.6976744186046512,
+          "balanced_accuracy": 0.675
+        },
+        "DEP20": {
+          "auc": 0.5,
+          "f1": 0.47619047619047616,
+          "balanced_accuracy": 0.45
+        },
+        "DEP21": {
+          "auc": 0.755,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.7
+        },
+        "DEP22": {
+          "auc": 0.6174999999999999,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP23": {
+          "auc": 0.5275,
+          "f1": 0.5,
+          "balanced_accuracy": 0.5
+        },
+        "DEP24": {
+          "auc": 0.6675,
+          "f1": 0.6363636363636364,
+          "balanced_accuracy": 0.6
+        },
+        "DEP25": {
+          "auc": 0.51,
+          "f1": 0.5365853658536586,
+          "balanced_accuracy": 0.525
+        },
+        "HC01": {
+          "auc": 0.82,
+          "f1": 0.8205128205128205,
+          "balanced_accuracy": 0.825
+        },
+        "HC02": {
+          "auc": 0.61,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "HC03": {
+          "auc": 0.6900000000000001,
+          "f1": 0.6511627906976745,
+          "balanced_accuracy": 0.625
+        },
+        "HC04": {
+          "auc": 0.855,
+          "f1": 0.7441860465116279,
+          "balanced_accuracy": 0.7250000000000001
+        },
+        "HC05": {
+          "auc": 0.97,
+          "f1": 0.8947368421052632,
+          "balanced_accuracy": 0.8999999999999999
+        },
+        "HC06": {
+          "auc": 0.7599999999999999,
+          "f1": 0.6829268292682927,
+          "balanced_accuracy": 0.675
+        },
+        "HC07": {
+          "auc": 0.6724999999999999,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "HC08": {
+          "auc": 0.7925,
+          "f1": 0.7,
+          "balanced_accuracy": 0.7
+        },
+        "HC09": {
+          "auc": 0.905,
+          "f1": 0.7441860465116279,
+          "balanced_accuracy": 0.7250000000000001
+        },
+        "HC10": {
+          "auc": 0.8500000000000001,
+          "f1": 0.723404255319149,
+          "balanced_accuracy": 0.675
+        },
+        "HC11": {
+          "auc": 0.915,
+          "f1": 0.85,
+          "balanced_accuracy": 0.85
+        },
+        "HC12": {
+          "auc": 0.8075,
+          "f1": 0.6451612903225806,
+          "balanced_accuracy": 0.725
+        },
+        "HC13": {
+          "auc": 0.99,
+          "f1": 0.926829268292683,
+          "balanced_accuracy": 0.925
+        },
+        "HC14": {
+          "auc": 0.8099999999999999,
+          "f1": 0.7058823529411765,
+          "balanced_accuracy": 0.75
+        },
+        "HC15": {
+          "auc": 0.775,
+          "f1": 0.7346938775510204,
+          "balanced_accuracy": 0.675
+        },
+        "HC16": {
+          "auc": 0.94,
+          "f1": 0.8372093023255814,
+          "balanced_accuracy": 0.825
+        },
+        "HC17": {
+          "auc": 0.9175,
+          "f1": 0.8571428571428571,
+          "balanced_accuracy": 0.8500000000000001
+        },
+        "HC18": {
+          "auc": 0.76,
+          "f1": 0.6829268292682927,
+          "balanced_accuracy": 0.675
+        },
+        "HC19": {
+          "auc": 0.9575,
+          "f1": 0.9,
+          "balanced_accuracy": 0.9
+        },
+        "HC20": {
+          "auc": 0.565,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "HC21": {
+          "auc": 0.9675,
+          "f1": 0.8888888888888888,
+          "balanced_accuracy": 0.875
+        },
+        "HC22": {
+          "auc": 0.9725,
+          "f1": 0.95,
+          "balanced_accuracy": 0.95
+        },
+        "HC23": {
+          "auc": 0.9525000000000001,
+          "f1": 0.8648648648648649,
+          "balanced_accuracy": 0.875
+        },
+        "HC24": {
+          "auc": 0.925,
+          "f1": 0.8108108108108109,
+          "balanced_accuracy": 0.825
+        },
+        "HC25": {
+          "auc": 0.7575,
+          "f1": 0.7567567567567568,
+          "balanced_accuracy": 0.7749999999999999
+        },
+        "HC26": {
+          "auc": 0.7999999999999999,
+          "f1": 0.8444444444444444,
+          "balanced_accuracy": 0.825
+        },
+        "HC27": {
+          "auc": 0.5725,
+          "f1": 0.5128205128205128,
+          "balanced_accuracy": 0.525
+        },
+        "HC28": {
+          "auc": 0.8999999999999999,
+          "f1": 0.85,
+          "balanced_accuracy": 0.85
+        },
+        "HC29": {
+          "auc": 0.945,
+          "f1": 0.9,
+          "balanced_accuracy": 0.9
+        },
+        "HC30": {
+          "auc": 0.9824999999999999,
+          "f1": 0.95,
+          "balanced_accuracy": 0.95
+        },
+        "HC31": {
+          "auc": 0.9275,
+          "f1": 0.8717948717948718,
+          "balanced_accuracy": 0.875
+        },
+        "HC32": {
+          "auc": 0.5774999999999999,
+          "f1": 0.6976744186046512,
+          "balanced_accuracy": 0.675
+        },
+        "HC33": {
+          "auc": 0.8700000000000001,
+          "f1": 0.8205128205128205,
+          "balanced_accuracy": 0.825
+        },
+        "HC34": {
+          "auc": 0.7725,
+          "f1": 0.7,
+          "balanced_accuracy": 0.7
+        },
+        "HC35": {
+          "auc": 0.8400000000000001,
+          "f1": 0.717948717948718,
+          "balanced_accuracy": 0.725
+        },
+        "HC36": {
+          "auc": 0.9825,
+          "f1": 0.9230769230769231,
+          "balanced_accuracy": 0.925
+        },
+        "HC37": {
+          "auc": 0.7,
+          "f1": 0.65,
+          "balanced_accuracy": 0.65
+        },
+        "HC38": {
+          "auc": 0.8475,
+          "f1": 0.7804878048780488,
+          "balanced_accuracy": 0.775
+        },
+        "HC39": {
+          "auc": 0.85,
+          "f1": 0.7368421052631579,
+          "balanced_accuracy": 0.75
+        },
+        "HC40": {
+          "auc": 0.84,
+          "f1": 0.7804878048780488,
+          "balanced_accuracy": 0.775
+        },
+        "HC41": {
+          "auc": 0.91,
+          "f1": 0.8292682926829268,
+          "balanced_accuracy": 0.825
+        },
+        "HC42": {
+          "auc": 0.8975000000000001,
+          "f1": 0.8717948717948718,
+          "balanced_accuracy": 0.875
+        },
+        "HC44": {
+          "auc": 0.6000000000000001,
+          "f1": 0.65,
+          "balanced_accuracy": 0.65
+        },
+        "HC45": {
+          "auc": 0.5725,
+          "f1": 0.55,
+          "balanced_accuracy": 0.55
+        }
+      },
+      "subject_auc_mean": 0.7697101449275363
+    },
+    "detrended150": {
+      "overall": {
+        "auc": 0.7504736399915984,
+        "f1": 0.6844050258684405,
+        "balanced_accuracy": 0.6905797101449276
+      },
+      "health_groups": {
+        "HC": {
+          "auc": 0.7930049070247934,
+          "f1": 0.7314548591144335,
+          "balanced_accuracy": 0.7346590909090909
+        },
+        "DEP": {
+          "auc": 0.6637679999999999,
+          "f1": 0.5997931747673216,
+          "balanced_accuracy": 0.613
+        }
+      },
+      "folds": {
+        "0": {
+          "auc": 0.7314158163265306,
+          "f1": 0.6654929577464789,
+          "balanced_accuracy": 0.6607142857142858
+        },
+        "1": {
+          "auc": 0.7300591715976331,
+          "f1": 0.6519114688128773,
+          "balanced_accuracy": 0.6673076923076924
+        },
+        "2": {
+          "auc": 0.7420408163265305,
+          "f1": 0.6654478976234004,
+          "balanced_accuracy": 0.6732142857142858
+        },
+        "3": {
+          "auc": 0.7371045918367347,
+          "f1": 0.6886446886446886,
+          "balanced_accuracy": 0.6964285714285714
+        },
+        "4": {
+          "auc": 0.8081760204081632,
+          "f1": 0.7481751824817519,
+          "balanced_accuracy": 0.7535714285714286
+        }
+      },
+      "subjects": {
+        "DEP01": {
+          "auc": 0.725,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "DEP02": {
+          "auc": 0.7125,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP03": {
+          "auc": 0.4525,
+          "f1": 0.46153846153846156,
+          "balanced_accuracy": 0.475
+        },
+        "DEP04": {
+          "auc": 0.62,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "DEP05": {
+          "auc": 0.8350000000000001,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.7
+        },
+        "DEP06": {
+          "auc": 0.9675,
+          "f1": 0.8717948717948718,
+          "balanced_accuracy": 0.875
+        },
+        "DEP07": {
+          "auc": 0.6725,
+          "f1": 0.6153846153846154,
+          "balanced_accuracy": 0.625
+        },
+        "DEP08": {
+          "auc": 0.7625,
+          "f1": 0.7,
+          "balanced_accuracy": 0.7
+        },
+        "DEP09": {
+          "auc": 0.6100000000000001,
+          "f1": 0.5142857142857142,
+          "balanced_accuracy": 0.575
+        },
+        "DEP10": {
+          "auc": 0.48999999999999994,
+          "f1": 0.5128205128205128,
+          "balanced_accuracy": 0.525
+        },
+        "DEP11": {
+          "auc": 0.7775000000000001,
+          "f1": 0.717948717948718,
+          "balanced_accuracy": 0.725
+        },
+        "DEP12": {
+          "auc": 0.7025,
+          "f1": 0.6153846153846154,
+          "balanced_accuracy": 0.625
+        },
+        "DEP13": {
+          "auc": 0.8049999999999999,
+          "f1": 0.7027027027027027,
+          "balanced_accuracy": 0.7250000000000001
+        },
+        "DEP14": {
+          "auc": 0.565,
+          "f1": 0.4444444444444444,
+          "balanced_accuracy": 0.5
+        },
+        "DEP15": {
+          "auc": 0.6725,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP16": {
+          "auc": 0.7075,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.675
+        },
+        "DEP17": {
+          "auc": 0.4875,
+          "f1": 0.45454545454545453,
+          "balanced_accuracy": 0.4
+        },
+        "DEP18": {
+          "auc": 0.7749999999999999,
+          "f1": 0.6486486486486487,
+          "balanced_accuracy": 0.675
+        },
+        "DEP19": {
+          "auc": 0.8325,
+          "f1": 0.717948717948718,
+          "balanced_accuracy": 0.725
+        },
+        "DEP20": {
+          "auc": 0.5075000000000001,
+          "f1": 0.45714285714285713,
+          "balanced_accuracy": 0.525
+        },
+        "DEP21": {
+          "auc": 0.6349999999999999,
+          "f1": 0.6,
+          "balanced_accuracy": 0.6
+        },
+        "DEP22": {
+          "auc": 0.615,
+          "f1": 0.6153846153846154,
+          "balanced_accuracy": 0.625
+        },
+        "DEP23": {
+          "auc": 0.5800000000000001,
+          "f1": 0.5581395348837209,
+          "balanced_accuracy": 0.525
+        },
+        "DEP24": {
+          "auc": 0.56,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "DEP25": {
+          "auc": 0.4425,
+          "f1": 0.43243243243243246,
+          "balanced_accuracy": 0.47500000000000003
+        },
+        "HC01": {
+          "auc": 0.7424999999999999,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.7
+        },
+        "HC02": {
+          "auc": 0.7825,
+          "f1": 0.7142857142857143,
+          "balanced_accuracy": 0.7
+        },
+        "HC03": {
+          "auc": 0.7424999999999999,
+          "f1": 0.6341463414634146,
+          "balanced_accuracy": 0.625
+        },
+        "HC04": {
+          "auc": 0.8875000000000001,
+          "f1": 0.8571428571428571,
+          "balanced_accuracy": 0.8500000000000001
+        },
+        "HC05": {
+          "auc": 0.875,
+          "f1": 0.8571428571428571,
+          "balanced_accuracy": 0.8500000000000001
+        },
+        "HC06": {
+          "auc": 0.575,
+          "f1": 0.6,
+          "balanced_accuracy": 0.6
+        },
+        "HC07": {
+          "auc": 0.595,
+          "f1": 0.5714285714285714,
+          "balanced_accuracy": 0.55
+        },
+        "HC08": {
+          "auc": 0.73,
+          "f1": 0.7317073170731707,
+          "balanced_accuracy": 0.725
+        },
+        "HC09": {
+          "auc": 0.8900000000000001,
+          "f1": 0.7804878048780488,
+          "balanced_accuracy": 0.775
+        },
+        "HC10": {
+          "auc": 0.8,
+          "f1": 0.7894736842105263,
+          "balanced_accuracy": 0.8
+        },
+        "HC11": {
+          "auc": 0.86,
+          "f1": 0.8205128205128205,
+          "balanced_accuracy": 0.825
+        },
+        "HC12": {
+          "auc": 0.6799999999999999,
+          "f1": 0.7272727272727273,
+          "balanced_accuracy": 0.7749999999999999
+        },
+        "HC13": {
+          "auc": 0.9725,
+          "f1": 0.8780487804878049,
+          "balanced_accuracy": 0.875
+        },
+        "HC14": {
+          "auc": 0.74,
+          "f1": 0.625,
+          "balanced_accuracy": 0.7
+        },
+        "HC15": {
+          "auc": 0.51,
+          "f1": 0.4444444444444444,
+          "balanced_accuracy": 0.5
+        },
+        "HC16": {
+          "auc": 0.9324999999999999,
+          "f1": 0.9047619047619048,
+          "balanced_accuracy": 0.8999999999999999
+        },
+        "HC17": {
+          "auc": 0.735,
+          "f1": 0.7317073170731707,
+          "balanced_accuracy": 0.725
+        },
+        "HC18": {
+          "auc": 0.7125,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.675
+        },
+        "HC19": {
+          "auc": 0.8925,
+          "f1": 0.8292682926829268,
+          "balanced_accuracy": 0.825
+        },
+        "HC20": {
+          "auc": 0.6224999999999999,
+          "f1": 0.5714285714285714,
+          "balanced_accuracy": 0.55
+        },
+        "HC21": {
+          "auc": 0.875,
+          "f1": 0.8,
+          "balanced_accuracy": 0.8
+        },
+        "HC22": {
+          "auc": 0.9850000000000001,
+          "f1": 0.8947368421052632,
+          "balanced_accuracy": 0.8999999999999999
+        },
+        "HC23": {
+          "auc": 0.9600000000000001,
+          "f1": 0.8571428571428571,
+          "balanced_accuracy": 0.875
+        },
+        "HC24": {
+          "auc": 0.935,
+          "f1": 0.8421052631578947,
+          "balanced_accuracy": 0.8500000000000001
+        },
+        "HC25": {
+          "auc": 0.8200000000000001,
+          "f1": 0.8,
+          "balanced_accuracy": 0.8
+        },
+        "HC26": {
+          "auc": 0.79,
+          "f1": 0.6666666666666666,
+          "balanced_accuracy": 0.7
+        },
+        "HC27": {
+          "auc": 0.5925,
+          "f1": 0.5641025641025641,
+          "balanced_accuracy": 0.575
+        },
+        "HC28": {
+          "auc": 0.87,
+          "f1": 0.8292682926829268,
+          "balanced_accuracy": 0.825
+        },
+        "HC29": {
+          "auc": 0.9125,
+          "f1": 0.7894736842105263,
+          "balanced_accuracy": 0.8
+        },
+        "HC30": {
+          "auc": 0.9475,
+          "f1": 0.8780487804878049,
+          "balanced_accuracy": 0.875
+        },
+        "HC31": {
+          "auc": 0.865,
+          "f1": 0.7894736842105263,
+          "balanced_accuracy": 0.8
+        },
+        "HC32": {
+          "auc": 0.5725,
+          "f1": 0.5714285714285714,
+          "balanced_accuracy": 0.55
+        },
+        "HC33": {
+          "auc": 0.83,
+          "f1": 0.8292682926829268,
+          "balanced_accuracy": 0.825
+        },
+        "HC34": {
+          "auc": 0.815,
+          "f1": 0.7692307692307693,
+          "balanced_accuracy": 0.775
+        },
+        "HC35": {
+          "auc": 0.7825,
+          "f1": 0.75,
+          "balanced_accuracy": 0.75
+        },
+        "HC36": {
+          "auc": 0.9375,
+          "f1": 0.8636363636363636,
+          "balanced_accuracy": 0.85
+        },
+        "HC37": {
+          "auc": 0.58,
+          "f1": 0.5909090909090909,
+          "balanced_accuracy": 0.55
+        },
+        "HC38": {
+          "auc": 0.78,
+          "f1": 0.7,
+          "balanced_accuracy": 0.7
+        },
+        "HC39": {
+          "auc": 0.68,
+          "f1": 0.6857142857142857,
+          "balanced_accuracy": 0.725
+        },
+        "HC40": {
+          "auc": 0.64,
+          "f1": 0.5789473684210527,
+          "balanced_accuracy": 0.6000000000000001
+        },
+        "HC41": {
+          "auc": 0.865,
+          "f1": 0.7906976744186046,
+          "balanced_accuracy": 0.7749999999999999
+        },
+        "HC42": {
+          "auc": 0.85,
+          "f1": 0.7894736842105263,
+          "balanced_accuracy": 0.8
+        },
+        "HC44": {
+          "auc": 0.5575,
+          "f1": 0.5128205128205128,
+          "balanced_accuracy": 0.525
+        },
+        "HC45": {
+          "auc": 0.6375,
+          "f1": 0.5853658536585366,
+          "balanced_accuracy": 0.575
+        }
+      },
+      "subject_auc_mean": 0.7372463768115942
+    }
+  },
+  "elapsed_seconds": 30.037749399998575,
+  "provenance": {
+    "spectral_sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "detrended_sha256": "b19c909f1e61ff52464d4e33fd3c64847ba618b5706551576788ee50c40f18e1",
+    "reference_sha256": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.1"
+  },
+  "protocol": {
+    "cache_alignment_checked": true,
+    "subject_isolation_checked": true,
+    "train_rows": 2760,
+    "public_rows": 80,
+    "subjectwise_unlabeled_zscore": true,
+    "exploratory_reused_folds": true
+  }
+}

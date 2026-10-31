@@ -1,0 +1,13 @@
+{
+  "experiment_id": "033_detrended_spectral_hgb",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "threshold": 0.5,
+  "fold_seed": "2026+fold",
+  "public_seed": 2026,
+  "welch": {"fs": 250, "nperseg": 500, "noverlap": 250, "detrend": "constant", "scaling": "density", "window": "hann"},
+  "background": "OLS natural-log PSD on natural-log frequency, inclusive 1-45 Hz, PSD floor 1e-20; log trapezoid integral of exp(logPSD-fitted_background), half-open bands",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false}
+}
