@@ -1,0 +1,15 @@
+{
+  "experiment_id": "018_nested_rbf",
+  "random_seed": 2026,
+  "public_seed_offset": 100,
+  "outer_folds": 5,
+  "excluded_subject": "HC43",
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "candidate_C": [0.1, 1.0, 10.0],
+  "candidate_gamma": [0.001, 0.006666666666666667, 0.03],
+  "inner_folds": 3,
+  "calibration": {"model": "LogisticRegression", "C": 1.0},
+  "threshold": 0.5,
+  "seconds_per_trial": 10
+}
