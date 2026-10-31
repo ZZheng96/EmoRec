@@ -1,0 +1,103 @@
+{
+  "experiment_id": "004_labram_frozen",
+  "random_seed": 2026,
+  "official": {
+    "repo_url": "https://github.com/935963004/LaBraM",
+    "repo_commit": "c431221e6cfd23dbfa9950e0180682fb322b0548",
+    "source_snapshot": "数据/external/LaBraM; pinned files downloaded through the GitHub Contents API",
+    "code_license": "MIT",
+    "checkpoint": "checkpoints/labram-base.pth",
+    "checkpoint_url": "https://github.com/935963004/LaBraM/raw/c431221e6cfd23dbfa9950e0180682fb322b0548/checkpoints/labram-base.pth",
+    "checkpoint_sha256": "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c",
+    "checkpoint_torch_weights_only": false,
+    "checkpoint_torch_weights_only_reason": "The verified official checkpoint container includes numpy.core.multiarray.scalar metadata; weights_only=False follows the official loader after SHA256 verification",
+    "vqnsp_required_for_frozen_downstream_inference": false,
+    "vqnsp_reason": "vqnsp.pth is the neural tokenizer used for pretraining; the official downstream classification path only loads labram-base.pth"
+  },
+  "channels": {
+    "competition_order": ["FP1", "FP2", "F7", "F3", "FZ", "F4", "F8", "FT7", "FC3", "FCZ", "FC4", "FT8", "T3", "C3", "CZ", "C4", "T4", "TP7", "CP3", "CPZ", "CP4", "TP8", "T5", "P3", "PZ", "P4", "T6", "O1", "OZ", "O2"],
+    "model_order": ["FP1", "FP2", "F7", "F3", "FZ", "F4", "F8", "FT7", "FC3", "FCZ", "FC4", "FT8", "T3", "C3", "CZ", "C4", "T4", "TP7", "CP3", "CPZ", "CP4", "TP8", "T5", "P3", "PZ", "P4", "T6", "O1", "OZ", "O2"],
+    "case_normalization": "uppercase before official standard_1020.index lookup",
+    "legacy_equivalences": {"T3": "T7", "T4": "T8", "T5": "P7", "T6": "P8"},
+    "legacy_mapping_applied": false,
+    "legacy_mapping_reason": "The pinned official standard_1020 list directly contains T3, T4, T5 and T6; their official learned positions are used without substitution or reordering",
+    "official_input_chans": [0, 1, 3, 16, 18, 20, 22, 24, 27, 29, 31, 33, 35, 89, 40, 42, 44, 91, 49, 51, 53, 55, 57, 90, 62, 64, 66, 92, 81, 82, 83]
+  },
+  "preprocessing": {
+    "input_unit": "microvolts",
+    "multiply_by_1e6": false,
+    "original_sampling_rate_hz": 250,
+    "target_sampling_rate_hz": 200,
+    "operations_in_order": ["MNE zero-phase 4th-order Butterworth SOS bandpass 0.1-75 Hz", "MNE FIR notch 50 Hz", "MNE FFT resample 250 to 200 Hz"],
+    "bandpass_method": "iir; order=4; ftype=butter; output=sos; phase=zero (forward-backward)",
+    "short_trial_filter_adaptation": "The official automatic 0.1 Hz FIR length is 8251 samples, longer than a public 2500-sample trial and triggers MNE's distortion warning; a short 2499-tap FIR is not realizable under MNE's high-pass transition constraint. The same zero-phase 4th-order Butterworth IIR is therefore used for training and public trials to preserve independent processing, identical filters and the official frequency band.",
+    "reference": "Official dataset_maker/make_TUAB.py: raw.filter(0.1, 75), raw.notch_filter(50), raw.resample(200), get_data(units='uV')",
+    "training_trial_processing": "Each original 50-second trial is filtered and resampled continuously, then split into five non-overlapping 10-second samples",
+    "public_trial_processing": "Each public 10-second trial is filtered and resampled independently",
+    "cross_trial_filtering": false,
+    "model_input_scaling": "Divide microvolt EEG by 100, matching data_processor/data_preprocess.py and engine_for_finetuning.py",
+    "per_sample_or_per_channel_standardization_before_backbone": "none in the official downstream path"
+  },
+  "labram_model": {
+    "name": "labram_base_patch200_200",
+    "backbone_frozen": true,
+    "classifier_head_used_for_embeddings": false,
+    "feature_path": "model.forward_features(input_chans=official_input_chans)",
+    "checkpoint_loading": "Follow run_class_finetuning.py: select checkpoint['model'], retain and strip student.*, discard pretraining-only heads; strict checks for all other backbone keys",
+    "fc_norm_initialization": "Official default LayerNorm weight=1 and bias=0 because fc_norm is absent from pretraining weights; classifier head is unused",
+    "pooling": "fc_norm(mean(all non-CLS channel-time tokens)), the official mean-pooling classification path before head",
+    "embedding_dim": 200,
+    "input_shape_per_batch": "[batch, 30, 10, 200]",
+    "use_abs_pos_emb": true,
+    "use_rel_pos_bias": false,
+    "use_mean_pooling": true,
+    "qkv_bias": false,
+    "init_values": 0.1
+  },
+  "extraction": {
+    "device": "cuda",
+    "batch_size": 32,
+    "amp": false,
+    "cache": "cache/embeddings.npz",
+    "smoke_test_before_full_extraction": "One HC subject (HC01, 40 samples) and one public user (P_test1, 8 samples)"
+  },
+  "validation": {
+    "scheme": "Exactly 002: subject-wise 5-fold stratified by health group, folds generated on all 70 subjects before complete HC43 exclusion",
+    "n_splits": 5,
+    "n_subjects": 69,
+    "n_samples": 2760,
+    "excluded_subject": "HC43",
+    "inner_tuning": false,
+    "probability_threshold": 0.5
+  },
+  "normalization": {
+    "mode": "Label-free transductive normalization of extracted embeddings, matching 002",
+    "training_statistics": "Per subject and embedding dimension using all 40 samples for that subject, including validation-fold samples",
+    "public_statistics": "Per user and embedding dimension using that user's 8 trials",
+    "near_zero_std": 1e-12
+  },
+  "model": {
+    "name": "logistic_regression",
+    "pipeline": "StandardScaler + LogisticRegression",
+    "C": 1.0,
+    "penalty": "l2",
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  },
+  "conditions": [
+    {"run_name": "labram_frozen_raw", "normalization": "raw"},
+    {"run_name": "labram_frozen_subject_zscore", "normalization": "zscore"}
+  ],
+  "baseline": {
+    "experiment": "002_subject_normalization",
+    "run_name": "subject_zscore_exclude_hc43",
+    "oof_auc": 0.7647490023104391
+  },
+  "metrics": {
+    "primary": "Pooled out-of-fold trial-level ROC AUC",
+    "secondary": "Binary F1 for positive emotion, macro F1 and balanced accuracy at threshold 0.5",
+    "diagnostics": "Per-fold, per-subject, HC/DEP pooled and subject-macro results, with deltas against the 002 best baseline",
+    "public_labels_used": false,
+    "public_online_score_claimed": false
+  }
+}
