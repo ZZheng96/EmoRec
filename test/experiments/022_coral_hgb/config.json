@@ -1,0 +1,16 @@
+{
+  "experiment_id": "022_coral_hgb",
+  "random_seed": 2026,
+  "outer_folds": 5,
+  "excluded_subject": "HC43",
+  "expected_oof_rows": 2760,
+  "expected_public_rows": 80,
+  "expected_subjects": 69,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "n_features": 150,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1, "early_stopping": false},
+  "coral": {"shrinkage": 0.5, "identity_scale": 1.0, "near_zero_std": 1e-12},
+  "conditions": ["baseline_zscore", "symmetric_coral"],
+  "protocol": "001的150维log_bandpower；排除HC43；严格复用002固定外层5折；每被试先无标签zscore；CORAL为固定shrinkage=0.5协方差收缩到identity后逆平方根；训练/验证/公开同构；不调参不融合。"
+}
