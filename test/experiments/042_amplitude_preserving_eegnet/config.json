@@ -1,0 +1,10 @@
+{
+  "experiment_id": "042_amplitude_preserving_eegnet",
+  "conditions": ["per_window_zscore", "amplitude_preserving"],
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "seed_base": 2026,
+  "training": {"epochs": 30, "batch_size": 64, "lr": 0.001, "weight_decay": 0.01, "early_stopping": false, "hyperparameter_tuning": false},
+  "model": {"source": "024_eegnet_cnn.EEGNet", "dropout": 0.25},
+  "input": {"shape": [30, 2000], "raw_shape": [30, 2500], "preprocessing": "Split raw EEG into independent 10s windows FIRST, then 004 bandpass 0.1-75Hz, notch 50Hz and resample 250->200Hz independently; identical train/public", "amplitude_scale": "per-channel RMS of demeaned samples fitted on training fold only, applied unchanged to validation/public"},
+  "protocol": {"fold_source": "002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv", "exclude_subject": "HC43", "threshold": 0.5, "public_labels_used": false, "use_original_trial_id": false, "use_neighbors": false, "outer_oof_tuning": false, "repeat_generator": "032 make_subject_folds", "repeat_interpretation": "paired descriptive fold sensitivity, not independent significance tests", "stop_rule": "If amplitude fixed-fold AUC is below control, stop direction; preregistered repeats still reported if run", "cpu_budget_fallback": "fixed folds first; repeated folds may be explicitly incomplete if excessive cost"}
+}
