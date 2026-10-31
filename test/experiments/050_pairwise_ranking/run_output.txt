@@ -1,0 +1,4 @@
+﻿           run_name      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc
+   pairwise_ranking 0.761610 0.697532           0.702609          0.753986 0.800967 0.689540
+logistic_regression 0.768859 0.707352           0.708768          0.761986 0.809390 0.693192
+       spectral_hgb 0.781203 0.712115           0.710580          0.768464 0.830301 0.677628

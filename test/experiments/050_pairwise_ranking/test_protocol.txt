@@ -1,0 +1,6 @@
+专项协议测试覆盖：
+1. 正负配对仅在同一训练被试内，固定每被试采样数；
+2. 被试级五折确定性与训练/验证subject disjoint；
+3. 训练标签扰动会改变训练配对，验证标签扰动不改变配对/预测输入；
+4. 150维频谱缓存有限值、OOF行数、HC43排除、公开80行及概率范围。
+运行命令：pytest -q test/experiments/050_pairwise_ranking/test_protocol.py

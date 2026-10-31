@@ -1,0 +1,14 @@
+{
+  "experiment_id": "050_pairwise_ranking",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "excluded_subject": "HC43",
+  "feature_dimensions": 150,
+  "folds": 5,
+  "fixed_fold_seed": 2026,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "pair_sampling": {"pairs_per_subject": 200, "seed_rule": "crc32(subject_id)+outer_seed+fold", "within_subject_only": true},
+  "pairwise_model": {"name": "StandardScaler+LogisticRegression", "C": 1.0, "max_iter": 2000},
+  "control_models": {"logistic_regression": {"C": 1.0, "max_iter": 2000}, "spectral_hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false}},
+  "threshold": 0.5,
+  "protocol": "001 150-dimensional spectral cache; exclude HC43; subject/user-independent unlabeled z-score; no row order, original_trial_id, neighboring windows, or public labels; train-fold-only pair construction and fitting; validation/public transform only."
+}
