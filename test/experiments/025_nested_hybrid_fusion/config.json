@@ -1,0 +1,37 @@
+{
+  "experiment_id": "025_nested_hybrid_fusion",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "expected_rows": 2760,
+  "expected_subjects": 69,
+  "expected_public_rows": 80,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "candidate_hgb_weights": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0],
+  "fixed_hgb_weight": 0.9,
+  "hgb": {
+    "max_iter": 200,
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "labram_lr": {
+    "C": 1.0,
+    "penalty": "l2",
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  },
+  "sources": {
+    "baseline": "../016_hgb_fusion/predictions/hgb_oof.csv",
+    "baseline_public": "../016_hgb_fusion/predictions/hgb_public.csv",
+    "labram_raw": "../004_labram_frozen/predictions/labram_frozen_raw_oof.csv",
+    "labram_raw_public": "../004_labram_frozen/predictions/labram_frozen_raw_public.csv",
+    "labram_zscore": "../004_labram_frozen/predictions/labram_frozen_subject_zscore_oof.csv",
+    "labram_zscore_public": "../004_labram_frozen/predictions/labram_frozen_subject_zscore_public.csv",
+    "outer_folds": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv"
+  },
+  "selection": "inner subject-wise 3-fold OOF; max AUC, ties max F1; outer validation never used",
+  "conditions": ["labram_raw", "labram_zscore", "labram_mean"]
+}
