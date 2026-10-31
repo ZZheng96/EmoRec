@@ -1,0 +1,59 @@
+{
+  "experiment_id": "002_subject_normalization",
+  "random_seed": 2026,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "feature_set": "log_bandpower",
+  "n_features": 150,
+  "model": {
+    "name": "logistic_regression",
+    "C": 1.0,
+    "penalty": "l2",
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  },
+  "validation": {
+    "scheme": "subject-wise 5-fold, stratified by health group; folds generated on all 70 subjects before optional HC43 exclusion",
+    "n_splits": 5,
+    "inner_tuning": false,
+    "probability_threshold": 0.5
+  },
+  "normalization": {
+    "mode": "transductive subject normalization; no labels are used",
+    "training_statistics": "per subject and feature using all training segments for that subject, including validation-fold segments",
+    "public_statistics": "per user and feature computed independently over that user's 8 trials",
+    "near_zero_std": 1e-12,
+    "excluded_subject_in_exclude_runs": "HC43"
+  },
+  "conditions": [
+    {
+      "run_name": "raw_exclude_hc43",
+      "normalization": "raw",
+      "exclude_hc43": true
+    },
+    {
+      "run_name": "subject_center_all",
+      "normalization": "center",
+      "exclude_hc43": false
+    },
+    {
+      "run_name": "subject_zscore_all",
+      "normalization": "zscore",
+      "exclude_hc43": false
+    },
+    {
+      "run_name": "subject_center_exclude_hc43",
+      "normalization": "center",
+      "exclude_hc43": true
+    },
+    {
+      "run_name": "subject_zscore_exclude_hc43",
+      "normalization": "zscore",
+      "exclude_hc43": true
+    }
+  ],
+  "metrics": {
+    "primary": "pooled out-of-fold trial-level ROC AUC",
+    "secondary": "binary F1 for positive emotion, balanced accuracy",
+    "diagnostics": "per-fold, per-subject and health-group pooled and subject-macro results"
+  }
+}
