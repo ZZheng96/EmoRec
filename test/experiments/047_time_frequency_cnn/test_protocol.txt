@@ -1,0 +1,2 @@
+047协议测试：pytest -q test/experiments/047_time_frequency_cnn/test_protocol.py
+覆盖：STFT张量形状与有限值、训练/验证被试隔离、验证标签扰动不影响输入、窗口独立、OOF行数与公开格式。

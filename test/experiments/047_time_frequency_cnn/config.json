@@ -1,0 +1,18 @@
+{
+  "experiment_id": "047_time_frequency_cnn",
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "stft": {"nperseg": 128, "noverlap": 64, "nfft": 128, "frequency_hz": [1.0, 45.0], "boundary": null},
+  "excluded_subject": "HC43",
+  "fixed_outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "expected_oof_rows": 2760,
+  "expected_subjects": 69,
+  "public_rows": 80,
+  "threshold": 0.5,
+  "normalization": "training-fold channel-wise mean/std over STFT tensors; epsilon=1e-6",
+  "cnn": {"architecture": "Conv2d(30,16,3,pad=1)-BN-ReLU-MaxPool2d(2)-DepthwiseSeparable(16,32)-AdaptiveAvgPool2d(1)-Linear(32,1)", "epochs": 2, "batch_size": 128, "learning_rate": 0.001, "weight_decay": 0.0001},
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "protocol": {"window_independent": true, "labels_used_for_features": false, "original_trial_id_used_for_features": false, "neighbor_window_used": false, "public_labels_used": false, "fixed_threshold": 0.5, "independent_oof_per_repeat": true}
+}
