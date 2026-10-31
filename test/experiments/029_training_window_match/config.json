@@ -1,0 +1,15 @@
+{
+  "experiment_id": "029_training_window_match",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "conditions": ["all_40", "one_per_trial_8", "one_per_trial_mean5"],
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "spectral_weight": 0.5,
+  "threshold": 0.5,
+  "threads": 1,
+  "normalization": "unlabeled subject zscore over all 40 training windows before selection/averaging; public over 8 windows",
+  "selection": "stable within-subject cache order; groups of five; no label/probability/feedback selection"
+}
