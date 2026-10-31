@@ -1,0 +1,43 @@
+{
+  "source": {
+    "oof": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
+    "public": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_public.csv",
+    "model_retrained": false
+  },
+  "prior": {
+    "oof_samples_per_subject": 40,
+    "oof_positive_quota": 20,
+    "public_trials_per_user": 8,
+    "public_positive_quota": 4,
+    "labels_used_for_quota": false
+  },
+  "oof": {
+    "before_threshold_0_5": {
+      "roc_auc": 0.7647490023104391,
+      "binary_f1": 0.7007299270072993,
+      "tn": 980,
+      "fp": 400,
+      "fn": 420,
+      "tp": 960,
+      "positive_count": 1360
+    },
+    "after_quota": {
+      "roc_auc": 0.7647490023104391,
+      "binary_f1": 0.7050724637681159,
+      "tn": 973,
+      "fp": 407,
+      "fn": 407,
+      "tp": 973,
+      "positive_count": 1380
+    },
+    "auc_change": 0.0,
+    "f1_change": 0.00434253676081664,
+    "auc_uses_original_probabilities": true
+  },
+  "public": {
+    "n_users": 10,
+    "n_rows": 80,
+    "positive_count": 40,
+    "binary_submission_is_rank_destroying": true
+  }
+}
