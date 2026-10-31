@@ -1,0 +1,20 @@
+{
+  "experiment_id": "019_window_matched_normalization",
+  "random_seed": 2026,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "feature_prefix": "log_bandpower_",
+  "n_features": 150,
+  "n_samples": 2760,
+  "model": {"C": 1.0, "penalty": "l2", "max_iter": 2000, "solver": "lbfgs"},
+  "threshold": 0.5,
+  "near_zero_std": 1e-12,
+  "batch_rule": "Within each subject, stable cache row ordinal modulo 5; each batch contains 8 rows. No labels or original_trial_id used.",
+  "conditions": {
+    "control_40_40": [40, 40],
+    "matched_8_8": [8, 8],
+    "eval_only_40_8": [40, 8]
+  },
+  "inference": "Every row is predicted once. For 8-window normalization, only its own batch supplies mean and population std, including itself. All 40 training rows are retained. Public users use their 8 unlabeled rows."
+}
