@@ -1,0 +1,29 @@
+{
+  "experiment_id": "005_labram_finetuned",
+  "reuse_config": "../004_labram_frozen/config.json",
+  "random_seed": 2026,
+  "training": {
+    "epochs": 5,
+    "batch_size": 8,
+    "backbone_lr": 0.00001,
+    "head_lr": 0.0001,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "amp": true,
+    "amp_dtype": "bfloat16",
+    "amp_note": "Initial float16 smoke overflowed scaled gradients; bfloat16 uses the GPU native wider exponent range without gradient scaling",
+    "loss": "cross_entropy",
+    "outer_validation_early_stopping": false,
+    "hyperparameter_tuning": false,
+    "final_seed": 2031
+  },
+  "protocol": {
+    "fold_source": "002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+    "n_subjects": 69,
+    "n_samples": 2760,
+    "excluded_subject": "HC43",
+    "conditions": ["raw", "subject_zscore"],
+    "normalization": "Label-free within-subject zscore of logit_positive minus logit_negative followed by sigmoid; 40 OOF segments or 8 public trials per subject",
+    "public_labels_used": false
+  }
+}

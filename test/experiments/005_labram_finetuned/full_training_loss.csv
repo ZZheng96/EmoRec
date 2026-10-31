@@ -1,0 +1,2 @@
+fit,seed,epoch,train_loss,batch_size,n_train,seconds,peak_cuda_gib
+full,2031,1,0.6737163156702899,8,2760,24.564142899995204,0.9306082725524902

@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "loss": 0.69140625,
+  "gradient_norms": {
+    "blocks.": 0.000289358664304018,
+    "fc_norm.": 2.1787140212836675e-05,
+    "head.": 0.9971247911453247
+  },
+  "all_parameters_unfrozen": true,
+  "train_input_shape": [
+    40,
+    30,
+    10,
+    200
+  ],
+  "logits_shape": [
+    8,
+    2
+  ],
+  "public_logits_shape": [
+    8,
+    2
+  ],
+  "subjects_disjoint": true,
+  "n_subjects": 69,
+  "n_samples": 2760,
+  "seconds": 3.2465857000206597,
+  "peak_cuda_gib": 0.8843073844909668,
+  "weight_loading_before_unfreeze": {
+    "repo_url": "https://github.com/935963004/LaBraM",
+    "repo_commit": "c431221e6cfd23dbfa9950e0180682fb322b0548",
+    "checkpoint_url": "https://github.com/935963004/LaBraM/raw/c431221e6cfd23dbfa9950e0180682fb322b0548/checkpoints/labram-base.pth",
+    "checkpoint_sha256": "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c",
+    "code_license": "MIT",
+    "code_license_sha256": "bc3f03e2c9071fb40507f5c575d95eeaa98d07c54c54fb2855942b2a729adc71",
+    "checkpoint_top_level_keys": [
+      "model",
+      "optimizer",
+      "epoch",
+      "args",
+      "scaler"
+    ],
+    "student_prefix_stripped": true,
+    "discarded_non_student_container_keys": [
+      "logit_scale",
+      "lm_head.weight",
+      "lm_head.bias",
+      "projection_head.0.weight",
+      "projection_head.0.bias"
+    ],
+    "ignored_classifier_keys": [],
+    "allowed_default_initialized_keys": [
+      "fc_norm.bias",
+      "fc_norm.weight",
+      "head.bias",
+      "head.weight"
+    ],
+    "allowed_pretraining_only_keys": [
+      "lm_head.bias",
+      "lm_head.weight",
+      "mask_token",
+      "norm.bias",
+      "norm.weight"
+    ],
+    "fc_norm_initialization": "Official default LayerNorm weight=1, bias=0; fc_norm is absent from the pretraining checkpoint",
+    "missing_keys": [
+      "fc_norm.weight",
+      "fc_norm.bias",
+      "head.weight",
+      "head.bias"
+    ],
+    "unexpected_keys": [
+      "mask_token",
+      "lm_head.weight",
+      "lm_head.bias",
+      "norm.weight",
+      "norm.bias"
+    ],
+    "all_backbone_weights_loaded": true,
+    "torch_weights_only": false,
+    "torch_weights_only_reason": "The SHA256-verified official checkpoint container includes numpy scalar metadata, which weights_only=True rejects",
+    "frozen": true,
+    "input_chans": [
+      0,
+      1,
+      3,
+      16,
+      18,
+      20,
+      22,
+      24,
+      27,
+      29,
+      31,
+      33,
+      35,
+      89,
+      40,
+      42,
+      44,
+      91,
+      49,
+      51,
+      53,
+      55,
+      57,
+      90,
+      62,
+      64,
+      66,
+      92,
+      81,
+      82,
+      83
+    ]
+  }
+}
