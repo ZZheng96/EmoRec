@@ -1,0 +1,14 @@
+{
+  "experiment_id": "021_spectral_asymmetry_hgb",
+  "random_seed": 2026,
+  "outer_folds": 5,
+  "excluded_subject": "HC43",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "metadata_reference": "../001_spectral_logpower/predictions/combined__logistic_regression_oof.csv",
+  "public_reference": "../001_spectral_logpower/predictions/combined__logistic_regression_public.csv",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1, "early_stopping": false},
+  "conditions": ["spectral150", "spectral_asymmetry210"],
+  "normalization": {"method": "zscore", "near_zero_std": 1e-12, "train_windows_per_subject": 40, "public_windows_per_user": 8},
+  "protocol": "固定002外层5折；排除HC43；无标签被试内zscore；StandardScaler仅拟合训练折；不调参、不融合、不按结果选择模型；最终全训练模型seed=2026"
+}

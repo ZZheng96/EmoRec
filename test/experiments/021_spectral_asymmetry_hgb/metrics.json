@@ -1,0 +1,698 @@
+{
+  "experiment_config": {
+    "experiment_id": "021_spectral_asymmetry_hgb",
+    "random_seed": 2026,
+    "outer_folds": 5,
+    "excluded_subject": "HC43",
+    "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+    "metadata_reference": "../001_spectral_logpower/predictions/combined__logistic_regression_oof.csv",
+    "public_reference": "../001_spectral_logpower/predictions/combined__logistic_regression_public.csv",
+    "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+    "hgb": {
+      "max_iter": 200,
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1,
+      "early_stopping": false
+    },
+    "conditions": [
+      "spectral150",
+      "spectral_asymmetry210"
+    ],
+    "normalization": {
+      "method": "zscore",
+      "near_zero_std": 1e-12,
+      "train_windows_per_subject": 40,
+      "public_windows_per_user": 8
+    },
+    "protocol": "固定002外层5折；排除HC43；无标签被试内zscore；StandardScaler仅拟合训练折；不调参、不融合、不按结果选择模型；最终全训练模型seed=2026"
+  },
+  "protocol": {
+    "feature_names": [
+      "log_bandpower_FP1_delta",
+      "log_bandpower_FP1_theta",
+      "log_bandpower_FP1_alpha",
+      "log_bandpower_FP1_beta",
+      "log_bandpower_FP1_gamma",
+      "log_bandpower_FP2_delta",
+      "log_bandpower_FP2_theta",
+      "log_bandpower_FP2_alpha",
+      "log_bandpower_FP2_beta",
+      "log_bandpower_FP2_gamma",
+      "log_bandpower_F7_delta",
+      "log_bandpower_F7_theta",
+      "log_bandpower_F7_alpha",
+      "log_bandpower_F7_beta",
+      "log_bandpower_F7_gamma",
+      "log_bandpower_F3_delta",
+      "log_bandpower_F3_theta",
+      "log_bandpower_F3_alpha",
+      "log_bandpower_F3_beta",
+      "log_bandpower_F3_gamma",
+      "log_bandpower_FZ_delta",
+      "log_bandpower_FZ_theta",
+      "log_bandpower_FZ_alpha",
+      "log_bandpower_FZ_beta",
+      "log_bandpower_FZ_gamma",
+      "log_bandpower_F4_delta",
+      "log_bandpower_F4_theta",
+      "log_bandpower_F4_alpha",
+      "log_bandpower_F4_beta",
+      "log_bandpower_F4_gamma",
+      "log_bandpower_F8_delta",
+      "log_bandpower_F8_theta",
+      "log_bandpower_F8_alpha",
+      "log_bandpower_F8_beta",
+      "log_bandpower_F8_gamma",
+      "log_bandpower_FT7_delta",
+      "log_bandpower_FT7_theta",
+      "log_bandpower_FT7_alpha",
+      "log_bandpower_FT7_beta",
+      "log_bandpower_FT7_gamma",
+      "log_bandpower_FC3_delta",
+      "log_bandpower_FC3_theta",
+      "log_bandpower_FC3_alpha",
+      "log_bandpower_FC3_beta",
+      "log_bandpower_FC3_gamma",
+      "log_bandpower_FCZ_delta",
+      "log_bandpower_FCZ_theta",
+      "log_bandpower_FCZ_alpha",
+      "log_bandpower_FCZ_beta",
+      "log_bandpower_FCZ_gamma",
+      "log_bandpower_FC4_delta",
+      "log_bandpower_FC4_theta",
+      "log_bandpower_FC4_alpha",
+      "log_bandpower_FC4_beta",
+      "log_bandpower_FC4_gamma",
+      "log_bandpower_FT8_delta",
+      "log_bandpower_FT8_theta",
+      "log_bandpower_FT8_alpha",
+      "log_bandpower_FT8_beta",
+      "log_bandpower_FT8_gamma",
+      "log_bandpower_T3_delta",
+      "log_bandpower_T3_theta",
+      "log_bandpower_T3_alpha",
+      "log_bandpower_T3_beta",
+      "log_bandpower_T3_gamma",
+      "log_bandpower_C3_delta",
+      "log_bandpower_C3_theta",
+      "log_bandpower_C3_alpha",
+      "log_bandpower_C3_beta",
+      "log_bandpower_C3_gamma",
+      "log_bandpower_CZ_delta",
+      "log_bandpower_CZ_theta",
+      "log_bandpower_CZ_alpha",
+      "log_bandpower_CZ_beta",
+      "log_bandpower_CZ_gamma",
+      "log_bandpower_C4_delta",
+      "log_bandpower_C4_theta",
+      "log_bandpower_C4_alpha",
+      "log_bandpower_C4_beta",
+      "log_bandpower_C4_gamma",
+      "log_bandpower_T4_delta",
+      "log_bandpower_T4_theta",
+      "log_bandpower_T4_alpha",
+      "log_bandpower_T4_beta",
+      "log_bandpower_T4_gamma",
+      "log_bandpower_TP7_delta",
+      "log_bandpower_TP7_theta",
+      "log_bandpower_TP7_alpha",
+      "log_bandpower_TP7_beta",
+      "log_bandpower_TP7_gamma",
+      "log_bandpower_CP3_delta",
+      "log_bandpower_CP3_theta",
+      "log_bandpower_CP3_alpha",
+      "log_bandpower_CP3_beta",
+      "log_bandpower_CP3_gamma",
+      "log_bandpower_CPZ_delta",
+      "log_bandpower_CPZ_theta",
+      "log_bandpower_CPZ_alpha",
+      "log_bandpower_CPZ_beta",
+      "log_bandpower_CPZ_gamma",
+      "log_bandpower_CP4_delta",
+      "log_bandpower_CP4_theta",
+      "log_bandpower_CP4_alpha",
+      "log_bandpower_CP4_beta",
+      "log_bandpower_CP4_gamma",
+      "log_bandpower_TP8_delta",
+      "log_bandpower_TP8_theta",
+      "log_bandpower_TP8_alpha",
+      "log_bandpower_TP8_beta",
+      "log_bandpower_TP8_gamma",
+      "log_bandpower_T5_delta",
+      "log_bandpower_T5_theta",
+      "log_bandpower_T5_alpha",
+      "log_bandpower_T5_beta",
+      "log_bandpower_T5_gamma",
+      "log_bandpower_P3_delta",
+      "log_bandpower_P3_theta",
+      "log_bandpower_P3_alpha",
+      "log_bandpower_P3_beta",
+      "log_bandpower_P3_gamma",
+      "log_bandpower_PZ_delta",
+      "log_bandpower_PZ_theta",
+      "log_bandpower_PZ_alpha",
+      "log_bandpower_PZ_beta",
+      "log_bandpower_PZ_gamma",
+      "log_bandpower_P4_delta",
+      "log_bandpower_P4_theta",
+      "log_bandpower_P4_alpha",
+      "log_bandpower_P4_beta",
+      "log_bandpower_P4_gamma",
+      "log_bandpower_T6_delta",
+      "log_bandpower_T6_theta",
+      "log_bandpower_T6_alpha",
+      "log_bandpower_T6_beta",
+      "log_bandpower_T6_gamma",
+      "log_bandpower_O1_delta",
+      "log_bandpower_O1_theta",
+      "log_bandpower_O1_alpha",
+      "log_bandpower_O1_beta",
+      "log_bandpower_O1_gamma",
+      "log_bandpower_OZ_delta",
+      "log_bandpower_OZ_theta",
+      "log_bandpower_OZ_alpha",
+      "log_bandpower_OZ_beta",
+      "log_bandpower_OZ_gamma",
+      "log_bandpower_O2_delta",
+      "log_bandpower_O2_theta",
+      "log_bandpower_O2_alpha",
+      "log_bandpower_O2_beta",
+      "log_bandpower_O2_gamma",
+      "asymmetry_FP1_FP2_delta",
+      "asymmetry_FP1_FP2_theta",
+      "asymmetry_FP1_FP2_alpha",
+      "asymmetry_FP1_FP2_beta",
+      "asymmetry_FP1_FP2_gamma",
+      "asymmetry_F7_F8_delta",
+      "asymmetry_F7_F8_theta",
+      "asymmetry_F7_F8_alpha",
+      "asymmetry_F7_F8_beta",
+      "asymmetry_F7_F8_gamma",
+      "asymmetry_F3_F4_delta",
+      "asymmetry_F3_F4_theta",
+      "asymmetry_F3_F4_alpha",
+      "asymmetry_F3_F4_beta",
+      "asymmetry_F3_F4_gamma",
+      "asymmetry_FC3_FC4_delta",
+      "asymmetry_FC3_FC4_theta",
+      "asymmetry_FC3_FC4_alpha",
+      "asymmetry_FC3_FC4_beta",
+      "asymmetry_FC3_FC4_gamma",
+      "asymmetry_FT7_FT8_delta",
+      "asymmetry_FT7_FT8_theta",
+      "asymmetry_FT7_FT8_alpha",
+      "asymmetry_FT7_FT8_beta",
+      "asymmetry_FT7_FT8_gamma",
+      "asymmetry_T3_T4_delta",
+      "asymmetry_T3_T4_theta",
+      "asymmetry_T3_T4_alpha",
+      "asymmetry_T3_T4_beta",
+      "asymmetry_T3_T4_gamma",
+      "asymmetry_C3_C4_delta",
+      "asymmetry_C3_C4_theta",
+      "asymmetry_C3_C4_alpha",
+      "asymmetry_C3_C4_beta",
+      "asymmetry_C3_C4_gamma",
+      "asymmetry_TP7_TP8_delta",
+      "asymmetry_TP7_TP8_theta",
+      "asymmetry_TP7_TP8_alpha",
+      "asymmetry_TP7_TP8_beta",
+      "asymmetry_TP7_TP8_gamma",
+      "asymmetry_CP3_CP4_delta",
+      "asymmetry_CP3_CP4_theta",
+      "asymmetry_CP3_CP4_alpha",
+      "asymmetry_CP3_CP4_beta",
+      "asymmetry_CP3_CP4_gamma",
+      "asymmetry_T5_T6_delta",
+      "asymmetry_T5_T6_theta",
+      "asymmetry_T5_T6_alpha",
+      "asymmetry_T5_T6_beta",
+      "asymmetry_T5_T6_gamma",
+      "asymmetry_P3_P4_delta",
+      "asymmetry_P3_P4_theta",
+      "asymmetry_P3_P4_alpha",
+      "asymmetry_P3_P4_beta",
+      "asymmetry_P3_P4_gamma",
+      "asymmetry_O1_O2_delta",
+      "asymmetry_O1_O2_theta",
+      "asymmetry_O1_O2_alpha",
+      "asymmetry_O1_O2_beta",
+      "asymmetry_O1_O2_gamma"
+    ],
+    "train_and_public_asymmetry_identity_checked": true,
+    "row_metadata_checked_against_001": true,
+    "outer_folds_reused_from_002": true,
+    "subject_isolation_checked": true,
+    "oof_rows_per_condition": 2760,
+    "public_rows_per_condition": 80,
+    "no_tuning_or_model_selection": true
+  },
+  "runs": {
+    "spectral150": {
+      "n_features": 150,
+      "overall": {
+        "roc_auc": 0.7824159840369671,
+        "binary_f1": 0.7186710003611412,
+        "balanced_accuracy": 0.7177536231884059,
+        "threshold": 0.5,
+        "tn": 986,
+        "fp": 394,
+        "fn": 385,
+        "tp": 995
+      },
+      "groups": {
+        "HC": {
+          "roc_auc": 0.8339320764462811,
+          "binary_f1": 0.770962296004502,
+          "balanced_accuracy": 0.76875,
+          "threshold": 0.5,
+          "tn": 668,
+          "fp": 212,
+          "fn": 195,
+          "tp": 685
+        },
+        "DEP": {
+          "roc_auc": 0.6748559999999999,
+          "binary_f1": 0.625,
+          "balanced_accuracy": 0.628,
+          "threshold": 0.5,
+          "tn": 318,
+          "fp": 182,
+          "fn": 190,
+          "tp": 310
+        }
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.7553826530612244,
+            "binary_f1": 0.6855123674911661,
+            "balanced_accuracy": 0.6821428571428572,
+            "threshold": 0.5,
+            "tn": 188,
+            "fp": 92,
+            "fn": 86,
+            "tp": 194
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.827716049382716,
+              "binary_f1": 0.7479674796747967,
+              "balanced_accuracy": 0.7416666666666667,
+              "threshold": 0.5,
+              "tn": 129,
+              "fp": 51,
+              "fn": 42,
+              "tp": 138
+            },
+            "DEP": {
+              "roc_auc": 0.6025,
+              "binary_f1": 0.5685279187817259,
+              "balanced_accuracy": 0.575,
+              "threshold": 0.5,
+              "tn": 59,
+              "fp": 41,
+              "fn": 44,
+              "tp": 56
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "n_train_subjects": 56,
+          "n_validation_subjects": 13,
+          "overall": {
+            "roc_auc": 0.745266272189349,
+            "binary_f1": 0.6954887218045113,
+            "balanced_accuracy": 0.6884615384615385,
+            "threshold": 0.5,
+            "tn": 173,
+            "fp": 87,
+            "fn": 75,
+            "tp": 185
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.7798828125,
+              "binary_f1": 0.7378048780487805,
+              "balanced_accuracy": 0.73125,
+              "threshold": 0.5,
+              "tn": 113,
+              "fp": 47,
+              "fn": 39,
+              "tp": 121
+            },
+            "DEP": {
+              "roc_auc": 0.6819000000000001,
+              "binary_f1": 0.6274509803921569,
+              "balanced_accuracy": 0.62,
+              "threshold": 0.5,
+              "tn": 60,
+              "fp": 40,
+              "fn": 36,
+              "tp": 64
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.789936224489796,
+            "binary_f1": 0.7385159010600707,
+            "balanced_accuracy": 0.7357142857142858,
+            "threshold": 0.5,
+            "tn": 203,
+            "fp": 77,
+            "fn": 71,
+            "tp": 209
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8031172839506172,
+              "binary_f1": 0.7603305785123967,
+              "balanced_accuracy": 0.7583333333333333,
+              "threshold": 0.5,
+              "tn": 135,
+              "fp": 45,
+              "fn": 42,
+              "tp": 138
+            },
+            "DEP": {
+              "roc_auc": 0.7643000000000001,
+              "binary_f1": 0.6995073891625616,
+              "balanced_accuracy": 0.6950000000000001,
+              "threshold": 0.5,
+              "tn": 68,
+              "fp": 32,
+              "fn": 29,
+              "tp": 71
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.7754464285714286,
+            "binary_f1": 0.7023172905525846,
+            "balanced_accuracy": 0.7017857142857142,
+            "threshold": 0.5,
+            "tn": 196,
+            "fp": 84,
+            "fn": 83,
+            "tp": 197
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8727777777777779,
+              "binary_f1": 0.8044077134986226,
+              "balanced_accuracy": 0.8027777777777778,
+              "threshold": 0.5,
+              "tn": 143,
+              "fp": 37,
+              "fn": 34,
+              "tp": 146
+            },
+            "DEP": {
+              "roc_auc": 0.5635,
+              "binary_f1": 0.5151515151515151,
+              "balanced_accuracy": 0.52,
+              "threshold": 0.5,
+              "tn": 53,
+              "fp": 47,
+              "fn": 49,
+              "tp": 51
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.8435331632653061,
+            "binary_f1": 0.7720588235294118,
+            "balanced_accuracy": 0.7785714285714286,
+            "threshold": 0.5,
+            "tn": 226,
+            "fp": 54,
+            "fn": 70,
+            "tp": 210
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8787345679012345,
+              "binary_f1": 0.8022598870056498,
+              "balanced_accuracy": 0.8055555555555556,
+              "threshold": 0.5,
+              "tn": 148,
+              "fp": 32,
+              "fn": 38,
+              "tp": 142
+            },
+            "DEP": {
+              "roc_auc": 0.7675,
+              "binary_f1": 0.7157894736842105,
+              "balanced_accuracy": 0.73,
+              "threshold": 0.5,
+              "tn": 78,
+              "fp": 22,
+              "fn": 32,
+              "tp": 68
+            }
+          }
+        }
+      ]
+    },
+    "spectral_asymmetry210": {
+      "n_features": 210,
+      "overall": {
+        "roc_auc": 0.7756369460197438,
+        "binary_f1": 0.714853632092519,
+        "balanced_accuracy": 0.7141304347826087,
+        "threshold": 0.5,
+        "tn": 982,
+        "fp": 398,
+        "fn": 391,
+        "tp": 989
+      },
+      "groups": {
+        "HC": {
+          "roc_auc": 0.8251472107438016,
+          "binary_f1": 0.7624434389140271,
+          "balanced_accuracy": 0.7613636363636364,
+          "threshold": 0.5,
+          "tn": 666,
+          "fp": 214,
+          "fn": 206,
+          "tp": 674
+        },
+        "DEP": {
+          "roc_auc": 0.6732559999999999,
+          "binary_f1": 0.6306306306306306,
+          "balanced_accuracy": 0.631,
+          "threshold": 0.5,
+          "tn": 316,
+          "fp": 184,
+          "fn": 185,
+          "tp": 315
+        }
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.746875,
+            "binary_f1": 0.6797853309481217,
+            "balanced_accuracy": 0.6803571428571429,
+            "threshold": 0.5,
+            "tn": 191,
+            "fp": 89,
+            "fn": 90,
+            "tp": 190
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8148148148148149,
+              "binary_f1": 0.7493112947658402,
+              "balanced_accuracy": 0.7472222222222222,
+              "threshold": 0.5,
+              "tn": 133,
+              "fp": 47,
+              "fn": 44,
+              "tp": 136
+            },
+            "DEP": {
+              "roc_auc": 0.6032,
+              "binary_f1": 0.5510204081632653,
+              "balanced_accuracy": 0.56,
+              "threshold": 0.5,
+              "tn": 58,
+              "fp": 42,
+              "fn": 46,
+              "tp": 54
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "n_train_subjects": 56,
+          "n_validation_subjects": 13,
+          "overall": {
+            "roc_auc": 0.7569082840236686,
+            "binary_f1": 0.6931818181818182,
+            "balanced_accuracy": 0.6884615384615385,
+            "threshold": 0.5,
+            "tn": 175,
+            "fp": 85,
+            "fn": 77,
+            "tp": 183
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.7985937500000001,
+              "binary_f1": 0.7484662576687117,
+              "balanced_accuracy": 0.7437499999999999,
+              "threshold": 0.5,
+              "tn": 116,
+              "fp": 44,
+              "fn": 38,
+              "tp": 122
+            },
+            "DEP": {
+              "roc_auc": 0.6765000000000001,
+              "binary_f1": 0.6039603960396039,
+              "balanced_accuracy": 0.6,
+              "threshold": 0.5,
+              "tn": 59,
+              "fp": 41,
+              "fn": 39,
+              "tp": 61
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.7743877551020407,
+            "binary_f1": 0.7314487632508834,
+            "balanced_accuracy": 0.7285714285714286,
+            "threshold": 0.5,
+            "tn": 201,
+            "fp": 79,
+            "fn": 73,
+            "tp": 207
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.7830246913580248,
+              "binary_f1": 0.7377049180327869,
+              "balanced_accuracy": 0.7333333333333334,
+              "threshold": 0.5,
+              "tn": 129,
+              "fp": 51,
+              "fn": 45,
+              "tp": 135
+            },
+            "DEP": {
+              "roc_auc": 0.7584,
+              "binary_f1": 0.72,
+              "balanced_accuracy": 0.72,
+              "threshold": 0.5,
+              "tn": 72,
+              "fp": 28,
+              "fn": 28,
+              "tp": 72
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.7666071428571428,
+            "binary_f1": 0.7025089605734767,
+            "balanced_accuracy": 0.7035714285714285,
+            "threshold": 0.5,
+            "tn": 198,
+            "fp": 82,
+            "fn": 84,
+            "tp": 196
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8604320987654321,
+              "binary_f1": 0.7853107344632768,
+              "balanced_accuracy": 0.788888888888889,
+              "threshold": 0.5,
+              "tn": 145,
+              "fp": 35,
+              "fn": 41,
+              "tp": 139
+            },
+            "DEP": {
+              "roc_auc": 0.5687,
+              "binary_f1": 0.5588235294117647,
+              "balanced_accuracy": 0.55,
+              "threshold": 0.5,
+              "tn": 53,
+              "fp": 47,
+              "fn": 43,
+              "tp": 57
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "n_train_subjects": 55,
+          "n_validation_subjects": 14,
+          "overall": {
+            "roc_auc": 0.8366326530612246,
+            "binary_f1": 0.7661870503597122,
+            "balanced_accuracy": 0.7678571428571428,
+            "threshold": 0.5,
+            "tn": 217,
+            "fp": 63,
+            "fn": 67,
+            "tp": 213
+          },
+          "groups": {
+            "HC": {
+              "roc_auc": 0.8705246913580248,
+              "binary_f1": 0.7910863509749304,
+              "balanced_accuracy": 0.7916666666666666,
+              "threshold": 0.5,
+              "tn": 143,
+              "fp": 37,
+              "fn": 38,
+              "tp": 142
+            },
+            "DEP": {
+              "roc_auc": 0.7621,
+              "binary_f1": 0.7208121827411168,
+              "balanced_accuracy": 0.725,
+              "threshold": 0.5,
+              "tn": 74,
+              "fp": 26,
+              "fn": 29,
+              "tp": 71
+            }
+          }
+        }
+      ]
+    }
+  }
+}
