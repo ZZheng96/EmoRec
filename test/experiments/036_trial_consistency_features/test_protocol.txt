@@ -1,0 +1,1 @@
+协议：001 spectral 150维与009 temporal 450维缓存逐项对齐；002固定StratifiedKFold(5, random_state=2026)在全70被试生成后排除HC43；训练每被试按行每5行块，公开每用户按行每2行块。块统计只使用被试内归一化后的特征，不使用y、health_group、trial id，公开块不映射训练trial。HGB参数固定，fold seed=2026+fold，阈值0.5，无概率后处理。主方法consistency_spectral不是真实trial一致性标签。输出2760行OOF、80行public及fold概率诊断。若主方法AUC低于spectral_control，停止该方向。
