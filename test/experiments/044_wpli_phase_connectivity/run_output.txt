@@ -1,0 +1,153 @@
+﻿Features train 1/70 DEP01
+Features train 2/70 DEP02
+Features train 3/70 DEP03
+Features train 4/70 DEP04
+Features train 5/70 DEP05
+Features train 6/70 DEP06
+Features train 7/70 DEP07
+Features train 8/70 DEP08
+Features train 9/70 DEP09
+Features train 10/70 DEP10
+Features train 11/70 DEP11
+Features train 12/70 DEP12
+Features train 13/70 DEP13
+Features train 14/70 DEP14
+Features train 15/70 DEP15
+Features train 16/70 DEP16
+Features train 17/70 DEP17
+Features train 18/70 DEP18
+Features train 19/70 DEP19
+Features train 20/70 DEP20
+Features train 21/70 DEP21
+Features train 22/70 DEP22
+Features train 23/70 DEP23
+Features train 24/70 DEP24
+Features train 25/70 DEP25
+Features train 26/70 HC01
+Features train 27/70 HC02
+Features train 28/70 HC03
+Features train 29/70 HC04
+Features train 30/70 HC05
+Features train 31/70 HC06
+Features train 32/70 HC07
+Features train 33/70 HC08
+Features train 34/70 HC09
+Features train 35/70 HC10
+Features train 36/70 HC11
+Features train 37/70 HC12
+Features train 38/70 HC13
+Features train 39/70 HC14
+Features train 40/70 HC15
+Features train 41/70 HC16
+Features train 42/70 HC17
+Features train 43/70 HC18
+Features train 44/70 HC19
+Features train 45/70 HC20
+Features train 46/70 HC21
+Features train 47/70 HC22
+Features train 48/70 HC23
+Features train 49/70 HC24
+Features train 50/70 HC25
+Features train 51/70 HC26
+Features train 52/70 HC27
+Features train 53/70 HC28
+Features train 54/70 HC29
+Features train 55/70 HC30
+Features train 56/70 HC31
+Features train 57/70 HC32
+Features train 58/70 HC33
+Features train 59/70 HC34
+Features train 60/70 HC35
+Features train 61/70 HC36
+Features train 62/70 HC37
+Features train 63/70 HC38
+Features train 64/70 HC39
+Features train 65/70 HC40
+Features train 66/70 HC41
+Features train 67/70 HC42
+Features train 68/70 HC43
+Features train 69/70 HC44
+Features train 70/70 HC45
+Features public P_test1
+Features public P_test2
+Features public P_test3
+Features public P_test4
+Features public P_test5
+Features public P_test6
+Features public P_test7
+Features public P_test8
+Features public P_test9
+Features public P_test10
+spectral_control fixed2026 fold 1/5 complete
+spectral_control fixed2026 fold 2/5 complete
+spectral_control fixed2026 fold 3/5 complete
+spectral_control fixed2026 fold 4/5 complete
+spectral_control fixed2026 fold 5/5 complete
+{"method": "spectral_control", "schedule": "fixed2026", "auc": 0.7824159840369671, "f1": 0.7186710003611412, "balanced_accuracy": 0.7177536231884059, "threshold": 0.5, "tn": 986, "fp": 394, "fn": 385, "tp": 995, "subject_macro_auc": 0.7697101449275363, "hc_auc": 0.8339320764462811, "dep_auc": 0.6748559999999999}
+spectral_control repeat2027 fold 1/5 complete
+spectral_control repeat2027 fold 2/5 complete
+spectral_control repeat2027 fold 3/5 complete
+spectral_control repeat2027 fold 4/5 complete
+spectral_control repeat2027 fold 5/5 complete
+{"method": "spectral_control", "schedule": "repeat2027", "auc": 0.7826911363158999, "f1": 0.710239651416122, "balanced_accuracy": 0.7108695652173913, "threshold": 0.5, "tn": 984, "fp": 396, "fn": 402, "tp": 978, "subject_macro_auc": 0.768768115942029, "hc_auc": 0.8318117252066115, "dep_auc": 0.677604}
+spectral_control repeat2028 fold 1/5 complete
+spectral_control repeat2028 fold 2/5 complete
+spectral_control repeat2028 fold 3/5 complete
+spectral_control repeat2028 fold 4/5 complete
+spectral_control repeat2028 fold 5/5 complete
+{"method": "spectral_control", "schedule": "repeat2028", "auc": 0.7763384793110691, "f1": 0.7130620985010707, "balanced_accuracy": 0.7086956521739131, "threshold": 0.5, "tn": 957, "fp": 423, "fn": 381, "tp": 999, "subject_macro_auc": 0.764891304347826, "hc_auc": 0.8246952479338843, "dep_auc": 0.674884}
+spectral_control repeat2029 fold 1/5 complete
+spectral_control repeat2029 fold 2/5 complete
+spectral_control repeat2029 fold 3/5 complete
+spectral_control repeat2029 fold 4/5 complete
+spectral_control repeat2029 fold 5/5 complete
+{"method": "spectral_control", "schedule": "repeat2029", "auc": 0.7817422810333964, "f1": 0.7150035893754487, "balanced_accuracy": 0.7123188405797102, "threshold": 0.5, "tn": 970, "fp": 410, "fn": 384, "tp": 996, "subject_macro_auc": 0.7709057971014492, "hc_auc": 0.8300710227272727, "dep_auc": 0.6797280000000001}
+spectral_control repeat2030 fold 1/5 complete
+spectral_control repeat2030 fold 2/5 complete
+spectral_control repeat2030 fold 3/5 complete
+spectral_control repeat2030 fold 4/5 complete
+spectral_control repeat2030 fold 5/5 complete
+{"method": "spectral_control", "schedule": "repeat2030", "auc": 0.7787518378491913, "f1": 0.7049891540130152, "balanced_accuracy": 0.7043478260869566, "threshold": 0.5, "tn": 969, "fp": 411, "fn": 405, "tp": 975, "subject_macro_auc": 0.7642028985507245, "hc_auc": 0.8304713326446281, "dep_auc": 0.670856}
+spectral_control repeat2031 fold 1/5 complete
+spectral_control repeat2031 fold 2/5 complete
+spectral_control repeat2031 fold 3/5 complete
+spectral_control repeat2031 fold 4/5 complete
+spectral_control repeat2031 fold 5/5 complete
+{"method": "spectral_control", "schedule": "repeat2031", "auc": 0.7864891829447594, "f1": 0.7172812725958062, "balanced_accuracy": 0.7166666666666667, "threshold": 0.5, "tn": 986, "fp": 394, "fn": 388, "tp": 992, "subject_macro_auc": 0.7735507246376813, "hc_auc": 0.834453770661157, "dep_auc": 0.685068}
+wpli_hgb fixed2026 fold 1/5 complete
+wpli_hgb fixed2026 fold 2/5 complete
+wpli_hgb fixed2026 fold 3/5 complete
+wpli_hgb fixed2026 fold 4/5 complete
+wpli_hgb fixed2026 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "fixed2026", "auc": 0.5276969124133586, "f1": 0.5169522420707254, "balanced_accuracy": 0.519927536231884, "threshold": 0.5, "tn": 726, "fp": 654, "fn": 671, "tp": 709, "subject_macro_auc": 0.528550724637681, "hc_auc": 0.5321255165289256, "dep_auc": 0.521568}
+wpli_hgb repeat2027 fold 1/5 complete
+wpli_hgb repeat2027 fold 2/5 complete
+wpli_hgb repeat2027 fold 3/5 complete
+wpli_hgb repeat2027 fold 4/5 complete
+wpli_hgb repeat2027 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "repeat2027", "auc": 0.5192491073303928, "f1": 0.5104357378249725, "balanced_accuracy": 0.5155797101449275, "threshold": 0.5, "tn": 726, "fp": 654, "fn": 683, "tp": 697, "subject_macro_auc": 0.518478260869565, "hc_auc": 0.5188287706611571, "dep_auc": 0.52}
+wpli_hgb repeat2028 fold 1/5 complete
+wpli_hgb repeat2028 fold 2/5 complete
+wpli_hgb repeat2028 fold 3/5 complete
+wpli_hgb repeat2028 fold 4/5 complete
+wpli_hgb repeat2028 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "repeat2028", "auc": 0.5192727368199959, "f1": 0.506949524506218, "balanced_accuracy": 0.5115942028985507, "threshold": 0.5, "tn": 719, "fp": 661, "fn": 687, "tp": 693, "subject_macro_auc": 0.5185144927536233, "hc_auc": 0.5178990185950413, "dep_auc": 0.52208}
+wpli_hgb repeat2029 fold 1/5 complete
+wpli_hgb repeat2029 fold 2/5 complete
+wpli_hgb repeat2029 fold 3/5 complete
+wpli_hgb repeat2029 fold 4/5 complete
+wpli_hgb repeat2029 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "repeat2029", "auc": 0.5163048729258559, "f1": 0.5036764705882353, "balanced_accuracy": 0.5108695652173914, "threshold": 0.5, "tn": 725, "fp": 655, "fn": 695, "tp": 685, "subject_macro_auc": 0.52018115942029, "hc_auc": 0.5198928202479339, "dep_auc": 0.510184}
+wpli_hgb repeat2030 fold 1/5 complete
+wpli_hgb repeat2030 fold 2/5 complete
+wpli_hgb repeat2030 fold 3/5 complete
+wpli_hgb repeat2030 fold 4/5 complete
+wpli_hgb repeat2030 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "repeat2030", "auc": 0.513252993068683, "f1": 0.501655020228025, "balanced_accuracy": 0.5090579710144927, "threshold": 0.5, "tn": 723, "fp": 657, "fn": 698, "tp": 682, "subject_macro_auc": 0.5132246376811594, "hc_auc": 0.5202053202479339, "dep_auc": 0.5012719999999999}
+wpli_hgb repeat2031 fold 1/5 complete
+wpli_hgb repeat2031 fold 2/5 complete
+wpli_hgb repeat2031 fold 3/5 complete
+wpli_hgb repeat2031 fold 4/5 complete
+wpli_hgb repeat2031 fold 5/5 complete
+{"method": "wpli_hgb", "schedule": "repeat2031", "auc": 0.5127179164041168, "f1": 0.5003684598378777, "balanced_accuracy": 0.508695652173913, "threshold": 0.5, "tn": 725, "fp": 655, "fn": 701, "tp": 679, "subject_macro_auc": 0.5116666666666667, "hc_auc": 0.5101485020661156, "dep_auc": 0.51726}
+COMPLETE elapsed_seconds=115.313 delta_auc=-0.265043 低于频谱控制，停止该方向，不调参、不融合。

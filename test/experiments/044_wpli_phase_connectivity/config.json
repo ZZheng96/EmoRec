@@ -1,0 +1,16 @@
+{
+  "experiment_id": "044_wpli_phase_connectivity",
+  "random_seeds": [2027, 2028, 2029, 2030, 2031],
+  "fixed_fold_seed": 2026,
+  "excluded_subject": "HC43",
+  "sampling_rate": 250,
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "pairs": [["FP1","FP2"],["F7","F8"],["F3","F4"],["FC3","FC4"],["T3","T4"],["C3","C4"],["CP3","CP4"],["T5","T6"],["P3","P4"],["O1","O2"]],
+  "definition": "Time-domain analytic-signal wPLI: abs(mean(imag(z_left*conj(z_right)))) / mean(abs(imag(z_left*conj(z_right)))), over time within each independently bandpass-filtered 10-second window; non-debiased, no edge trimming",
+  "filter": "Butterworth order 4 bandpass SOS, scipy sosfiltfilt default padding; scipy Hilbert",
+  "phase_normalization": "none before training-only StandardScaler",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "hgb": {"max_iter":200,"learning_rate":0.03,"max_leaf_nodes":15,"min_samples_leaf":20,"l2_regularization":1.0,"early_stopping":false},
+  "threshold": 0.5,
+  "stop_rule": "If mean repeated OOF AUC is below spectral control, stop without tuning. All five predeclared repeats are evaluation, not tuning."
+}
