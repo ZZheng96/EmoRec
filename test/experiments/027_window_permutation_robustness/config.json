@@ -1,0 +1,21 @@
+{
+  "experiment_id": "027_window_permutation_robustness",
+  "random_seed": 2026,
+  "permutation_seeds": [1101, 2202, 3303, 4404, 5505, 6606, 7707, 8808, 9909, 10110],
+  "grouping": "Per subject SHA256(subject_id) + seed SeedSequence; permute 40 cache row ordinals, consecutive groups of 8; no labels or original_trial_id",
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "n_samples": 2760,
+  "n_features": 150,
+  "outer_folds": 5,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "feature_prefix": "log_bandpower_",
+  "near_zero_std": 1e-12,
+  "threshold": 0.5,
+  "threads": 1,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "conditions": {"control_40_40": [40, 40], "baseline_8_8": [8, 8], "matched_random_8_8": [8, 8], "eval_only_40_8": [40, 8]},
+  "seed_selection": "All ten seeds fixed before execution; report every seed; no selection",
+  "public_predictions": "baseline, control, and every condition/seed; each 80 rows"
+}
