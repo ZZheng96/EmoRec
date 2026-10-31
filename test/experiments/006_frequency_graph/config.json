@@ -1,0 +1,17 @@
+{
+  "experiment_id": "006_frequency_graph",
+  "random_seed": 2026,
+  "cpu_threads": 2,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "graph_cache": "cache/graph_features.npz",
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "sampling_rate": 250,
+  "segment_samples": 2500,
+  "graph": "FFT rectangular band projection; mean absolute Pearson correlation to other 29 channels per node; 150 dimensions",
+  "n_features": 300,
+  "conditions": ["raw", "zscore"],
+  "normalization": {"near_zero_std": 1e-12, "mode": "label-free within-subject transductive feature normalization; public subjects use their own eight trials"},
+  "model": {"name": "logistic_regression", "C": 1.0, "penalty": "l2", "solver": "lbfgs", "max_iter": 2000},
+  "validation": {"scheme": "reuse 002 folds generated on all 70 subjects, then exclude HC43", "n_splits": 5, "inner_tuning": false, "probability_threshold": 0.5}
+}
