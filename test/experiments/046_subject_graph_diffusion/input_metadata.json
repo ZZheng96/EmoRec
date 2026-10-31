@@ -1,0 +1,7 @@
+{
+  "spectral_cache_sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+  "graph_cache_sha256": "19b4fb7c40700ebe05271ad150f45b44a049163b32bf033300e3fee3b25b5605",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "sklearn": "1.9.1"
+}

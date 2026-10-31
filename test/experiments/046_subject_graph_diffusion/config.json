@@ -1,0 +1,16 @@
+{
+  "experiment_id": "046_subject_graph_diffusion",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "expected_oof_rows": 2760,
+  "expected_subjects": 69,
+  "public_rows": 80,
+  "outer_folds": 5,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "feature_dimensions": {"control": 150, "diffusion": 300},
+  "graph": {"similarity": "cosine", "k_neighbors": 5, "alpha": 0.25, "steps": 1, "self_loop": false, "fixed_before_validation": true},
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "protocol": {"labels_used_for_features": false, "cross_subject_edges": false, "neighbor_window_or_trial_order_used": false, "public_predictions_only": true}
+}

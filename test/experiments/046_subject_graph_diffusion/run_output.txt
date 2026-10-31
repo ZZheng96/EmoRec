@@ -1,0 +1,3 @@
+﻿        run_name  n_features  oof_auc   oof_f1  oof_balanced_accuracy  subject_auc_mean   hc_auc  dep_auc
+spectral_control         150 0.782416 0.718671               0.717754           0.76971 0.833932 0.674856
+ graph_diffusion         300 0.786283 0.713873               0.713043           0.77029 0.837335 0.679088
