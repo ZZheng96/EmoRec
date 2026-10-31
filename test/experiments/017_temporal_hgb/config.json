@@ -1,0 +1,22 @@
+{
+  "experiment_id": "017_temporal_hgb",
+  "random_seed": 2026,
+  "threads": 4,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "outer_folds": 5,
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "hgb": {
+    "max_iter": 200,
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "conditions": ["spectral150", "temporal450", "concat600"],
+  "seconds_per_trial": 10,
+  "comparison": {"experiment_016_spectral_hgb_auc": 0.7824159840369671, "target_auc": 0.95}
+}
