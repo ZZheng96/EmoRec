@@ -1,0 +1,13 @@
+{
+  "experiment_id": "014_asymmetry_ensemble",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "n_splits": 5,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "normalization": "raw and subject zscore; label-free within subject",
+  "model": {"name": "logistic_regression", "C": 1.0, "max_iter": 2000, "solver": "lbfgs"},
+  "fusion": {"baseline": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv", "auxiliary": ["../004_labram_frozen/predictions/labram_frozen_subject_zscore_oof.csv", "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv"], "weights": {"baseline": 0.9, "auxiliary_mean": 0.1}, "labels_used_for_weights": false},
+  "baseline_auc": 0.7647490023104391,
+  "baseline_f1": 0.7007299270072993
+}

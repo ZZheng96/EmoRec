@@ -1,0 +1,26 @@
+{
+  "experiment_id": "015_nested_fusion",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "candidate_weights": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+  "baseline_auc": 0.7647490023104391,
+  "baseline_f1": 0.7007299270072993,
+  "sources": {
+    "baseline": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+    "auxiliary": [
+      "../004_labram_frozen/predictions/labram_frozen_subject_zscore_oof.csv",
+      "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv"
+    ]
+  },
+  "public_sources": {
+    "baseline": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_public.csv",
+    "auxiliary": [
+      "../004_labram_frozen/predictions/labram_frozen_subject_zscore_public.csv",
+      "../006_frequency_graph/predictions/frequency_graph_zscore_public.csv"
+    ]
+  },
+  "fixed_control": {"baseline_weight": 0.9, "auxiliary_mean_weight": 0.1}
+}
