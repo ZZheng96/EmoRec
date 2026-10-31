@@ -1,0 +1,14 @@
+{
+  "experiment_id": "032_repeated_subject_folds",
+  "random_seeds": [2027, 2028, 2029, 2030, 2031],
+  "folds": 5,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "expected_train_rows": 2760,
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "methods": ["spectral_control", "temporal_control", "fixed_05_05"],
+  "fusion_weights": [0.5, 0.5],
+  "threshold": 0.5
+}
