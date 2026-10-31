@@ -1,0 +1,13 @@
+# 比赛数据集与结果（体积过大，不入库）
+数据/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
