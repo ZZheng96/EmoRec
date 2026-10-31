@@ -1,0 +1,88 @@
+{
+  "source": {
+    "oof": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
+    "public": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_public.csv",
+    "model_retrained": false
+  },
+  "audit": {
+    "segment_rows": 2760,
+    "n_subjects": 69,
+    "n_trials": 552,
+    "segments_per_trial": 5,
+    "group_key": [
+      "subject_id",
+      "health_group",
+      "original_trial_id",
+      "y_true"
+    ],
+    "original_trial_id_collision_audit": "每个subject的original_trial_id 1-4在两种标签块各出现5段；为避免错误合并，聚合键保留health_group/y_true。",
+    "labels_consistent": true,
+    "folds_consistent": true
+  },
+  "comparisons": {
+    "mean": {
+      "segment_level": {
+        "roc_auc": 0.7647490023104391,
+        "binary_f1": 0.7007299270072993,
+        "balanced_accuracy": 0.7028985507246377,
+        "threshold": 0.5,
+        "tn": 980,
+        "fp": 400,
+        "fn": 420,
+        "tp": 960
+      },
+      "trial_level": {
+        "roc_auc": 0.8592863894139887,
+        "binary_f1": 0.7792207792207793,
+        "balanced_accuracy": 0.7844202898550725,
+        "threshold": 0.5,
+        "tn": 223,
+        "fp": 53,
+        "fn": 66,
+        "tp": 210
+      },
+      "difference_trial_minus_segment": {
+        "roc_auc": 0.09453738710354964,
+        "binary_f1": 0.07849085221347996,
+        "balanced_accuracy": 0.08152173913043481
+      }
+    },
+    "median": {
+      "segment_level": {
+        "roc_auc": 0.7647490023104391,
+        "binary_f1": 0.7007299270072993,
+        "balanced_accuracy": 0.7028985507246377,
+        "threshold": 0.5,
+        "tn": 980,
+        "fp": 400,
+        "fn": 420,
+        "tp": 960
+      },
+      "trial_level": {
+        "roc_auc": 0.8481017643352237,
+        "binary_f1": 0.7734806629834254,
+        "balanced_accuracy": 0.7771739130434783,
+        "threshold": 0.5,
+        "tn": 219,
+        "fp": 57,
+        "fn": 66,
+        "tp": 210
+      },
+      "difference_trial_minus_segment": {
+        "roc_auc": 0.08335276202478459,
+        "binary_f1": 0.07275073597612614,
+        "balanced_accuracy": 0.07427536231884058
+      }
+    }
+  },
+  "public": {
+    "rows": 80,
+    "users": 10,
+    "rows_per_user": 8,
+    "aggregated": false
+  },
+  "training_audit": {
+    "trial_balanced_retrained": false,
+    "claim": "聚合审计，不代表trial-balanced训练对照"
+  }
+}
