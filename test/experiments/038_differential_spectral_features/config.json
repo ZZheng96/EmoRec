@@ -1,0 +1,17 @@
+{
+  "experiment_id": "038_differential_spectral_features",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "fixed_fold_seed": 2026,
+  "repeated_fold_seeds": [2027, 2028, 2029, 2030, 2031],
+  "n_splits": 5,
+  "threshold": 0.5,
+  "sampling_rate": 250,
+  "welch": {"nperseg": 500, "noverlap": 250, "window": "hann", "detrend": "constant", "scaling": "density"},
+  "bands_hz": {"delta": [1, 4], "theta": [4, 8], "alpha": [8, 13], "beta": [13, 30], "gamma": [30, 45]},
+  "differential_definition": "fixed homologous left-minus-right log bandpower for 12 pairs; 60 dimensions; computed independently for each raw 10-second window",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "methods_fixed": ["spectral_control", "differential_spectral", "fixed_05_05"],
+  "methods_repeated": ["spectral_control", "differential_spectral"]
+}

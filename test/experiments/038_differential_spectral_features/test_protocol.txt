@@ -1,0 +1,5 @@
+专项协议测试命令：
+.venv\Scripts\python.exe -B -m pytest -q -p no:cacheprovider test/experiments/038_differential_spectral_features/test_protocol.py
+实际输出：9 passed in 2.56s
+
+覆盖：原始窗口特征维度与无标签接口、缓存元数据对齐、训练40窗口/公开8窗口、随机重排行序恢复一致、被试隔离、OOF完整性、概率范围、公开80行提交格式。
