@@ -1,0 +1,113 @@
+﻿Window covariance: DEP01
+Window covariance: DEP02
+Window covariance: DEP03
+Window covariance: DEP04
+Window covariance: DEP05
+Window covariance: DEP06
+Window covariance: DEP07
+Window covariance: DEP08
+Window covariance: DEP09
+Window covariance: DEP10
+Window covariance: DEP11
+Window covariance: DEP12
+Window covariance: DEP13
+Window covariance: DEP14
+Window covariance: DEP15
+Window covariance: DEP16
+Window covariance: DEP17
+Window covariance: DEP18
+Window covariance: DEP19
+Window covariance: DEP20
+Window covariance: DEP21
+Window covariance: DEP22
+Window covariance: DEP23
+Window covariance: DEP24
+Window covariance: DEP25
+Window covariance: HC01
+Window covariance: HC02
+Window covariance: HC03
+Window covariance: HC04
+Window covariance: HC05
+Window covariance: HC06
+Window covariance: HC07
+Window covariance: HC08
+Window covariance: HC09
+Window covariance: HC10
+Window covariance: HC11
+Window covariance: HC12
+Window covariance: HC13
+Window covariance: HC14
+Window covariance: HC15
+Window covariance: HC16
+Window covariance: HC17
+Window covariance: HC18
+Window covariance: HC19
+Window covariance: HC20
+Window covariance: HC21
+Window covariance: HC22
+Window covariance: HC23
+Window covariance: HC24
+Window covariance: HC25
+Window covariance: HC26
+Window covariance: HC27
+Window covariance: HC28
+Window covariance: HC29
+Window covariance: HC30
+Window covariance: HC31
+Window covariance: HC32
+Window covariance: HC33
+Window covariance: HC34
+Window covariance: HC35
+Window covariance: HC36
+Window covariance: HC37
+Window covariance: HC38
+Window covariance: HC39
+Window covariance: HC40
+Window covariance: HC41
+Window covariance: HC42
+Window covariance: HC44
+Window covariance: HC45
+fixed: fold 1/5 completed
+fixed: fold 2/5 completed
+fixed: fold 3/5 completed
+fixed: fold 4/5 completed
+fixed: fold 5/5 completed
+repeat_2027: fold 1/5 completed
+repeat_2027: fold 2/5 completed
+repeat_2027: fold 3/5 completed
+repeat_2027: fold 4/5 completed
+repeat_2027: fold 5/5 completed
+repeat_2028: fold 1/5 completed
+repeat_2028: fold 2/5 completed
+repeat_2028: fold 3/5 completed
+repeat_2028: fold 4/5 completed
+repeat_2028: fold 5/5 completed
+repeat_2029: fold 1/5 completed
+repeat_2029: fold 2/5 completed
+repeat_2029: fold 3/5 completed
+repeat_2029: fold 4/5 completed
+repeat_2029: fold 5/5 completed
+repeat_2030: fold 1/5 completed
+repeat_2030: fold 2/5 completed
+repeat_2030: fold 3/5 completed
+repeat_2030: fold 4/5 completed
+repeat_2030: fold 5/5 completed
+repeat_2031: fold 1/5 completed
+repeat_2031: fold 2/5 completed
+repeat_2031: fold 3/5 completed
+repeat_2031: fold 4/5 completed
+repeat_2031: fold 5/5 completed
+   protocol           method      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc
+      fixed   filterbank_csp 0.653962 0.618980           0.610145          0.723551 0.701557 0.571260
+      fixed spectral_control 0.782416 0.718671           0.717754          0.769710 0.833932 0.674856
+repeat_2027   filterbank_csp 0.648873 0.602418           0.606884          0.717826 0.677905 0.590856
+repeat_2027 spectral_control 0.782691 0.710240           0.710870          0.768768 0.831812 0.677604
+repeat_2028   filterbank_csp 0.651441 0.607942           0.606522          0.716558 0.692969 0.574908
+repeat_2028 spectral_control 0.776338 0.713062           0.708696          0.764891 0.824695 0.674884
+repeat_2029   filterbank_csp 0.659070 0.603499           0.605797          0.730435 0.703518 0.579276
+repeat_2029 spectral_control 0.781742 0.715004           0.712319          0.770906 0.830071 0.679728
+repeat_2030   filterbank_csp 0.654113 0.600147           0.606522          0.700870 0.698631 0.565616
+repeat_2030 spectral_control 0.778752 0.704989           0.704348          0.764203 0.830471 0.670856
+repeat_2031   filterbank_csp 0.652980 0.594776           0.606522          0.730507 0.689717 0.590168
+repeat_2031 spectral_control 0.786489 0.717281           0.716667          0.773551 0.834454 0.685068
+低于控制，停止该方向，不调参追分。

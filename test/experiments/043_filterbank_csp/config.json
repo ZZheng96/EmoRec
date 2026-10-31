@@ -1,0 +1,19 @@
+{
+  "experiment_id": "043_filterbank_csp",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "excluded_subject": "HC43",
+  "fixed_seed": 2026,
+  "repeat_seeds": [2027,2028,2029,2030,2031],
+  "fixed_folds": "StratifiedKFold on all 70 subjects before HC43 exclusion, as 002",
+  "repeat_folds": "StratifiedKFold on retained 69 subjects, as 032",
+  "sampling_rate": 250,
+  "window_samples": 2500,
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "filter_order": 4,
+  "covariance_regularization": 1e-6,
+  "filters_per_end": 2,
+  "csp": "class-mean trace-normalized covariance, generalized eigh(C1,C0+C1); log projected variance, no subject normalization",
+  "threshold": 0.5,
+  "hgb": {"max_iter":200,"learning_rate":0.03,"max_leaf_nodes":15,"min_samples_leaf":20,"l2_regularization":1.0,"early_stopping":false},
+  "logistic": {"C":1.0,"solver":"lbfgs","max_iter":2000}
+}

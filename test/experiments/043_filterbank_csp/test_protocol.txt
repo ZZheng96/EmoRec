@@ -1,0 +1,16 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 6 items
+
+test/experiments/043_filterbank_csp/test_protocol.py::test_csp_training_only_and_validation_label_invariance PASSED [ 16%]
+test/experiments/043_filterbank_csp/test_protocol.py::test_subject_disjoint_and_fixed_fold_reproduction PASSED [ 33%]
+test/experiments/043_filterbank_csp/test_protocol.py::test_feature_dimensions_finite_and_permutation PASSED [ 50%]
+test/experiments/043_filterbank_csp/test_protocol.py::test_windows_are_filtered_independently PASSED [ 66%]
+test/experiments/043_filterbank_csp/test_protocol.py::test_public_format PASSED [ 83%]
+test/experiments/043_filterbank_csp/test_protocol.py::test_oof_row_count_and_unique_coverage PASSED [100%]
+
+============================== 6 passed in 2.76s ==============================
