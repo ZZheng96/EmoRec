@@ -1,0 +1,15 @@
+{
+  "experiment_id": "007_riemannian_alignment",
+  "random_seed": 2026,
+  "source_config": "../002_subject_normalization/config.json",
+  "sampling_rate": 250,
+  "segment_seconds": 10,
+  "covariance": {"shrinkage": 0.1, "filter": "none", "reference": "training-fold arithmetic mean", "coordinates": "upper triangle of log(R^-1/2 C R^-1/2), off-diagonals weighted sqrt(2)"},
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "conditions": ["raw", "center", "zscore"],
+  "normalization": {"near_zero_std": 1e-12, "mode": "label-free transductive per-subject tangent feature normalization; 40 validation segments or 8 public trials"},
+  "model": {"C": 1.0, "max_iter": 2000, "solver": "lbfgs"},
+  "validation": {"n_splits": 5, "scheme": "health-stratified subject folds on all 70 subjects before HC43 exclusion", "probability_threshold": 0.5, "inner_tuning": false},
+  "cpu_threads": 1
+}
