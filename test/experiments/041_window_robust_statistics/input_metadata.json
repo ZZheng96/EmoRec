@@ -1,0 +1,409 @@
+{
+  "input_files": [
+    {
+      "path": "数据\\公开测试集\\P_test1.mat",
+      "sha256": "394c27342157a2f337f37b2c5ef02b4578340f3420b867209c8083e9fc36d3c1",
+      "size": 2782439
+    },
+    {
+      "path": "数据\\公开测试集\\P_test10.mat",
+      "sha256": "a6c76f8bfa38abcde9a8efd86da4aad0087c7440e519de602497ef51ca9b47a7",
+      "size": 2787349
+    },
+    {
+      "path": "数据\\公开测试集\\P_test2.mat",
+      "sha256": "9cc1211cce1f22b876e2161dba875d4522f6f382e404ee5a254d4ed2ad9655c3",
+      "size": 2781863
+    },
+    {
+      "path": "数据\\公开测试集\\P_test3.mat",
+      "sha256": "897a5a8032b864b801b208f51817d29d3957b498c015ef890a2cee4788a6c78c",
+      "size": 2782019
+    },
+    {
+      "path": "数据\\公开测试集\\P_test4.mat",
+      "sha256": "18912feb693d8e57d7bf0bc9218bb39d8e1605103d2c8299102290295f977f04",
+      "size": 2779295
+    },
+    {
+      "path": "数据\\公开测试集\\P_test5.mat",
+      "sha256": "c5dda1adb053e56743265f24bf36f8f76ee4f15243b6ee9e273aa2af67f5ab7e",
+      "size": 2783484
+    },
+    {
+      "path": "数据\\公开测试集\\P_test6.mat",
+      "sha256": "669edfd56c1417747ff80ad96b1ce7c85e9de1794e90b9d66e9169da38e59fdb",
+      "size": 2789478
+    },
+    {
+      "path": "数据\\公开测试集\\P_test7.mat",
+      "sha256": "e5d44fa83edd5ab53ca2747f9918437d87cd8be9741194b0a962f1ab3ae6d721",
+      "size": 2786950
+    },
+    {
+      "path": "数据\\公开测试集\\P_test8.mat",
+      "sha256": "940afb960853335521e60b052462b6ea2ee5574b8a3c5cdf5207d3819852073d",
+      "size": 2792562
+    },
+    {
+      "path": "数据\\公开测试集\\P_test9.mat",
+      "sha256": "38b2a3f07bf856bab8f3e1d7a1da3d4a24fec0da46f97595b3acb0c6f0f20f9d",
+      "size": 2793425
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP01.mat",
+      "sha256": "a8305f6ff0eb2eec43ce1a890161f01afadc860c634b6c57ea53f1c157dba210",
+      "size": 11193910
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP02.mat",
+      "sha256": "05d23c1f588db0a6dae03fef9ed2adf375c94ebf6ef368c2604319183a8f1572",
+      "size": 11200834
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP03.mat",
+      "sha256": "b9eef21d4f301ec51182179d614dae26119e743cd755d6c7356ba49398cd52df",
+      "size": 11199569
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP04.mat",
+      "sha256": "4e239d21145300b093d31fb991831601a0a725512925d493baf1fc4c8f6b8743",
+      "size": 11190171
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP05.mat",
+      "sha256": "b6b4a94a8b552beffca8f1ae08a1cc78830f3228552db0d34630af17e03745a4",
+      "size": 11196250
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP06.mat",
+      "sha256": "edc156be493f1a365d7ac64ddc1d6730245939b3170ebd191dfe9ff5883afb1a",
+      "size": 11203841
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP07.mat",
+      "sha256": "9d256bd728ecc3c0fabaadc6f3967fd3b9398b484d1a25bd247ccfc2050f9da1",
+      "size": 11197182
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP08.mat",
+      "sha256": "361f52e049e1935b6d7737fe3843b0005c31359bdb5a6807df94fa39e6e55c58",
+      "size": 11196827
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP09.mat",
+      "sha256": "30a4c3c4f45ba7adc9036b1cc9c7e702c645c18a7efb5bad63c40b128fe582f1",
+      "size": 11176460
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP10.mat",
+      "sha256": "f6b9d4474bfaf455cb94d94b874eae161c5593a6901b4d758c43f8273c82dd98",
+      "size": 11189831
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP11.mat",
+      "sha256": "1bc147c96e1295505c1b87fde21518ce261f37dcac6169b1bc2c4f88d89fc892",
+      "size": 11198615
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP12.mat",
+      "sha256": "6a0f0255c99850edb94b087ea20a9897f8141b88107004898d1e56a09318ff54",
+      "size": 11194382
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP13.mat",
+      "sha256": "650890de71447c9d11dc1ecfc69372818cb05c7d8e8a810cd16cad51ce9aff61",
+      "size": 11197465
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP14.mat",
+      "sha256": "7fee15f6f95e4b30bab1b27a68217d125e995a153ffe8f01fd825653582b02d2",
+      "size": 11189288
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP15.mat",
+      "sha256": "01276ecde18c6626603359eef34ae5ec0b21718ec599075d8fa109b9dbe9eed0",
+      "size": 11192280
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP16.mat",
+      "sha256": "73e5188acd70d18f2a9b510688e6ba961b5869f834abbbb4688878ffc07dcd0c",
+      "size": 11195607
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP17.mat",
+      "sha256": "9b0c48f58762b6645301d55cfeb48bbce4c53cb9e6fb969ee122bce6c074c816",
+      "size": 11192716
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP18.mat",
+      "sha256": "c38051930c0f982078e84c703c2d3fec122d336fbaaef2338cef56d4f0117213",
+      "size": 11180701
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP19.mat",
+      "sha256": "226daa6fca7f6a789bd483df2dd5d7e6dc6e6cab176d62affcc5519dbe4581a1",
+      "size": 11188426
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP20.mat",
+      "sha256": "b9cc0daef4e706fb8a52723718eebf6e76b546bb28e2258bd1fc2bd45f6b96f5",
+      "size": 11198392
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP21.mat",
+      "sha256": "0258fdf5c1ed60e09bce06d811df467913f2ff3e0ef54e83122a2b75c7ae0a08",
+      "size": 11197416
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP22.mat",
+      "sha256": "7d2db045fd537ca71997c286a68f27d3f558a6e05a09242798ac9ef20becf8e1",
+      "size": 11178908
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP23.mat",
+      "sha256": "e412992199f2be009771b25b634efd331d21a996d936e495f273971f4a17ba77",
+      "size": 11198157
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP24.mat",
+      "sha256": "e063a8aa36592ad4d94a3eb1834e4dde3cf8d803eb2cdce75d4aaad6baa1cb5b",
+      "size": 11191772
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP25.mat",
+      "sha256": "bf83516c9993805096ea5af3ce4e110c33da84004f4725fb1b8280adc1dd0ef7",
+      "size": 11175663
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC01.mat",
+      "sha256": "6417519e641a815c07c7f0e12f639a77e144945a1d1ee484aefc327d957ff23b",
+      "size": 11194638
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC02.mat",
+      "sha256": "c0436eed4f2f0e43f3ab3007577cce591cc20155a580062af41eaca76510eefa",
+      "size": 11189417
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC03.mat",
+      "sha256": "943d860ac5109020f4a461eb69710d7c47f18daeb9f460d830bb3f4a375756a3",
+      "size": 11201404
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC04.mat",
+      "sha256": "9524470a33ba30e66d33a1b2f49efcd1a9f031baa23956385711a3fe54f0944e",
+      "size": 11187872
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC05.mat",
+      "sha256": "b10400d40bac67af54ed79d0f2f725675177486d98d09e2dfc2281b10e8b5471",
+      "size": 11193279
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC06.mat",
+      "sha256": "c62a9dec5d426d4a827a492098158f37461117c8eea2545bbf69434f90303440",
+      "size": 11198257
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC07.mat",
+      "sha256": "5ee5d9a91ae3dcd39e45b06590687ebc43408241e3a1381a6032168f357d6543",
+      "size": 11203574
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC08.mat",
+      "sha256": "611317934bf1920446c540943cbefa78749ebbd122f6525c1e8908cedbfd6a3e",
+      "size": 11200778
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC09.mat",
+      "sha256": "93d85cec68c515961aae2b26ab842630b36b373ee7278faec25a781399c5d1ee",
+      "size": 11211875
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC10.mat",
+      "sha256": "fdcd9596c3e658a7c1ec98b066c5d14c556c41af1e11cd4619e4f0fc6eefbe21",
+      "size": 11208107
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC11.mat",
+      "sha256": "c343b72adb20386c1bb3e553db01442ee2d983e709596d30a193d6848afc354e",
+      "size": 11193553
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC12.mat",
+      "sha256": "930d436a02cecc86a84b3d03ff9a7afb1b8116451d534014af053b112e52db10",
+      "size": 11202924
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC13.mat",
+      "sha256": "3122af879358dd50fb9f03e2baea4cd2f9d08fffe92aac24f9d6c63a0bb9549c",
+      "size": 11207716
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC14.mat",
+      "sha256": "fdd394a9b3eab5fa235971cd750335942465a25e463bed6d5ec32d8c508aefb4",
+      "size": 11195748
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC15.mat",
+      "sha256": "65c5f286df24dbdb01a2fc960e1418e011ad43bdab04cfd2489fc54dab60838d",
+      "size": 11200465
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC16.mat",
+      "sha256": "6c0087bef3404701c78c426426bfefdb8f1ff0c05b4c2f5654571323337105ec",
+      "size": 11198795
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC17.mat",
+      "sha256": "c1d905600383507ab665712fbf5d69cc1656d49c37a7759eff266605c7a11617",
+      "size": 11190897
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC18.mat",
+      "sha256": "2693ae4fdd18785fd66b874d359415c31ee30848821f2ca6f41c2c349d6ec536",
+      "size": 11195633
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC19.mat",
+      "sha256": "66cbac012475ebe9b97c84112ac7d1cbed7f4245539a0c70191f4914813541e0",
+      "size": 11204970
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC20.mat",
+      "sha256": "e488ab17f3133a646ff373e7dd5575c4b77968002fe154ec7acb095f88865214",
+      "size": 11189401
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC21.mat",
+      "sha256": "c53edd6bfad6606baf7251cdc20d40d0f36755c83e67bc38c1d5dabdea9ffb21",
+      "size": 11201384
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC22.mat",
+      "sha256": "cbf3a35689a472f745e835b652cf7ffd08fb8ed1ec5c487e3f3a54a63c4c3ab1",
+      "size": 11190300
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC23.mat",
+      "sha256": "c7d6b7561b586d42ad3b9b42e7c50290d947984b7021f9ba259bc4981abef263",
+      "size": 11202066
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC24.mat",
+      "sha256": "55675a9af12ad06aaf35be5ae198219394ba1c97297e0a86d7ba33ea2bb7d1e0",
+      "size": 11191185
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC25.mat",
+      "sha256": "81f72e0f2e4acbc3447e9a0f9b588dbfb024474becb153b4875b10ed53de9925",
+      "size": 11207240
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC26.mat",
+      "sha256": "68e21b34350cf9c0e778d8a794374972652a003e5754951d99aecc74e6dd7753",
+      "size": 11207337
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC27.mat",
+      "sha256": "8a6918abdb90c2fbbe5a021e93332ebae5f30499abbe42fe186623bc7d666736",
+      "size": 11184348
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC28.mat",
+      "sha256": "117891319f498b576513acc885c338eae595d6e312deffcf0cddae70f2549eac",
+      "size": 11197263
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC29.mat",
+      "sha256": "c64ef58b78cd6719921b3b18ad4ff37fa568f3da091a8a52e1fbcd4eea6c6e54",
+      "size": 11187496
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC30.mat",
+      "sha256": "ac7ee6e617dc4e104e51f070acc9cd4b9918dff21e0352665a3d4fe82e647149",
+      "size": 11201693
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC31.mat",
+      "sha256": "1066f4f15535f22938d00ca6b7fbfd40957492348a1ce341adfe322b144676e9",
+      "size": 11199713
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC32.mat",
+      "sha256": "3e0e47044d41180b3d887849ef5a31bd63a9d8ccb7367f5ef1ba40aaae28b5d0",
+      "size": 11205954
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC33.mat",
+      "sha256": "b9aa84d5d62794ef49c0230268f39f6ab8769e0522cc9e304959b3ac21e43f4d",
+      "size": 11195598
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC34.mat",
+      "sha256": "b829c565d7eb878b0fcedb41ec7eb0ebac40c098004403add6eae89db8be0147",
+      "size": 11199888
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC35.mat",
+      "sha256": "35d51912cc4944830707b1eb074370c83cdca41b1750a234abd38fe7eccc61a0",
+      "size": 11200605
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC36.mat",
+      "sha256": "f735c6a448a37a92ae83201104766190dc497ca0a5db2de1339ffe79a041fce8",
+      "size": 11202323
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC37.mat",
+      "sha256": "b311309079082939fc60450b6cf5e7662c2d80472124ee387811481488a7c301",
+      "size": 11196584
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC38.mat",
+      "sha256": "850fe58ee3aa53bbf87ac8ee247872a5eeda454dd18211922aeba8c3077bf14e",
+      "size": 11203768
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC39.mat",
+      "sha256": "812f65ee196f30ad12c093b3930caa77980a0469e84261b99558e2bbc8966ad3",
+      "size": 11198480
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC40.mat",
+      "sha256": "d2959d38b8dec7eaf26337dd265cd8b0c299fa03448f278682ea0504512749f1",
+      "size": 11192576
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC41.mat",
+      "sha256": "2d7558b6fe6bdbf459735425e656bac6ec2466d71dbaccc2f19a152c1e3ae4ef",
+      "size": 11197076
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC42.mat",
+      "sha256": "f75a844a6264d8a494366db889abec5161cf55610f2459684a18405c33f725e7",
+      "size": 11199483
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC43.mat",
+      "sha256": "be89d160cac5a5f6b0d36083093f32a7e024d5a8f976e4e726b4e94eb9169aba",
+      "size": 11196846
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC44.mat",
+      "sha256": "63ae93a7bfdd50421ded411bc354b256a0f0a9b6638d366b2a61593e2e33b4c3",
+      "size": 11188494
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC45.mat",
+      "sha256": "7750e86a1f37993c4fb5f4e5ddab31b973eb663ea61aad3b0e584b00900bc44e",
+      "size": 11193075
+    }
+  ],
+  "spectral_cache_sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+  "feature_cache_sha256": "acea56a8207540176e34db2ed7bcbae6b7f00404937453d53ea3472ac1bae828",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1"
+}
