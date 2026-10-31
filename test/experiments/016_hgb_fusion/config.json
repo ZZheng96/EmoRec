@@ -1,0 +1,29 @@
+{
+  "experiment_id": "016_hgb_fusion",
+  "random_seed": 2026,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "n_features": 150,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "hgb": {
+    "max_iter": 200,
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  },
+  "baseline_lr": {
+    "C": 1.0,
+    "penalty": "l2",
+    "max_iter": 2000,
+    "solver": "lbfgs"
+  },
+  "fixed_baseline_weight": 0.9,
+  "comparison": {
+    "current_auc": 0.7771628859483302,
+    "current_f1": 0.7064421669106882
+  }
+}
