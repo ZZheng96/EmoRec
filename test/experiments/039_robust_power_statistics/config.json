@@ -1,0 +1,20 @@
+{
+  "experiment_id": "039_robust_power_statistics",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "expected_train_rows": 2760,
+  "expected_public_rows": 80,
+  "expected_subjects": 69,
+  "base_dimensions": 150,
+  "robust_dimensions": 15,
+  "output_dimensions": 165,
+  "repeated_fold_seeds": [2027, 2028, 2029, 2030, 2031],
+  "folds": 5,
+  "threshold": 0.5,
+  "normalization": "per-subject unlabeled zscore on 150 log-bandpower values",
+  "robust_definition": "for each of 5 bands, cross-channel median, MAD=median(abs(x-median)), and IQR=percentile75-percentile25 on each window's 30 channel z-scores",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "methods_fixed": ["spectral_control", "robust_power", "fixed_05_05"],
+  "methods_repeated": ["spectral_control", "robust_power"]
+}

@@ -1,0 +1,11 @@
+专项协议测试：
+- 150维输入经逐被试无标签z-score后追加每频带跨30通道median/MAD/IQR，输出165维。
+- 检查median、MAD、IQR数学恒等式及无标签接口。
+- 检查001缓存元数据、维度、HC43排除后的2760行/69被试。
+- 随机重排行后按id恢复，特征逐行一致，证明不依赖行序。
+- 检查被试隔离、固定外层三种OOF完整、概率范围和公开80行。
+- 检查五个独立重复seed的control/robust结果均保存。
+
+运行命令：
+python run_experiment.py > run_output.txt
+python -m pytest -q test_protocol.py > test_protocol_output.txt
