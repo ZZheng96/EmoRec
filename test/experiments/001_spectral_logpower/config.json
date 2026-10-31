@@ -1,0 +1,44 @@
+{
+  "experiment_id": "001_spectral_logpower",
+  "random_seed": 2026,
+  "sampling_rate": 250,
+  "segment_seconds": 10,
+  "welch": {
+    "nperseg": 500,
+    "overlap_fraction": 0.5,
+    "window": "hann",
+    "detrend": "constant"
+  },
+  "frequency_bands_hz": {
+    "delta": [1, 4],
+    "theta": [4, 8],
+    "alpha": [8, 13],
+    "beta": [13, 30],
+    "gamma": [30, 45]
+  },
+  "feature_sets": ["log_bandpower", "asymmetry", "combined"],
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "penalty": "l2",
+      "max_iter": 2000
+    },
+    "rbf_svm": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "probability": true
+    }
+  },
+  "validation": {
+    "scheme": "subject-wise 5-fold, stratified by health group",
+    "n_splits": 5,
+    "inner_tuning": false,
+    "probability_threshold": 0.5
+  },
+  "metrics": {
+    "primary": "pooled out-of-fold trial-level ROC AUC",
+    "secondary": "binary F1 for positive emotion, balanced accuracy",
+    "diagnostics": "per-fold, per-subject and health-group results"
+  }
+}

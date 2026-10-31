@@ -5,6 +5,12 @@
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+test/experiments/**/cache/
 
 # 编辑器/系统
 .vscode/

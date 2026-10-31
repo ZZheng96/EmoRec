@@ -1,0 +1,3026 @@
+{
+  "train_file_count": 70,
+  "public_test_file_count": 10,
+  "issue_count": 0,
+  "issues": [],
+  "warning_count": 2,
+  "warnings": [
+    "数据\\训练集\\正常人\\HC43.mat: EEG_data_neu has near-zero global std (1.709e-13)",
+    "数据\\训练集\\正常人\\HC43.mat: EEG_data_pos has near-zero global std (1.744e-13)"
+  ],
+  "files": [
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP01.mat",
+      "role": "train",
+      "subject_id": "DEP01",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -55.82986831665039,
+          "max": 54.498233795166016,
+          "mean": -2.937379031209275e-05,
+          "std": 4.461972236633301,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -49.120750427246094,
+          "max": 51.07673263549805,
+          "mean": 0.00013549445429816842,
+          "std": 4.564844131469727,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP02.mat",
+      "role": "train",
+      "subject_id": "DEP02",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -92.23268127441406,
+          "max": 73.14715576171875,
+          "mean": -2.2328694448958686e-09,
+          "std": 7.645790100097656,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -79.36459350585938,
+          "max": 88.3823013305664,
+          "mean": 2.6982625023208584e-09,
+          "std": 7.628786087036133,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP03.mat",
+      "role": "train",
+      "subject_id": "DEP03",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -241.2217254638672,
+          "max": 156.03128051757812,
+          "mean": 2.975463875287687e-09,
+          "std": 7.926323413848877,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -81.707275390625,
+          "max": 102.76626586914062,
+          "mean": -2.753575589764523e-09,
+          "std": 6.8287811279296875,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP04.mat",
+      "role": "train",
+      "subject_id": "DEP04",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -60.440269470214844,
+          "max": 63.67130661010742,
+          "mean": -0.0002419340453343466,
+          "std": 5.2555131912231445,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -87.0535659790039,
+          "max": 91.76570129394531,
+          "mean": -0.00020356466120574623,
+          "std": 5.55738639831543,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP05.mat",
+      "role": "train",
+      "subject_id": "DEP05",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -133.42861938476562,
+          "max": 118.5529556274414,
+          "mean": -0.0002480881230439991,
+          "std": 5.725588798522949,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -142.76095581054688,
+          "max": 161.5662384033203,
+          "mean": 0.0002608790819067508,
+          "std": 6.211427211761475,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP06.mat",
+      "role": "train",
+      "subject_id": "DEP06",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -63.21385192871094,
+          "max": 57.93710708618164,
+          "mean": 0.00013737035624217242,
+          "std": 6.8066816329956055,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -202.46136474609375,
+          "max": 151.5502471923828,
+          "mean": 1.8581766198622063e-05,
+          "std": 8.230100631713867,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP07.mat",
+      "role": "train",
+      "subject_id": "DEP07",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -54.24953842163086,
+          "max": 85.73883056640625,
+          "mean": 0.00031908403616398573,
+          "std": 6.682283878326416,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -178.1868438720703,
+          "max": 142.88316345214844,
+          "mean": 0.00027130162925459445,
+          "std": 7.641214847564697,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP08.mat",
+      "role": "train",
+      "subject_id": "DEP08",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -129.3157196044922,
+          "max": 127.01532745361328,
+          "mean": -0.000393483234802261,
+          "std": 7.626052379608154,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -131.90933227539062,
+          "max": 155.36058044433594,
+          "mean": 7.89072691986803e-06,
+          "std": 8.1861572265625,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP09.mat",
+      "role": "train",
+      "subject_id": "DEP09",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -41.90638732910156,
+          "max": 43.86147689819336,
+          "mean": 0.000740011571906507,
+          "std": 4.627737522125244,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -39.64984893798828,
+          "max": 38.79186248779297,
+          "mean": -8.058217645157129e-06,
+          "std": 4.785229206085205,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP10.mat",
+      "role": "train",
+      "subject_id": "DEP10",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -137.97743225097656,
+          "max": 123.7203369140625,
+          "mean": 5.404154346244638e-10,
+          "std": 5.616971015930176,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -135.34356689453125,
+          "max": 99.04644775390625,
+          "mean": 1.1876424288459475e-09,
+          "std": 5.335048675537109,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP11.mat",
+      "role": "train",
+      "subject_id": "DEP11",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -106.25279235839844,
+          "max": 118.8600845336914,
+          "mean": 5.111694401094269e-10,
+          "std": 6.9705071449279785,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -98.30245971679688,
+          "max": 100.03423309326172,
+          "mean": -1.730600995841769e-09,
+          "std": 7.249668598175049,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP12.mat",
+      "role": "train",
+      "subject_id": "DEP12",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -112.04981994628906,
+          "max": 111.80176544189453,
+          "mean": -0.0017381373327225447,
+          "std": 7.003974914550781,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -101.41943359375,
+          "max": 61.98537826538086,
+          "mean": 0.0004978933138772845,
+          "std": 6.202781677246094,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP13.mat",
+      "role": "train",
+      "subject_id": "DEP13",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -88.37061309814453,
+          "max": 104.5174331665039,
+          "mean": 0.00026621928554959595,
+          "std": 6.388280391693115,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -110.27850341796875,
+          "max": 105.5425033569336,
+          "mean": -0.00020784196385648102,
+          "std": 7.285367965698242,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP14.mat",
+      "role": "train",
+      "subject_id": "DEP14",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -85.10942077636719,
+          "max": 81.89558410644531,
+          "mean": 0.0005671356339007616,
+          "std": 5.545670986175537,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -121.56583404541016,
+          "max": 85.93753051757812,
+          "mean": 0.0006273032049648464,
+          "std": 6.096245765686035,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP15.mat",
+      "role": "train",
+      "subject_id": "DEP15",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -52.84022903442383,
+          "max": 43.241268157958984,
+          "mean": 0.0005190775264054537,
+          "std": 5.220190525054932,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -97.17950439453125,
+          "max": 77.83450317382812,
+          "mean": -7.110424485290423e-05,
+          "std": 5.494752407073975,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP16.mat",
+      "role": "train",
+      "subject_id": "DEP16",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -64.5838394165039,
+          "max": 80.0605697631836,
+          "mean": 0.00045070829219184816,
+          "std": 7.498737335205078,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -77.1627197265625,
+          "max": 70.66514587402344,
+          "mean": -0.00044749723747372627,
+          "std": 7.699021339416504,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP17.mat",
+      "role": "train",
+      "subject_id": "DEP17",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -127.97955322265625,
+          "max": 154.80120849609375,
+          "mean": -0.003999469336122274,
+          "std": 6.6131792068481445,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -174.68252563476562,
+          "max": 171.304443359375,
+          "mean": 0.001845366321504116,
+          "std": 6.098522186279297,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP18.mat",
+      "role": "train",
+      "subject_id": "DEP18",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -41.5504035949707,
+          "max": 49.23223876953125,
+          "mean": -0.0003785354783758521,
+          "std": 4.480248928070068,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -49.268428802490234,
+          "max": 41.073944091796875,
+          "mean": 0.00010594115883577615,
+          "std": 4.8317952156066895,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP19.mat",
+      "role": "train",
+      "subject_id": "DEP19",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -100.61199951171875,
+          "max": 81.43283081054688,
+          "mean": -0.00013564522669184953,
+          "std": 6.054717540740967,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -70.0714111328125,
+          "max": 68.79574584960938,
+          "mean": 0.0005478885723277926,
+          "std": 6.100409984588623,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP20.mat",
+      "role": "train",
+      "subject_id": "DEP20",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -159.13760375976562,
+          "max": 122.22742462158203,
+          "mean": -0.001461318228393793,
+          "std": 9.159037590026855,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -75.43734741210938,
+          "max": 65.65263366699219,
+          "mean": 0.0007685549207963049,
+          "std": 8.231861114501953,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP21.mat",
+      "role": "train",
+      "subject_id": "DEP21",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -58.73185348510742,
+          "max": 47.62605285644531,
+          "mean": -0.00021123223996255547,
+          "std": 5.863704204559326,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -233.52232360839844,
+          "max": 91.52703857421875,
+          "mean": -0.0002872339973691851,
+          "std": 6.320448398590088,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP22.mat",
+      "role": "train",
+      "subject_id": "DEP22",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -144.56678771972656,
+          "max": 176.1480712890625,
+          "mean": 2.7993520834712626e-09,
+          "std": 4.858777046203613,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -81.9127426147461,
+          "max": 82.60232543945312,
+          "mean": -1.2334188115303846e-09,
+          "std": 4.607981204986572,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP23.mat",
+      "role": "train",
+      "subject_id": "DEP23",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -209.56382751464844,
+          "max": 245.51902770996094,
+          "mean": -0.0002659703022800386,
+          "std": 7.981993675231934,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -67.8298568725586,
+          "max": 94.58037567138672,
+          "mean": -0.00019646299188025296,
+          "std": 7.2567667961120605,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP24.mat",
+      "role": "train",
+      "subject_id": "DEP24",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -52.591800689697266,
+          "max": 48.66262435913086,
+          "mean": -0.00040402114973403513,
+          "std": 5.726540565490723,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -107.74546813964844,
+          "max": 89.43351745605469,
+          "mean": -2.567375668149907e-05,
+          "std": 5.874669551849365,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\抑郁症患者\\DEP25.mat",
+      "role": "train",
+      "subject_id": "DEP25",
+      "group": "抑郁症患者",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -274.09332275390625,
+          "max": 221.73699951171875,
+          "mean": 2.683003819115015e-09,
+          "std": 16.671436309814453,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -177.9467315673828,
+          "max": 167.74119567871094,
+          "mean": 9.297688841058971e-09,
+          "std": 14.696554183959961,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC01.mat",
+      "role": "train",
+      "subject_id": "HC01",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -1418.62109375,
+          "max": 452.3250427246094,
+          "mean": 3.444671747843131e-08,
+          "std": 8.691610336303711,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -130.27798461914062,
+          "max": 141.65780639648438,
+          "mean": -2.78472911396932e-10,
+          "std": 7.838311195373535,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC02.mat",
+      "role": "train",
+      "subject_id": "HC02",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -272.4598693847656,
+          "max": 162.55946350097656,
+          "mean": 0.00012952199904248118,
+          "std": 4.981239318847656,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -110.5197982788086,
+          "max": 88.32684326171875,
+          "mean": 0.0005093172658234835,
+          "std": 4.505104064941406,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC03.mat",
+      "role": "train",
+      "subject_id": "HC03",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -106.7724838256836,
+          "max": 117.21276092529297,
+          "mean": 1.622517897814646e-09,
+          "std": 6.67720890045166,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -50.92631530761719,
+          "max": 92.60472869873047,
+          "mean": -1.8119812317252126e-09,
+          "std": 6.732358455657959,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC04.mat",
+      "role": "train",
+      "subject_id": "HC04",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -165.51748657226562,
+          "max": 249.43272399902344,
+          "mean": -0.0002516208915039897,
+          "std": 6.485856533050537,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -198.81887817382812,
+          "max": 196.1561737060547,
+          "mean": -0.004311147145926952,
+          "std": 7.489436626434326,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC05.mat",
+      "role": "train",
+      "subject_id": "HC05",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -74.49552154541016,
+          "max": 73.7170639038086,
+          "mean": -0.0005057373782619834,
+          "std": 6.2420573234558105,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -68.34814453125,
+          "max": 95.02877807617188,
+          "mean": -1.9232666090829298e-05,
+          "std": 6.619069576263428,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC06.mat",
+      "role": "train",
+      "subject_id": "HC06",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -121.87925720214844,
+          "max": 112.5539779663086,
+          "mean": -4.069010406393403e-10,
+          "std": 6.050861835479736,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -53.34941101074219,
+          "max": 64.9747314453125,
+          "mean": -8.20159884451499e-10,
+          "std": 6.448742389678955,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC07.mat",
+      "role": "train",
+      "subject_id": "HC07",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -106.13337707519531,
+          "max": 131.30642700195312,
+          "mean": -0.0003556778538040817,
+          "std": 7.343009948730469,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -180.29510498046875,
+          "max": 137.9683380126953,
+          "mean": -0.00022612942848354578,
+          "std": 7.052834987640381,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC08.mat",
+      "role": "train",
+      "subject_id": "HC08",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -246.78282165527344,
+          "max": 261.5522766113281,
+          "mean": 0.006728132721036673,
+          "std": 8.612468719482422,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -185.2030029296875,
+          "max": 179.12013244628906,
+          "mean": -0.003238793695345521,
+          "std": 8.417679786682129,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC09.mat",
+      "role": "train",
+      "subject_id": "HC09",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -553.48779296875,
+          "max": 828.0242919921875,
+          "mean": 0.0038482975214719772,
+          "std": 16.58331871032715,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -515.8551025390625,
+          "max": 753.61376953125,
+          "mean": 0.026510942727327347,
+          "std": 25.057327270507812,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC10.mat",
+      "role": "train",
+      "subject_id": "HC10",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -433.3357238769531,
+          "max": 164.16183471679688,
+          "mean": -0.0032197139225900173,
+          "std": 10.928956031799316,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -744.5714111328125,
+          "max": 181.45762634277344,
+          "mean": 0.006725581828504801,
+          "std": 12.955107688903809,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC11.mat",
+      "role": "train",
+      "subject_id": "HC11",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -303.2856140136719,
+          "max": 248.595947265625,
+          "mean": 0.0007159337401390076,
+          "std": 7.625335216522217,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -152.2096710205078,
+          "max": 134.59999084472656,
+          "mean": -0.0031292776111513376,
+          "std": 9.13820743560791,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC12.mat",
+      "role": "train",
+      "subject_id": "HC12",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -179.21942138671875,
+          "max": 173.9401092529297,
+          "mean": 2.787272190829526e-09,
+          "std": 8.267830848693848,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -189.5151824951172,
+          "max": 285.8824157714844,
+          "mean": -3.560002781455296e-08,
+          "std": 9.746594429016113,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC13.mat",
+      "role": "train",
+      "subject_id": "HC13",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -212.58306884765625,
+          "max": 186.71780395507812,
+          "mean": 0.00022966618416830897,
+          "std": 7.938264846801758,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -213.7573699951172,
+          "max": 146.8251495361328,
+          "mean": -0.00012511936074588448,
+          "std": 9.690953254699707,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC14.mat",
+      "role": "train",
+      "subject_id": "HC14",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -65.56260681152344,
+          "max": 64.06233215332031,
+          "mean": -0.00023653529933653772,
+          "std": 7.650711536407471,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -114.22105407714844,
+          "max": 117.38324737548828,
+          "mean": 0.0002528000040911138,
+          "std": 8.066049575805664,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC15.mat",
+      "role": "train",
+      "subject_id": "HC15",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -95.25279235839844,
+          "max": 63.65692138671875,
+          "mean": -0.0033383159898221493,
+          "std": 7.116771697998047,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -208.876953125,
+          "max": 103.25215148925781,
+          "mean": 0.006721440702676773,
+          "std": 7.977519512176514,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC16.mat",
+      "role": "train",
+      "subject_id": "HC16",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -182.08712768554688,
+          "max": 121.0723876953125,
+          "mean": 0.0009812797652557492,
+          "std": 8.087882995605469,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -178.99002075195312,
+          "max": 183.00094604492188,
+          "mean": -0.001299278694204986,
+          "std": 9.18712043762207,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC17.mat",
+      "role": "train",
+      "subject_id": "HC17",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -121.1334457397461,
+          "max": 130.517578125,
+          "mean": 0.0005514724762178957,
+          "std": 5.436608791351318,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -152.42381286621094,
+          "max": 125.67418670654297,
+          "mean": -0.0002744777884799987,
+          "std": 5.975785255432129,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC18.mat",
+      "role": "train",
+      "subject_id": "HC18",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -115.50340270996094,
+          "max": 97.32981872558594,
+          "mean": 0.0007983040413819253,
+          "std": 6.4336652755737305,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -164.81716918945312,
+          "max": 146.06185913085938,
+          "mean": -0.0012732351897284389,
+          "std": 6.66865873336792,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC19.mat",
+      "role": "train",
+      "subject_id": "HC19",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -109.47943115234375,
+          "max": 81.82503509521484,
+          "mean": 8.265177431354687e-11,
+          "std": 8.95968246459961,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -105.90201568603516,
+          "max": 119.4130859375,
+          "mean": -3.0021667374313665e-09,
+          "std": 9.63359546661377,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC20.mat",
+      "role": "train",
+      "subject_id": "HC20",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -265.626220703125,
+          "max": 387.14935302734375,
+          "mean": -0.0020763727370649576,
+          "std": 5.218466758728027,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -258.21728515625,
+          "max": 225.76829528808594,
+          "mean": 0.0032752486877143383,
+          "std": 6.237686634063721,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC21.mat",
+      "role": "train",
+      "subject_id": "HC21",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -140.8411865234375,
+          "max": 139.5211181640625,
+          "mean": -3.280981400166638e-05,
+          "std": 7.730948448181152,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -284.5071105957031,
+          "max": 137.3058319091797,
+          "mean": 0.001152125303633511,
+          "std": 8.578240394592285,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC22.mat",
+      "role": "train",
+      "subject_id": "HC22",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -38.956146240234375,
+          "max": 36.18646240234375,
+          "mean": -7.572576578240842e-05,
+          "std": 4.74564790725708,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -128.0834197998047,
+          "max": 245.08433532714844,
+          "mean": -0.0022705302108079195,
+          "std": 7.282505035400391,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC23.mat",
+      "role": "train",
+      "subject_id": "HC23",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -82.24380493164062,
+          "max": 90.17529296875,
+          "mean": -7.904171070549637e-05,
+          "std": 8.850593566894531,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -130.3094940185547,
+          "max": 96.58435821533203,
+          "mean": 0.00024023417790886015,
+          "std": 9.822981834411621,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC24.mat",
+      "role": "train",
+      "subject_id": "HC24",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -58.4306755065918,
+          "max": 51.430355072021484,
+          "mean": 0.0005955219967290759,
+          "std": 3.8359646797180176,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -185.29432678222656,
+          "max": 139.70138549804688,
+          "mean": -0.0005922744749113917,
+          "std": 5.344510078430176,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC25.mat",
+      "role": "train",
+      "subject_id": "HC25",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -441.7043762207031,
+          "max": 314.2989196777344,
+          "mean": 0.003822362283244729,
+          "std": 9.331323623657227,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -288.63629150390625,
+          "max": 245.73731994628906,
+          "mean": -0.0012688981369137764,
+          "std": 12.468718528747559,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC26.mat",
+      "role": "train",
+      "subject_id": "HC26",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -124.07605743408203,
+          "max": 187.5819854736328,
+          "mean": 0.0027484626043587923,
+          "std": 7.608442783355713,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -156.12448120117188,
+          "max": 170.99998474121094,
+          "mean": 0.032485172152519226,
+          "std": 8.20387077331543,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC27.mat",
+      "role": "train",
+      "subject_id": "HC27",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -98.44873809814453,
+          "max": 89.78662109375,
+          "mean": -0.015953456982970238,
+          "std": 5.848209381103516,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -129.36415100097656,
+          "max": 154.06663513183594,
+          "mean": -0.000706818827893585,
+          "std": 6.307492733001709,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC28.mat",
+      "role": "train",
+      "subject_id": "HC28",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -80.82555389404297,
+          "max": 90.39430236816406,
+          "mean": 0.0005909779574722052,
+          "std": 6.767046928405762,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -150.60513305664062,
+          "max": 163.75318908691406,
+          "mean": -3.471136369626038e-05,
+          "std": 7.616720676422119,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC29.mat",
+      "role": "train",
+      "subject_id": "HC29",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -115.67701721191406,
+          "max": 95.12255096435547,
+          "mean": -0.0001045572935254313,
+          "std": 12.087366104125977,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -429.2247619628906,
+          "max": 273.9997863769531,
+          "mean": -0.0009792125783860683,
+          "std": 14.396455764770508,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC30.mat",
+      "role": "train",
+      "subject_id": "HC30",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -66.60982513427734,
+          "max": 69.1912612915039,
+          "mean": 0.0006664731772616506,
+          "std": 6.421473026275635,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -158.69586181640625,
+          "max": 157.7158660888672,
+          "mean": -0.0005993309896439314,
+          "std": 8.92541790008545,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC31.mat",
+      "role": "train",
+      "subject_id": "HC31",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -107.96786499023438,
+          "max": 131.1964111328125,
+          "mean": -1.2696614248852711e-05,
+          "std": 9.832536697387695,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -314.9244079589844,
+          "max": 156.5060272216797,
+          "mean": 0.00024957425193861127,
+          "std": 10.521086692810059,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC32.mat",
+      "role": "train",
+      "subject_id": "HC32",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -257.26507568359375,
+          "max": 309.97625732421875,
+          "mean": -0.002301533240824938,
+          "std": 11.67271614074707,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -196.5314483642578,
+          "max": 274.10980224609375,
+          "mean": 0.010826000943779945,
+          "std": 12.633990287780762,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC33.mat",
+      "role": "train",
+      "subject_id": "HC33",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -260.9351806640625,
+          "max": 359.01434326171875,
+          "mean": 5.1759419875452295e-05,
+          "std": 11.24048900604248,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -246.8926239013672,
+          "max": 261.2853088378906,
+          "mean": 0.002410946413874626,
+          "std": 16.32946014404297,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC34.mat",
+      "role": "train",
+      "subject_id": "HC34",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -266.11309814453125,
+          "max": 301.0539855957031,
+          "mean": 7.868809916544706e-05,
+          "std": 14.054664611816406,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -346.30615234375,
+          "max": 272.4510498046875,
+          "mean": 0.0008075645891949534,
+          "std": 16.504493713378906,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC35.mat",
+      "role": "train",
+      "subject_id": "HC35",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -307.58599853515625,
+          "max": 192.9945526123047,
+          "mean": 3.213246557720595e-09,
+          "std": 8.32976245880127,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -129.6014404296875,
+          "max": 91.81354522705078,
+          "mean": -3.778457724479267e-08,
+          "std": 9.143473625183105,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC36.mat",
+      "role": "train",
+      "subject_id": "HC36",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -110.3119888305664,
+          "max": 112.5640640258789,
+          "mean": -0.00023544751456938684,
+          "std": 7.206596851348877,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -277.8119201660156,
+          "max": 153.3644561767578,
+          "mean": -6.515242421301082e-05,
+          "std": 8.287271499633789,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC37.mat",
+      "role": "train",
+      "subject_id": "HC37",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -226.29588317871094,
+          "max": 253.75686645507812,
+          "mean": 0.00028290320187807083,
+          "std": 6.922266483306885,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -424.5196533203125,
+          "max": 269.1949157714844,
+          "mean": -0.0026301457546651363,
+          "std": 7.175363540649414,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC38.mat",
+      "role": "train",
+      "subject_id": "HC38",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -198.01846313476562,
+          "max": 260.91033935546875,
+          "mean": -0.0004447429091669619,
+          "std": 8.079704284667969,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -176.67800903320312,
+          "max": 122.20405578613281,
+          "mean": 0.0005929208709858358,
+          "std": 9.40149974822998,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC39.mat",
+      "role": "train",
+      "subject_id": "HC39",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -170.4315643310547,
+          "max": 244.4770050048828,
+          "mean": 0.0005553025403060019,
+          "std": 9.85782527923584,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -244.82330322265625,
+          "max": 262.98388671875,
+          "mean": 3.8397723983507603e-05,
+          "std": 11.989236831665039,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC40.mat",
+      "role": "train",
+      "subject_id": "HC40",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -160.2899932861328,
+          "max": 126.56658172607422,
+          "mean": 0.00022142204397823662,
+          "std": 5.737070083618164,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -257.095703125,
+          "max": 227.2340087890625,
+          "mean": -0.004545573145151138,
+          "std": 6.903902530670166,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC41.mat",
+      "role": "train",
+      "subject_id": "HC41",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -264.95513916015625,
+          "max": 312.7125244140625,
+          "mean": 0.008720607496798038,
+          "std": 13.059910774230957,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -487.4072570800781,
+          "max": 464.2502746582031,
+          "mean": 0.020815696567296982,
+          "std": 22.1934757232666,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC42.mat",
+      "role": "train",
+      "subject_id": "HC42",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -346.7774658203125,
+          "max": 423.1942138671875,
+          "mean": -0.002863505622372031,
+          "std": 10.639058113098145,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -375.74908447265625,
+          "max": 393.7928466796875,
+          "mean": -0.003924548160284758,
+          "std": 17.107498168945312,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC43.mat",
+      "role": "train",
+      "subject_id": "HC43",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -1.6049500053613719e-12,
+          "max": 1.5100389471819908e-12,
+          "mean": 1.9990999950438604e-17,
+          "std": 1.7087610352291976e-13,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -1.413723847189241e-12,
+          "max": 1.539657724231036e-12,
+          "mean": -5.502829612920857e-17,
+          "std": 1.743569617027388e-13,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": [
+        "EEG_data_neu has near-zero global std (1.709e-13)",
+        "EEG_data_pos has near-zero global std (1.744e-13)"
+      ]
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC44.mat",
+      "role": "train",
+      "subject_id": "HC44",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -134.48191833496094,
+          "max": 100.85029602050781,
+          "mean": 0.00019949444686062634,
+          "std": 5.377920627593994,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -184.7982635498047,
+          "max": 246.82339477539062,
+          "mean": 0.00029695159173570573,
+          "std": 6.099992275238037,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\训练集\\正常人\\HC45.mat",
+      "role": "train",
+      "subject_id": "HC45",
+      "group": "正常人",
+      "reader": "h5py (MATLAB v7.3; transposed to channels x samples)",
+      "arrays": {
+        "EEG_data_neu": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -48.10275650024414,
+          "max": 46.395076751708984,
+          "mean": 2.988179426122173e-10,
+          "std": 5.157939434051514,
+          "zero_variance_channels": []
+        },
+        "EEG_data_pos": {
+          "shape": [
+            30,
+            50000
+          ],
+          "dtype": "float32",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -174.67752075195312,
+          "max": 108.5260238647461,
+          "mean": 1.0808308692489277e-09,
+          "std": 5.536745071411133,
+          "zero_variance_channels": []
+        }
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test1.mat",
+      "role": "public_test",
+      "subject_id": "P_test1",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -56.27922058105469,
+          "max": 95.99270629882812,
+          "mean": 0.0003231306619332836,
+          "std": 4.996626083747578,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test10.mat",
+      "role": "public_test",
+      "subject_id": "P_test10",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -65.7254867553711,
+          "max": 57.92877960205078,
+          "mean": 0.004428619750797518,
+          "std": 5.334472863040684,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test2.mat",
+      "role": "public_test",
+      "subject_id": "P_test2",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -37.09975814819336,
+          "max": 36.333194732666016,
+          "mean": -0.0010084539857027326,
+          "std": 5.195541327277304,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test3.mat",
+      "role": "public_test",
+      "subject_id": "P_test3",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -95.81809997558594,
+          "max": 88.09671783447266,
+          "mean": -0.00046267504214275506,
+          "std": 5.96961401626484,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test4.mat",
+      "role": "public_test",
+      "subject_id": "P_test4",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -109.29474639892578,
+          "max": 90.4982681274414,
+          "mean": 0.00011105975886243262,
+          "std": 6.097342012342003,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test5.mat",
+      "role": "public_test",
+      "subject_id": "P_test5",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -52.172237396240234,
+          "max": 46.917484283447266,
+          "mean": 1.4514466586964167e-09,
+          "std": 3.7444973077867196,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test6.mat",
+      "role": "public_test",
+      "subject_id": "P_test6",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -145.58938598632812,
+          "max": 114.92832946777344,
+          "mean": -0.0023575126237667487,
+          "std": 6.23154890575164,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test7.mat",
+      "role": "public_test",
+      "subject_id": "P_test7",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -278.1676025390625,
+          "max": 171.14874267578125,
+          "mean": 0.001603323994342564,
+          "std": 8.029889875598073,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test8.mat",
+      "role": "public_test",
+      "subject_id": "P_test8",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -85.8025894165039,
+          "max": 81.6456527709961,
+          "mean": 0.0003978454041163345,
+          "std": 5.1544746122110965,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "path": "数据\\公开测试集\\P_test9.mat",
+      "role": "public_test",
+      "subject_id": "P_test9",
+      "group": "公开测试集",
+      "reader": "scipy.io.loadmat",
+      "arrays": {
+        "test_eeg_c": {
+          "shape": [
+            30,
+            20000
+          ],
+          "dtype": "float64",
+          "nan_count": 0,
+          "inf_count": 0,
+          "min": -91.8436508178711,
+          "max": 117.65349578857422,
+          "mean": 3.477898791970801e-08,
+          "std": 6.770228975042478,
+          "zero_variance_channels": []
+        }
+      },
+      "test_data_candidates": [
+        "test_eeg_c"
+      ],
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}
