@@ -1,0 +1,16 @@
+{
+  "experiment_id": "034_band_covariance_fusion",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "reference_oof": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "threshold": 0.5,
+  "fold_seed": "2026+fold",
+  "public_seed": 2026,
+  "sampling_rate": 250,
+  "window_samples": 2500,
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "filter": {"type": "butterworth_sos", "order": 4, "zero_phase": true},
+  "covariance": {"regularization": 1e-6, "normalization": "trace", "feature": "upper_triangle(log(C)-log(G_train))"},
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "logistic": {"C": 1.0, "penalty": "l2", "solver": "lbfgs", "max_iter": 2000}
+}
