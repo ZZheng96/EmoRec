@@ -1,0 +1,119 @@
+﻿input 1/69 DEP01
+input 2/69 DEP02
+input 3/69 DEP03
+input 4/69 DEP04
+input 5/69 DEP05
+input 6/69 DEP06
+input 7/69 DEP07
+input 8/69 DEP08
+input 9/69 DEP09
+input 10/69 DEP10
+input 11/69 DEP11
+input 12/69 DEP12
+input 13/69 DEP13
+input 14/69 DEP14
+input 15/69 DEP15
+input 16/69 DEP16
+input 17/69 DEP17
+input 18/69 DEP18
+input 19/69 DEP19
+input 20/69 DEP20
+input 21/69 DEP21
+input 22/69 DEP22
+input 23/69 DEP23
+input 24/69 DEP24
+input 25/69 DEP25
+input 26/69 HC01
+input 27/69 HC02
+input 28/69 HC03
+input 29/69 HC04
+input 30/69 HC05
+input 31/69 HC06
+input 32/69 HC07
+input 33/69 HC08
+input 34/69 HC09
+input 35/69 HC10
+input 36/69 HC11
+input 37/69 HC12
+input 38/69 HC13
+input 39/69 HC14
+input 40/69 HC15
+input 41/69 HC16
+input 42/69 HC17
+input 43/69 HC18
+input 44/69 HC19
+input 45/69 HC20
+input 46/69 HC21
+input 47/69 HC22
+input 48/69 HC23
+input 49/69 HC24
+input 50/69 HC25
+input 51/69 HC26
+input 52/69 HC27
+input 53/69 HC28
+input 54/69 HC29
+input 55/69 HC30
+input 56/69 HC31
+input 57/69 HC32
+input 58/69 HC33
+input 59/69 HC34
+input 60/69 HC35
+input 61/69 HC36
+input 62/69 HC37
+input 63/69 HC38
+input 64/69 HC39
+input 65/69 HC40
+input 66/69 HC41
+input 67/69 HC42
+input 68/69 HC44
+input 69/69 HC45
+fixed fold 1/5 elapsed=21.9s
+fixed fold 2/5 elapsed=26.8s
+fixed fold 3/5 elapsed=31.4s
+fixed fold 4/5 elapsed=36.0s
+fixed fold 5/5 elapsed=40.6s
+repeat2027 fold 1/5 elapsed=46.4s
+repeat2027 fold 2/5 elapsed=51.1s
+repeat2027 fold 3/5 elapsed=55.6s
+repeat2027 fold 4/5 elapsed=60.2s
+repeat2027 fold 5/5 elapsed=65.3s
+repeat2028 fold 1/5 elapsed=71.1s
+repeat2028 fold 2/5 elapsed=75.9s
+repeat2028 fold 3/5 elapsed=80.7s
+repeat2028 fold 4/5 elapsed=85.5s
+repeat2028 fold 5/5 elapsed=90.2s
+repeat2029 fold 1/5 elapsed=95.8s
+repeat2029 fold 2/5 elapsed=100.6s
+repeat2029 fold 3/5 elapsed=105.5s
+repeat2029 fold 4/5 elapsed=110.1s
+repeat2029 fold 5/5 elapsed=114.9s
+repeat2030 fold 1/5 elapsed=120.5s
+repeat2030 fold 2/5 elapsed=125.5s
+repeat2030 fold 3/5 elapsed=130.4s
+repeat2030 fold 4/5 elapsed=135.4s
+repeat2030 fold 5/5 elapsed=139.9s
+repeat2031 fold 1/5 elapsed=145.7s
+repeat2031 fold 2/5 elapsed=150.3s
+repeat2031 fold 3/5 elapsed=154.9s
+repeat2031 fold 4/5 elapsed=159.6s
+repeat2031 fold 5/5 elapsed=164.1s
+       run  seed                  method      auc       f1  balanced_accuracy  threshold  tn  fp  fn  tp  subject_macro_auc   hc_auc  dep_auc  dep_subject_macro_auc
+     fixed  2026        spectral_control 0.782416 0.718671           0.717754        0.5 986 394 385 995           0.769710 0.833932 0.674856                 0.6714
+     fixed  2026          microstate_hgb 0.639840 0.593245           0.598551        0.5 844 536 572 808           0.647428 0.680767 0.566176                 0.5651
+     fixed  2026 spectral_microstate_hgb 0.784071 0.710076           0.711232        0.5 987 393 404 976           0.771594 0.837996 0.672384                 0.6681
+repeat2027  2027        spectral_control 0.782691 0.710240           0.710870        0.5 984 396 402 978           0.768768 0.831812 0.677604                 0.6708
+repeat2027  2027          microstate_hgb 0.642987 0.598165           0.603261        0.5 850 530 565 815           0.662645 0.688653 0.561072                 0.5756
+repeat2027  2027 spectral_microstate_hgb 0.784004 0.710102           0.713043        0.5 998 382 410 970           0.770870 0.832109 0.683088                 0.6753
+repeat2028  2028        spectral_control 0.776338 0.713062           0.708696        0.5 957 423 381 999           0.764891 0.824695 0.674884                 0.6704
+repeat2028  2028          microstate_hgb 0.635268 0.597534           0.597826        0.5 826 554 556 824           0.642355 0.681091 0.552764                 0.5531
+repeat2028  2028 spectral_microstate_hgb 0.779271 0.709353           0.707246        0.5 966 414 394 986           0.766159 0.830591 0.671708                 0.6677
+repeat2029  2029        spectral_control 0.781742 0.715004           0.712319        0.5 970 410 384 996           0.770906 0.830071 0.679728                 0.6763
+repeat2029  2029          microstate_hgb 0.627748 0.579159           0.582971        0.5 817 563 588 792           0.643623 0.662885 0.564408                 0.5778
+repeat2029  2029 spectral_microstate_hgb 0.779011 0.710098           0.709783        0.5 978 402 399 981           0.771051 0.828020 0.677880                 0.6802
+repeat2030  2030        spectral_control 0.778752 0.704989           0.704348        0.5 969 411 405 975           0.764203 0.830471 0.670856                 0.6659
+repeat2030  2030          microstate_hgb 0.634692 0.581940           0.592391        0.5 852 528 597 783           0.647174 0.677955 0.554996                 0.5498
+repeat2030  2030 spectral_microstate_hgb 0.780328 0.716612           0.716304        0.5 987 393 390 990           0.771159 0.829655 0.678360                 0.6798
+repeat2031  2031        spectral_control 0.786489 0.717281           0.716667        0.5 986 394 388 992           0.773551 0.834454 0.685068                 0.6844
+repeat2031  2031          microstate_hgb 0.630478 0.589006           0.590942        0.5 822 558 571 809           0.643696 0.667206 0.562320                 0.5725
+repeat2031  2031 spectral_microstate_hgb 0.783355 0.712635           0.711594        0.5 977 403 393 987           0.771775 0.832166 0.682688                 0.6804
+Total elapsed: 170.440s

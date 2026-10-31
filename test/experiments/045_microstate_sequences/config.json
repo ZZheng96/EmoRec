@@ -1,0 +1,20 @@
+{
+  "experiment_id": "045_microstate_sequences",
+  "fixed_seed": 2026,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "n_states": 4,
+  "template_seed": 2026,
+  "samples_per_window": 32,
+  "kmeans_n_init": 3,
+  "kmeans_max_iter": 100,
+  "sampling_rate": 250,
+  "window_samples": 2500,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "methods": ["spectral_control", "microstate_hgb", "spectral_microstate_hgb"],
+  "polarity": "canonicalize training maps by largest absolute channel; assign with absolute spatial correlation",
+  "normalization": "window-local temporal demean then spatial demean/unit norm; spectral only uses unlabeled subject zscore",
+  "fixed_folds": "002 all 70 subjects seed2026 then exclude HC43",
+  "repeat_folds": "032 remaining 69 subjects seeds2027..2031",
+  "public": "one full-training refit per method; no public labels"
+}
