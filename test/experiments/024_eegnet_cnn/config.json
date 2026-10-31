@@ -1,0 +1,8 @@
+{
+  "experiment_id": "024_eegnet_cnn",
+  "seed_base": 2026,
+  "training": {"epochs": 30, "batch_size": 64, "lr": 0.001, "weight_decay": 0.01, "deterministic": true, "device": "cuda_if_available", "early_stopping": false, "hyperparameter_tuning": false},
+  "input": {"shape": [30, 2000], "dtype": "float32", "preprocessing": "005 continuous-trial bandpass/notch/resample to 200 Hz, then 10-second windows", "normalization": "per-sample per-channel zscore"},
+  "protocol": {"fold_source": "002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv", "n_folds": 5, "train_subject_disjoint": true, "exclude_subject": "HC43", "public_labels_used": false},
+  "model": {"temporal_kernel": 64, "temporal_filters": 8, "depth_multiplier": 2, "spatial_kernel": [30, 1], "dropout": 0.25, "classifier": "linear"}
+}
