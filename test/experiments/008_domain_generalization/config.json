@@ -1,0 +1,12 @@
+{
+  "experiment_id": "008_domain_generalization",
+  "random_seed": 2026,
+  "feature_cache": "../001_spectral_logpower/cache/features.npz",
+  "n_features": 150,
+  "conditions": ["baseline_zscore", "subject_residual", "coral_identity"],
+  "coral_shrinkage": 0.5,
+  "coral_target": "fixed identity; training subjects only are covariance-aligned",
+  "validation": "Reuse experiment002 folds generated on all 70 subjects, then exclude HC43; 5 folds; threshold 0.5; no tuning",
+  "normalization": "Label-free subject statistics independently in each partition; center for residual, zscore for baseline and CORAL. No validation covariance fitting.",
+  "threads": 1
+}
