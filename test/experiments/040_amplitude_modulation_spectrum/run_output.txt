@@ -1,0 +1,4 @@
+﻿           run_name  n_features      auc       f1  balanced_accuracy  threshold  tn  fp  fn  tp  subject_auc_mean   hc_auc  dep_auc
+   spectral_control         150 0.782416 0.718671           0.717754        0.5 986 394 385 995          0.769710 0.833932 0.674856
+modulation_spectral         450 0.757786 0.689064           0.684783        0.5 926 454 416 964          0.745725 0.812018 0.643312
+        fixed_05_05         600 0.783425 0.712594           0.709783        0.5 966 414 387 993          0.771413 0.836207 0.669840

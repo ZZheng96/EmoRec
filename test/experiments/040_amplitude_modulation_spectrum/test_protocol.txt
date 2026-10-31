@@ -1,0 +1,2 @@
+专项协议测试命令：python -m pytest test/experiments/040_amplitude_modulation_spectrum/test_protocol.py -q
+覆盖：150/450维、EEG/调制频带定义、无标签输入接口、行重排后还原一致、被试隔离、有限值、缓存尺寸、OOF完整与概率范围、公开80行格式、三组重复seed结果。

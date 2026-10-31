@@ -1,0 +1,20 @@
+{
+  "experiment_id": "040_amplitude_modulation_spectrum",
+  "excluded_subject": "HC43",
+  "expected_train_rows": 2760,
+  "expected_public_rows": 80,
+  "expected_subjects": 69,
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "eeg_bands": {"delta": [1.0, 4.0], "theta": [4.0, 8.0], "alpha": [8.0, 13.0], "beta": [13.0, 30.0], "gamma": [30.0, 45.0]},
+  "eeg_filter_order": 4,
+  "modulation_bands": {"slow": [0.2, 0.5], "mid": [0.5, 1.0], "fast": [1.0, 2.0]},
+  "modulation_dimensions": 450,
+  "spectral_control_dimensions": 150,
+  "folds": 5,
+  "threshold": 0.5,
+  "repeated_fold_seeds": [2032, 2033, 2034],
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "methods_fixed": ["spectral_control", "modulation_spectral", "fixed_05_05"],
+  "methods_repeated": ["spectral_control", "modulation_spectral"]
+}
