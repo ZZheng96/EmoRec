@@ -1,0 +1,16 @@
+{
+  "experiment_id": "020_graph_hgb",
+  "random_seed": 2026,
+  "outer_folds": 5,
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "expected_oof_rows": 2760,
+  "expected_public_rows": 80,
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "graph_cache": "../006_frequency_graph/cache/graph_features.npz",
+  "outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "normalization": {"method": "zscore", "near_zero_std": 1e-12, "description": "按被试无标签zscore；公开集按用户自身8行zscore"},
+  "conditions": ["spectral150", "graph150", "concat300"],
+  "protocol": "固定002的5个外层被试折；不调参、不融合、不按结果选模型；StandardScaler pipeline；seed=2026+fold"
+}
