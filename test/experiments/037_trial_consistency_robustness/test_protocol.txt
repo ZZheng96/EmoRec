@@ -1,0 +1,19 @@
+Working directory: D:\WORK\BCIC2026\EmoRec
+
+Full experiment command:
+.\.venv\Scripts\python.exe -u test\experiments\037_trial_consistency_robustness\run_experiment.py
+Completed: 35 candidate/fold-seed runs, 210 fits, 1241.4 seconds (metrics.json).
+Each run saved complete 2760-row OOF, 80-row public refit predictions and 80-row five-fold public probabilities.
+
+Preliminary feature tests:
+.\.venv\Scripts\python.exe -m pytest test\experiments\037_trial_consistency_robustness\test_protocol.py -q -k "features_subject or unlabeled_interface or real_dimensions"
+..........                                                               [100%]
+10 passed, 36 deselected in 2.88s
+
+Final full protocol test command:
+.\.venv\Scripts\python.exe -m pytest test\experiments\037_trial_consistency_robustness\test_protocol.py -q
+..............................................                           [100%]
+46 passed in 15.28s
+
+Coverage: dimensions, finite features, subjectwise normalization, subject isolation, unlabeled feature API, explicit within-subject permutation/inverse mapping, original-row metadata alignment, 69 subjects/2760 train/80 public rows, probability ranges, all 5 fold seeds crossed with 7 candidates (including all 3 perturbations), full OOF coverage, public metadata, fixed threshold, metrics consistency, 5/2 versus 5/5 identical OOF.
+No incomplete runs. No public labels used or public performance claimed. No git commit and no overall progress-document update.

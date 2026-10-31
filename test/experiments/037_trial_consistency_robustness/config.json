@@ -1,0 +1,24 @@
+{
+  "experiment_id": "037_trial_consistency_robustness",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "excluded_subject": "HC43",
+  "expected_train_rows": 2760,
+  "expected_public_rows": 80,
+  "expected_subjects": 69,
+  "random_seeds": [2027, 2028, 2029, 2030, 2031],
+  "perturbation_seeds": [4101, 4102, 4103],
+  "folds": 5,
+  "fold_scheme": "032: exclude HC43 first, then subject-level health-stratified shuffled 5-fold",
+  "model_seed": 2026,
+  "threshold": 0.5,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "methods": [
+    {"name": "spectral_control", "train_block": null, "public_block": null},
+    {"name": "consistency_spectral", "train_block": 5, "public_block": 2},
+    {"name": "consistency_b5_b5", "train_block": 5, "public_block": 5},
+    {"name": "consistency_b2_b2", "train_block": 2, "public_block": 2}
+  ],
+  "perturbation_protocol": "3 fixed row-order seeds crossed with all 5 fold seeds; original b5/b2 protocol; independent train/public RNG streams, permutation within subject, inverse mapping to original rows",
+  "interpretation_rule": "Report paired AUC drops descriptively; correlated repeats are not independent significance tests. Material mean drop >= 0.01 means protocol-sensitive exploration, not robust improvement. No tuning or public label feedback.",
+  "material_auc_drop": 0.01
+}
