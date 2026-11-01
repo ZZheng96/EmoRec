@@ -1,0 +1,14 @@
+﻿..........                                                               [100%]
+10 passed in 38.36s
+
+补齐报告复核（2026-11-02；保留以上原始训练后记录）
+工作目录：D:\WORK\BCIC2026\EmoRec
+命令：.\.venv\Scripts\python.exe -B -m pytest -p no:cacheprovider test/experiments/070_train_context_match_new_splits -q
+..........                                                               [100%]
+10 passed in 38.23s
+退出码：0；完整目录10项测试，无skip。
+
+summary.md补齐后再次执行上述相同命令：
+..........                                                               [100%]
+10 passed in 36.95s
+退出码：0；完整目录10项测试，无skip。

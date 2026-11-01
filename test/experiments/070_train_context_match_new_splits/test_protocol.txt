@@ -1,0 +1,9 @@
+实验070预注册协议（首次训练前冻结）
+
+唯一改变069的repeat_seeds：采用058协议2042,2043,2044,2045,2046的HC/DEP被试级分层五折；保留fixed002，共6套×5折×2路=60 fits。直接复用069 job、load_data、contexts、模型、汇总与接受判定，不调参，不按位置选择。
+控制a40训练→a8验证；匹配a8训练→a8验证。150 log-bandpower + 450 temporal + 120 PE共720特征；按原三块、ddof=0逐被试zscore。a40按每被试40行，a8按每被试每位置8行。全部位置0..4与全部训练行保留，HC43排除后69被试2760行；StandardScaler+HGB、模型seed2052+fold和阈值0.5严格沿用069。
+训练源45 HC+25 DEP，每人8视频，每视频数组对应约50秒。公开5 HC+5 DEP，每人8视频、描述约20秒、顺序随机未知（文件说明另列实际数组10秒分段，不能据此假设刺激身份）。仅从既有缓存取TRAIN_KEYS，不读取公开数组，不生成公开预测、不读取公开标签。已知训练结构分组仅诊断，不代表公开刺激/时间匹配。
+控制复现：首先审计069/068六套历史OOF（fixed002、2027..2031）元数据和p_train40一致；070仅fixed002具有同划分历史参考，逐行核对两路与069/068，最大绝对差<=1e-12。2042..2046不存在旧上下文OOF，必须重新拟合两路，不虚构旧OOF比较、不增加历史重训fits。
+接受线仅五个新split的all_rows：平均delta AUC>=0.005、平均delta F1>=0.005，AUC与F1各至少4/5非负，HC/DEP平均delta AUC各>=-0.005；delta=a8训练减a40训练。fixed002不纳入接受汇总；位置结果仅报告；报告五重复样本SD和值，不宣称独立队列、显著性或公开提升。
+保存完整predictions、folds、逐被试/逐折metrics.json、summary.csv、paired_delta.csv、输入和全链源码hash provenance、pytest_before.txt/pytest_after.txt及run_output.txt。
+执行根目录.venv/Scripts/python.exe -B：先pytest（产物测试明确skip），再完整实验，再pytest全部通过。HGB无GPU实现，为严格复用模型使用CPU例外n_jobs=10、全局threadpool_limits(1)，不换GPU模型。无新增依赖，不git提交。
