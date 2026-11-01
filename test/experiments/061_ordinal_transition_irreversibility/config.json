@@ -1,0 +1,19 @@
+{
+  "experiment_id": "061_ordinal_transition_irreversibility",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "ordinal_cache": "cache/ordinal_transition_features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "n_jobs": 10,
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "ordinal": {"downsample_factor": 2, "resample_window": ["kaiser", 5.0], "padtype": "line", "scales": [1, 2, 4, 8], "embedding_order": 3, "delay": 1, "coarse_graining": "nonoverlapping mean, discard remainder within window", "ties": "invalid pattern", "features": ["conditional_transition_entropy_over_log6", "joint_probability_js_divergence_log2"]},
+  "methods": ["control_pe", "plus_ordinal"],
+  "normalization": "separate train/public per subject/user unlabeled zscore, ddof=0",
+  "forbidden_predictors": ["labels", "trial_id", "neighbor_windows", "row_order", "public_labels"],
+  "acceptance": {"repeat_delta_auc_min": 0.005, "repeat_delta_f1_min": 0.0, "repeat_delta_dep_auc_min": 0.0, "fixed_delta_auc_strict_min": 0.0},
+  "decision": "All four criteria must hold; otherwise stop without tuning. One fixed configuration only."
+}
