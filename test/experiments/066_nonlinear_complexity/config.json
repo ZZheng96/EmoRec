@@ -1,0 +1,21 @@
+{
+  "experiment_id": "066_nonlinear_complexity",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "complexity_cache": "cache/complexity_features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "n_jobs": 10,
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "complexity": {"sampen_m": 2, "sampen_r_std": 0.2, "sampen_tau": 1, "match_metric": "Chebyshev", "self_match": false, "chunk_rows": 64, "lzc": "LZ76", "lzc_binary": "window median, equality is 1", "lzc_normalization": "c*log2(n)/n", "n_samples": 2500},
+  "methods": ["control_pe", "plus_complexity"],
+  "normalization": "separate train/public per subject/user unlabeled zscore for every block",
+  "forbidden_predictors": ["labels", "trial_id", "neighbor_windows", "row_order", "public_labels"],
+  "acceptance": {"repeat_delta_auc_min": 0.005, "repeat_delta_f1_min": 0.0, "repeat_delta_dep_auc_min": 0.0, "fixed_delta_auc_strict_min": 0.0},
+  "decision": "All four criteria must hold; otherwise stop without tuning. One fixed configuration only."
+}

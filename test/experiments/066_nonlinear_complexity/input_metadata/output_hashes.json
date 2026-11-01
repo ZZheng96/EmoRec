@@ -1,0 +1,157 @@
+﻿[
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\config.json",
+        "bytes":  1443,
+        "sha256":  "d9581d7cc9fe940090b274e5fff1b92c77c74fd957114a06998e28d5aa5bf3be"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\metrics.json",
+        "bytes":  320266,
+        "sha256":  "cab81310354112bf5cff182fe688127b1e357ce25999abd3f08c2e1b5ed74304"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\protocol.md",
+        "bytes":  2259,
+        "sha256":  "d3d6c0b60053f2f2fa0ebdb84dda36063b17387009c2567c2e6e580b78a78107"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\run_experiment.py",
+        "bytes":  12436,
+        "sha256":  "97a17a5c458868701ebaf85f126fe3c5a564f83c97c110037ef3fb69e4731f6d"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\run_output.txt",
+        "bytes":  2752,
+        "sha256":  "c30826b2c595203a4a52ddc49684031a1d1060f61c7c48c15ab0e80a05d8a3c3"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\summary.csv",
+        "bytes":  2085,
+        "sha256":  "a4e73fd9c1828b15e7b5ac11871508d809b0b067fa476249765f6e2532722149"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\summary.md",
+        "bytes":  587,
+        "sha256":  "ecc238a66522b20337a09f32576d9a07267722e188686fb6b6bd62df5ac7d82d"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\test_066.py",
+        "bytes":  3103,
+        "sha256":  "ec419702a3293a11f27afb0efb3d1a2be92236520639520f9485a50f9384e852"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\cache\\complexity_features.npz",
+        "bytes":  829467,
+        "sha256":  "b1290e9ea4f9fb6444042f955673a67e4dd57c3dddce925cdd9fc8698a817f50"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_fixed002.csv",
+        "bytes":  43455,
+        "sha256":  "809e3c1f3965ba0f0d0946753cf1ea3fef92c884639f7c15e4b8c376d1fa132e"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_repeat2027.csv",
+        "bytes":  43455,
+        "sha256":  "902a9269692d229ccfbbfef1a901d3c98efc7ca7b4f4f4618b0b1022b62d86ee"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_repeat2028.csv",
+        "bytes":  43455,
+        "sha256":  "5ccd49ef781699cc504e4687e89fc83ade32c18ef2d58b44b60aeafb70057e04"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_repeat2029.csv",
+        "bytes":  43455,
+        "sha256":  "dccd4f75ef1a300d15d0c685de6fab4191b68eb9ad2dd0a1678f7a98c2fbdb79"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_repeat2030.csv",
+        "bytes":  43455,
+        "sha256":  "a2a05db2ca7c2a2263e18f1d2b498a0f0dc9342176408bc0edcbb8d8229c5e70"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\folds_repeat2031.csv",
+        "bytes":  43455,
+        "sha256":  "c01fc8a3c6a084bdabb71384826104e05a01c80e97b2b8ccd0b673bb807ae90e"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\provenance.json",
+        "bytes":  2673,
+        "sha256":  "7eef95f9a97518fff4e59afc7c742463d8c14bc62fc122a08b5d93d6dc0be5e1"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\input_metadata\\raw_inputs.json",
+        "bytes":  13909,
+        "sha256":  "0599391ed21ec059834da0e5d637f1fb852ca5b4f52db5e3d45e60b5d06e68e3"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_fixed002_oof.csv",
+        "bytes":  96556,
+        "sha256":  "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_public.csv",
+        "bytes":  2465,
+        "sha256":  "5f74792688393720c5c0e31144fb788000b8d70070abfbb69c901f7b3acfe7f4"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_repeat2027_oof.csv",
+        "bytes":  96523,
+        "sha256":  "291eced56c2fd2f64fcdd1baa18973baf582db9a61e2dd3fd666515b5b3bf0a3"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_repeat2028_oof.csv",
+        "bytes":  96514,
+        "sha256":  "bccaff3f6920641839188e419d37614ffaa81525b6db4ece819f59f9879c0e57"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_repeat2029_oof.csv",
+        "bytes":  96537,
+        "sha256":  "63cf80e3f9dd8df6517375f1a7e3ebc4a9b282623e63f0b9c0cd99ca713ee30f"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_repeat2030_oof.csv",
+        "bytes":  96531,
+        "sha256":  "99b1d1ac7119ebf19554b2f424e2ef1fedaee55eaf38873aaff591545b147b91"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\control_pe_repeat2031_oof.csv",
+        "bytes":  96536,
+        "sha256":  "b06cc25e8e53496cfe93c12f15d39fd08a441534b998b13d077761e83d0a9587"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_fixed002_oof.csv",
+        "bytes":  96555,
+        "sha256":  "2cabe522eebff7313575f07420a3d6a24ca2aa57dec7014b8c2fd3579d6549b3"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_public.csv",
+        "bytes":  2473,
+        "sha256":  "360bca90ae9ff2b230ccae2c1b66ca4651ce3e11939551a527efce5203dfe7e5"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_repeat2027_oof.csv",
+        "bytes":  96571,
+        "sha256":  "c852228102f31058011a7c1484ac0ed40c4d21ee87d001ffda7b27926cb8f949"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_repeat2028_oof.csv",
+        "bytes":  96567,
+        "sha256":  "a5218f3677b595d51f31f224890cf8c3514fa3129418790d403defd5baf010d7"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_repeat2029_oof.csv",
+        "bytes":  96482,
+        "sha256":  "8890a131c607b46b4f61ff0ec3c1e8a919a4cf74b9de362a116e78162422f557"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_repeat2030_oof.csv",
+        "bytes":  96498,
+        "sha256":  "d6f793b9a0e85a6dd165bb2f5e42ee471bb35b9315abecdf2c24d020ac77cb6b"
+    },
+    {
+        "path":  "test\\experiments\\066_nonlinear_complexity\\predictions\\plus_complexity_repeat2031_oof.csv",
+        "bytes":  96542,
+        "sha256":  "5ce1127dedd9f9af66a492146c42bae6e7128257dfe1b1836723bf0ec3ada925"
+    }
+]
