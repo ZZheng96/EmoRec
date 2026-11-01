@@ -1,0 +1,13 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 4 items
+
+test/experiments/054_trial_teacher_distillation/test_protocol.py::test_real_trial_keys_have_five_rows_and_subject_isolation PASSED [ 25%]
+test/experiments/054_trial_teacher_distillation/test_protocol.py::test_validation_labels_do_not_change_fold_predictions PASSED [ 50%]
+test/experiments/054_trial_teacher_distillation/test_protocol.py::test_teacher_depends_on_training_labels_and_soft_targets_in_range PASSED [ 75%]
+test/experiments/054_trial_teacher_distillation/test_protocol.py::test_saved_artifacts_when_available PASSED [100%]
+
+============================== 4 passed in 5.02s ==============================

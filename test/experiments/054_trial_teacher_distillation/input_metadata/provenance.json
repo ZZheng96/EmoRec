@@ -1,0 +1,36 @@
+{
+  "python": "3.11.9",
+  "sklearn": "1.9.1",
+  "numpy": "2.4.6",
+  "inputs": {
+    "spectral_cache": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+      "sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11"
+    },
+    "temporal_cache": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
+      "sha256": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb"
+    },
+    "fixed_reference": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
+      "sha256": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+    },
+    "audit_per_subject_table": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\053_hierarchical_error_audit\\tables\\per_subject_auc_spectral_temporal.csv",
+      "sha256": "ef5cdc20626df65d488d4acb9f052c36bb3a22ec40debffa3775c9667aba82da"
+    }
+  },
+  "config_sha256": "7761db6aa806218963f13ff88a201a2b71d9e011ae2712336bf23ef7879bcb2f",
+  "train_shape": [
+    2760,
+    600
+  ],
+  "public_shape": [
+    80,
+    600
+  ],
+  "excluded": "HC43",
+  "unlabeled_subject_zscore": true,
+  "n_trial_keys": 552,
+  "trial_id_used_as_predictor": false
+}

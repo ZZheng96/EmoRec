@@ -1,0 +1,94 @@
+﻿.venv\Scripts\python.exe : [Parallel(n_jobs=10)]: Using backend LokyBackend with 10 concurrent workers.
+所在位置 行:15 字符: 3581
++ ... M = 'dumb'; .venv\Scripts\python.exe test/experiments/054_trial_teach ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([Parallel(n_job...urrent workers.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[Parallel(n_jobs=10)]: Done 18 out of 30 | elapsed:  9.2min remaining:  6.2min
+[Parallel(n_jobs=10)]: Done 25 out of 30 | elapsed: 13.8min remaining:  2.8min
+[Parallel(n_jobs=10)]: Done 30 out of 30 | elapsed: 13.8min finished
+outer folds done elapsed=829.8s
+                      method       split      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc  worst_subject_auc
+                     control    fixed002 0.788575 0.708468           0.706884          0.772174 0.841019 0.676240             0.4075
+         soft_target_student    fixed002 0.791248 0.712437           0.710145          0.771957 0.845817 0.673716             0.4025
+teacher_confidence_weighting    fixed002 0.789672 0.710489           0.707971          0.772029 0.842522 0.677888             0.4300
+                     control  repeat2027 0.788481 0.721455           0.722464          0.773949 0.838835 0.681864             0.4625
+         soft_target_student  repeat2027 0.790534 0.719044           0.718841          0.774457 0.840364 0.683000             0.4550
+teacher_confidence_weighting  repeat2027 0.791379 0.724100           0.725000          0.775688 0.839761 0.687560             0.4625
+                     control  repeat2028 0.788872 0.718468           0.717754          0.772826 0.839872 0.678360             0.3600
+         soft_target_student  repeat2028 0.787520 0.722483           0.721377          0.769167 0.840881 0.669760             0.3500
+teacher_confidence_weighting  repeat2028 0.786790 0.721395           0.722101          0.770942 0.840507 0.668600             0.3375
+                     control  repeat2029 0.786322 0.720604           0.718478          0.771304 0.833308 0.683156             0.4075
+         soft_target_student  repeat2029 0.789986 0.718041           0.716304          0.774094 0.841209 0.677848             0.4000
+teacher_confidence_weighting  repeat2029 0.790919 0.719798           0.718478          0.777029 0.838821 0.686844             0.4200
+                     control  repeat2030 0.790989 0.721919           0.722826          0.778188 0.842271 0.682860             0.3525
+         soft_target_student  repeat2030 0.789981 0.723188           0.723188          0.774928 0.841349 0.678288             0.3975
+teacher_confidence_weighting  repeat2030 0.795320 0.724837           0.724638          0.779928 0.845429 0.687076             0.3950
+                     control  repeat2031 0.792459 0.717745           0.717029          0.775000 0.842699 0.684552             0.4225
+         soft_target_student  repeat2031 0.795663 0.716655           0.715217          0.779275 0.846246 0.687256             0.4250
+teacher_confidence_weighting  repeat2031 0.794433 0.725299           0.725000          0.778514 0.844264 0.687184             0.4300
+                     control repeat_mean 0.789424 0.720038           0.719710          0.774254 0.839397 0.682158             0.4010
+         soft_target_student repeat_mean 0.790737 0.719882           0.718986          0.774384 0.842010 0.679230             0.4055
+teacher_confidence_weighting repeat_mean 0.791768 0.723086           0.723043          0.776420 0.841756 0.683453             0.4090
+{
+ "deltas_repeat_mean": {
+  "soft_target_student": {
+   "auc": 0.0013124343625289248,
+   "f1": -0.00015586292167180105,
+   "balanced_accuracy": -0.0007246376811593791,
+   "subject_auc_mean": 0.00013043478260865715,
+   "hc_auc": 0.002612603305785277,
+   "dep_auc": -0.0029279999999999307,
+   "worst_subject_auc": 0.004500000000000004
+  },
+  "teacher_confidence_weighting": {
+   "auc": 0.002343835328712296,
+   "f1": 0.003047686716071918,
+   "balanced_accuracy": 0.0033333333333335213,
+   "subject_auc_mean": 0.00216666666666665,
+   "hc_auc": 0.0023592458677687,
+   "dep_auc": 0.0012943999999999178,
+   "worst_subject_auc": 0.008000000000000007
+  }
+ },
+ "decision": {
+  "soft_target_student": false,
+  "teacher_confidence_weighting": false
+ },
+ "control_check": {
+  "fixed002": 1.1102230246251565e-16,
+  "repeat2027": 1.1102230246251565e-16,
+  "repeat2028": 1.1102230246251565e-16,
+  "repeat2029": 1.1102230246251565e-16,
+  "repeat2030": 1.1102230246251565e-16,
+  "repeat2031": 1.1102230246251565e-16
+ },
+ "p3": {
+  "soft_target_student": {
+   "n_subjects": 69,
+   "spearman_rho": 0.2209180178952354,
+   "spearman_p": 0.06812667543883898,
+   "pearson_r": 0.18997116767795752,
+   "pearson_p": 0.11794323168212434,
+   "mean_gain_high_gap_half": 0.0035857142857142867,
+   "mean_gain_low_gap_half": -0.0034264705882352895,
+   "mean_gain_all": 0.00013043478260869803
+  },
+  "teacher_confidence_weighting": {
+   "n_subjects": 69,
+   "spearman_rho": 0.34418277510462536,
+   "spearman_p": 0.0037818878723153556,
+   "pearson_r": 0.3110285961396464,
+   "pearson_p": 0.009288144166151886,
+   "mean_gain_high_gap_half": 0.005471428571428564,
+   "mean_gain_low_gap_half": -0.0012352941176470515,
+   "mean_gain_all": 0.002166666666666667
+  }
+ },
+ "teacher": {
+  "window": 0.7819106356204671,
+  "trial": 0.8515612987188679
+ },
+ "elapsed_seconds": 954.721636599992
+}
