@@ -1,0 +1,39 @@
+{
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_repeat2027_oof.csv": "291eced56c2fd2f64fcdd1baa18973baf582db9a61e2dd3fd666515b5b3bf0a3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_repeat2028_oof.csv": "bccaff3f6920641839188e419d37614ffaa81525b6db4ece819f59f9879c0e57",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_repeat2029_oof.csv": "63cf80e3f9dd8df6517375f1a7e3ebc4a9b282623e63f0b9c0cd99ca713ee30f",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_repeat2030_oof.csv": "99b1d1ac7119ebf19554b2f424e2ef1fedaee55eaf38873aaff591545b147b91",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_repeat2031_oof.csv": "b06cc25e8e53496cfe93c12f15d39fd08a441534b998b13d077761e83d0a9587"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\run_experiment.py": "d81ca1dc17edba5ad9c1c0ffced924eac2ac2fb08ed160c3ba539287484d87c0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\test_067.py": "3528725575ce5508522116df9ab3546e4e068031e5b2b959dd2b194a7c7a0aa6",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\config.json": "fba27d5a8f765bc10f154b3d55e737fb5f00d5a137281be75dec1944eda1d1b5",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\test_protocol.txt": "1cbf25d8d2270ceec3673a0296ee02f6d6255588e29f56b669298e2b3043db21",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\run_experiment.py": "83685594df98a0bb4682529df7f6adbf5da04371a6a3c0c1dca956be4889ddb6",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\config.json": "fa81e550392d58c5ff01d1be5aecb8955ab76df552fa7ab82c379c72a33f8839",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\normalization.py": "479ad36b298d3adb2c6a4c14ff8b37e0929223c4289113edbff282239acacbb8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\data.py": "993eb102687057f794664c8549a4b7ecf5034eee2d7100fda390a9b8e7f4bed4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1",
+  "raw_shape": [
+    2760,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "model_fits": 30,
+  "cpu_only": "sklearn HGB has no GPU implementation",
+  "n_jobs": 10,
+  "threads_per_job": 1
+}

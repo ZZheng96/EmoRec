@@ -1,0 +1,9 @@
+实验067：训练前冻结协议
+1. 复用057原始缓存，按subject_ids/health_groups/original_trial_ids/y_train逐行对齐；spectral log_bandpower_150 + temporal450 + PE120 = raw720；排HC43，69人2760行。不访问公开数据目录，不解压缓存公开数组，不生成公开预测。
+2. physical video由(subject,y,original_trial_id)定义；沿原始缓存顺序每视频5窗位置0..4。五位置全部评估，不挑最好位置。每位置每人8行、标签4/4，五位置完整覆盖row_index恰好一次。row_index为排HC43后0-based索引。
+3. 训练被试使用全40窗无标签subject zscore（ddof=0，std<=1e-12置1），与057一致。验证同一批预测行分别用被试全40窗统计量(context40)与该位置8窗统计量(context8)。归一化接口仅接特征与subject，不接标签；标签只用于视频映射、监督训练及评估，不参与归一化或作为预测特征。
+4. 固定002五折+2027..2031五次被试分层五折，排除训练/验证被试交叉。每fold仅训练一次，然后推理全部位置与两个context，共30模型。032.make_model的StandardScaler+HGB，057参数和2052+fold随机种子不变。阈值0.5，不做超参搜索。
+5. 六份OOF含row_index,position,subject,group,trial,y,fold,p_context40,p_context8。context40逐行与057 plus_pe六份OOF比较，最大绝对误差<=1e-12方可接受。
+6. 每位置和all_rows报告AUC/F1/balanced accuracy/HC/DEP/subject宏AUC/最差subject AUC及五重复均值、样本SD、逐重复配对差值。all_rows是不同位置各自context8预测的拼接，不是一个共同8窗队列。五位置不是独立队列，五重复也复用同一数据；不做显著性宣称。
+7. 这是归一化上下文数量敏感性实验，不是实际测试分布模拟。训练视频50秒且已知情绪映射，真实测试时长和顺序不同。无公开标签、公开指标或公开预测。
+8. 保存输入/源码SHA256、运行时间、环境和测试。sklearn HGB没有GPU实现，CPU n_jobs=10，每任务线程=1，复用057限制；不以不同GPU模型替代。
