@@ -1,0 +1,19 @@
+{
+  "experiment_id": "051_stable_feature_selection",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "inner_seed": 2051,
+  "selector": {"C": 1.0, "solver": "liblinear", "penalty": "l2", "max_iter": 2000, "random_state": 2051},
+  "inner_top_k": 200,
+  "frequency_threshold": 0.6,
+  "max_selected": 200,
+  "empty_selection": "abort_without_tuning",
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "decision": "advance only if fixed and repeat-mean overall AUC and DEP AUC all improve; otherwise stop",
+  "normalization": "per subject/user unlabeled zscore; HC43 excluded",
+  "forbidden_predictors": ["row_order", "original_trial_id", "neighbor_windows", "public_labels"],
+  "selection_rule": "five inner subject folds; standardized logistic absolute coefficient top200 each; frequency>=0.6; cap200 ranked by frequency then mean absolute coefficient then feature index"
+}

@@ -1,0 +1,85 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 4 items
+
+test/experiments/051_stable_feature_selection/test_protocol.py::test_inner_isolation_and_training_labels_only PASSED [ 25%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_validation_labels_do_not_change_predictions PASSED [ 50%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_real_dimensions_finite_fixed_folds_and_oof_coverage PASSED [ 75%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_saved_artifacts_when_available PASSED [100%]
+
+============================== warnings summary ===============================
+test/experiments/051_stable_feature_selection/test_protocol.py: 15 warnings
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 4 passed, 15 warnings in 2.59s ========================
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 4 items
+
+test/experiments/051_stable_feature_selection/test_protocol.py::test_inner_isolation_and_training_labels_only PASSED [ 25%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_validation_labels_do_not_change_predictions PASSED [ 50%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_real_dimensions_finite_fixed_folds_and_oof_coverage PASSED [ 75%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_saved_artifacts_when_available FAILED [100%]
+
+================================== FAILURES ===================================
+_____________________ test_saved_artifacts_when_available _____________________
+
+    def test_saved_artifacts_when_available():
+        if not (HERE / 'metrics.json').exists():
+            return
+        for method in exp.METHODS:
+            for split in ['fixed002'] + [f'repeat{seed}' for seed in CONFIG['repeat_seeds']]:
+                frame = pd.read_csv(HERE / f'predictions/{method}_{split}_oof.csv')
+                assert len(frame) == 2760 and np.isfinite(frame.prob_positive).all()
+                assert frame.prob_positive.between(0, 1).all()
+>               assert not frame.duplicated(['subject_id', 'original_trial_id']).any()
+E               AssertionError: assert not np.True_
+E                +  where np.True_ = any()
+E                +    where any = 0       False\n1        True\n2        True\n3        True\n4        True\n        ...  \n2755     True\n2756     True\n2757     True\n2758     True\n2759     True\nLength: 2760, dtype: bool.any
+E                +      where 0       False\n1        True\n2        True\n3        True\n4        True\n        ...  \n2755     True\n2756     True\n2757     True\n2758     True\n2759     True\nLength: 2760, dtype: bool = duplicated(['subject_id', 'original_trial_id'])
+E                +        where duplicated =      subject_id health_group  original_trial_id  fold  y_true  prob_positive\n0         DEP01          DEP                  1     0       0       0.602997\n1         DEP01          DEP                  1     0       0       0.566663\n2         DEP01          DEP                  1     0       0       0.536921\n3         DEP01          DEP                  1     0       0       0.168801\n4         DEP01          DEP                  1     0       0       0.242555\n...         ...          ...                ...   ...     ...            ...\n2755       HC45           HC                  4     1       1       0.840540\n2756       HC45           HC                  4     1       1       0.806921\n2757       HC45           HC                  4     1       1       0.652144\n2758       HC45           HC                  4     1       1       0.859062\n2759       HC45           HC                  4     1       1       0.668840\n\n[2760 rows x 6 columns].duplicated
+
+test\experiments\051_stable_feature_selection\test_protocol.py:83: AssertionError
+============================== warnings summary ===============================
+test/experiments/051_stable_feature_selection/test_protocol.py: 15 warnings
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED test/experiments/051_stable_feature_selection/test_protocol.py::test_saved_artifacts_when_available - AssertionError: assert not np.True_
+ +  where np.True_ = any()
+ +    where any = 0       False\n1        True\n2        True\n3        True\n4        True\n        ...  \n2755     True\n2756     True\n2757     True\n2758     True\n2759     True\nLength: 2760, dtype: bool.any
+ +      where 0       False\n1        True\n2        True\n3        True\n4        True\n        ...  \n2755     True\n2756     True\n2757     True\n2758     True\n2759     True\nLength: 2760, dtype: bool = duplicated(['subject_id', 'original_trial_id'])
+ +        where duplicated =      subject_id health_group  original_trial_id  fold  y_true  prob_positive\n0         DEP01          DEP                  1     0       0       0.602997\n1         DEP01          DEP                  1     0       0       0.566663\n2         DEP01          DEP                  1     0       0       0.536921\n3         DEP01          DEP                  1     0       0       0.168801\n4         DEP01          DEP                  1     0       0       0.242555\n...         ...          ...                ...   ...     ...            ...\n2755       HC45           HC                  4     1       1       0.840540\n2756       HC45           HC                  4     1       1       0.806921\n2757       HC45           HC                  4     1       1       0.652144\n2758       HC45           HC                  4     1       1       0.859062\n2759       HC45           HC                  4     1       1       0.668840\n\n[2760 rows x 6 columns].duplicated
+================== 1 failed, 3 passed, 15 warnings in 2.85s ===================
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 4 items
+
+test/experiments/051_stable_feature_selection/test_protocol.py::test_inner_isolation_and_training_labels_only PASSED [ 25%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_validation_labels_do_not_change_predictions PASSED [ 50%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_real_dimensions_finite_fixed_folds_and_oof_coverage PASSED [ 75%]
+test/experiments/051_stable_feature_selection/test_protocol.py::test_saved_artifacts_when_available PASSED [100%]
+
+============================== warnings summary ===============================
+test/experiments/051_stable_feature_selection/test_protocol.py: 15 warnings
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 4 passed, 15 warnings in 2.71s ========================

@@ -1,0 +1,828 @@
+﻿.\.venv\Scripts\python.exe : D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: Fu
+tureWarning: 'penalty' was deprecated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty
+' set to its default value and use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instea
+d of penalty='l1', l1_ratio set to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of pen
+alty=None.
+所在位置 行:15 字符: 3581
++ ... M = 'dumb'; .\.venv\Scripts\python.exe -u test/experiments/051_stable ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\WORK\BCIC202...f penalty=None.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+fixed002 fold=0 selected=168 elapsed=10.8s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+fixed002 fold=1 selected=175 elapsed=21.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+fixed002 fold=2 selected=163 elapsed=31.4s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+fixed002 fold=3 selected=170 elapsed=41.8s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+fixed002 fold=4 selected=178 elapsed=52.1s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2027 fold=0 selected=166 elapsed=63.1s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2027 fold=1 selected=166 elapsed=73.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2027 fold=2 selected=175 elapsed=83.6s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2027 fold=3 selected=174 elapsed=94.0s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2027 fold=4 selected=167 elapsed=104.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2028 fold=0 selected=174 elapsed=115.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2028 fold=1 selected=170 elapsed=125.7s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2028 fold=2 selected=165 elapsed=136.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2028 fold=3 selected=172 elapsed=147.2s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2028 fold=4 selected=170 elapsed=157.6s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2029 fold=0 selected=182 elapsed=169.1s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2029 fold=1 selected=169 elapsed=179.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2029 fold=2 selected=175 elapsed=189.6s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2029 fold=3 selected=170 elapsed=199.9s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2029 fold=4 selected=164 elapsed=210.3s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2030 fold=0 selected=171 elapsed=221.2s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2030 fold=1 selected=163 elapsed=231.4s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2030 fold=2 selected=169 elapsed=241.4s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2030 fold=3 selected=182 elapsed=251.9s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2030 fold=4 selected=173 elapsed=262.0s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2031 fold=0 selected=187 elapsed=273.2s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2031 fold=1 selected=176 elapsed=283.2s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2031 fold=2 selected=177 elapsed=293.2s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2031 fold=3 selected=173 elapsed=303.0s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+repeat2031 fold=4 selected=171 elapsed=312.8s
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\sklearn\linear_model\_logistic.py:1381: FutureWarning: 'penalty' was de
+precated in version 1.8 and will be removed in 1.10. To avoid this warning, leave 'penalty' set to its default value an
+d use 'l1_ratio' or 'C' instead. Use l1_ratio=0 instead of penalty='l2', l1_ratio=1 instead of penalty='l1', l1_ratio s
+et to a float between 0 and 1 instead of penalty='elasticnet', and C=np.inf instead of penalty=None.
+  warnings.warn(
+                   method       split      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc
+spectral_temporal_control    fixed002 0.788575 0.708468           0.706884          0.772174 0.841019 0.676240
+          stable_selected    fixed002 0.791150 0.709584           0.709058          0.775507 0.840699 0.686948
+spectral_temporal_control  repeat2027 0.788481 0.721455           0.722464          0.773949 0.838835 0.681864
+          stable_selected  repeat2027 0.790967 0.721620           0.721014          0.776522 0.839309 0.686240
+spectral_temporal_control  repeat2028 0.788872 0.718468           0.717754          0.772826 0.839872 0.678360
+          stable_selected  repeat2028 0.787139 0.717360           0.714493          0.771268 0.837473 0.678488
+spectral_temporal_control  repeat2029 0.786322 0.720604           0.718478          0.771304 0.833308 0.683156
+          stable_selected  repeat2029 0.784248 0.715477           0.715580          0.768623 0.836702 0.669860
+spectral_temporal_control  repeat2030 0.790989 0.721919           0.722826          0.778188 0.842271 0.682860
+          stable_selected  repeat2030 0.791717 0.723851           0.723551          0.776051 0.840119 0.687728
+spectral_temporal_control  repeat2031 0.792459 0.717745           0.717029          0.775000 0.842699 0.684552
+          stable_selected  repeat2031 0.791699 0.720695           0.720290          0.774964 0.840382 0.686216
+spectral_temporal_control repeat_mean 0.789424 0.720038           0.719710          0.774254 0.839397 0.682158
+          stable_selected repeat_mean 0.789154 0.719800           0.718986          0.773486 0.838797 0.681706
+{"paired_deltas": {"fixed002": {"auc": 0.002575089266960817, "f1": 0.001115618330808199, "balanced_accuracy": 0.0021739130434782483, "subject_auc_mean": 0.0033333333333330772, "hc_auc": -0.00032024793388429895, "dep_auc": 0.01070799999999994}, "repeat_mean": {"auc": -0.00027063642092006734, "f1": -0.0002377029996734059, "balanced_accuracy": -0.0007246376811593791, "subject_auc_mean": -0.0007681159420290795, "hc_auc": -0.0006002066115702309, "dep_auc": -0.00045200000000000795}}, "advance": false, "elapsed_seconds": 324.3325213999997}
