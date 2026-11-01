@@ -1,0 +1,9 @@
+实验073，运行前冻结。
+仅新增原始连续10秒窗自相关：每窗每通道去均值z，r(tau)=sum(z[:-tau]*z[tau:])/sqrt(sum(z[:-tau]^2)*sum(z[tau:]^2))；tau=250,500，各30通道，lag-major 60维。分母为0输出0。不得跨窗/跨视频，不以标签构造特征。
+复用emo_rec.data.load_train_segments，每视频12500点分为5个2500点窗。记录所有训练MAT和接口源码SHA256。没有接口则停止，不替换候选。CUDA float64逐被试计算；HGB无GPU实现，冻结模型CPU例外，10 jobs/1 thread。
+直接复用070.load_data与contexts取a8；旧720维不变，新增60维仅按subject/position无标签zscore；处理780，对照720，两者a8到a8。
+fixed002及2042..2046五套新split，每套被试级五折，全部位置，HGB参数/seed/threshold与070完全一致，合计60 fits。不访问公开数组，不挑位置、不调参。
+先运行pytest（结果测试未产出时skip），再真实OOF，再pytest（结果测试必须通过）。六套控制逐行复现070 p_train8，容差1e-12。
+接受线：五新split all_rows平均处理减控制ΔAUC>=0.005且ΔF1>=0.005，至少4/5 split两指标同时非负，HC/DEP平均ΔAUC均>=-0.005；任何不满足即停止。fixed002和分位置结果仅诊断，不参与接受。
+测试：常数/人工公式、窗长、窗独立、行对齐、无标签subject/position归一化、控制复现070、OOF完整性和聚合/接受判断。
+仅新增073文件；保存cache、OOF、metrics、paired_delta、summary.md、provenance和前后测试日志；不改旧文件/根进度，不git。

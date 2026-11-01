@@ -1,0 +1,85 @@
+﻿......F                                                                  [100%]
+================================== FAILURES ===================================
+________________________ test_real_oof_and_control070 _________________________
+
+    def test_real_oof_and_control070():
+        if not (HERE/'metrics.json').exists():
+            pytest.skip('Real OOF not yet run')
+        metrics = json.loads((HERE/'metrics.json').read_text())
+        cache = np.load(HERE/'cache/autocorrelation.npz',allow_pickle=False)
+        raw, ref, fixed = m.e.load_data(CONFIG)
+>       m.assert_alignment(ref,cache)
+
+test\experiments\073_temporal_autocorrelation\test_073.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+test\experiments\073_temporal_autocorrelation\run_experiment.py:64: in assert_alignment
+    np.testing.assert_array_equal(ref[key], other[key])
+                                            ^^^^^^^^^^
+.venv\Lib\site-packages\numpy\lib\_npyio_impl.py:257: in __getitem__
+    return format.read_array(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+fp = <zipfile.ZipExtFile [closed]>, allow_pickle = False
+pickle_kwargs = {'encoding': 'ASCII', 'fix_imports': True}
+
+    @set_module("numpy.lib.format")
+    def read_array(fp, allow_pickle=False, pickle_kwargs=None, *,
+                   max_header_size=_MAX_HEADER_SIZE):
+        """
+        Read an array from an NPY file.
+    
+        Parameters
+        ----------
+        fp : file_like object
+            If this is not a real file object, then this may take extra memory
+            and time.
+        allow_pickle : bool, optional
+            Whether to allow writing pickled data. Default: False
+        pickle_kwargs : dict
+            Additional keyword arguments to pass to pickle.load. These are only
+            useful when loading object arrays saved on Python 2.
+        max_header_size : int, optional
+            Maximum allowed size of the header.  Large headers may not be safe
+            to load securely and thus require explicitly passing a larger value.
+            See :py:func:`ast.literal_eval()` for details.
+            This option is ignored when `allow_pickle` is passed.  In that case
+            the file is by definition trusted and the limit is unnecessary.
+    
+        Returns
+        -------
+        array : ndarray
+            The array from the data on disk.
+    
+        Raises
+        ------
+        ValueError
+            If the data is invalid, or allow_pickle=False and the file contains
+            an object array.
+    
+        """
+        if allow_pickle:
+            # Effectively ignore max_header_size, since `allow_pickle` indicates
+            # that the input is fully trusted.
+            max_header_size = 2**64
+    
+        version = read_magic(fp)
+        _check_version(version)
+        shape, fortran_order, dtype = _read_array_header(
+                fp, version, max_header_size=max_header_size)
+        if len(shape) == 0:
+            count = 1
+        else:
+            count = numpy.multiply.reduce(shape, dtype=numpy.int64)
+    
+        # Now read the actual data.
+        if dtype.hasobject:
+            # The array contained Python objects. We need to unpickle the data.
+            if not allow_pickle:
+>               raise ValueError("Object arrays cannot be loaded when "
+                                 "allow_pickle=False")
+E               ValueError: Object arrays cannot be loaded when allow_pickle=False
+
+.venv\Lib\site-packages\numpy\lib\_format_impl.py:833: ValueError
+=========================== short test summary info ===========================
+FAILED test/experiments/073_temporal_autocorrelation/test_073.py::test_real_oof_and_control070 - ValueError: Object arrays cannot be loaded when allow_pickle=False
+1 failed, 6 passed in 6.83s
