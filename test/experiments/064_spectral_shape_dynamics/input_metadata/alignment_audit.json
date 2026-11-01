@@ -1,0 +1,29 @@
+{
+  "cache_keys_checked": [
+    "subject_ids",
+    "health_groups",
+    "original_trial_ids",
+    "y_train",
+    "public_user_ids",
+    "public_trial_ids"
+  ],
+  "rows": 2760,
+  "subjects": 69,
+  "excluded": "HC43",
+  "paired_reference_columns": [
+    "subject_id",
+    "health_group",
+    "original_trial_id",
+    "fold",
+    "y_true"
+  ],
+  "control_max_abs_diff_vs_057": {
+    "fixed002": 1.1102230246251565e-16,
+    "repeat2027": 1.1102230246251565e-16,
+    "repeat2028": 1.1102230246251565e-16,
+    "repeat2029": 1.1102230246251565e-16,
+    "repeat2030": 1.1102230246251565e-16,
+    "repeat2031": 1.1102230246251565e-16
+  },
+  "subject_isolation_all_splits": true
+}

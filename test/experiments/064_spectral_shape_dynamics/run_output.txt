@@ -1,0 +1,121 @@
+spectral_js 1/70 DEP01
+spectral_js 2/70 DEP02
+spectral_js 3/70 DEP03
+spectral_js 4/70 DEP04
+spectral_js 5/70 DEP05
+spectral_js 6/70 DEP06
+spectral_js 7/70 DEP07
+spectral_js 8/70 DEP08
+spectral_js 9/70 DEP09
+spectral_js 10/70 DEP10
+spectral_js 11/70 DEP11
+spectral_js 12/70 DEP12
+spectral_js 13/70 DEP13
+spectral_js 14/70 DEP14
+spectral_js 15/70 DEP15
+spectral_js 16/70 DEP16
+spectral_js 17/70 DEP17
+spectral_js 18/70 DEP18
+spectral_js 19/70 DEP19
+spectral_js 20/70 DEP20
+spectral_js 21/70 DEP21
+spectral_js 22/70 DEP22
+spectral_js 23/70 DEP23
+spectral_js 24/70 DEP24
+spectral_js 25/70 DEP25
+spectral_js 26/70 HC01
+spectral_js 27/70 HC02
+spectral_js 28/70 HC03
+spectral_js 29/70 HC04
+spectral_js 30/70 HC05
+spectral_js 31/70 HC06
+spectral_js 32/70 HC07
+spectral_js 33/70 HC08
+spectral_js 34/70 HC09
+spectral_js 35/70 HC10
+spectral_js 36/70 HC11
+spectral_js 37/70 HC12
+spectral_js 38/70 HC13
+spectral_js 39/70 HC14
+spectral_js 40/70 HC15
+spectral_js 41/70 HC16
+spectral_js 42/70 HC17
+spectral_js 43/70 HC18
+spectral_js 44/70 HC19
+spectral_js 45/70 HC20
+spectral_js 46/70 HC21
+spectral_js 47/70 HC22
+spectral_js 48/70 HC23
+spectral_js 49/70 HC24
+spectral_js 50/70 HC25
+spectral_js 51/70 HC26
+spectral_js 52/70 HC27
+spectral_js 53/70 HC28
+spectral_js 54/70 HC29
+spectral_js 55/70 HC30
+spectral_js 56/70 HC31
+spectral_js 57/70 HC32
+spectral_js 58/70 HC33
+spectral_js 59/70 HC34
+spectral_js 60/70 HC35
+spectral_js 61/70 HC36
+spectral_js 62/70 HC37
+spectral_js 63/70 HC38
+spectral_js 64/70 HC39
+spectral_js 65/70 HC40
+spectral_js 66/70 HC41
+spectral_js 67/70 HC42
+spectral_js 68/70 HC43
+spectral_js 69/70 HC44
+spectral_js 70/70 HC45
+data ready (2760, 780); frozen paired 30 folds / 60 models
+          method       split      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc  worst_subject_auc
+      control_pe    fixed002 0.799903 0.724910           0.723913          0.784384 0.854708 0.685032             0.4575
+plus_spectral_js    fixed002 0.797125 0.726554           0.724275          0.782174 0.851313 0.682976             0.4400
+      control_pe  repeat2027 0.795637 0.729632           0.728261          0.780725 0.844025 0.695208             0.4525
+plus_spectral_js  repeat2027 0.793114 0.723741           0.721739          0.777935 0.840950 0.693540             0.4275
+      control_pe  repeat2028 0.788343 0.716981           0.717391          0.771304 0.841379 0.673344             0.3925
+plus_spectral_js  repeat2028 0.787270 0.719477           0.720290          0.769710 0.840549 0.671648             0.3950
+      control_pe  repeat2029 0.794886 0.728710           0.726449          0.779783 0.844316 0.687836             0.4275
+plus_spectral_js  repeat2029 0.789979 0.718559           0.717029          0.776014 0.840026 0.683460             0.4300
+      control_pe  repeat2030 0.798235 0.726483           0.726087          0.783370 0.850914 0.685228             0.4300
+plus_spectral_js  repeat2030 0.796521 0.721821           0.721014          0.779384 0.848808 0.684544             0.4025
+      control_pe  repeat2031 0.797157 0.721941           0.721739          0.782754 0.850114 0.684560             0.4475
+plus_spectral_js  repeat2031 0.796721 0.722604           0.722101          0.779022 0.850965 0.680888             0.4275
+      control_pe repeat_mean 0.794851 0.724749           0.723986          0.779587 0.846150 0.685235             0.4300
+plus_spectral_js repeat_mean 0.792721 0.721240           0.720435          0.776413 0.844260 0.682816             0.4165
+{
+  "delta": {
+    "plus_spectral_js": {
+      "repeat_mean": {
+        "auc": -0.0021303297626549256,
+        "f1": -0.003509267971722907,
+        "balanced_accuracy": -0.0035507246376813573,
+        "subject_auc_mean": -0.003173913043478249,
+        "hc_auc": -0.0018899793388429398,
+        "dep_auc": -0.0024191999999999547,
+        "worst_subject_auc": -0.013500000000000123
+      },
+      "fixed002": {
+        "auc": -0.0027783028775467677,
+        "f1": 0.001644331040315694,
+        "balanced_accuracy": 0.00036231884057980057,
+        "subject_auc_mean": -0.0022101449275363505,
+        "hc_auc": -0.0033948863636361626,
+        "dep_auc": -0.002056000000000169,
+        "worst_subject_auc": -0.01750000000000007
+      },
+      "repeat_paired_auc": [
+        -0.0025225792900651633,
+        -0.0010727788279772943,
+        -0.004907057340894805,
+        -0.0017134005461038049,
+        -0.00043583280823367154
+      ]
+    }
+  },
+  "decision": {
+    "plus_spectral_js": false
+  },
+  "elapsed_seconds": 195.35688069999742
+}

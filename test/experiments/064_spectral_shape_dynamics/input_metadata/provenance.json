@@ -1,0 +1,126 @@
+{
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.1",
+  "inputs": [
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\config.json",
+      "sha256": "e068a28807fa84a436f8f10c895535ee604d6f984c6e6325fe96f23d6951a3f6"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\protocol.md",
+      "sha256": "ed3d855de1f5b2189e4cb17a08b1d55f199b7268165d9b2d160c93979f7c4524"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\run_experiment.py",
+      "sha256": "a481416bf8e43bcc11fff78940b6564270e9b0d8504aca3d6705a20ecaa03af9"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\run_experiment.py",
+      "sha256": "83685594df98a0bb4682529df7f6adbf5da04371a6a3c0c1dca956be4889ddb6"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\config.json",
+      "sha256": "fa81e550392d58c5ff01d1be5aecb8955ab76df552fa7ab82c379c72a33f8839"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\cache\\spectral_js_features.npz",
+      "sha256": "10c05d7fd905787fa6d9e70323f6cb6287231692b1353dd8655c5f8c63a60496"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+      "sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
+      "sha256": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz",
+      "sha256": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+    },
+    {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
+      "sha256": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+    }
+  ],
+  "train_shape": [
+    2760,
+    780
+  ],
+  "public_training": false,
+  "public_predictions": false,
+  "feature_names": [
+    "spectral_js_mean_FP1",
+    "spectral_js_mean_FP2",
+    "spectral_js_mean_F7",
+    "spectral_js_mean_F3",
+    "spectral_js_mean_FZ",
+    "spectral_js_mean_F4",
+    "spectral_js_mean_F8",
+    "spectral_js_mean_FT7",
+    "spectral_js_mean_FC3",
+    "spectral_js_mean_FCZ",
+    "spectral_js_mean_FC4",
+    "spectral_js_mean_FT8",
+    "spectral_js_mean_T3",
+    "spectral_js_mean_C3",
+    "spectral_js_mean_CZ",
+    "spectral_js_mean_C4",
+    "spectral_js_mean_T4",
+    "spectral_js_mean_TP7",
+    "spectral_js_mean_CP3",
+    "spectral_js_mean_CPZ",
+    "spectral_js_mean_CP4",
+    "spectral_js_mean_TP8",
+    "spectral_js_mean_T5",
+    "spectral_js_mean_P3",
+    "spectral_js_mean_PZ",
+    "spectral_js_mean_P4",
+    "spectral_js_mean_T6",
+    "spectral_js_mean_O1",
+    "spectral_js_mean_OZ",
+    "spectral_js_mean_O2",
+    "spectral_js_std_FP1",
+    "spectral_js_std_FP2",
+    "spectral_js_std_F7",
+    "spectral_js_std_F3",
+    "spectral_js_std_FZ",
+    "spectral_js_std_F4",
+    "spectral_js_std_F8",
+    "spectral_js_std_FT7",
+    "spectral_js_std_FC3",
+    "spectral_js_std_FCZ",
+    "spectral_js_std_FC4",
+    "spectral_js_std_FT8",
+    "spectral_js_std_T3",
+    "spectral_js_std_C3",
+    "spectral_js_std_CZ",
+    "spectral_js_std_C4",
+    "spectral_js_std_T4",
+    "spectral_js_std_TP7",
+    "spectral_js_std_CP3",
+    "spectral_js_std_CPZ",
+    "spectral_js_std_CP4",
+    "spectral_js_std_TP8",
+    "spectral_js_std_T5",
+    "spectral_js_std_P3",
+    "spectral_js_std_PZ",
+    "spectral_js_std_P4",
+    "spectral_js_std_T6",
+    "spectral_js_std_O1",
+    "spectral_js_std_OZ",
+    "spectral_js_std_O2"
+  ],
+  "alignment_checked": [
+    "subject_ids",
+    "health_groups",
+    "original_trial_ids",
+    "y_train",
+    "public_user_ids",
+    "public_trial_ids"
+  ],
+  "subject_isolation": true,
+  "subject_zscore": true
+}
