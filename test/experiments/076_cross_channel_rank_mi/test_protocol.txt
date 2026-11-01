@@ -1,0 +1,11 @@
+实验076冻结协议
+
+目标：检验固定通道对F3-F4、C3-C4、P3-P4的跨通道联合分布互信息是否提供超出功率与二阶线性相关的稳定信息。
+
+数据与窗口：严格使用数据集说明中的训练MAT；每个独立30×2500窗口作为一个样本，250 Hz；不加载公开测试数组。HC43在特征提取前排除。特征函数只接收原始窗口，不接收label、subject、trial。
+
+特征：每个通道在当前窗口内独立计算Q1/Q2/Q3（torch.quantile，经验四分位边界）；样本按严格大于边界编码为0..3，边界重复时仍保持确定性。构造4×4联合计数表，除以2500得到p(x,y)，按MI=sum_{pij>0} pij log(pij/(pi pj))计算，log为自然对数，零计数项贡献0。三对各输出1维，共3维。CUDA float64为生产要求；仅CUDA不可用时单元测试允许CPU。
+
+模型与评估：严格复用070/075的a8->a8、五个位置、fixed002及repeat2042..2046六套split、subject isolation、固定HGB、每套5折、两臂60 fits、HC43排除。控制分支逐行复现070，误差≤1e-12。处理分支为070控制720维拼接3维MI，subject/position无标签ddof=0 zscore。接受线只看五新split all_rows：平均ΔAUC和ΔF1均≥0.005；至少4/5 split两项同时非负；HC/DEP平均ΔAUC均≥-0.005。失败即停止，不调参、不挑位置。
+
+产物：cache/rank_mi.npz、六套predictions/*_oof.csv、metrics.json、paired_delta.csv、summary.csv/txt、input_metadata/folds_*.csv及provenance.json、pytest前后日志和run输出。测试覆盖NumPy公式、零计数、常数/形状、窗口独立、CPU/CUDA一致性、标签/subject/trial不依赖、归一化、split隔离、控制复现、OOF及产物哈希。执行顺序：pytest前→生产OOF→pytest后。
