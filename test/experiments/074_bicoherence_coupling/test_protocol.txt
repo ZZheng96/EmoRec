@@ -1,0 +1,7 @@
+实验074，运行前冻结。
+
+仅新增每个独立30×2500窗口、每通道的固定窗口归一化双相干：采样率250Hz，短时FFT nperseg=500、noverlap=250、nfft=500、Hann窗；频率网格1Hz，FFT bin严格为bin=2*f（nfft=500时频率间隔0.5Hz）。固定三元组 theta+theta->alpha (6,6,12)、theta+alpha->beta (6,10,16)、alpha+alpha->beta (10,10,20)、theta+beta->gamma (6,20,26)、alpha+beta->gamma (10,20,30) Hz。每个窗口的频率谱按分段平均归一化：|mean(X(f1)X(f2)conj(X(f3)))|² / (mean|X(f1)X(f2)|² × mean|X(f3)|²)，分母为0输出0；每通道5值，共150维。特征计算优先CUDA torch，CPU仅无CUDA时回退；HGB固定CPU例外。
+
+复用070的load_data、contexts、splits、model、summarize、OOF协议，排除HC43，a8->a8，fixed002及repeat2042..2046，每套5折、全位置、固定HGB。控制720维，处理870维；新增特征仅按subject/position无标签ddof=0 zscore。不访问公开数组、标签或subject/trial构造特征。
+
+先pytest，再真实OOF，再pytest。测试覆盖常数/人工二次相位耦合、随机与独立窗口、窗口形状、150维/870维、对齐、无标签归一化、控制070逐行复现、OOF聚合与接受判定。保存cache、OOF、metrics、paired_delta、summary、provenance、前后测试日志。接受线只看五新split all_rows：平均ΔAUC/F1>=0.005，至少4/5 split两指标同时非负，HC/DEP平均ΔAUC>=-0.005；失败即停止，不调参、不挑位置。仅新增074目录，不修改旧文件、根进度，不提交git。

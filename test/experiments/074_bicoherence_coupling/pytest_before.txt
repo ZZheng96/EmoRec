@@ -1,0 +1,24 @@
+﻿......s                                                                  [100%]
+============================== warnings summary ===============================
+test/experiments/074_bicoherence_coupling/test_074.py::test_protocol_and_acceptance
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:3824: RuntimeWarning: Mean of empty slice
+    return _methods._mean(a, axis=axis, dtype=dtype,
+
+test/experiments/074_bicoherence_coupling/test_074.py::test_protocol_and_acceptance
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+test/experiments/074_bicoherence_coupling/test_074.py::test_protocol_and_acceptance
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\numpy\_core\_methods.py:219: RuntimeWarning: Degrees of freedom <= 0 for slice
+    ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+
+test/experiments/074_bicoherence_coupling/test_074.py::test_protocol_and_acceptance
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\numpy\_core\_methods.py:178: RuntimeWarning: invalid value encountered in divide
+    arrmean = um.true_divide(arrmean, div, out=arrmean,
+
+test/experiments/074_bicoherence_coupling/test_074.py::test_protocol_and_acceptance
+  D:\WORK\BCIC2026\EmoRec\.venv\Lib\site-packages\numpy\_core\_methods.py:211: RuntimeWarning: invalid value encountered in scalar divide
+    ret = ret.dtype.type(ret / rcount)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+6 passed, 1 skipped, 5 warnings in 5.26s
