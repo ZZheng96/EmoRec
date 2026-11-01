@@ -1,0 +1,16 @@
+实验057 预注册协议（首次训练前固定）
+已阅读001/009/032/055/056实现、summary以及可用专项测试：032/test_protocol.py、055/test_055.py、056/test_056.py。001/009/055/056不存在test_protocol文件，使用其实际测试及代码协议。001是频谱log功率；009是本窗5个2秒子窗频谱均值/标准差/斜率；055的熵是PSD Shannon谱熵，不是排列熵；056是theta-beta PAC。本次只新增序模式排列熵。
+
+每个原始10秒、30通道、250Hz EEG窗独立计算。scipy.signal.resample_poly按1/2降至125Hz，Kaiser(beta=5)滤波，padtype=line，所有边界处理仅在当前窗内。分别以scale=1,2,4,8做不重叠均值粗粒化，末尾不足一个块的样本丢弃。固定嵌入阶数m=3、延迟tau=1，稳定排序处理相等值（按本窗嵌入位置破平局）；序模式频率的Shannon熵除以ln(3!)。恒定序列PE=0。特征按尺度优先、通道次序排列，共120维。原始特征函数仅接收EEG和config，不接收标签/身份/trial_id/行序/邻窗。
+
+复用001的150维log_bandpower和009的450维时序缓存作为control_600；每块分别训练逐被试和公开逐user无标签zscore（ddof=0），二者统计量互不混用。这是历史的无标签被试级transductive协议，不冒称严格单窗归一化；单窗限制适用于原始特征提取。标签只用于监督拟合和训练OOF评估。trial_id只用于对齐/输出，非模型输入；公开标签从不加载。
+排除HC43：69被试2760训练窗；公开10 user、80窗。
+三个方法同脚本、同折、同seed重新训练：control_600(600维)、pe_only(120维)、plus_pe(720维)。
+固定002 reference五折；另做seeds 2027,2028,2029,2030,2031被试级HC/DEP分层五折。每折seed=2052+fold；全训练公开预测seed=2052。HGB参数与056完全一致：max_iter=200, learning_rate=.03, max_leaf_nodes=15, min_samples_leaf=20, l2_regularization=1, early_stopping=False。模型pipeline StandardScaler只在训练折fit。阈值固定0.5。
+接受线：相对本次control，五重复均值ΔAUC>=0.005、ΔF1>=0、ΔDEP AUC>=0，且fixed002 ΔAUC>0，四项全部满足；否则停止，不调参。不用公开预测或任何公开指标决策。
+断言：六项缓存元数据一致、reference一致、被试隔离、折完整性、训练公开身份隔离、维度/有限值/概率范围、公开submission有效、control复现056误差<1e-12。保存原始输入与缓存/config/script SHA256、六套折分配。
+
+先运行专项pytest，再完整实验，再复核输出pytest。命令（仓库根目录）：
+.venv\Scripts\python.exe -B -m pytest -q -p no:cacheprovider test/experiments/057_multiscale_permutation_entropy/test_057.py
+.venv\Scripts\python.exe -B test/experiments/057_multiscale_permutation_entropy/run_experiment.py
+真实测试输出保存pytest_before.txt、pytest_after.txt；真实完整运行日志run_output.txt；耗时在metrics.json和summary.md。不安装包，不改已有实验目录，不提交git。
