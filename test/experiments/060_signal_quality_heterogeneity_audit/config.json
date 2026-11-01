@@ -1,0 +1,15 @@
+{
+  "experiment_id": "060_signal_quality_heterogeneity_audit",
+  "quality_source": "../../data_audit/mat_audit.json",
+  "primary_predictions": "../058_pe_split_replication/predictions",
+  "repeat_predictions": "../057_multiscale_permutation_entropy/predictions",
+  "primary_splits": [2042, 2043, 2044, 2045, 2046],
+  "repeat_splits": [2027, 2028, 2029, 2030, 2031],
+  "methods": ["control_600", "plus_pe"],
+  "excluded_subject_reference_only": "HC43",
+  "bootstrap_reps": 2000,
+  "permutation_reps": 4999,
+  "seed": 2060,
+  "multiple_testing": "BH within each prediction set across 12 tests",
+  "scope": "Exploratory same-cohort diagnostic; no thresholding, subject deletion, retraining, public predictions, or artifact-rate claim"
+}
