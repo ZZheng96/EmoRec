@@ -1,0 +1,179 @@
+features 1/70 DEP01
+features 2/70 DEP02
+features 3/70 DEP03
+features 4/70 DEP04
+features 5/70 DEP05
+features 6/70 DEP06
+features 7/70 DEP07
+features 8/70 DEP08
+features 9/70 DEP09
+features 10/70 DEP10
+features 11/70 DEP11
+features 12/70 DEP12
+features 13/70 DEP13
+features 14/70 DEP14
+features 15/70 DEP15
+features 16/70 DEP16
+features 17/70 DEP17
+features 18/70 DEP18
+features 19/70 DEP19
+features 20/70 DEP20
+features 21/70 DEP21
+features 22/70 DEP22
+features 23/70 DEP23
+features 24/70 DEP24
+features 25/70 DEP25
+features 26/70 HC01
+features 27/70 HC02
+features 28/70 HC03
+features 29/70 HC04
+features 30/70 HC05
+features 31/70 HC06
+features 32/70 HC07
+features 33/70 HC08
+features 34/70 HC09
+features 35/70 HC10
+features 36/70 HC11
+features 37/70 HC12
+features 38/70 HC13
+features 39/70 HC14
+features 40/70 HC15
+features 41/70 HC16
+features 42/70 HC17
+features 43/70 HC18
+features 44/70 HC19
+features 45/70 HC20
+features 46/70 HC21
+features 47/70 HC22
+features 48/70 HC23
+features 49/70 HC24
+features 50/70 HC25
+features 51/70 HC26
+features 52/70 HC27
+features 53/70 HC28
+features 54/70 HC29
+features 55/70 HC30
+features 56/70 HC31
+features 57/70 HC32
+features 58/70 HC33
+features 59/70 HC34
+features 60/70 HC35
+features 61/70 HC36
+features 62/70 HC37
+features 63/70 HC38
+features 64/70 HC39
+features 65/70 HC40
+features 66/70 HC41
+features 67/70 HC42
+features 68/70 HC43
+features 69/70 HC44
+features 70/70 HC45
+data ready X=(2760, 870) XP=(80, 870) elapsed=20.2s
+outer folds done elapsed=394.8s
+       method       split      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc  worst_subject_auc
+  control_600    fixed002 0.788575 0.708468           0.706884          0.772174 0.841019 0.676240             0.4075
+     plus_ABC    fixed002 0.789584 0.712785           0.712681          0.772464 0.841173 0.680048             0.4100
+       plus_D    fixed002 0.786578 0.706221           0.703986          0.771449 0.838106 0.676576             0.3875
+     plus_all    fixed002 0.788056 0.716721           0.717029          0.770616 0.840049 0.678108             0.4225
+new_only_ABCD    fixed002 0.746227 0.673692           0.674638          0.730145 0.791419 0.655424             0.3825
+  control_600  repeat2027 0.788481 0.721455           0.722464          0.773949 0.838835 0.681864             0.4625
+     plus_ABC  repeat2027 0.794063 0.720610           0.721014          0.775036 0.846333 0.680812             0.4425
+       plus_D  repeat2027 0.784562 0.721182           0.719565          0.767645 0.835368 0.676228             0.4725
+     plus_all  repeat2027 0.789469 0.718004           0.717391          0.772210 0.841878 0.676644             0.4350
+new_only_ABCD  repeat2027 0.745998 0.678674           0.676812          0.730725 0.789757 0.656200             0.3875
+  control_600  repeat2028 0.788872 0.718468           0.717754          0.772826 0.839872 0.678360             0.3600
+     plus_ABC  repeat2028 0.788821 0.719653           0.718841          0.772029 0.838307 0.680556             0.3325
+       plus_D  repeat2028 0.785205 0.714027           0.714130          0.770761 0.836245 0.673620             0.3525
+     plus_all  repeat2028 0.786899 0.718060           0.717754          0.770109 0.837712 0.675544             0.3475
+new_only_ABCD  repeat2028 0.742213 0.683508           0.682246          0.730978 0.786715 0.651312             0.3675
+  control_600  repeat2029 0.786322 0.720604           0.718478          0.771304 0.833308 0.683156             0.4075
+     plus_ABC  repeat2029 0.791881 0.724711           0.723913          0.774710 0.843253 0.679436             0.3675
+       plus_D  repeat2029 0.783746 0.727142           0.724275          0.769601 0.833120 0.676536             0.3800
+     plus_all  repeat2029 0.788709 0.720863           0.718841          0.771957 0.838879 0.678900             0.3825
+new_only_ABCD  repeat2029 0.741395 0.674402           0.674638          0.725870 0.787944 0.646456             0.4125
+  control_600  repeat2030 0.790989 0.721919           0.722826          0.778188 0.842271 0.682860             0.3525
+     plus_ABC  repeat2030 0.793789 0.722865           0.722464          0.777319 0.844999 0.683784             0.3925
+       plus_D  repeat2030 0.791312 0.722022           0.721014          0.775507 0.839628 0.688580             0.3975
+     plus_all  repeat2030 0.793538 0.723188           0.723188          0.780217 0.842881 0.689436             0.4200
+new_only_ABCD  repeat2030 0.745108 0.678261           0.678261          0.728841 0.785306 0.663192             0.3850
+  control_600  repeat2031 0.792459 0.717745           0.717029          0.775000 0.842699 0.684552             0.4225
+     plus_ABC  repeat2031 0.799040 0.730825           0.730435          0.781739 0.847765 0.694224             0.4275
+       plus_D  repeat2031 0.792654 0.720203           0.721014          0.777500 0.840209 0.691276             0.4075
+     plus_all  repeat2031 0.796921 0.722646           0.723551          0.781884 0.842784 0.697544             0.4375
+new_only_ABCD  repeat2031 0.751163 0.685111           0.686594          0.733768 0.797847 0.656400             0.3925
+  control_600 repeat_mean 0.789424 0.720038           0.719710          0.774254 0.839397 0.682158             0.4010
+     plus_ABC repeat_mean 0.793519 0.723733           0.723333          0.776167 0.844131 0.683762             0.3925
+       plus_D repeat_mean 0.787496 0.720915           0.720000          0.772203 0.836914 0.681248             0.4020
+     plus_all repeat_mean 0.791107 0.720552           0.720145          0.775275 0.840827 0.683614             0.4045
+new_only_ABCD repeat_mean 0.745175 0.679991           0.679710          0.730036 0.789514 0.654712             0.3890
+                     abs_d_all  abs_d_HC  abs_d_DEP  consistency_all  consistency_HC  consistency_DEP
+family                                                                                               
+A_exponent            0.693622  0.835031   0.444741         0.728019        0.803788         0.594667
+A_offset              0.475404  0.545087   0.352761         0.589372        0.616667         0.541333
+A_alpha_peak_freq     0.362314  0.396144   0.302775         0.623671        0.646212         0.584000
+A_alpha_peak_power    0.600579  0.701453   0.423040         0.794203        0.824242         0.741333
+B_spectral_entropy    0.431139  0.479465   0.346087         0.559903        0.587879         0.510667
+C_hjorth_mobility     0.648700  0.762294   0.448773         0.703865        0.772727         0.582667
+C_hjorth_complexity   0.514107  0.582215   0.394237         0.596618        0.607576         0.577333
+D_asymmetry           0.422110  0.464332   0.347799         0.548551        0.549621         0.546667
+{
+ "deltas_repeat_mean": {
+  "plus_ABC": {
+   "auc": 0.004094097878596825,
+   "f1": 0.0036947187136625592,
+   "balanced_accuracy": 0.0036231884057971175,
+   "subject_auc_mean": 0.001913043478260823,
+   "hc_auc": 0.004733987603305789,
+   "dep_auc": 0.0016040000000001609,
+   "worst_subject_auc": -0.008499999999999952
+  },
+  "plus_D": {
+   "auc": -0.0019286914513758635,
+   "f1": 0.0008770840335042829,
+   "balanced_accuracy": 0.00028985507246381825,
+   "subject_auc_mean": -0.0020507246376813004,
+   "hc_auc": -0.002483212809917257,
+   "dep_auc": -0.0009103999999998669,
+   "worst_subject_auc": 0.0010000000000000009
+  },
+  "plus_all": {
+   "auc": 0.0016826296996429457,
+   "f1": 0.0005143984623315889,
+   "balanced_accuracy": 0.00043478260869567187,
+   "subject_auc_mean": 0.0010217391304347956,
+   "hc_auc": 0.0014294938016529146,
+   "dep_auc": 0.0014551999999999898,
+   "worst_subject_auc": 0.003500000000000003
+  },
+  "new_only_ABCD": {
+   "auc": -0.04424910733039289,
+   "f1": -0.0400469401201059,
+   "balanced_accuracy": -0.039999999999999925,
+   "subject_auc_mean": -0.044217391304347764,
+   "hc_auc": -0.04988326446280977,
+   "dep_auc": -0.02744639999999987,
+   "worst_subject_auc": -0.01200000000000001
+  }
+ },
+ "fixed002_auc_delta": {
+  "plus_ABC": 0.0010081915563957544,
+  "plus_D": -0.001996954421340069,
+  "plus_all": -0.0005193236714975402,
+  "new_only_ABCD": -0.042348246166771464
+ },
+ "decision": {
+  "plus_ABC": false,
+  "plus_D": false,
+  "plus_all": false,
+  "new_only_ABCD": false
+ },
+ "control_check": {
+  "fixed002": 1.1102230246251565e-16,
+  "repeat2027": 1.1102230246251565e-16,
+  "repeat2028": 1.1102230246251565e-16,
+  "repeat2029": 1.1102230246251565e-16,
+  "repeat2030": 1.1102230246251565e-16,
+  "repeat2031": 1.1102230246251565e-16
+ },
+ "elapsed_seconds": 441.4722206000006
+}

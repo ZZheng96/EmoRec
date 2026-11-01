@@ -1,0 +1,33 @@
+{
+  "experiment_id": "055_aperiodic_entropy_asymmetry",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "control_reference_dir": "../052_subject_group_dro/predictions",
+  "new_feature_cache": "cache/new_features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "n_jobs": 10,
+  "sampling_rate": 250,
+  "welch": {"nperseg": 500, "noverlap": 250},
+  "aperiodic_fit_range_hz": [2.0, 40.0],
+  "aperiodic_exclude_hz": [7.0, 14.0],
+  "alpha_peak_range_hz": [7.0, 14.0],
+  "entropy_range_hz": [1.0, 45.0],
+  "hjorth_bandpass_hz": [1.0, 45.0],
+  "hjorth_filter": "Butterworth order 4, zero-phase sosfiltfilt, whole 10 s window",
+  "feature_rules": {
+    "A": "Welch PSD; least squares log10(PSD) ~ log10(f) on 2-40 Hz excluding 7-14 Hz; exponent=-slope, offset=intercept; alpha peak = argmax of log10 residual over 7-14 Hz (freq and residual power)",
+    "B": "Shannon entropy of PSD normalized to sum 1 over 1-45 Hz, divided by log(n_bins)",
+    "C": "Hjorth mobility and complexity on 1-45 Hz band-passed window",
+    "D": "001 cache asymmetry_* (12 pairs x 5 bands, left minus right log power)"
+  },
+  "methods": ["control_600", "plus_ABC", "plus_D", "plus_all", "new_only_ABCD"],
+  "normalization": "per subject/user unlabeled zscore for every feature block",
+  "forbidden_predictors": ["row_order", "original_trial_id", "neighbor_windows", "public_labels"],
+  "decision": "pre-registered: accept a method only if repeat-mean AUC gain >= +0.005 vs control_600 AND repeat-mean F1 not lower AND repeat-mean DEP AUC not lower AND fixed002 AUC gain > 0; otherwise stop, no tuning",
+  "p2_diagnostic": "descriptive only, training labels: per-subject Cohen d (pos minus neg, pooled sd) per new feature; mean |d| by HC/DEP; direction consistency = fraction of subjects whose sign(d) equals sign of all-subject mean d"
+}
