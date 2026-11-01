@@ -1,0 +1,9 @@
+﻿PSI frozen 24 dimensions; CUDA extraction complete; starting 60 HGB fits
+实验075 PSI：接受=False；五新split联合非负1/5。
+平均Delta auc=-0.000096933
+平均Delta f1=-0.002645381
+平均Delta hc_auc=0.000203512
+平均Delta dep_auc=-0.000300800
+控制720/处理744维；CUDA float64；60 fits；控制070最大误差1.11e-16。
+全局净流恒零及其他冗余按协议保留。未访问公开数组，不调参、不挑位置。
+未达到接受线，停止该候选。

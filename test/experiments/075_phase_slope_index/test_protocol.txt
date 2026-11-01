@@ -1,0 +1,9 @@
+实验075，运行前冻结；不搜索参数。
+已读数据集说明、070代码、074协议、044 wPLI与072图谱代码；test及src搜索phase slope/PSI无已有覆盖。044为Hilbert无向wPLI，072为绝对相关图谱，均非PSI。
+每独立30x2500窗，250Hz。逐段减均值，symmetric Hann(nperseg=500)，noverlap=250，nfft=500，9段无padding，0.5Hz bin。对每有序通道对i!=j：Sij(f)=mean_segments(Xi(f)*conj(Xj(f)))，Cij=Sij/sqrt(Sii*Sjj)，零功率时C=0；PSIij=Im(sum_f conj(Cij(f))*Cij(f+0.5))。频带闭区间theta[4,8]、alpha[8,13]、beta[13,30]、gamma[30,45]，两个bin均须落在同一频带；不除以0.5，不做jackknife标准化。正值定义i领先j（j为i的正延迟时），负值反向；不宣称因果。
+每带保存全部870条有向边的正向总量sum(max(PSI,0))、负向总量sum(max(-PSI,0))、净流sum(PSI)、绝对流sum(abs(PSI))。PSI反对称，因此净流解析恒零（显式写0避免浮点噪声被zscore放大），正负总量相同，绝对流为二者之和；不选半边改变语义。
+严格依数据集通道顺序冻结前额/颞区源集合FP1 FP2 F7 F3 FZ F4 F8 FT7 FT8 T3 T4 TP7 TP8 T5 T6；中央/顶叶目标集合FC3 FCZ FC4 C3 CZ C4 CP3 CPZ CP4 P3 PZ P4；O1 OZ O2不参与区域摘要。每带追加source->target的带符号PSI总和及反向总和（互为相反数），不是先取正值再求和。每带依次6列，共24维，控制720，处理744。保留用户规定摘要的数学冗余。
+特征函数仅接收独立信号窗，禁用标签/subject/trial构造特征；元数据仅用于对齐、分折和无标签subject/position ddof=0 zscore。只加载训练原始MAT及旧缓存训练键，不加载公开数组。HC43在原始特征计算前排除。优先CUDA float64；本机CUDA可用，生产提取要求CUDA，HGB为CPU例外。
+复用070 load_data、contexts、splits、固定HGB及summarize；借用074的配对运行框架。a8->a8，全位置，fixed002+repeat2042..2046，每套5折，两臂共60 fits，控制逐行核对070六套OOF。接受只看五新split all_rows：平均Delta AUC和F1均>=0.005，至少4/5两指标同时非负，HC和DEP平均Delta AUC各>=-0.005；失败停止、不调参、不挑位置。
+时间反转/通道置乱仅单元诊断，不用作模型特征、训练增强或候选选择。诊断包含独立NumPy公式、零/常数、延迟方向、反对称性、时间反转、通道置换、窗独立性、CUDA一致性、形状、归一化、控制复现及OOF指标重算。
+先pytest（真实产物测试允许尚未运行而skip），真实OOF，后pytest；记录cache、六套OOF、metrics、paired_delta、summary、provenance及前后日志。仅新增075目录，不改旧文件/根进度，不提交git。
