@@ -16,13 +16,13 @@
       "sha256": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
     },
     "complexity_cache": {
-      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\066_nonlinear_complexity\\cache\\complexity_features.npz",
-      "sha256": "b1290e9ea4f9fb6444042f955673a67e4dd57c3dddce925cdd9fc8698a817f50"
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\066_nonlinear_complexity\\cache\\complexity_features_v2.npz",
+      "sha256": "01255ce08bf002bb9e5056fe3af7cb78e17bd7b511453000481fc7938f7d15fc"
     }
   },
   "pe_cache_sha256": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
-  "config_sha256": "d9581d7cc9fe940090b274e5fff1b92c77c74fd957114a06998e28d5aa5bf3be",
-  "script_sha256": "97a17a5c458868701ebaf85f126fe3c5a564f83c97c110037ef3fb69e4731f6d",
+  "config_sha256": "3cb3faf898d7ae818c1a5d05d34d6a272c1987fb93c5d771ce4fa18555715943",
+  "script_sha256": "02ec93da7c7227ca24b55ffbfcf73a34c6ccb5d0a1220c28aa4f37cb4364ef16",
   "train_shape": [
     2760,
     780
@@ -31,10 +31,7 @@
     2760,
     60
   ],
-  "public_shape": [
-    80,
-    780
-  ],
+  "public_shape": null,
   "alignment_checked": [
     "subject_ids",
     "health_groups",

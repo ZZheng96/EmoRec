@@ -348,55 +348,5 @@
     "path": "数据\\训练集\\正常人\\HC45.mat",
     "bytes": 11193075,
     "sha256": "7750e86a1f37993c4fb5f4e5ddab31b973eb663ea61aad3b0e584b00900bc44e"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test1.mat",
-    "bytes": 2782439,
-    "sha256": "394c27342157a2f337f37b2c5ef02b4578340f3420b867209c8083e9fc36d3c1"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test2.mat",
-    "bytes": 2781863,
-    "sha256": "9cc1211cce1f22b876e2161dba875d4522f6f382e404ee5a254d4ed2ad9655c3"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test3.mat",
-    "bytes": 2782019,
-    "sha256": "897a5a8032b864b801b208f51817d29d3957b498c015ef890a2cee4788a6c78c"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test4.mat",
-    "bytes": 2779295,
-    "sha256": "18912feb693d8e57d7bf0bc9218bb39d8e1605103d2c8299102290295f977f04"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test5.mat",
-    "bytes": 2783484,
-    "sha256": "c5dda1adb053e56743265f24bf36f8f76ee4f15243b6ee9e273aa2af67f5ab7e"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test6.mat",
-    "bytes": 2789478,
-    "sha256": "669edfd56c1417747ff80ad96b1ce7c85e9de1794e90b9d66e9169da38e59fdb"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test7.mat",
-    "bytes": 2786950,
-    "sha256": "e5d44fa83edd5ab53ca2747f9918437d87cd8be9741194b0a962f1ab3ae6d721"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test8.mat",
-    "bytes": 2792562,
-    "sha256": "940afb960853335521e60b052462b6ea2ee5574b8a3c5cdf5207d3819852073d"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test9.mat",
-    "bytes": 2793425,
-    "sha256": "38b2a3f07bf856bab8f3e1d7a1da3d4a24fec0da46f97595b3acb0c6f0f20f9d"
-  },
-  {
-    "path": "数据\\公开测试集\\P_test10.mat",
-    "bytes": 2787349,
-    "sha256": "a6c76f8bfa38abcde9a8efd86da4aad0087c7440e519de602497ef51ca9b47a7"
   }
 ]

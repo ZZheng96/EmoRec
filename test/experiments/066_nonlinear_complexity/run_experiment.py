@@ -10,18 +10,22 @@ pe_spec=importlib.util.spec_from_file_location('exp057',HERE.parent/'057_multisc
 METHODS=('control_pe','plus_complexity'); KEYS=('auc','f1','balanced_accuracy','subject_auc_mean','hc_auc','dep_auc','worst_subject_auc'); ALIGN_KEYS=('subject_ids','health_groups','original_trial_ids','y_train','public_user_ids','public_trial_ids')
 
 def _pair_matches(templates, r, chunk_rows):
-    n=len(templates)
-    if n < 2: return 0
-    tree=cKDTree(templates, leafsize=chunk_rows)
-    return int((sum(tree.query_pairs(r, p=np.inf, output_type='ndarray').shape[:1])))
+    n = len(templates)
+    if n < 2:
+        return 0
+    tree = cKDTree(templates, leafsize=chunk_rows)
+    # count_neighbors includes n self matches and both (i,j)/(j,i).
+    total = int(tree.count_neighbors(tree, r, p=np.inf))
+    return (total - n) // 2
 
 def sample_entropy(x,m=2,r_factor=.2,tau=1,chunk_rows=64):
     x=np.asarray(x,dtype=float); std=float(np.std(x))
     if std==0 or not np.isfinite(std): return 0.0
-    r=r_factor*std; out=[]
+    r=r_factor*std
+    n=x.size-m*tau
+    if n<1: return 0.0
+    out=[]
     for order in (m,m+1):
-        n=x.size-(order-1)*tau
-        if n<1: return 0.0
         t=np.stack([x[i*tau:i*tau+n] for i in range(order)],axis=1)
         out.append(_pair_matches(t,r,chunk_rows))
     B,A=out
@@ -29,13 +33,26 @@ def sample_entropy(x,m=2,r_factor=.2,tau=1,chunk_rows=64):
     v=-math.log(A/B); return float(v) if np.isfinite(v) else 0.0
 
 def lz76_count(bits):
-    if isinstance(bits,str): s=bits
-    else: s=''.join('1' if int(v) else '0' for v in np.asarray(bits).ravel())
-    n=len(s); i=0; c=0; phrases=set()
-    while i<n:
-        length=1
-        while i+length<=n and s[i:i+length] in phrases: length+=1
-        phrases.add(s[i:i+length]); c+=1; i+=length
+    if isinstance(bits, str):
+        s = bits
+    else:
+        s = ''.join('1' if int(v) else '0' for v in np.asarray(bits).ravel())
+    n = len(s)
+    if n == 0:
+        return 0
+    i = 0
+    c = 0
+    while i < n:
+        length = 1
+        # Exhaustive LZ76 parsing: the next phrase is the shortest substring
+        # absent from the already parsed prefix, with overlap allowed.
+        while i + length <= n:
+            candidate = s[i:i + length]
+            if candidate not in s[:i + length - 1]:
+                break
+            length += 1
+        c += 1
+        i += length
     return c
 
 def lzc(x):
@@ -56,16 +73,14 @@ def complexity_features(segments,config):
     return out
 
 def build_cache(config,path):
-    from emo_rec.data import load_train_segments,load_public_test_segments
-    files=sorted((ROOT/'数据/训练集').glob('*/*.mat')); pubs=sorted((ROOT/'数据/公开测试集').glob('*.mat'),key=lambda p:int(p.stem.replace('P_test','')))
-    tr=[]; ys=[]; subs=[]; groups=[]; trials=[]; pu=[]; pt=[]; pub=[]
+    from emo_rec.data import load_train_segments
+    files=sorted((ROOT/'数据/训练集').glob('*/*.mat'))
+    tr=[]; ys=[]; subs=[]; groups=[]; trials=[]
     for i,f in enumerate(files,1):
         seg,y,t=load_train_segments(f); tr.append(complexity_features(seg,config)); ys.append(y); trials.append(t); subs.extend([f.stem]*len(seg)); groups.extend(['DEP' if f.parent.name=='抑郁症患者' else 'HC']*len(seg)); print(f'complexity {i}/{len(files)} {f.stem}',flush=True)
-    for f in pubs:
-        seg=load_public_test_segments(f); pub.append(complexity_features(seg,config)); pu.extend([f.stem]*len(seg)); pt.extend(np.arange(1,9))
     names=np.asarray([f'sampen_{i}' for i in range(30)]+[f'lzc_{i}' for i in range(30)])
-    path.parent.mkdir(parents=True,exist_ok=True); np.savez_compressed(path,X_train=np.concatenate(tr),y_train=np.concatenate(ys),subject_ids=np.asarray(subs),health_groups=np.asarray(groups),original_trial_ids=np.concatenate(trials),feature_names=names,X_public=np.concatenate(pub),public_user_ids=np.asarray(pu),public_trial_ids=np.asarray(pt),config_sha256=np.asarray(base.sha256(HERE/'config.json')))
-    meta=[{'path':str(f.relative_to(ROOT)),'bytes':f.stat().st_size,'sha256':base.sha256(f)} for f in files+pubs]; (HERE/'input_metadata/raw_inputs.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf8')
+    path.parent.mkdir(parents=True,exist_ok=True); np.savez_compressed(path,X_train=np.concatenate(tr),y_train=np.concatenate(ys),subject_ids=np.asarray(subs),health_groups=np.asarray(groups),original_trial_ids=np.concatenate(trials),feature_names=names,config_sha256=np.asarray(base.sha256(HERE/'config.json')),source_sha256=np.asarray(base.sha256(Path(__file__))))
+    meta=[{'path':str(f.relative_to(ROOT)),'bytes':f.stat().st_size,'sha256':base.sha256(f)} for f in files]; (HERE/'input_metadata/raw_inputs.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf8')
 
 def assert_alignment(a,b):
     for k in ALIGN_KEYS:
@@ -79,12 +94,16 @@ def load_data(config):
     p=base.load_cache(pepath); assert_alignment(s,p)
     cpath=HERE/config['complexity_cache'];
     if not cpath.exists(): build_cache(config,cpath)
-    c=base.load_cache(cpath); assert_alignment(s,c); assert str(c['config_sha256'])==base.sha256(HERE/'config.json')
-    keep=s['subject_ids']!=config['excluded_subject']; subs=s['subject_ids'][keep]; pub=s['public_user_ids']; z=lambda a,ids:normalize_by_subject(a,ids,'zscore')
-    sm=np.asarray([str(n).startswith('log_bandpower_') for n in s['feature_names']]); X=np.column_stack([z(s['X_train'][keep][:,sm],subs),z(t['X_train'][keep],subs),z(p['X_train'][keep],subs)]); XP=np.column_stack([z(s['X_public'][:,sm],pub),z(t['X_public'],pub),z(p['X_public'],pub)]); C=z(c['X_train'][keep],subs); CP=z(c['X_public'],pub)
+    c=base.load_cache(cpath)
+    for key in ('subject_ids','health_groups','original_trial_ids','y_train'):
+        if not np.array_equal(s[key],c[key]): raise RuntimeError(f'cache alignment mismatch: {key}')
+    if str(c['config_sha256']) != base.sha256(HERE/'config.json') or str(c['source_sha256']) != base.sha256(Path(__file__)):
+        raise RuntimeError('complexity cache invalid: config/source hash mismatch')
+    keep=s['subject_ids']!=config['excluded_subject']; subs=s['subject_ids'][keep]; z=lambda a,ids:normalize_by_subject(a,ids,'zscore')
+    sm=np.asarray([str(n).startswith('log_bandpower_') for n in s['feature_names']]); X=np.column_stack([z(s['X_train'][keep][:,sm],subs),z(t['X_train'][keep],subs),z(p['X_train'][keep],subs)]); C=z(c['X_train'][keep],subs)
     ref=pd.read_csv((HERE/config['fixed_reference']).resolve());
     for col,arr in [('subject_id',subs),('health_group',s['health_groups'][keep]),('y_true',s['y_train'][keep]),('original_trial_id',s['original_trial_ids'][keep])]: np.testing.assert_array_equal(ref[col].to_numpy(),arr)
-    ref=ref[['subject_id','health_group','original_trial_id','fold','y_true']]; assert X.shape==(2760,720) and C.shape==(2760,60) and XP.shape==(80,720) and CP.shape==(80,60) and np.isfinite(np.r_[X.ravel(),C.ravel()]).all(); return X,XP,C,CP,ref,s,c
+    ref=ref[['subject_id','health_group','original_trial_id','fold','y_true']]; assert X.shape==(2760,720) and C.shape==(2760,60) and np.isfinite(np.r_[X.ravel(),C.ravel()]).all(); return X,C,ref,s,c
 
 def column_sets(): return {'control_pe':np.arange(720),'plus_complexity':np.arange(780)}
 def fit_predict(X,C,y,train,ev,config,seed):
@@ -108,8 +127,8 @@ class Tee:
     def write(self,x): self.s.write(x); self.f.write(x); self.f.flush()
     def flush(self): self.s.flush(); self.f.flush()
 def main():
-    sys.stdout=Tee(HERE/'run_output.txt'); start=time.perf_counter(); config=json.loads((HERE/'config.json').read_text(encoding='utf8')); (HERE/'predictions').mkdir(exist_ok=True); (HERE/'input_metadata').mkdir(exist_ok=True); X,XP,C,CP,ref,s,c=load_data(config); y=ref.y_true.to_numpy(); subs=ref.subject_id.to_numpy(); groups=ref.health_group.to_numpy(); feature_seconds=time.perf_counter()-start; print(f'data ready train={X.shape} complexity={C.shape} public={XP.shape} elapsed={feature_seconds:.1f}s',flush=True)
-    prov={'python':platform.python_version(),'numpy':np.__version__,'sklearn':sklearn.__version__,'inputs':{k:{'path':str((HERE/config[k]).resolve()),'sha256':base.sha256((HERE/config[k]).resolve())} for k in ('spectral_cache','temporal_cache','fixed_reference','complexity_cache')},'pe_cache_sha256':base.sha256((HERE.parent/'057_multiscale_permutation_entropy'/'cache/pe_features.npz')),'config_sha256':base.sha256(HERE/'config.json'),'script_sha256':base.sha256(Path(__file__)),'train_shape':[int(X.shape[0]),780],'complexity_shape':list(C.shape),'public_shape':[int(XP.shape[0]),780],'alignment_checked':list(ALIGN_KEYS),'subject_zscore':True,'public_metrics':False,'feature_names':c['feature_names'].tolist()}; (HERE/'input_metadata/provenance.json').write_text(json.dumps(prov,indent=2),encoding='utf8')
+    sys.stdout=Tee(HERE/'run_output.txt'); start=time.perf_counter(); config=json.loads((HERE/'config.json').read_text(encoding='utf8')); (HERE/'predictions').mkdir(exist_ok=True); (HERE/'input_metadata').mkdir(exist_ok=True); X,C,ref,s,c=load_data(config); y=ref.y_true.to_numpy(); subs=ref.subject_id.to_numpy(); groups=ref.health_group.to_numpy(); feature_seconds=time.perf_counter()-start; print(f'data ready train={X.shape} complexity={C.shape} elapsed={feature_seconds:.1f}s',flush=True)
+    prov={'python':platform.python_version(),'numpy':np.__version__,'sklearn':sklearn.__version__,'inputs':{k:{'path':str((HERE/config[k]).resolve()),'sha256':base.sha256((HERE/config[k]).resolve())} for k in ('spectral_cache','temporal_cache','fixed_reference','complexity_cache')},'pe_cache_sha256':base.sha256((HERE.parent/'057_multiscale_permutation_entropy'/'cache/pe_features.npz')),'config_sha256':base.sha256(HERE/'config.json'),'script_sha256':base.sha256(Path(__file__)),'train_shape':[int(X.shape[0]),780],'complexity_shape':list(C.shape),'public_shape':None,'alignment_checked':list(ALIGN_KEYS),'subject_zscore':True,'public_metrics':False,'feature_names':c['feature_names'].tolist()}; (HERE/'input_metadata/provenance.json').write_text(json.dumps(prov,indent=2),encoding='utf8')
     splits=[('fixed002',ref.fold.to_numpy())]+[(f'repeat{q}',base.make_subject_folds(subs,groups,q)) for q in config['repeat_seeds']];
     for n,f in splits: base.assert_subject_isolation(subs,f); ref.assign(fold=f).to_csv(HERE/'input_metadata'/f'folds_{n}.csv',index=False)
     results=Parallel(n_jobs=config['n_jobs'])(delayed(job)(X,C,y,n,f,k,config) for n,f in splits for k in range(5)); pred={n:{m:np.full(len(y),np.nan) for m in METHODS} for n,_ in splits}; fmap=dict(splits)
@@ -120,8 +139,8 @@ def main():
         rr=ref.assign(fold=f)
         for m in METHODS:
             p=pred[n][m]; assert np.isfinite(p).all() and ((p>=0)&(p<=1)).all(); rr.assign(prob_positive=p).to_csv(HERE/'predictions'/f'{m}_{n}_oof.csv',index=False); r=base.summarize(y,p,rr,f); runs[m][n]=r; rows.append({'method':m,'split':n,**scalars(r)})
-    public=fit_public(X,C,XP,CP,y,config,config['outer_model_seed_base'])
-    for m in METHODS: pd.DataFrame({'user_id':s['public_user_ids'],'trial_id':s['public_trial_ids'],'prob. of positive emotion':public[m]}).to_csv(HERE/'predictions'/f'{m}_public.csv',index=False)
+    # v2 intentionally does not extract new public features or train public predictors;
+    # existing v1 public predictions remain untouched and are not v2 results.
     agg={}
     for m in METHODS:
         vals=[scalars(runs[m][f'repeat{q}']) for q in config['repeat_seeds']]; agg[m]={k:{'mean':float(np.mean([v[k] for v in vals])),'std':float(np.std([v[k] for v in vals],ddof=1)),'values':[v[k] for v in vals]} for k in KEYS}; rows.append({'method':m,'split':'repeat_mean',**{k:agg[m][k]['mean'] for k in KEYS}})
