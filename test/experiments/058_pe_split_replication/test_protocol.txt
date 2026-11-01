@@ -1,0 +1,9 @@
+实验058预注册协议（首次训练前固定）
+
+本实验通过importlib加载057_multiscale_permutation_entropy/run_experiment.py，并调用057原config.json与057.load_data，保持原始数据读取、缓存校验、排除HC43、逐被试/逐公开用户无标签z-score、HGB参数、StandardScaler、阈值0.5以及训练seed=2052+fold全部不变。只比较control_600和plus_pe，跳过057的pe_only训练。
+
+这是与057相同数据上的新被试级HC/DEP分层五折敏感性检查，不是独立验证。新split seeds固定为2042, 2043, 2044, 2045, 2046；不调参，不新增公开集训练，不读取公开标签，不使用公开指标做决策。
+
+接受线：相对control_600，五个新split均值deltaAUC>=0.005、deltaF1>=0、deltaDEP AUC>=0。另报告五折中正增益次数，但不增加事后门槛。所有指标由保存的OOF重新计算；保存每折assignments、10份OOF、metrics.json、summary.csv、summary.md、输入/脚本/config哈希及日志。
+
+执行：先pytest，再完整实验，再pytest；使用根目录.venv/Scripts/python.exe -B，无额外依赖。
