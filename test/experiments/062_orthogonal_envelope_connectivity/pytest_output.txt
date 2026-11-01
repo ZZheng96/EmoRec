@@ -1,0 +1,14 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- D:\WORK\BCIC2026\EmoRec\.venv\Scripts\python.exe
+rootdir: D:\WORK\BCIC2026\EmoRec
+configfile: pyproject.toml
+plugins: platformdirs-4.14.0
+collecting ... collected 5 items
+
+test/experiments/062_orthogonal_envelope_connectivity/test_062.py::test_constants_and_shape PASSED [ 20%]
+test/experiments/062_orthogonal_envelope_connectivity/test_062.py::test_scaling_sign_and_window_order PASSED [ 40%]
+test/experiments/062_orthogonal_envelope_connectivity/test_062.py::test_direct_pair_reference_and_symmetry PASSED [ 60%]
+test/experiments/062_orthogonal_envelope_connectivity/test_062.py::test_real_data_reference_and_cache_order PASSED [ 80%]
+test/experiments/062_orthogonal_envelope_connectivity/test_062.py::test_all_oof_metrics_isolation_control_and_hashes PASSED [100%]
+
+============================== 5 passed in 9.46s ==============================

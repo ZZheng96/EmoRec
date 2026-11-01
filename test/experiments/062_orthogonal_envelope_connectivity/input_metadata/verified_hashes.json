@@ -1,0 +1,39 @@
+{
+  "verified_tests": "real data, scaling/sign invariance, pair reference, subject isolation, full OOF metrics and aggregate, row alignment, control reproduction <1e-12",
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\run_experiment.py": "83685594df98a0bb4682529df7f6adbf5da04371a6a3c0c1dca956be4889ddb6",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9"
+  },
+  "artifacts": {
+    "config.json": "54a5800d2315b22ad09774790aed5400b605481bafbc8af0a878d1af9a9b3c3c",
+    "test_protocol.txt": "3d7920a1f6fc1b00c6329bc404caab637f60935b6f62afdd113227cd3984d247",
+    "run_experiment.py": "1656bbe0a3fe491d66add8fd780bba1e7a7ba016b300acb843917c53a8b8332f",
+    "test_062.py": "6a0eae4fca80f4de172bfab710b46f7c87da2358dbb4772e740ad94b2f89623a",
+    "metrics.json": "fcca02287a9d1afb0ba70d2362ebe17d0c3ba7553f000d0f29c6049c43b20eb4",
+    "summary.csv": "e0c35edd0d942e95d1f3373c34cf470a28ece6d4a11b9a8a63b0dfc3d52a5002",
+    "summary.md": "e0be69c2a9d7afab4645cac58c42b49bc722ea312a9cc42207f0e6e65eed09fa",
+    "cache\\orthogonal_envelope_features.npz": "4a7d081e82d025eb2ddb396317f4524013e94569f0820702d178adc06844511e",
+    "predictions\\control_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "predictions\\control_pe_repeat2027_oof.csv": "291eced56c2fd2f64fcdd1baa18973baf582db9a61e2dd3fd666515b5b3bf0a3",
+    "predictions\\control_pe_repeat2028_oof.csv": "bccaff3f6920641839188e419d37614ffaa81525b6db4ece819f59f9879c0e57",
+    "predictions\\control_pe_repeat2029_oof.csv": "63cf80e3f9dd8df6517375f1a7e3ebc4a9b282623e63f0b9c0cd99ca713ee30f",
+    "predictions\\control_pe_repeat2030_oof.csv": "99b1d1ac7119ebf19554b2f424e2ef1fedaee55eaf38873aaff591545b147b91",
+    "predictions\\control_pe_repeat2031_oof.csv": "b06cc25e8e53496cfe93c12f15d39fd08a441534b998b13d077761e83d0a9587",
+    "predictions\\plus_oAEC_fixed002_oof.csv": "1734a91177fa2f253a17c3080e99bc27c2922b5dd88ba7a9b28de4240381ba74",
+    "predictions\\plus_oAEC_repeat2027_oof.csv": "9f9a3898197543b5ed2c3da4b60b288ddc9309721b03b6eb995517b4786c883f",
+    "predictions\\plus_oAEC_repeat2028_oof.csv": "522c90f18a7a1deca089f8a2305a96a318840040c5dae158bac0273714de1873",
+    "predictions\\plus_oAEC_repeat2029_oof.csv": "4aab6dc87e89541e5867eefc86c6114c03e16f5592f843f35b7bfef5c101d3f5",
+    "predictions\\plus_oAEC_repeat2030_oof.csv": "5bfd49705d76ebc49a3220d213feb33dbd86ef813c6508a4bc4a5a597c39ff9c",
+    "predictions\\plus_oAEC_repeat2031_oof.csv": "f14839eb05927a8ca9a5a6e0a6d9dc8ac1eb2dc51237cb9b28226e0ea0be99a1",
+    "input_metadata\\folds_fixed002.csv": "809e3c1f3965ba0f0d0946753cf1ea3fef92c884639f7c15e4b8c376d1fa132e",
+    "input_metadata\\folds_repeat2027.csv": "902a9269692d229ccfbbfef1a901d3c98efc7ca7b4f4f4618b0b1022b62d86ee",
+    "input_metadata\\folds_repeat2028.csv": "5ccd49ef781699cc504e4687e89fc83ade32c18ef2d58b44b60aeafb70057e04",
+    "input_metadata\\folds_repeat2029.csv": "dccd4f75ef1a300d15d0c685de6fab4191b68eb9ad2dd0a1678f7a98c2fbdb79",
+    "input_metadata\\folds_repeat2030.csv": "a2a05db2ca7c2a2263e18f1d2b498a0f0dc9342176408bc0edcbb8d8229c5e70",
+    "input_metadata\\folds_repeat2031.csv": "c01fc8a3c6a084bdabb71384826104e05a01c80e97b2b8ccd0b673bb807ae90e"
+  }
+}

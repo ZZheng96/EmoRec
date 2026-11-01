@@ -1,0 +1,20 @@
+{
+  "experiment_id": "062_orthogonal_envelope_connectivity",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "oAEC_cache": "cache/orthogonal_envelope_features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "n_jobs": 10,
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "oAEC": {"bands": [[4, 8], [8, 13], [13, 30], [30, 45]], "order": 4, "trim_seconds": 1, "filter": "butter bandpass sosfiltfilt defaults then hilbert then trim", "epsilon": "numpy.finfo(float64).eps", "zero_variance_correlation": 0, "pair": "mean of absolute Pearson correlations in both orthogonalization directions", "node": "mean over other 29 channels", "feature_order": "band then channel"},
+  "methods": ["control_pe", "plus_oAEC"],
+  "normalization": "new training features: per subject unlabeled zscore ddof=0; control unchanged from 057 load_data",
+  "forbidden_predictors": ["labels", "trial_id", "neighbor_windows", "row_order", "public_labels"],
+  "acceptance": {"repeat_delta_auc_min": 0.005, "repeat_delta_f1_min": 0.0, "repeat_delta_dep_auc_min": 0.0, "fixed_delta_auc_strict_min": 0.0},
+  "decision": "All four criteria must hold; otherwise stop without tuning. One fixed configuration only.",
+  "limitations": "Sensor orthogonalization is not source-space leakage elimination or evidence of brain connectivity; short-window reliability unknown. No new public features or public predictions."
+}
