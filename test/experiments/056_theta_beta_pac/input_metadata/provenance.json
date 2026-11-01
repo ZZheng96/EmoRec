@@ -1,0 +1,27 @@
+{
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "sklearn": "1.9.1",
+  "train_shape": [
+    2760,
+    600
+  ],
+  "pac_shape": [
+    2760,
+    30
+  ],
+  "public_shape": [
+    80,
+    600
+  ],
+  "alignment_checked": [
+    "subject_ids",
+    "health_groups",
+    "original_trial_ids",
+    "y_train",
+    "public_user_ids",
+    "public_trial_ids"
+  ],
+  "subject_zscore": true,
+  "public_metrics": false
+}

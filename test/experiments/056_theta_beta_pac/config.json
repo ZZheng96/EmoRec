@@ -1,0 +1,22 @@
+{
+  "experiment_id": "056_theta_beta_pac",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "control_reference_dir": "../052_subject_group_dro/predictions",
+  "pac_cache": "cache/pac_features.npz",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "n_jobs": 10,
+  "sampling_rate": 250,
+  "pac": {"theta_hz": [4.0, 8.0], "beta_hz": [15.0, 30.0], "edge_seconds": 0.5, "n_phase_bins": 18, "surrogates": 8, "min_shift_seconds": 1.0, "filter_order": 4},
+  "methods": ["control_600", "pac_only", "plus_pac"],
+  "normalization": "per subject/user unlabeled zscore for every feature block",
+  "forbidden_predictors": ["row_order", "original_trial_id", "neighbor_windows", "public_labels"],
+  "decision": "pre-registered: accept only if five-repeat mean delta AUC >= +0.005, delta F1 >= 0, delta DEP AUC >= 0, and fixed002 delta AUC > 0; otherwise stop and do not tune",
+  "strict_single_window": "not the primary historical protocol; included as documented future/independent control because control_600 reuses historical subject zscore protocol",
+  "screening_note": "fixed theta-beta PAC, 18 bins, 8 within-window circular surrogates; screening configuration, not a full PAC search"
+}
