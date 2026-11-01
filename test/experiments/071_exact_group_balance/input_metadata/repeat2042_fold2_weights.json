@@ -1,0 +1,20 @@
+{
+  "split": "repeat2042",
+  "outer_fold": 2,
+  "weighted": true,
+  "outer_train_rows": 2200,
+  "outer_validation_rows": 560,
+  "subject_disjoint": true,
+  "weights": {
+    "DEP": {
+      "n": 800,
+      "weight": 1.375,
+      "total_weight": 1100.0
+    },
+    "HC": {
+      "n": 1400,
+      "weight": 0.7857142857142857,
+      "total_weight": 1100.0
+    }
+  }
+}

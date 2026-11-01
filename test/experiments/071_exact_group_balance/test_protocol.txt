@@ -1,0 +1,11 @@
+实验071预注册冻结协议
+
+单一配对实验：复用实验070的load_data、contexts、base.make_model、720维69人2760窗、a8训练/a8验证、fixed002及2042..2046五套被试级分层五折、全部位置0..4、HGB参数/seed2052+fold/阈值0.5。共6套×5折×2条件=60 fits；控制为普通ERM，处理为训练折内严格HC/DEP等总权重。
+
+每个外层训练折仅用训练标签和训练组别计算w_i=N_train/(2*N_group_train)，故HC与DEP总权重各N_train/2，权重均值1且不裁剪；验证折权重不参与训练。通过pipeline.fit(histgradientboostingclassifier__sample_weight=weights)传递，区别于class_weight。目标等价于0.5 mean_loss_HC + 0.5 mean_loss_DEP。控制必须逐行复现070的p_train8至1e-12；不访问公开数组，不生成公开预测。
+
+接受线仅五个新split的all_rows：平均DEP deltaAUC>=0.005，overall deltaAUC>=0，deltaF1>=0，至少4/5 DEP deltaAUC非负，HC平均deltaAUC>=-0.005。delta=严格等权组训练减control。fixed002仅作复现与报告，不纳入接受汇总；位置0..4只报告，不调参、不挑位置。
+
+背景仅作为方法动机，不作为EEG证据：Sagawa et al. https://arxiv.org/abs/1911.08731；sklearn HGB fit sample_weight文档 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html。训练44 HC/25 DEP与公开5/5仅支持组比例动机，不能解决组内条件偏移。普通平均可能掩盖弱组，naive groupDRO也可能泛化失败；本实验是固定等权ERM，不是DRO。
+
+执行：运行前pytest（产物测试skip），再完整实验，再pytest全部通过。HGB无GPU实现，CPU例外n_jobs=10、threadpool_limits(1)。保存逐折权重计数证据、OOF、指标/位置/组汇总、输入源码hash、耗时、summary.md、pytest_before/after、run_output；不git。
