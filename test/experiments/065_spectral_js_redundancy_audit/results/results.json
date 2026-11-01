@@ -1,0 +1,907 @@
+{
+  "provenance": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "source": [
+      {
+        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\run_experiment.py",
+        "sha256": "a481416bf8e43bcc11fff78940b6564270e9b0d8504aca3d6705a20ecaa03af9"
+      },
+      {
+        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\config.json",
+        "sha256": "e068a28807fa84a436f8f10c895535ee604d6f984c6e6325fe96f23d6951a3f6"
+      },
+      {
+        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\064_spectral_shape_dynamics\\cache\\spectral_js_features.npz",
+        "sha256": "10c05d7fd905787fa6d9e70323f6cb6287231692b1353dd8655c5f8c63a60496"
+      }
+    ],
+    "protocol_sha256": "3b55c2eed888cbaac81f567113f49a11eeac9bd5daa4cea7f032ff00f9fecfcb",
+    "shape": [
+      2760,
+      780
+    ],
+    "subjects": 69,
+    "rows_per_subject": 40,
+    "label_use": "descriptive diagnostics only",
+    "elapsed_seconds": 222.53096949998871
+  },
+  "alignment": {
+    "finite": true,
+    "subjects": [
+      "DEP01",
+      "DEP02",
+      "DEP03",
+      "DEP04",
+      "DEP05",
+      "DEP06",
+      "DEP07",
+      "DEP08",
+      "DEP09",
+      "DEP10",
+      "DEP11",
+      "DEP12",
+      "DEP13",
+      "DEP14",
+      "DEP15",
+      "DEP16",
+      "DEP17",
+      "DEP18",
+      "DEP19",
+      "DEP20",
+      "DEP21",
+      "DEP22",
+      "DEP23",
+      "DEP24",
+      "DEP25",
+      "HC01",
+      "HC02",
+      "HC03",
+      "HC04",
+      "HC05",
+      "HC06",
+      "HC07",
+      "HC08",
+      "HC09",
+      "HC10",
+      "HC11",
+      "HC12",
+      "HC13",
+      "HC14",
+      "HC15",
+      "HC16",
+      "HC17",
+      "HC18",
+      "HC19",
+      "HC20",
+      "HC21",
+      "HC22",
+      "HC23",
+      "HC24",
+      "HC25",
+      "HC26",
+      "HC27",
+      "HC28",
+      "HC29",
+      "HC30",
+      "HC31",
+      "HC32",
+      "HC33",
+      "HC34",
+      "HC35",
+      "HC36",
+      "HC37",
+      "HC38",
+      "HC39",
+      "HC40",
+      "HC41",
+      "HC42",
+      "HC44",
+      "HC45"
+    ],
+    "group_counts": {
+      "HC": 1760,
+      "DEP": 1000
+    },
+    "rows_per_subject": {
+      "DEP01": 40,
+      "DEP02": 40,
+      "DEP03": 40,
+      "DEP04": 40,
+      "DEP05": 40,
+      "DEP06": 40,
+      "DEP07": 40,
+      "DEP08": 40,
+      "DEP09": 40,
+      "DEP10": 40,
+      "DEP11": 40,
+      "DEP12": 40,
+      "DEP13": 40,
+      "DEP14": 40,
+      "DEP15": 40,
+      "DEP16": 40,
+      "DEP17": 40,
+      "DEP18": 40,
+      "DEP19": 40,
+      "DEP20": 40,
+      "DEP21": 40,
+      "DEP22": 40,
+      "DEP23": 40,
+      "DEP24": 40,
+      "DEP25": 40,
+      "HC01": 40,
+      "HC02": 40,
+      "HC03": 40,
+      "HC04": 40,
+      "HC05": 40,
+      "HC06": 40,
+      "HC07": 40,
+      "HC08": 40,
+      "HC09": 40,
+      "HC10": 40,
+      "HC11": 40,
+      "HC12": 40,
+      "HC13": 40,
+      "HC14": 40,
+      "HC15": 40,
+      "HC16": 40,
+      "HC17": 40,
+      "HC18": 40,
+      "HC19": 40,
+      "HC20": 40,
+      "HC21": 40,
+      "HC22": 40,
+      "HC23": 40,
+      "HC24": 40,
+      "HC25": 40,
+      "HC26": 40,
+      "HC27": 40,
+      "HC28": 40,
+      "HC29": 40,
+      "HC30": 40,
+      "HC31": 40,
+      "HC32": 40,
+      "HC33": 40,
+      "HC34": 40,
+      "HC35": 40,
+      "HC36": 40,
+      "HC37": 40,
+      "HC38": 40,
+      "HC39": 40,
+      "HC40": 40,
+      "HC41": 40,
+      "HC42": 40,
+      "HC44": 40,
+      "HC45": 40
+    }
+  },
+  "correlation": {
+    "pooled_max_abs": 0.3285613816082776,
+    "mean_subject_max_abs": 0.3285613816082776,
+    "max_matrix_abs_diff": 1.3877787807814457e-16,
+    "nonfinite_pooled": 0,
+    "nonfinite_subject_mean": 0
+  },
+  "effects": [
+    {
+      "feature": "spectral_js_mean_FP1",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.025252008620096737
+    },
+    {
+      "feature": "spectral_js_mean_FP1",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.08701099247832299
+    },
+    {
+      "feature": "spectral_js_mean_FP2",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.054701684291281055
+    },
+    {
+      "feature": "spectral_js_mean_FP2",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.08976041960727457
+    },
+    {
+      "feature": "spectral_js_mean_F7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.13513498004551602
+    },
+    {
+      "feature": "spectral_js_mean_F7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.1408580377485919
+    },
+    {
+      "feature": "spectral_js_mean_F3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.11599953438470403
+    },
+    {
+      "feature": "spectral_js_mean_F3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.012538364280624461
+    },
+    {
+      "feature": "spectral_js_mean_FZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.024290334631391654
+    },
+    {
+      "feature": "spectral_js_mean_FZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.0905256452042215
+    },
+    {
+      "feature": "spectral_js_mean_F4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.09610659299220875
+    },
+    {
+      "feature": "spectral_js_mean_F4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.04328716305667206
+    },
+    {
+      "feature": "spectral_js_mean_F8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.03473983869906723
+    },
+    {
+      "feature": "spectral_js_mean_F8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.045134436634450964
+    },
+    {
+      "feature": "spectral_js_mean_FT7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.021418531345864387
+    },
+    {
+      "feature": "spectral_js_mean_FT7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.16021392333914936
+    },
+    {
+      "feature": "spectral_js_mean_FC3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.036296650323855865
+    },
+    {
+      "feature": "spectral_js_mean_FC3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.002052052147702722
+    },
+    {
+      "feature": "spectral_js_mean_FCZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.04682553984032964
+    },
+    {
+      "feature": "spectral_js_mean_FCZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.06558522793440602
+    },
+    {
+      "feature": "spectral_js_mean_FC4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.061841841543015336
+    },
+    {
+      "feature": "spectral_js_mean_FC4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.023434481955090302
+    },
+    {
+      "feature": "spectral_js_mean_FT8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.1336286911810667
+    },
+    {
+      "feature": "spectral_js_mean_FT8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.022248286719738764
+    },
+    {
+      "feature": "spectral_js_mean_T3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.10214680330682264
+    },
+    {
+      "feature": "spectral_js_mean_T3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.1407658662535134
+    },
+    {
+      "feature": "spectral_js_mean_C3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.032820200111407724
+    },
+    {
+      "feature": "spectral_js_mean_C3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.01731034534719419
+    },
+    {
+      "feature": "spectral_js_mean_CZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.06542430932590758
+    },
+    {
+      "feature": "spectral_js_mean_CZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.09548113772883873
+    },
+    {
+      "feature": "spectral_js_mean_C4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.08450168815719537
+    },
+    {
+      "feature": "spectral_js_mean_C4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.01377861605687929
+    },
+    {
+      "feature": "spectral_js_mean_T4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.14519645699842226
+    },
+    {
+      "feature": "spectral_js_mean_T4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05928206974838847
+    },
+    {
+      "feature": "spectral_js_mean_TP7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.20655001552654167
+    },
+    {
+      "feature": "spectral_js_mean_TP7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.0021498388003258905
+    },
+    {
+      "feature": "spectral_js_mean_CP3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.005918951593553189
+    },
+    {
+      "feature": "spectral_js_mean_CP3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.0005487487649586646
+    },
+    {
+      "feature": "spectral_js_mean_CPZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.062283594623996796
+    },
+    {
+      "feature": "spectral_js_mean_CPZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.07158121210492989
+    },
+    {
+      "feature": "spectral_js_mean_CP4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.006258941954048043
+    },
+    {
+      "feature": "spectral_js_mean_CP4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.01963121576028892
+    },
+    {
+      "feature": "spectral_js_mean_TP8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.26802009116505854
+    },
+    {
+      "feature": "spectral_js_mean_TP8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.053784515359587046
+    },
+    {
+      "feature": "spectral_js_mean_T5",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.17746433046766652
+    },
+    {
+      "feature": "spectral_js_mean_T5",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.050248867201862314
+    },
+    {
+      "feature": "spectral_js_mean_P3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.01920119485733325
+    },
+    {
+      "feature": "spectral_js_mean_P3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.025161669825366707
+    },
+    {
+      "feature": "spectral_js_mean_PZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.05884979530600117
+    },
+    {
+      "feature": "spectral_js_mean_PZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.07856240577881574
+    },
+    {
+      "feature": "spectral_js_mean_P4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.013534285501575725
+    },
+    {
+      "feature": "spectral_js_mean_P4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.10249973054121578
+    },
+    {
+      "feature": "spectral_js_mean_T6",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.13476772141980212
+    },
+    {
+      "feature": "spectral_js_mean_T6",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05626682197264697
+    },
+    {
+      "feature": "spectral_js_mean_O1",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.10971922612216739
+    },
+    {
+      "feature": "spectral_js_mean_O1",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.08298965531337239
+    },
+    {
+      "feature": "spectral_js_mean_OZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.0026596203205867114
+    },
+    {
+      "feature": "spectral_js_mean_OZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.0815403707752697
+    },
+    {
+      "feature": "spectral_js_mean_O2",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.01284468829164982
+    },
+    {
+      "feature": "spectral_js_mean_O2",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.14251320996400418
+    },
+    {
+      "feature": "spectral_js_std_FP1",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.0029424657921518246
+    },
+    {
+      "feature": "spectral_js_std_FP1",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05639730920906967
+    },
+    {
+      "feature": "spectral_js_std_FP2",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.029987573562598825
+    },
+    {
+      "feature": "spectral_js_std_FP2",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.01973623826300981
+    },
+    {
+      "feature": "spectral_js_std_F7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.046424909947162786
+    },
+    {
+      "feature": "spectral_js_std_F7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.0961983904886195
+    },
+    {
+      "feature": "spectral_js_std_F3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.020264860324640296
+    },
+    {
+      "feature": "spectral_js_std_F3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.09432696775598486
+    },
+    {
+      "feature": "spectral_js_std_FZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.01736895004314292
+    },
+    {
+      "feature": "spectral_js_std_FZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.026177764516037552
+    },
+    {
+      "feature": "spectral_js_std_F4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.025321785873353597
+    },
+    {
+      "feature": "spectral_js_std_F4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.008693891730905625
+    },
+    {
+      "feature": "spectral_js_std_F8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.037019511957010795
+    },
+    {
+      "feature": "spectral_js_std_F8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.07442447547786996
+    },
+    {
+      "feature": "spectral_js_std_FT7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.14092677378045051
+    },
+    {
+      "feature": "spectral_js_std_FT7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.010269002779282766
+    },
+    {
+      "feature": "spectral_js_std_FC3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.07570628132952534
+    },
+    {
+      "feature": "spectral_js_std_FC3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.007667310070594809
+    },
+    {
+      "feature": "spectral_js_std_FCZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.04328034490052533
+    },
+    {
+      "feature": "spectral_js_std_FCZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05439699226522043
+    },
+    {
+      "feature": "spectral_js_std_FC4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.041251017352998555
+    },
+    {
+      "feature": "spectral_js_std_FC4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.03346344387444649
+    },
+    {
+      "feature": "spectral_js_std_FT8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.042810637195683225
+    },
+    {
+      "feature": "spectral_js_std_FT8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.011738269043392884
+    },
+    {
+      "feature": "spectral_js_std_T3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.12799124326885625
+    },
+    {
+      "feature": "spectral_js_std_T3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.010501879609155055
+    },
+    {
+      "feature": "spectral_js_std_C3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.027730296142520483
+    },
+    {
+      "feature": "spectral_js_std_C3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.09822408447780519
+    },
+    {
+      "feature": "spectral_js_std_CZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.012547137600060007
+    },
+    {
+      "feature": "spectral_js_std_CZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.13717869303346863
+    },
+    {
+      "feature": "spectral_js_std_C4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.001902919207769442
+    },
+    {
+      "feature": "spectral_js_std_C4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.025188952884205272
+    },
+    {
+      "feature": "spectral_js_std_T4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.1782919025851972
+    },
+    {
+      "feature": "spectral_js_std_T4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05523109705945827
+    },
+    {
+      "feature": "spectral_js_std_TP7",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.1488374126653175
+    },
+    {
+      "feature": "spectral_js_std_TP7",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.1568892553670869
+    },
+    {
+      "feature": "spectral_js_std_CP3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.08487722651353853
+    },
+    {
+      "feature": "spectral_js_std_CP3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.1004753368938961
+    },
+    {
+      "feature": "spectral_js_std_CPZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.04511336687129268
+    },
+    {
+      "feature": "spectral_js_std_CPZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.04842024174479782
+    },
+    {
+      "feature": "spectral_js_std_CP4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.005532710867852505
+    },
+    {
+      "feature": "spectral_js_std_CP4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.01894208529154892
+    },
+    {
+      "feature": "spectral_js_std_TP8",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.10705355886602216
+    },
+    {
+      "feature": "spectral_js_std_TP8",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.20879049589670357
+    },
+    {
+      "feature": "spectral_js_std_T5",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.1063909618665991
+    },
+    {
+      "feature": "spectral_js_std_T5",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.16340921331950503
+    },
+    {
+      "feature": "spectral_js_std_P3",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.05319769576811854
+    },
+    {
+      "feature": "spectral_js_std_P3",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.05539478592175572
+    },
+    {
+      "feature": "spectral_js_std_PZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.006722464207767685
+    },
+    {
+      "feature": "spectral_js_std_PZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.07590923924641997
+    },
+    {
+      "feature": "spectral_js_std_P4",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": 0.052851348810054606
+    },
+    {
+      "feature": "spectral_js_std_P4",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.09134918984051187
+    },
+    {
+      "feature": "spectral_js_std_T6",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.1707321315256795
+    },
+    {
+      "feature": "spectral_js_std_T6",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.0698880097538621
+    },
+    {
+      "feature": "spectral_js_std_O1",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.15856261843717512
+    },
+    {
+      "feature": "spectral_js_std_O1",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": 0.02517586966976298
+    },
+    {
+      "feature": "spectral_js_std_OZ",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.08302956604095603
+    },
+    {
+      "feature": "spectral_js_std_OZ",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.13064382876894906
+    },
+    {
+      "feature": "spectral_js_std_O2",
+      "group": "HC",
+      "n_subjects": 44,
+      "window_cohen_d": -0.16756163256773363
+    },
+    {
+      "feature": "spectral_js_std_O2",
+      "group": "DEP",
+      "n_subjects": 25,
+      "window_cohen_d": -0.11647203140795893
+    }
+  ]
+}
