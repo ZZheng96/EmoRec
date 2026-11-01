@@ -1,0 +1,19 @@
+{
+  "experiment_id": "052_subject_group_dro",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "inner_seed": 2052,
+  "inner_folds": 5,
+  "weight_min": 1.0,
+  "weight_max": 3.0,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "decision": "advance only if fixed002 and repeat-mean overall AUC and DEP AUC improve over control; otherwise stop",
+  "normalization": "per subject/user unlabeled zscore",
+  "forbidden_predictors": ["row_order", "original_trial_id", "neighbor_windows", "public_labels"],
+  "weight_rule": "inner subject-stratified 5-fold OOF HGB logloss; subject loss divided by training-subject median, clipped to [1,3]; no outer validation labels",
+  "group_control_rule": "fixed inverse group-frequency weights normalized to mean 1, clipped to [1,3]"
+}

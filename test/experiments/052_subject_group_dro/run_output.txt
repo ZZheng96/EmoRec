@@ -1,0 +1,53 @@
+﻿fixed002 fold=0 max_weight=1.635 elapsed=107.6s
+fixed002 fold=1 max_weight=2.186 elapsed=214.8s
+fixed002 fold=2 max_weight=1.962 elapsed=321.9s
+fixed002 fold=3 max_weight=1.796 elapsed=429.1s
+fixed002 fold=4 max_weight=1.853 elapsed=536.0s
+repeat2027 fold=0 max_weight=1.556 elapsed=644.4s
+repeat2027 fold=1 max_weight=1.840 elapsed=751.1s
+repeat2027 fold=2 max_weight=2.009 elapsed=858.3s
+repeat2027 fold=3 max_weight=1.951 elapsed=965.6s
+repeat2027 fold=4 max_weight=1.839 elapsed=1073.4s
+repeat2028 fold=0 max_weight=1.780 elapsed=1181.8s
+repeat2028 fold=1 max_weight=1.797 elapsed=1288.7s
+repeat2028 fold=2 max_weight=1.910 elapsed=1395.8s
+repeat2028 fold=3 max_weight=1.897 elapsed=1503.1s
+repeat2028 fold=4 max_weight=1.850 elapsed=1610.2s
+repeat2029 fold=0 max_weight=1.781 elapsed=1718.5s
+repeat2029 fold=1 max_weight=1.881 elapsed=1825.5s
+repeat2029 fold=2 max_weight=1.527 elapsed=1933.3s
+repeat2029 fold=3 max_weight=1.694 elapsed=2038.9s
+repeat2029 fold=4 max_weight=2.222 elapsed=2146.6s
+repeat2030 fold=0 max_weight=1.719 elapsed=2252.6s
+repeat2030 fold=1 max_weight=1.822 elapsed=2358.5s
+repeat2030 fold=2 max_weight=1.942 elapsed=2464.0s
+repeat2030 fold=3 max_weight=1.926 elapsed=2570.2s
+repeat2030 fold=4 max_weight=1.605 elapsed=2676.4s
+repeat2031 fold=0 max_weight=1.674 elapsed=2782.9s
+repeat2031 fold=1 max_weight=1.625 elapsed=2888.9s
+repeat2031 fold=2 max_weight=2.008 elapsed=2994.3s
+repeat2031 fold=3 max_weight=1.879 elapsed=3099.9s
+repeat2031 fold=4 max_weight=1.954 elapsed=3206.0s
+                       method       split      auc       f1  balanced_accuracy  subject_auc_mean   hc_auc  dep_auc  worst_subject_auc
+spectral_temporal_hgb_control    fixed002 0.788575 0.708468           0.706884          0.772174 0.841019 0.676240             0.4075
+         subject_weighted_hgb    fixed002 0.791738 0.712950           0.710870          0.776558 0.840298 0.688800             0.4425
+           group_balanced_hgb    fixed002 0.790370 0.719626           0.717391          0.773913 0.840845 0.683860             0.4350
+spectral_temporal_hgb_control  repeat2027 0.788481 0.721455           0.722464          0.773949 0.838835 0.681864             0.4625
+         subject_weighted_hgb  repeat2027 0.788251 0.721276           0.721377          0.772428 0.837849 0.682376             0.4500
+           group_balanced_hgb  repeat2027 0.792364 0.725426           0.725725          0.776232 0.840713 0.689808             0.4750
+spectral_temporal_hgb_control  repeat2028 0.788872 0.718468           0.717754          0.772826 0.839872 0.678360             0.3600
+         subject_weighted_hgb  repeat2028 0.783613 0.714492           0.713043          0.768514 0.834722 0.672156             0.4200
+           group_balanced_hgb  repeat2028 0.785957 0.715683           0.715580          0.767790 0.836369 0.676412             0.3600
+spectral_temporal_hgb_control  repeat2029 0.786322 0.720604           0.718478          0.771304 0.833308 0.683156             0.4075
+         subject_weighted_hgb  repeat2029 0.788720 0.723404           0.722101          0.773152 0.836194 0.685600             0.4300
+           group_balanced_hgb  repeat2029 0.785626 0.715570           0.713406          0.770725 0.834712 0.679588             0.3900
+spectral_temporal_hgb_control  repeat2030 0.790989 0.721919           0.722826          0.778188 0.842271 0.682860             0.3525
+         subject_weighted_hgb  repeat2030 0.792393 0.717579           0.715942          0.778659 0.842628 0.685164             0.4325
+           group_balanced_hgb  repeat2030 0.791750 0.719913           0.719203          0.777355 0.842677 0.683304             0.3675
+spectral_temporal_hgb_control  repeat2031 0.792459 0.717745           0.717029          0.775000 0.842699 0.684552             0.4225
+         subject_weighted_hgb  repeat2031 0.789045 0.715835           0.715217          0.773913 0.839212 0.682644             0.4000
+           group_balanced_hgb  repeat2031 0.790780 0.716913           0.715580          0.776486 0.839548 0.686944             0.4100
+spectral_temporal_hgb_control repeat_mean 0.789424 0.720038           0.719710          0.774254 0.839397 0.682158             0.4010
+         subject_weighted_hgb repeat_mean 0.788404 0.718517           0.717536          0.773333 0.838121 0.681588             0.4265
+           group_balanced_hgb repeat_mean 0.789295 0.718701           0.717899          0.773717 0.838804 0.683211             0.4005
+{"deltas": {"fixed002": {"auc": 0.0031621508086536743, "f1": 0.0044811718193012995, "balanced_accuracy": 0.003985507246376807, "subject_auc_mean": 0.004384057971014488, "hc_auc": -0.0007205578512397004, "dep_auc": 0.012559999999999905, "worst_subject_auc": 0.034999999999999976}, "repeat_mean": {"auc": -0.0010200588111741737, "f1": -0.0015208541906993611, "balanced_accuracy": -0.0021739130434781373, "subject_auc_mean": -0.0009202898550724203, "hc_auc": -0.0012760847107436968, "dep_auc": -0.000570400000000082, "worst_subject_auc": 0.025500000000000023}}, "advance": false, "elapsed_seconds": 3317.1427333999964}

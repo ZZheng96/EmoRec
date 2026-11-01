@@ -1,0 +1,1 @@
+专项协议：1) 权重仅由外层训练折及其内部固定5折训练标签计算；2) 扰动外层验证标签不影响权重；3) 被试级折隔离；4) 权重范围[1,3]、有限值；5) 600维输入、OOF 2760行、每被试40行、公开格式；6) 不使用行序、original_trial_id、邻窗或公开标签。执行：pytest -q test/experiments/052_subject_group_dro/test_protocol.py。
