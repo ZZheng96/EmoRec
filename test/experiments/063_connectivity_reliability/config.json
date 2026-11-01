@@ -1,0 +1,13 @@
+{
+  "experiment_id": "063_connectivity_reliability",
+  "excluded_subject": "HC43",
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "central_trim_seconds": 1,
+  "bands": [[4, 8], [8, 13], [13, 30], [30, 45]],
+  "filter_order": 4,
+  "source_experiment": "../062_orthogonal_envelope_connectivity",
+  "source_cache": "../062_orthogonal_envelope_connectivity/cache/orthogonal_envelope_features.npz",
+  "oof_splits": ["fixed002", "repeat2027", "repeat2028", "repeat2029", "repeat2030", "repeat2031"],
+  "oof_methods": ["control_pe", "plus_oAEC"]
+}

@@ -1,0 +1,5134 @@
+{
+  "experiment_id": "063_connectivity_reliability",
+  "protocol": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\063_connectivity_reliability\\protocol.txt",
+  "excluded_subject": "HC43",
+  "sampling_rate": 250,
+  "raw_cache_alignment": true,
+  "full8s_cache_allclose": true,
+  "n_subjects": 69,
+  "windows_per_subject": 40,
+  "reliability_summary": [
+    {
+      "subject_id": "DEP01",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0479909104402172,
+      "q1": -0.08176389482478391,
+      "q3": 0.17193539099665306
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.21213854771428312,
+      "q1": 0.09345166109996773,
+      "q3": 0.3118234924713855
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09126144705401168,
+      "q1": -0.012723144174627722,
+      "q3": 0.17945529063361193
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.22015450036975626,
+      "q1": 0.10765003960815205,
+      "q3": 0.29959235599481615
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.05737534308165537,
+      "q1": -0.14020064968377938,
+      "q3": 0.051704022540198284
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3422900774474421,
+      "q1": 0.2223829122365386,
+      "q3": 0.4498123524300351
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.4419543394001594,
+      "q1": 0.1603468383464417,
+      "q3": 0.595477399084655
+    },
+    {
+      "subject_id": "DEP01",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4169157144461688,
+      "q1": 0.309581925390493,
+      "q3": 0.5054881044697574
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02718501515598498,
+      "q1": -0.10579598334255197,
+      "q3": 0.10092058844691332
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15771891816587053,
+      "q1": -0.026229312843555373,
+      "q3": 0.22930117858570676
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04402008919820778,
+      "q1": -0.0769501938907364,
+      "q3": 0.13195289155941084
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.21892988744522798,
+      "q1": 0.10219661481538488,
+      "q3": 0.3335014905505779
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.10726459341303218,
+      "q1": -0.09644264096825043,
+      "q3": 0.17412036297777522
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5578147630107413,
+      "q1": 0.2806746076292532,
+      "q3": 0.7117492763741174
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.10569466915567471,
+      "q1": -0.16720213648382481,
+      "q3": 0.08912984195238949
+    },
+    {
+      "subject_id": "DEP02",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6703266089595241,
+      "q1": 0.46155489264875277,
+      "q3": 0.7706527675905329
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03163871668674762,
+      "q1": -0.1159995920237323,
+      "q3": 0.11371274908647303
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.0793702108006771,
+      "q1": -0.07234635467366816,
+      "q3": 0.204257822574019
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.05964391823417893,
+      "q1": -0.16573318543821394,
+      "q3": 0.007050098570758967
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.06565533531407418,
+      "q1": -0.10491021943489409,
+      "q3": 0.18307854442840826
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07706443103407543,
+      "q1": 0.024590707444277556,
+      "q3": 0.16437596284419004
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.23351261535843282,
+      "q1": 0.1544637551524753,
+      "q3": 0.3616114486595823
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.34950912480731977,
+      "q1": 0.2666845848696865,
+      "q3": 0.4659153551423127
+    },
+    {
+      "subject_id": "DEP03",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.415135428549978,
+      "q1": 0.38042503725517535,
+      "q3": 0.6416258769541894
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.035234432294766034,
+      "q1": -0.14419879288879278,
+      "q3": 0.05763034820539163
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.106647306725654,
+      "q1": -0.0068371485685578305,
+      "q3": 0.1949788323483636
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.026987250046149092,
+      "q1": -0.14753491876245217,
+      "q3": 0.14366075974726272
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19294671262479512,
+      "q1": -0.06217668436312504,
+      "q3": 0.32841463583610764
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02124316675779032,
+      "q1": -0.09109257361109117,
+      "q3": 0.15246338774023407
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.28497544043525636,
+      "q1": 0.1713262961475404,
+      "q3": 0.39116124539310115
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01729894806073313,
+      "q1": -0.03202411772638418,
+      "q3": 0.0743623179467826
+    },
+    {
+      "subject_id": "DEP04",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.47341538798744554,
+      "q1": 0.4310815156644841,
+      "q3": 0.5312801922509527
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.05809020205306326,
+      "q1": -0.12437051422868431,
+      "q3": 0.13054027761896647
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1928088607060519,
+      "q1": 0.07601354522287214,
+      "q3": 0.2642299816178504
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.009967659804334384,
+      "q1": -0.0832740487573664,
+      "q3": 0.0501784719492754
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.012613320856137717,
+      "q1": -0.16458581977821338,
+      "q3": 0.13448058149705996
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07365066820386536,
+      "q1": 0.0020006519705626415,
+      "q3": 0.17198007546001565
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.07284901999075785,
+      "q1": -0.04204403250370431,
+      "q3": 0.3187521176517932
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.03445606851429228,
+      "q1": -0.07106529509427331,
+      "q3": 0.05153080841216628
+    },
+    {
+      "subject_id": "DEP05",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2595691392752464,
+      "q1": 0.1143733559634395,
+      "q3": 0.38382309329367287
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02487023642770185,
+      "q1": -0.08333273600817907,
+      "q3": 0.11562849473336215
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.14048316618921652,
+      "q1": 0.05261114541057779,
+      "q3": 0.2839788072445912
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.001011965577421078,
+      "q1": -0.08488173211408784,
+      "q3": 0.12849059446152605
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.0380804003376649,
+      "q1": -0.053046385429513954,
+      "q3": 0.2788601356800821
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02167499006456462,
+      "q1": -0.03972843921954395,
+      "q3": 0.12523402788683602
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6520670015643687,
+      "q1": 0.3941789953821733,
+      "q3": 0.742064457821933
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08836743943225978,
+      "q1": -0.039811368557446686,
+      "q3": 0.23142945951558697
+    },
+    {
+      "subject_id": "DEP06",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.76554519039444,
+      "q1": 0.7116562384266774,
+      "q3": 0.7955285204268489
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.043151585332895114,
+      "q1": -0.13505918660369104,
+      "q3": 0.08404507866240732
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.38526727656935755,
+      "q1": 0.23806787214311537,
+      "q3": 0.44622798704419536
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1252038685465883,
+      "q1": 0.07573358790301633,
+      "q3": 0.21657547621211923
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.27328608017491607,
+      "q1": 0.21925250686654651,
+      "q3": 0.33063178460371234
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11139364797166304,
+      "q1": 0.01968743509510107,
+      "q3": 0.20635094049764519
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.34863620773626547,
+      "q1": 0.18896755533852114,
+      "q3": 0.42400853572844754
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01689048569602886,
+      "q1": -0.07452826309354753,
+      "q3": 0.11883843989563547
+    },
+    {
+      "subject_id": "DEP07",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.45639783329506467,
+      "q1": 0.3553799923933142,
+      "q3": 0.6717267701221099
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.128573150393319,
+      "q1": -0.19343658621559706,
+      "q3": -0.0436341874999829
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.06945853164506938,
+      "q1": 0.009148489316523527,
+      "q3": 0.19160509427820294
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0050270040006544885,
+      "q1": -0.07884687222674285,
+      "q3": 0.15463316760682405
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15077536049552975,
+      "q1": 0.08279387739204407,
+      "q3": 0.22724541394044412
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.22115472674118214,
+      "q1": 0.0815854245984794,
+      "q3": 0.31527819076818475
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24110594963638485,
+      "q1": 0.13401584516606752,
+      "q3": 0.34846568109940945
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07400248594745329,
+      "q1": -0.041465357213327475,
+      "q3": 0.23258534225912336
+    },
+    {
+      "subject_id": "DEP08",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4889651492499356,
+      "q1": 0.4073817521422631,
+      "q3": 0.5799723310363295
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.002949368157393913,
+      "q1": -0.06293143452526884,
+      "q3": 0.05451939709732992
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.06073115545660865,
+      "q1": -0.045680042760549745,
+      "q3": 0.22076774342628308
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0025963383486714772,
+      "q1": -0.12225807930757573,
+      "q3": 0.13180061908189522
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.16372888133931202,
+      "q1": 0.08323822962699187,
+      "q3": 0.22734024192474328
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07420955220881867,
+      "q1": -0.02995266750066907,
+      "q3": 0.16447447684989536
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.37269439110480274,
+      "q1": 0.19754237181076617,
+      "q3": 0.5032521953763174
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02023882447751229,
+      "q1": -0.1187114430529374,
+      "q3": 0.04355883304106813
+    },
+    {
+      "subject_id": "DEP09",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6035554519224382,
+      "q1": 0.49398414264432755,
+      "q3": 0.6400342060096307
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08404086158975133,
+      "q1": -0.10330095324923483,
+      "q3": 0.13108935269115007
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.23668307867325872,
+      "q1": 0.09699873073207489,
+      "q3": 0.3306973686793526
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.047528863088627485,
+      "q1": -0.07375329930656085,
+      "q3": 0.19757201629638904
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.45061035403780547,
+      "q1": 0.3032178892236924,
+      "q3": 0.6160955663133102
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.06159295311292968,
+      "q1": -0.0215029172844969,
+      "q3": 0.11182879196190498
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4224201230895044,
+      "q1": 0.34601681170424636,
+      "q3": 0.5675670976555017
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.045856112097973536,
+      "q1": -0.05732546997305235,
+      "q3": 0.10355432218534225
+    },
+    {
+      "subject_id": "DEP10",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.48552986341691595,
+      "q1": 0.43478090834014116,
+      "q3": 0.5484605689412897
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1161001276136944,
+      "q1": -0.04028979393087715,
+      "q3": 0.18894897236439417
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.13946873315666816,
+      "q1": 0.024029153274467877,
+      "q3": 0.2891366932650281
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.007927677053784384,
+      "q1": -0.08836344846197738,
+      "q3": 0.09669486308562822
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.08552391626296603,
+      "q1": 0.012509696202637333,
+      "q3": 0.20072975001852242
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08787069788839222,
+      "q1": -0.15059454964794994,
+      "q3": 0.006862028012355799
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.09482773581365268,
+      "q1": -0.07875576727690746,
+      "q3": 0.3313952487601945
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02224218336723361,
+      "q1": -0.02217392277517223,
+      "q3": 0.10473038547800309
+    },
+    {
+      "subject_id": "DEP11",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5536265857838198,
+      "q1": 0.44290148228856924,
+      "q3": 0.6693110219094334
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.05105782392609277,
+      "q1": -0.017399060914533034,
+      "q3": 0.12269708949698482
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.13965919541407737,
+      "q1": 0.03688594128713897,
+      "q3": 0.21014683633857745
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08884743312276655,
+      "q1": -0.15459261689153586,
+      "q3": -0.04568263347971916
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.30989528390101795,
+      "q1": 0.26318156529833914,
+      "q3": 0.3711849041181098
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.030859524184989856,
+      "q1": -0.10523804217846512,
+      "q3": 0.10176607757946024
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24073487273478378,
+      "q1": 0.16676322743779107,
+      "q3": 0.305544266578627
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1048681263330102,
+      "q1": -0.03989559207690638,
+      "q3": 0.18779637548029363
+    },
+    {
+      "subject_id": "DEP12",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5238014411097798,
+      "q1": 0.42976350788569184,
+      "q3": 0.6000381302703448
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0473676505595718,
+      "q1": -0.1524295002746649,
+      "q3": 0.051678418915882096
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.11853392716865829,
+      "q1": 0.01929277149431618,
+      "q3": 0.18853328565598657
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.10859382226175192,
+      "q1": 0.03616176347967509,
+      "q3": 0.17958978954327146
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2740837674639108,
+      "q1": 0.2096517034336985,
+      "q3": 0.34313313026803083
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.10315068589692931,
+      "q1": 0.021007440343025895,
+      "q3": 0.21349482772660117
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4936859168929204,
+      "q1": 0.4329506605073013,
+      "q3": 0.7178598362220634
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.2366643281156534,
+      "q1": 0.11102842303603908,
+      "q3": 0.3513870468170739
+    },
+    {
+      "subject_id": "DEP13",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7934208854044281,
+      "q1": 0.7345187640922969,
+      "q3": 0.8525937331941847
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.095700716403508,
+      "q1": -0.17264275027173717,
+      "q3": -0.03952692957185748
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19740354995965476,
+      "q1": 0.0833027936586316,
+      "q3": 0.2934196383051041
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0153697887774998,
+      "q1": -0.053235460864473734,
+      "q3": 0.12670152295896578
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1730984381601796,
+      "q1": 0.01966978841280418,
+      "q3": 0.38080873371593355
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1070136284713202,
+      "q1": 0.023035036395746625,
+      "q3": 0.18758546904515438
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6009017597894164,
+      "q1": 0.3626984087329793,
+      "q3": 0.7603232240391987
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1157741775031821,
+      "q1": 0.0328277503171275,
+      "q3": 0.16492365393387262
+    },
+    {
+      "subject_id": "DEP14",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8879822421543088,
+      "q1": 0.804028464223417,
+      "q3": 0.9208395887108901
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.044100111198856824,
+      "q1": -0.08790313114444995,
+      "q3": 0.1419963605648481
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.05091577153627211,
+      "q1": -0.01676112750424811,
+      "q3": 0.24197662150258414
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11769111171384494,
+      "q1": -0.019469683339632997,
+      "q3": 0.2369952286633124
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.192380765168348,
+      "q1": 0.10342064939203709,
+      "q3": 0.31111863050653954
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.067890066441509,
+      "q1": -0.06346406724449775,
+      "q3": 0.16786410515777112
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2850176138221202,
+      "q1": 0.09843364675148157,
+      "q3": 0.446614768635077
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.013274263984708538,
+      "q1": -0.11317684375875459,
+      "q3": 0.10474459249294993
+    },
+    {
+      "subject_id": "DEP15",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6411146210317056,
+      "q1": 0.5087003398754085,
+      "q3": 0.6987417309223963
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -6.854457307469753e-05,
+      "q1": -0.08545397115513917,
+      "q3": 0.13749382835204566
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.10230604475442082,
+      "q1": 0.02388806045721635,
+      "q3": 0.3465075030882
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04679177642017851,
+      "q1": -0.07111622925957109,
+      "q3": 0.20708399064296562
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5129896914936845,
+      "q1": 0.34913007697842885,
+      "q3": 0.6347113956127378
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.07881963855383825,
+      "q1": -0.1839181645064092,
+      "q3": 0.07890273473456878
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3275777291262788,
+      "q1": 0.2123847150502363,
+      "q3": 0.5297020945784676
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.013420180720586344,
+      "q1": -0.07197542493599264,
+      "q3": 0.11908047660132143
+    },
+    {
+      "subject_id": "DEP16",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6402243655660389,
+      "q1": 0.5710371333835681,
+      "q3": 0.7616312186418392
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.008943270013048012,
+      "q1": -0.13179234917217053,
+      "q3": 0.13747198877312455
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3972351166645338,
+      "q1": 0.31090376808662085,
+      "q3": 0.4751733156728749
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.35331432328296564,
+      "q1": 0.2603965660289593,
+      "q3": 0.4590203781564481
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7757031280072988,
+      "q1": 0.6501810642032413,
+      "q3": 0.8023508225147229
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.14943764714646635,
+      "q1": -0.02923333344157687,
+      "q3": 0.29577562086918824
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6696061761990137,
+      "q1": 0.5949752782721182,
+      "q3": 0.762862287376197
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.4580219274679279,
+      "q1": 0.39916072651986556,
+      "q3": 0.5418914379616546
+    },
+    {
+      "subject_id": "DEP17",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8030054172045659,
+      "q1": 0.7542081984469989,
+      "q3": 0.8335194837207693
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08052025537558072,
+      "q1": -0.16626226216506745,
+      "q3": 0.049142228761386714
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.04672372079672722,
+      "q1": -0.1303334029387513,
+      "q3": 0.15916504836843676
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.017867995611921022,
+      "q1": -0.09158716438582662,
+      "q3": 0.036811532630558697
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.10959397269107601,
+      "q1": 0.025437768844845804,
+      "q3": 0.24122843073123182
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.025430576909411945,
+      "q1": -0.11823048789680489,
+      "q3": 0.11651969381696389
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1341985993138453,
+      "q1": 0.058423308414345725,
+      "q3": 0.2833406683812827
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03588778807514024,
+      "q1": -0.12034073259767268,
+      "q3": 0.11934011943565954
+    },
+    {
+      "subject_id": "DEP18",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.30834137444480836,
+      "q1": 0.1655121447441094,
+      "q3": 0.4183642572907341
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0028586873850529847,
+      "q1": -0.14958830891436356,
+      "q3": 0.1043210202861852
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.055678869568353245,
+      "q1": -0.0670227178308032,
+      "q3": 0.25039998604624486
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.052486154960744394,
+      "q1": -0.12744779846459833,
+      "q3": -0.007914840055035701
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": -0.003603411124366275,
+      "q1": -0.07017194202202919,
+      "q3": 0.07490636248091397
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0004922943730258955,
+      "q1": -0.07809903539306344,
+      "q3": 0.09555882545370026
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.16503667250744086,
+      "q1": 0.061728038231291735,
+      "q3": 0.24304820791179088
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03960681562106025,
+      "q1": -0.060404331501459005,
+      "q3": 0.1938680979013288
+    },
+    {
+      "subject_id": "DEP19",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3732399948574895,
+      "q1": 0.2139281745229284,
+      "q3": 0.450243874283571
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.016827293605834993,
+      "q1": -0.04550452104185505,
+      "q3": 0.1388165448131901
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.31708112295685287,
+      "q1": 0.1829510977988808,
+      "q3": 0.4246236366185217
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.013580541788854716,
+      "q1": -0.06598717780887992,
+      "q3": 0.1717509314058493
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.20290199283287874,
+      "q1": 0.07712399004044566,
+      "q3": 0.35906626251767976
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.022162660867855538,
+      "q1": -0.05383682629272494,
+      "q3": 0.1401634035256193
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24969638291265928,
+      "q1": 0.18554488436894911,
+      "q3": 0.39106182679862084
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.008488437827418647,
+      "q1": -0.13482560446534883,
+      "q3": 0.08856022330880128
+    },
+    {
+      "subject_id": "DEP20",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7149010306435968,
+      "q1": 0.5015729227450113,
+      "q3": 0.8159216387451368
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.002275771695100326,
+      "q1": -0.13513484306329526,
+      "q3": 0.07502516487448775
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.0815438441970269,
+      "q1": -0.027489953542414982,
+      "q3": 0.1604870599082265
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.012476987967347121,
+      "q1": -0.04871059664669217,
+      "q3": 0.05953205192610918
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19734320224773028,
+      "q1": 0.039561327780892164,
+      "q3": 0.34271802653101
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02790768950409873,
+      "q1": -0.1252094575122026,
+      "q3": 0.06801263685949364
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4631400756481323,
+      "q1": 0.370946095568698,
+      "q3": 0.5996183798934587
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1751752734153737,
+      "q1": 0.015206217423486632,
+      "q3": 0.3527258852252505
+    },
+    {
+      "subject_id": "DEP21",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6301599623749337,
+      "q1": 0.5504526343654249,
+      "q3": 0.724287918875723
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.027159716483817875,
+      "q1": -0.09411201479561014,
+      "q3": 0.05330331387845352
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.006730570486598917,
+      "q1": -0.05551502785668934,
+      "q3": 0.0853078655960756
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.019312575721948458,
+      "q1": -0.08552933034673305,
+      "q3": 0.07005374409589589
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.20661173566823185,
+      "q1": 0.17390236145930282,
+      "q3": 0.2651758079386175
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07836046752898085,
+      "q1": 0.0004269339479725425,
+      "q3": 0.16108930088031273
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.14871836143098244,
+      "q1": 0.049798933202340315,
+      "q3": 0.23731143408084954
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.010524290605164514,
+      "q1": -0.07093973561437221,
+      "q3": 0.02855133404923552
+    },
+    {
+      "subject_id": "DEP22",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2314088688307108,
+      "q1": 0.07564360659269492,
+      "q3": 0.316574574671207
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02477851161393374,
+      "q1": -0.1130421300642635,
+      "q3": 0.09566304588225852
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.06349431717462947,
+      "q1": -0.02509817512001468,
+      "q3": 0.12403276300172963
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11076601605139366,
+      "q1": -0.04188179389351213,
+      "q3": 0.21730198772282638
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.32322932899736395,
+      "q1": 0.11544736873581732,
+      "q3": 0.45441283257963033
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11391488076044008,
+      "q1": 0.009145487862769332,
+      "q3": 0.2011145575371147
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3929804451460762,
+      "q1": 0.2594049061143365,
+      "q3": 0.5830879919801094
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0643589482439018,
+      "q1": -0.041263372291704306,
+      "q3": 0.19706324853907944
+    },
+    {
+      "subject_id": "DEP23",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4780681813288006,
+      "q1": 0.3300623397428166,
+      "q3": 0.616673754305032
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.05143726266530051,
+      "q1": -0.08792995468789408,
+      "q3": 0.1780778370246513
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15754244759228947,
+      "q1": 0.07678783340319623,
+      "q3": 0.2649599984681358
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03900961187746423,
+      "q1": -0.0790689798266037,
+      "q3": 0.1118260000978081
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.23886204605756806,
+      "q1": 0.1546904037306838,
+      "q3": 0.3294360042720007
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.025045876401268763,
+      "q1": -0.05356556100558535,
+      "q3": 0.12524483048042473
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.38963066995236784,
+      "q1": 0.23037353041316233,
+      "q3": 0.547647493550904
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0034571767354857623,
+      "q1": -0.09264580014363893,
+      "q3": 0.05286928376464119
+    },
+    {
+      "subject_id": "DEP24",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5516773870643348,
+      "q1": 0.4881302631751452,
+      "q3": 0.7441040887891512
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.04188155232659714,
+      "q1": -0.09747298305070934,
+      "q3": 0.025083295632027894
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.32072450809850095,
+      "q1": 0.27152136503154994,
+      "q3": 0.39376557738381274
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.006153388109888064,
+      "q1": -0.04089714037902677,
+      "q3": 0.12971061685921825
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2433531427278391,
+      "q1": 0.11792616847640504,
+      "q3": 0.46408652885133816
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.017606715232677823,
+      "q1": -0.09212955733747745,
+      "q3": 0.10497494491211092
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6855464736566351,
+      "q1": 0.4320691181576326,
+      "q3": 0.8441869551921868
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0185828485776026,
+      "q1": -0.10546950203355829,
+      "q3": 0.13766625585056602
+    },
+    {
+      "subject_id": "DEP25",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7005026552485977,
+      "q1": 0.603942326893605,
+      "q3": 0.8588321867927369
+    },
+    {
+      "subject_id": "HC01",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.005805283461861627,
+      "q1": -0.11323311008743481,
+      "q3": 0.10672841909371374
+    },
+    {
+      "subject_id": "HC01",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1534296692181758,
+      "q1": 0.02920437793210768,
+      "q3": 0.29272266762883425
+    },
+    {
+      "subject_id": "HC01",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03304501641483805,
+      "q1": -0.05664807203284249,
+      "q3": 0.10575797240091858
+    },
+    {
+      "subject_id": "HC01",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.34332077930862104,
+      "q1": 0.22635749622246287,
+      "q3": 0.43194830222584807
+    },
+    {
+      "subject_id": "HC01",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.033214030915809455,
+      "q1": -0.05404723883605191,
+      "q3": 0.1107756146462503
+    },
+    {
+      "subject_id": "HC01",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.43012106668194816,
+      "q1": 0.29985561743322325,
+      "q3": 0.6055161581965007
+    },
+    {
+      "subject_id": "HC01",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09104444923485336,
+      "q1": 0.04151998556244623,
+      "q3": 0.13156696846468388
+    },
+    {
+      "subject_id": "HC01",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5779740078534468,
+      "q1": 0.48159877189514183,
+      "q3": 0.7140074254700356
+    },
+    {
+      "subject_id": "HC02",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.054315753153449484,
+      "q1": -0.11270719006239797,
+      "q3": 0.06627150949642321
+    },
+    {
+      "subject_id": "HC02",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2276947310033347,
+      "q1": 0.1517969213590734,
+      "q3": 0.3589670604061749
+    },
+    {
+      "subject_id": "HC02",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.030826249420239538,
+      "q1": -0.1432884023720046,
+      "q3": 0.03087124011498827
+    },
+    {
+      "subject_id": "HC02",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24682635587791485,
+      "q1": 0.12998002446409196,
+      "q3": 0.33815252335852186
+    },
+    {
+      "subject_id": "HC02",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.22668687747834174,
+      "q1": 0.06705549629174115,
+      "q3": 0.3837351115381969
+    },
+    {
+      "subject_id": "HC02",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5136089762132854,
+      "q1": 0.453189548081034,
+      "q3": 0.6990237394824197
+    },
+    {
+      "subject_id": "HC02",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.00730297636658619,
+      "q1": -0.1279352148741433,
+      "q3": 0.11192632809189161
+    },
+    {
+      "subject_id": "HC02",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5253161377110095,
+      "q1": 0.4197104506348861,
+      "q3": 0.7411219125519476
+    },
+    {
+      "subject_id": "HC03",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.14445866208800046,
+      "q1": -0.08492621183648415,
+      "q3": 0.21693582916446724
+    },
+    {
+      "subject_id": "HC03",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.08053074036770688,
+      "q1": -0.0557545330218047,
+      "q3": 0.2029997725047678
+    },
+    {
+      "subject_id": "HC03",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.13789592416166396,
+      "q1": -0.058678095717713215,
+      "q3": 0.2551069934240398
+    },
+    {
+      "subject_id": "HC03",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3828713595173392,
+      "q1": 0.2865722018144441,
+      "q3": 0.48374290076152615
+    },
+    {
+      "subject_id": "HC03",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04900962498796696,
+      "q1": -0.05730724385247186,
+      "q3": 0.16400568059564247
+    },
+    {
+      "subject_id": "HC03",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.28724003960451644,
+      "q1": 0.19208061749210775,
+      "q3": 0.39071582037241886
+    },
+    {
+      "subject_id": "HC03",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02245676559994576,
+      "q1": -0.08709853078532434,
+      "q3": 0.08930626970919957
+    },
+    {
+      "subject_id": "HC03",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5649701150441202,
+      "q1": 0.2352715762257981,
+      "q3": 0.7588389442980563
+    },
+    {
+      "subject_id": "HC04",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.027402364500475535,
+      "q1": -0.03951539703719999,
+      "q3": 0.2094594467774975
+    },
+    {
+      "subject_id": "HC04",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.23761534355562197,
+      "q1": 0.18362632370083018,
+      "q3": 0.3337339936351558
+    },
+    {
+      "subject_id": "HC04",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.19683073343092103,
+      "q1": 0.08586430167182449,
+      "q3": 0.3533251477824131
+    },
+    {
+      "subject_id": "HC04",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3585221415085233,
+      "q1": 0.1838406684215699,
+      "q3": 0.4472742655247177
+    },
+    {
+      "subject_id": "HC04",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.03579055148118017,
+      "q1": -0.11422222166190969,
+      "q3": 0.08686073696818293
+    },
+    {
+      "subject_id": "HC04",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3913299685825782,
+      "q1": 0.22335843456050392,
+      "q3": 0.5679428201768036
+    },
+    {
+      "subject_id": "HC04",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.19470180705626047,
+      "q1": 0.08215020443238306,
+      "q3": 0.26688991710829646
+    },
+    {
+      "subject_id": "HC04",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7292014083118343,
+      "q1": 0.6706276343059405,
+      "q3": 0.7833946681930373
+    },
+    {
+      "subject_id": "HC05",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08701430436948923,
+      "q1": -0.05430976183052931,
+      "q3": 0.16181450232053088
+    },
+    {
+      "subject_id": "HC05",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": -0.02897273105271876,
+      "q1": -0.08907632773412374,
+      "q3": 0.09119063448969997
+    },
+    {
+      "subject_id": "HC05",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0034547997972915454,
+      "q1": -0.06884050360306065,
+      "q3": 0.030838485881917677
+    },
+    {
+      "subject_id": "HC05",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.21969351623206113,
+      "q1": 0.1499114080267641,
+      "q3": 0.28597986773864403
+    },
+    {
+      "subject_id": "HC05",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.004393391230141902,
+      "q1": -0.10271135310271123,
+      "q3": 0.11453229132075837
+    },
+    {
+      "subject_id": "HC05",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3255601333073479,
+      "q1": 0.24231662479183919,
+      "q3": 0.3901632555842737
+    },
+    {
+      "subject_id": "HC05",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.061103439316350594,
+      "q1": -0.13190246899018787,
+      "q3": 0.12557642079564607
+    },
+    {
+      "subject_id": "HC05",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.441618747308236,
+      "q1": 0.1338332279369924,
+      "q3": 0.6360553986747681
+    },
+    {
+      "subject_id": "HC06",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.06542002244964261,
+      "q1": -0.021974707175207796,
+      "q3": 0.12854096968974038
+    },
+    {
+      "subject_id": "HC06",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": -0.022045343811930122,
+      "q1": -0.14339695270620964,
+      "q3": 0.053207884593956
+    },
+    {
+      "subject_id": "HC06",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07893699691819193,
+      "q1": -0.013300691931047345,
+      "q3": 0.23528121262544016
+    },
+    {
+      "subject_id": "HC06",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.14284434068429624,
+      "q1": 0.023463178564101926,
+      "q3": 0.27440322997605743
+    },
+    {
+      "subject_id": "HC06",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08570961859997597,
+      "q1": -0.1892074721120669,
+      "q3": -0.016836473467758337
+    },
+    {
+      "subject_id": "HC06",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3983123352237958,
+      "q1": 0.16928421984782832,
+      "q3": 0.5492547817318366
+    },
+    {
+      "subject_id": "HC06",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01376725835239752,
+      "q1": -0.07629442089915547,
+      "q3": 0.13288496760505467
+    },
+    {
+      "subject_id": "HC06",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7280450803507084,
+      "q1": 0.6580326575451181,
+      "q3": 0.8466849110575387
+    },
+    {
+      "subject_id": "HC07",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01905637680142993,
+      "q1": -0.0717320641052815,
+      "q3": 0.06722660385360775
+    },
+    {
+      "subject_id": "HC07",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.08575852253126641,
+      "q1": -0.011006159125801556,
+      "q3": 0.2052911662748335
+    },
+    {
+      "subject_id": "HC07",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03787591479676218,
+      "q1": -0.06600507786894029,
+      "q3": 0.14805210687992623
+    },
+    {
+      "subject_id": "HC07",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.18736896897698965,
+      "q1": 0.06898182196748331,
+      "q3": 0.43883280589024054
+    },
+    {
+      "subject_id": "HC07",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0008123266120276603,
+      "q1": -0.11023327587734087,
+      "q3": 0.09655468754277832
+    },
+    {
+      "subject_id": "HC07",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4548248984278691,
+      "q1": 0.21951997179502525,
+      "q3": 0.578880128195128
+    },
+    {
+      "subject_id": "HC07",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0022952858308565704,
+      "q1": -0.08870964743148149,
+      "q3": 0.06716653715757379
+    },
+    {
+      "subject_id": "HC07",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6287154412857652,
+      "q1": 0.5164787401524894,
+      "q3": 0.7663544544296769
+    },
+    {
+      "subject_id": "HC08",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.014194011773075773,
+      "q1": -0.06701349462540919,
+      "q3": 0.08937296427333176
+    },
+    {
+      "subject_id": "HC08",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.16406675869978138,
+      "q1": 0.08835027758388235,
+      "q3": 0.30520690545406953
+    },
+    {
+      "subject_id": "HC08",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.10165736835917874,
+      "q1": 0.05116522979301215,
+      "q3": 0.2235462114593821
+    },
+    {
+      "subject_id": "HC08",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.32826227834700483,
+      "q1": 0.23095804829862007,
+      "q3": 0.39721444176785037
+    },
+    {
+      "subject_id": "HC08",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08325162832798688,
+      "q1": -0.021455564394463108,
+      "q3": 0.22509476128294492
+    },
+    {
+      "subject_id": "HC08",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4462526101473191,
+      "q1": 0.3294935983081419,
+      "q3": 0.5566410882168449
+    },
+    {
+      "subject_id": "HC08",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0054385032003205465,
+      "q1": -0.03398730810911768,
+      "q3": 0.11246105240085422
+    },
+    {
+      "subject_id": "HC08",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5961620481993812,
+      "q1": 0.5224164562038116,
+      "q3": 0.6807921992464965
+    },
+    {
+      "subject_id": "HC09",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04288003795869629,
+      "q1": -0.039970044399512634,
+      "q3": 0.14252533722315056
+    },
+    {
+      "subject_id": "HC09",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3631505833768791,
+      "q1": 0.199079265068027,
+      "q3": 0.5050469722542961
+    },
+    {
+      "subject_id": "HC09",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04615115855718222,
+      "q1": -0.0894188780166546,
+      "q3": 0.11751700119326747
+    },
+    {
+      "subject_id": "HC09",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.41892814660805766,
+      "q1": 0.2884541538144368,
+      "q3": 0.5429122764758986
+    },
+    {
+      "subject_id": "HC09",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09731383829881021,
+      "q1": 0.01753414229717515,
+      "q3": 0.25141087921463046
+    },
+    {
+      "subject_id": "HC09",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6750599543680593,
+      "q1": 0.5980267948536551,
+      "q3": 0.7546875926509126
+    },
+    {
+      "subject_id": "HC09",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11660685835019464,
+      "q1": 0.0341382458790179,
+      "q3": 0.17279820156209696
+    },
+    {
+      "subject_id": "HC09",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.732460602152529,
+      "q1": 0.6047976614221853,
+      "q3": 0.7965860071086324
+    },
+    {
+      "subject_id": "HC10",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.024372532847566807,
+      "q1": -0.07308760063150138,
+      "q3": 0.059228028931744
+    },
+    {
+      "subject_id": "HC10",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24347550762961823,
+      "q1": 0.13438665908086578,
+      "q3": 0.3353892167633819
+    },
+    {
+      "subject_id": "HC10",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04690687591922311,
+      "q1": -0.0740542627047418,
+      "q3": 0.17305860126970468
+    },
+    {
+      "subject_id": "HC10",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2915673405140025,
+      "q1": 0.16177450511645242,
+      "q3": 0.39936627505503874
+    },
+    {
+      "subject_id": "HC10",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.004231160173496304,
+      "q1": -0.0634314380375096,
+      "q3": 0.17197758351416498
+    },
+    {
+      "subject_id": "HC10",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5120713053161441,
+      "q1": 0.44125500590573913,
+      "q3": 0.6804370550491172
+    },
+    {
+      "subject_id": "HC10",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.047053652420588225,
+      "q1": -0.1462621543272937,
+      "q3": 0.030500865580135227
+    },
+    {
+      "subject_id": "HC10",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.590534535417624,
+      "q1": 0.46089664729668883,
+      "q3": 0.664436156356672
+    },
+    {
+      "subject_id": "HC11",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.037589304266412354,
+      "q1": -0.08228458890997155,
+      "q3": 0.21808950058971963
+    },
+    {
+      "subject_id": "HC11",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5505716699635372,
+      "q1": 0.45214525551063567,
+      "q3": 0.6260208427991919
+    },
+    {
+      "subject_id": "HC11",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04540563392213753,
+      "q1": -0.03751201713488248,
+      "q3": 0.16889686164837167
+    },
+    {
+      "subject_id": "HC11",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6717159114318763,
+      "q1": 0.6075985509698503,
+      "q3": 0.7090609516838962
+    },
+    {
+      "subject_id": "HC11",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.18371229999761557,
+      "q1": 0.0199886407713927,
+      "q3": 0.3212371186042629
+    },
+    {
+      "subject_id": "HC11",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.36976370986018287,
+      "q1": 0.31532934614178226,
+      "q3": 0.5765417393969741
+    },
+    {
+      "subject_id": "HC11",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.10520836521595309,
+      "q1": 0.03515056810783336,
+      "q3": 0.1818882051230149
+    },
+    {
+      "subject_id": "HC11",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8488106531965045,
+      "q1": 0.7986581831542423,
+      "q3": 0.8863758372355135
+    },
+    {
+      "subject_id": "HC12",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.035624287031864266,
+      "q1": -0.10779985802736912,
+      "q3": 0.027400724833550757
+    },
+    {
+      "subject_id": "HC12",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.18438491404708102,
+      "q1": -0.05313745018619638,
+      "q3": 0.3578876181915988
+    },
+    {
+      "subject_id": "HC12",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.12042642336243067,
+      "q1": 0.025313546055516355,
+      "q3": 0.17894495582441627
+    },
+    {
+      "subject_id": "HC12",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.30230288391762355,
+      "q1": 0.19537619874015488,
+      "q3": 0.34708138408225936
+    },
+    {
+      "subject_id": "HC12",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.059408264134781306,
+      "q1": -0.18172082958697516,
+      "q3": 0.08352266605227647
+    },
+    {
+      "subject_id": "HC12",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4286567175054902,
+      "q1": 0.338132293943347,
+      "q3": 0.6379535696115097
+    },
+    {
+      "subject_id": "HC12",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.12465190080966933,
+      "q1": 0.05464392652290572,
+      "q3": 0.23838642835278848
+    },
+    {
+      "subject_id": "HC12",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7437149679674643,
+      "q1": 0.635615910449143,
+      "q3": 0.8353696079561018
+    },
+    {
+      "subject_id": "HC13",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.01380776867631741,
+      "q1": -0.10963509836490869,
+      "q3": 0.07847380650353104
+    },
+    {
+      "subject_id": "HC13",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2428781295267268,
+      "q1": 0.14211172683758036,
+      "q3": 0.3217845209926513
+    },
+    {
+      "subject_id": "HC13",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07465162485611931,
+      "q1": -0.0056146351746118985,
+      "q3": 0.1830387960821913
+    },
+    {
+      "subject_id": "HC13",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6957701959344075,
+      "q1": 0.6619511210264976,
+      "q3": 0.7235697688257261
+    },
+    {
+      "subject_id": "HC13",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.12446456611548498,
+      "q1": 0.03246142125103028,
+      "q3": 0.20043575037441008
+    },
+    {
+      "subject_id": "HC13",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5712989733486187,
+      "q1": 0.48420275398381196,
+      "q3": 0.646249629060701
+    },
+    {
+      "subject_id": "HC13",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.12830121706411102,
+      "q1": 0.020937427627828954,
+      "q3": 0.1884042323057619
+    },
+    {
+      "subject_id": "HC13",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5710676642286475,
+      "q1": 0.5347081961216674,
+      "q3": 0.6638969435923482
+    },
+    {
+      "subject_id": "HC14",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.020739450956225373,
+      "q1": -0.0804145355211164,
+      "q3": 0.10299571184679633
+    },
+    {
+      "subject_id": "HC14",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.11958589032732636,
+      "q1": 0.09315664584138633,
+      "q3": 0.20589932123343396
+    },
+    {
+      "subject_id": "HC14",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.007370137260001814,
+      "q1": -0.04503391301328657,
+      "q3": 0.07731127922370398
+    },
+    {
+      "subject_id": "HC14",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.34433820731672565,
+      "q1": 0.25684170811204904,
+      "q3": 0.38543086492164214
+    },
+    {
+      "subject_id": "HC14",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03085091413648875,
+      "q1": -0.02832779417001471,
+      "q3": 0.06741795905033604
+    },
+    {
+      "subject_id": "HC14",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.28961693911461106,
+      "q1": 0.12480684533351671,
+      "q3": 0.4806450842056157
+    },
+    {
+      "subject_id": "HC14",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.1618818294281547,
+      "q1": -0.18049138856834906,
+      "q3": -0.13173345908692366
+    },
+    {
+      "subject_id": "HC14",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.47266834623439913,
+      "q1": 0.36632196990608645,
+      "q3": 0.6614971426648392
+    },
+    {
+      "subject_id": "HC15",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0263580981244532,
+      "q1": -0.057295418891649956,
+      "q3": 0.11820335781064037
+    },
+    {
+      "subject_id": "HC15",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2827498144268343,
+      "q1": 0.22308546268611582,
+      "q3": 0.43767375346997883
+    },
+    {
+      "subject_id": "HC15",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07715731950079864,
+      "q1": -0.05384075344914787,
+      "q3": 0.2253071168783409
+    },
+    {
+      "subject_id": "HC15",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3674167252487952,
+      "q1": 0.2684857781222776,
+      "q3": 0.4519945952751236
+    },
+    {
+      "subject_id": "HC15",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0744127987875673,
+      "q1": -0.04004381448971214,
+      "q3": 0.20160179904285785
+    },
+    {
+      "subject_id": "HC15",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7085535143144589,
+      "q1": 0.5521456205419638,
+      "q3": 0.7803825755711665
+    },
+    {
+      "subject_id": "HC15",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.052869286281800945,
+      "q1": -0.025159665750619637,
+      "q3": 0.16286169100516973
+    },
+    {
+      "subject_id": "HC15",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6814160031012751,
+      "q1": 0.581855711056656,
+      "q3": 0.7724395657284022
+    },
+    {
+      "subject_id": "HC16",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.030778360264684168,
+      "q1": -0.04392089470199004,
+      "q3": 0.08880528339891816
+    },
+    {
+      "subject_id": "HC16",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3366244397851309,
+      "q1": 0.22602822596709882,
+      "q3": 0.4394732801040682
+    },
+    {
+      "subject_id": "HC16",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11763696008168889,
+      "q1": -0.0074404692948773395,
+      "q3": 0.22190727194783627
+    },
+    {
+      "subject_id": "HC16",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3029840096700035,
+      "q1": 0.21744367448977397,
+      "q3": 0.4318279777628212
+    },
+    {
+      "subject_id": "HC16",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.06334331847258975,
+      "q1": -0.015566927384430015,
+      "q3": 0.1608590881515254
+    },
+    {
+      "subject_id": "HC16",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.37666350629421896,
+      "q1": 0.15152454893413886,
+      "q3": 0.5537037845114703
+    },
+    {
+      "subject_id": "HC16",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0073159653902684675,
+      "q1": -0.056792502806562076,
+      "q3": 0.12428392820280476
+    },
+    {
+      "subject_id": "HC16",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6264869186661168,
+      "q1": 0.5125010920440625,
+      "q3": 0.6767290377687888
+    },
+    {
+      "subject_id": "HC17",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.029713687182212734,
+      "q1": -0.12219201074559001,
+      "q3": 0.015272764913721528
+    },
+    {
+      "subject_id": "HC17",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15036326412913265,
+      "q1": 0.08256106056763231,
+      "q3": 0.2383369728014063
+    },
+    {
+      "subject_id": "HC17",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08196205799753495,
+      "q1": -0.15157332384019218,
+      "q3": 0.03850997060943219
+    },
+    {
+      "subject_id": "HC17",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2412019867778492,
+      "q1": 0.1529401150389561,
+      "q3": 0.31030377584634133
+    },
+    {
+      "subject_id": "HC17",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.017346482113994813,
+      "q1": -0.12681039184176351,
+      "q3": 0.07743787691658094
+    },
+    {
+      "subject_id": "HC17",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2532978978271149,
+      "q1": 0.08654970209423496,
+      "q3": 0.37480820170126034
+    },
+    {
+      "subject_id": "HC17",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.037103128386381634,
+      "q1": -0.1094248725173276,
+      "q3": 0.05550046117797143
+    },
+    {
+      "subject_id": "HC17",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.26288319542204786,
+      "q1": 0.13103823442906343,
+      "q3": 0.3881062993471793
+    },
+    {
+      "subject_id": "HC18",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03784494573679716,
+      "q1": -0.06643300187711573,
+      "q3": 0.0812302825960821
+    },
+    {
+      "subject_id": "HC18",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2762780766488032,
+      "q1": 0.1361399984781288,
+      "q3": 0.3600812241079179
+    },
+    {
+      "subject_id": "HC18",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01735227473261588,
+      "q1": -0.06887311168822008,
+      "q3": 0.09772233295560444
+    },
+    {
+      "subject_id": "HC18",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2245604760353223,
+      "q1": 0.11900862605158449,
+      "q3": 0.3216445837480298
+    },
+    {
+      "subject_id": "HC18",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.004970017436068858,
+      "q1": -0.09598577710777403,
+      "q3": 0.10600627854559035
+    },
+    {
+      "subject_id": "HC18",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6374085045217597,
+      "q1": 0.5495534346658779,
+      "q3": 0.7209044256433244
+    },
+    {
+      "subject_id": "HC18",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08583295958819823,
+      "q1": -0.010264497688344974,
+      "q3": 0.1866957261334632
+    },
+    {
+      "subject_id": "HC18",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6960378128608495,
+      "q1": 0.5622112648196267,
+      "q3": 0.7601407362204124
+    },
+    {
+      "subject_id": "HC19",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.004061605508248704,
+      "q1": -0.06994281922772005,
+      "q3": 0.14557084237450102
+    },
+    {
+      "subject_id": "HC19",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7434272977335276,
+      "q1": 0.7053931952528287,
+      "q3": 0.7897728749134759
+    },
+    {
+      "subject_id": "HC19",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.15837294262820562,
+      "q1": 0.03082076445883982,
+      "q3": 0.2676041759919771
+    },
+    {
+      "subject_id": "HC19",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.83970393221138,
+      "q1": 0.8110714138562396,
+      "q3": 0.8619912210480503
+    },
+    {
+      "subject_id": "HC19",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.041113731087334515,
+      "q1": -0.1232687837941162,
+      "q3": 0.011826935174692531
+    },
+    {
+      "subject_id": "HC19",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7755813308593724,
+      "q1": 0.6993533104727525,
+      "q3": 0.8389839075881464
+    },
+    {
+      "subject_id": "HC19",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.18060743540093108,
+      "q1": 0.05453925688325929,
+      "q3": 0.29820605003788014
+    },
+    {
+      "subject_id": "HC19",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8609574848542776,
+      "q1": 0.8329852487272024,
+      "q3": 0.9060903249570782
+    },
+    {
+      "subject_id": "HC20",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03769128847938302,
+      "q1": -0.10819826058059201,
+      "q3": 0.1296714578582206
+    },
+    {
+      "subject_id": "HC20",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1535476871081824,
+      "q1": 0.025773403696750737,
+      "q3": 0.22739547241903318
+    },
+    {
+      "subject_id": "HC20",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04253235824652142,
+      "q1": -0.04066573431564462,
+      "q3": 0.1033652190596517
+    },
+    {
+      "subject_id": "HC20",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.30865925350594925,
+      "q1": 0.1678406775828007,
+      "q3": 0.4152598161586341
+    },
+    {
+      "subject_id": "HC20",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.029505048269527108,
+      "q1": -0.06731135928617919,
+      "q3": 0.017782596084262144
+    },
+    {
+      "subject_id": "HC20",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.57501008130458,
+      "q1": 0.28054058811076427,
+      "q3": 0.8016288861518919
+    },
+    {
+      "subject_id": "HC20",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.00924156410534725,
+      "q1": -0.02973008550096227,
+      "q3": 0.05858679828598612
+    },
+    {
+      "subject_id": "HC20",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.710395558269203,
+      "q1": 0.5794160206872933,
+      "q3": 0.8368167573807629
+    },
+    {
+      "subject_id": "HC21",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.018732390803419673,
+      "q1": -0.09606125336703508,
+      "q3": 0.09989780485164401
+    },
+    {
+      "subject_id": "HC21",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.30566981097514073,
+      "q1": 0.1821523522137763,
+      "q3": 0.38812709340484775
+    },
+    {
+      "subject_id": "HC21",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.013091846659704785,
+      "q1": -0.07454197501968088,
+      "q3": 0.12189400555949954
+    },
+    {
+      "subject_id": "HC21",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1896185285928476,
+      "q1": 0.0564131415188332,
+      "q3": 0.4174449666716775
+    },
+    {
+      "subject_id": "HC21",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.046011209325163505,
+      "q1": -0.019778336898955876,
+      "q3": 0.1310301278758845
+    },
+    {
+      "subject_id": "HC21",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.42365783483258757,
+      "q1": 0.33744196843553365,
+      "q3": 0.5689025179051735
+    },
+    {
+      "subject_id": "HC21",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1908692362933923,
+      "q1": 0.08681880123526262,
+      "q3": 0.2667121737339214
+    },
+    {
+      "subject_id": "HC21",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6716784157751452,
+      "q1": 0.5388293472665686,
+      "q3": 0.8139113739590651
+    },
+    {
+      "subject_id": "HC22",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09040431390812238,
+      "q1": -0.041662753975581224,
+      "q3": 0.13387272454942395
+    },
+    {
+      "subject_id": "HC22",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4706153905941327,
+      "q1": 0.3608519940563395,
+      "q3": 0.5260614816469473
+    },
+    {
+      "subject_id": "HC22",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08412010586134011,
+      "q1": 0.0015493690746730573,
+      "q3": 0.19724221910306078
+    },
+    {
+      "subject_id": "HC22",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6792157111091064,
+      "q1": 0.575206929397508,
+      "q3": 0.7438843763814122
+    },
+    {
+      "subject_id": "HC22",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.06590276079040194,
+      "q1": 0.031993803754961775,
+      "q3": 0.15170173804709008
+    },
+    {
+      "subject_id": "HC22",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7845481469291049,
+      "q1": 0.7213489222474865,
+      "q3": 0.8182543293221528
+    },
+    {
+      "subject_id": "HC22",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1564957191055975,
+      "q1": 0.02548473485842358,
+      "q3": 0.23263147677481655
+    },
+    {
+      "subject_id": "HC22",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.9014107744902187,
+      "q1": 0.8576062629780085,
+      "q3": 0.9152858719668349
+    },
+    {
+      "subject_id": "HC23",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.018836584970418586,
+      "q1": -0.11179864054907845,
+      "q3": 0.07221251538141851
+    },
+    {
+      "subject_id": "HC23",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.1289079457948079,
+      "q1": -0.10856669458920486,
+      "q3": 0.20992795233223674
+    },
+    {
+      "subject_id": "HC23",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02316902035454143,
+      "q1": -0.11626128618137688,
+      "q3": 0.05766973669754117
+    },
+    {
+      "subject_id": "HC23",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19231764101346066,
+      "q1": 0.08161513072993798,
+      "q3": 0.252626994335907
+    },
+    {
+      "subject_id": "HC23",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11676126679516655,
+      "q1": 0.0032136216870346395,
+      "q3": 0.23126692906899962
+    },
+    {
+      "subject_id": "HC23",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3673537705057286,
+      "q1": 0.29886451002418435,
+      "q3": 0.6965289227800935
+    },
+    {
+      "subject_id": "HC23",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.2683537666050574,
+      "q1": 0.0944487164607467,
+      "q3": 0.3684257328749273
+    },
+    {
+      "subject_id": "HC23",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7864914759465487,
+      "q1": 0.698269743212761,
+      "q3": 0.8492377626861491
+    },
+    {
+      "subject_id": "HC24",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0371785423859337,
+      "q1": -0.052443717959291904,
+      "q3": 0.08176941166163568
+    },
+    {
+      "subject_id": "HC24",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.29190192692165406,
+      "q1": 0.2050310392351307,
+      "q3": 0.39464314562657765
+    },
+    {
+      "subject_id": "HC24",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.004076263525617812,
+      "q1": -0.08485673571350143,
+      "q3": 0.08829153551261845
+    },
+    {
+      "subject_id": "HC24",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2697160674545631,
+      "q1": 0.06865234786071381,
+      "q3": 0.3416386852200065
+    },
+    {
+      "subject_id": "HC24",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08786460338120985,
+      "q1": -0.11622215646591669,
+      "q3": -0.007878210914516933
+    },
+    {
+      "subject_id": "HC24",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7980357684246655,
+      "q1": 0.7086764315150299,
+      "q3": 0.8345566372282529
+    },
+    {
+      "subject_id": "HC24",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.21988787613624522,
+      "q1": 0.12738519634240034,
+      "q3": 0.26568032494460736
+    },
+    {
+      "subject_id": "HC24",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8995491710622899,
+      "q1": 0.8539571395468821,
+      "q3": 0.9222716594032145
+    },
+    {
+      "subject_id": "HC25",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.026455893524580207,
+      "q1": -0.0371976716757374,
+      "q3": 0.09907857167881093
+    },
+    {
+      "subject_id": "HC25",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.16052076516735259,
+      "q1": 0.06117166176465902,
+      "q3": 0.24776680741552687
+    },
+    {
+      "subject_id": "HC25",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.06981980563533224,
+      "q1": -0.160176029720969,
+      "q3": 0.02055277577419482
+    },
+    {
+      "subject_id": "HC25",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.264676456889619,
+      "q1": 0.07962061721969085,
+      "q3": 0.3708156462906216
+    },
+    {
+      "subject_id": "HC25",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.41403105341617175,
+      "q1": 0.3104921053670208,
+      "q3": 0.48921112429074454
+    },
+    {
+      "subject_id": "HC25",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3905019641426748,
+      "q1": 0.25106369430342407,
+      "q3": 0.5035069024818404
+    },
+    {
+      "subject_id": "HC25",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.5276559346428822,
+      "q1": 0.431622267648854,
+      "q3": 0.5781882535706043
+    },
+    {
+      "subject_id": "HC25",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5649515435021164,
+      "q1": 0.4722076209077505,
+      "q3": 0.6219253844924275
+    },
+    {
+      "subject_id": "HC26",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0064373257121773456,
+      "q1": -0.07011409170949677,
+      "q3": 0.09051711585854913
+    },
+    {
+      "subject_id": "HC26",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3283422076372894,
+      "q1": 0.17905869519350542,
+      "q3": 0.41120886568977
+    },
+    {
+      "subject_id": "HC26",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03733652614056681,
+      "q1": -0.05242821343181278,
+      "q3": 0.10360581865759351
+    },
+    {
+      "subject_id": "HC26",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.23128998127092487,
+      "q1": 0.15894070987141307,
+      "q3": 0.33759925193085516
+    },
+    {
+      "subject_id": "HC26",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.02929522075985713,
+      "q1": -0.07716042571679067,
+      "q3": 0.12208600089064862
+    },
+    {
+      "subject_id": "HC26",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6221410975168296,
+      "q1": 0.41101089775063604,
+      "q3": 0.7146607991398561
+    },
+    {
+      "subject_id": "HC26",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.08529821107198521,
+      "q1": -0.15475382401211332,
+      "q3": -0.012804853479348817
+    },
+    {
+      "subject_id": "HC26",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6417236467263301,
+      "q1": 0.5243575817127067,
+      "q3": 0.7308240612646073
+    },
+    {
+      "subject_id": "HC27",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.21844043533191085,
+      "q1": 0.0720318915442039,
+      "q3": 0.3126301602402605
+    },
+    {
+      "subject_id": "HC27",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24751886935124368,
+      "q1": 0.1580481855569038,
+      "q3": 0.3416803174488928
+    },
+    {
+      "subject_id": "HC27",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.07338194399621334,
+      "q1": -0.10292719483922524,
+      "q3": 0.02304641149499229
+    },
+    {
+      "subject_id": "HC27",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.18373833187932032,
+      "q1": 0.08248848571414602,
+      "q3": 0.2344200070579316
+    },
+    {
+      "subject_id": "HC27",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.14683539263140655,
+      "q1": -0.03873587913090256,
+      "q3": 0.22574967563432116
+    },
+    {
+      "subject_id": "HC27",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19500413582561577,
+      "q1": 0.08862178960549442,
+      "q3": 0.3070855284344094
+    },
+    {
+      "subject_id": "HC27",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02223633021404539,
+      "q1": -0.09420142877767702,
+      "q3": 0.05819447047425516
+    },
+    {
+      "subject_id": "HC27",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.466287582407724,
+      "q1": 0.3562453796181705,
+      "q3": 0.5711533670971791
+    },
+    {
+      "subject_id": "HC28",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0350548459630974,
+      "q1": 0.008917050283022405,
+      "q3": 0.13830111087813707
+    },
+    {
+      "subject_id": "HC28",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.25622577643564504,
+      "q1": 0.11610338795416197,
+      "q3": 0.3474617362874597
+    },
+    {
+      "subject_id": "HC28",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.4421037262864754,
+      "q1": 0.38790454987414313,
+      "q3": 0.5314900666715989
+    },
+    {
+      "subject_id": "HC28",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.44231698733138414,
+      "q1": 0.27918709548715637,
+      "q3": 0.5081384505501201
+    },
+    {
+      "subject_id": "HC28",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.17076504333003362,
+      "q1": 0.04782012534281142,
+      "q3": 0.2804623263886148
+    },
+    {
+      "subject_id": "HC28",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.40946618355957165,
+      "q1": 0.32290606658482524,
+      "q3": 0.5583948243030754
+    },
+    {
+      "subject_id": "HC28",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01981642478824002,
+      "q1": -0.07015613597974873,
+      "q3": 0.12034565156139782
+    },
+    {
+      "subject_id": "HC28",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6217664740712623,
+      "q1": 0.5047982400760965,
+      "q3": 0.7253001382114674
+    },
+    {
+      "subject_id": "HC29",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.18846755786117825,
+      "q1": 0.1279786032856996,
+      "q3": 0.2886362465466826
+    },
+    {
+      "subject_id": "HC29",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.46550600279955523,
+      "q1": 0.37782353195373175,
+      "q3": 0.5575860963310653
+    },
+    {
+      "subject_id": "HC29",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04359373808004158,
+      "q1": -0.006997586190592204,
+      "q3": 0.17907840664588048
+    },
+    {
+      "subject_id": "HC29",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4506352650804274,
+      "q1": 0.38735321484080665,
+      "q3": 0.5554486830933498
+    },
+    {
+      "subject_id": "HC29",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.36246790395476514,
+      "q1": 0.19225531658470438,
+      "q3": 0.5000878280788004
+    },
+    {
+      "subject_id": "HC29",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.36807515846456385,
+      "q1": 0.2698911357724272,
+      "q3": 0.48265233050105094
+    },
+    {
+      "subject_id": "HC29",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.6766208897568625,
+      "q1": 0.619196109992189,
+      "q3": 0.7037648917541506
+    },
+    {
+      "subject_id": "HC29",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5836217155772263,
+      "q1": 0.5042750834628643,
+      "q3": 0.6940731628642618
+    },
+    {
+      "subject_id": "HC30",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0288860883064012,
+      "q1": -0.10837818736078403,
+      "q3": 0.10290114412414716
+    },
+    {
+      "subject_id": "HC30",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15988399009603732,
+      "q1": 0.03324950881382621,
+      "q3": 0.24318613488503932
+    },
+    {
+      "subject_id": "HC30",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.1316800905001248,
+      "q1": 0.06518470068818283,
+      "q3": 0.20413525355098283
+    },
+    {
+      "subject_id": "HC30",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.593364640176416,
+      "q1": 0.47260584573748315,
+      "q3": 0.6660377471426914
+    },
+    {
+      "subject_id": "HC30",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.01964869255687246,
+      "q1": -0.04887835799303862,
+      "q3": 0.11641967694700128
+    },
+    {
+      "subject_id": "HC30",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7129144378316651,
+      "q1": 0.6201135114947268,
+      "q3": 0.8306591124658443
+    },
+    {
+      "subject_id": "HC30",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09690595790447093,
+      "q1": 0.056487638089459835,
+      "q3": 0.15019296921746442
+    },
+    {
+      "subject_id": "HC30",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8384479136201929,
+      "q1": 0.7805366192437101,
+      "q3": 0.869386501177102
+    },
+    {
+      "subject_id": "HC31",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.07046961036791854,
+      "q1": -0.14490039266115642,
+      "q3": 0.09842482807772646
+    },
+    {
+      "subject_id": "HC31",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24072582487479127,
+      "q1": 0.15711358278804394,
+      "q3": 0.351490346526403
+    },
+    {
+      "subject_id": "HC31",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.034427250438269434,
+      "q1": -0.07412779701506413,
+      "q3": 0.02837765707662667
+    },
+    {
+      "subject_id": "HC31",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.46361998018613554,
+      "q1": 0.3768192266878554,
+      "q3": 0.5090359712938333
+    },
+    {
+      "subject_id": "HC31",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.05532064224649276,
+      "q1": -0.21439013141341304,
+      "q3": 0.16736417812551335
+    },
+    {
+      "subject_id": "HC31",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.48252280622689414,
+      "q1": 0.4132474230030174,
+      "q3": 0.6699159534922069
+    },
+    {
+      "subject_id": "HC31",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.3398419334659246,
+      "q1": 0.19704941235839699,
+      "q3": 0.451885303830347
+    },
+    {
+      "subject_id": "HC31",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8057511297744082,
+      "q1": 0.7685981232701357,
+      "q3": 0.8321523508876596
+    },
+    {
+      "subject_id": "HC32",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.014973263466376341,
+      "q1": -0.04605561769205246,
+      "q3": 0.09433063903246978
+    },
+    {
+      "subject_id": "HC32",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.21895004036885535,
+      "q1": 0.16182979453884744,
+      "q3": 0.3291608476186395
+    },
+    {
+      "subject_id": "HC32",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0907306491221864,
+      "q1": 0.03929770807962986,
+      "q3": 0.27916039308148904
+    },
+    {
+      "subject_id": "HC32",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4244622846368794,
+      "q1": 0.31305919324565945,
+      "q3": 0.5042623634344453
+    },
+    {
+      "subject_id": "HC32",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.016874182428263478,
+      "q1": -0.08080883262602118,
+      "q3": 0.10150699977358306
+    },
+    {
+      "subject_id": "HC32",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2830449863159479,
+      "q1": 0.12381468582957421,
+      "q3": 0.46545304779170843
+    },
+    {
+      "subject_id": "HC32",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.01668172197591118,
+      "q1": -0.10171996442440902,
+      "q3": 0.03557639173821047
+    },
+    {
+      "subject_id": "HC32",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4146792086590137,
+      "q1": 0.32422293496694843,
+      "q3": 0.4803900344688014
+    },
+    {
+      "subject_id": "HC33",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02955383757171686,
+      "q1": -0.09508472636808261,
+      "q3": 0.0343210878770121
+    },
+    {
+      "subject_id": "HC33",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.37164449094335184,
+      "q1": 0.27636884870812645,
+      "q3": 0.5118142981270672
+    },
+    {
+      "subject_id": "HC33",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09786508669150179,
+      "q1": 0.025502892643585146,
+      "q3": 0.19523904544694506
+    },
+    {
+      "subject_id": "HC33",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4933233247253125,
+      "q1": 0.30519375166971613,
+      "q3": 0.5506561263930626
+    },
+    {
+      "subject_id": "HC33",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.09509197984572497,
+      "q1": -0.049776565794777704,
+      "q3": 0.17683395622014686
+    },
+    {
+      "subject_id": "HC33",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.49940463647788713,
+      "q1": 0.3548490086091212,
+      "q3": 0.8836061544370767
+    },
+    {
+      "subject_id": "HC33",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.26648506936922944,
+      "q1": 0.17999906746903815,
+      "q3": 0.3174209556507312
+    },
+    {
+      "subject_id": "HC33",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8791066721903854,
+      "q1": 0.8178076414196753,
+      "q3": 0.9301551568902169
+    },
+    {
+      "subject_id": "HC34",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0335359396021492,
+      "q1": -0.07997416615763359,
+      "q3": 0.09993362915074044
+    },
+    {
+      "subject_id": "HC34",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.114801199099727,
+      "q1": 0.024136380092310318,
+      "q3": 0.2670693981853991
+    },
+    {
+      "subject_id": "HC34",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.17072700997103982,
+      "q1": -0.005266843318509001,
+      "q3": 0.25317322425454736
+    },
+    {
+      "subject_id": "HC34",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.38228937714805344,
+      "q1": 0.27548100949018894,
+      "q3": 0.4290877118422263
+    },
+    {
+      "subject_id": "HC34",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.18789508176823,
+      "q1": 0.0895189066201319,
+      "q3": 0.3203239275223938
+    },
+    {
+      "subject_id": "HC34",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.41265405854507586,
+      "q1": 0.319715149098401,
+      "q3": 0.5841261676053952
+    },
+    {
+      "subject_id": "HC34",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.3277874035475788,
+      "q1": 0.24034113403422785,
+      "q3": 0.4072737981537148
+    },
+    {
+      "subject_id": "HC34",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.469820758101514,
+      "q1": 0.36183142026141957,
+      "q3": 0.5136943941054882
+    },
+    {
+      "subject_id": "HC35",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.11898202325132454,
+      "q1": 0.008211316471030279,
+      "q3": 0.17964548421779147
+    },
+    {
+      "subject_id": "HC35",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15387391853093838,
+      "q1": 0.06299816246845384,
+      "q3": 0.25867468327758414
+    },
+    {
+      "subject_id": "HC35",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0430508961730467,
+      "q1": -0.08265547340538511,
+      "q3": 0.1435868731078013
+    },
+    {
+      "subject_id": "HC35",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.39305209116125106,
+      "q1": 0.2458116889064223,
+      "q3": 0.5574918525383283
+    },
+    {
+      "subject_id": "HC35",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.26536884288702367,
+      "q1": 0.11753240141463646,
+      "q3": 0.3303946536932857
+    },
+    {
+      "subject_id": "HC35",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5378333287369818,
+      "q1": 0.399815651779185,
+      "q3": 0.7114006682808948
+    },
+    {
+      "subject_id": "HC35",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.3522787159093517,
+      "q1": 0.24640673096420113,
+      "q3": 0.4782829423730855
+    },
+    {
+      "subject_id": "HC35",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6720634867772534,
+      "q1": 0.5428718926881702,
+      "q3": 0.7618342557286136
+    },
+    {
+      "subject_id": "HC36",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.03586318687414065,
+      "q1": -0.04050551852339944,
+      "q3": 0.147855801562866
+    },
+    {
+      "subject_id": "HC36",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.26980822249079883,
+      "q1": 0.16869847243827973,
+      "q3": 0.33733779754176224
+    },
+    {
+      "subject_id": "HC36",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.20674200677839172,
+      "q1": 0.13511410729646997,
+      "q3": 0.3038259164594885
+    },
+    {
+      "subject_id": "HC36",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.36353636476688334,
+      "q1": 0.24695474806652395,
+      "q3": 0.4830487986007359
+    },
+    {
+      "subject_id": "HC36",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07853770375359245,
+      "q1": 0.009962343324006728,
+      "q3": 0.1473956504621761
+    },
+    {
+      "subject_id": "HC36",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.46292027322875184,
+      "q1": 0.4175727455606655,
+      "q3": 0.5715566987591676
+    },
+    {
+      "subject_id": "HC36",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.4337701643478417,
+      "q1": 0.2940351556575854,
+      "q3": 0.5081885868780373
+    },
+    {
+      "subject_id": "HC36",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6815029495914431,
+      "q1": 0.5522214858154837,
+      "q3": 0.7556488159384263
+    },
+    {
+      "subject_id": "HC37",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04062793588813549,
+      "q1": -0.05482666646028588,
+      "q3": 0.15588405604254701
+    },
+    {
+      "subject_id": "HC37",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.17843935950811235,
+      "q1": 0.10771300979705713,
+      "q3": 0.2757953334219302
+    },
+    {
+      "subject_id": "HC37",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.05236401356661472,
+      "q1": -0.13578356702952582,
+      "q3": 0.04246877346779988
+    },
+    {
+      "subject_id": "HC37",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.510522415528694,
+      "q1": 0.36542467925779276,
+      "q3": 0.5476492607931079
+    },
+    {
+      "subject_id": "HC37",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.03996240937040292,
+      "q1": -0.06847386143181125,
+      "q3": 0.028373649928339767
+    },
+    {
+      "subject_id": "HC37",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.33975457248802593,
+      "q1": 0.2435308063971251,
+      "q3": 0.42759101432484486
+    },
+    {
+      "subject_id": "HC37",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04374968718434253,
+      "q1": -0.014850224963352924,
+      "q3": 0.10237460641727564
+    },
+    {
+      "subject_id": "HC37",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5044885419100084,
+      "q1": 0.3642043881288338,
+      "q3": 0.5870796832952112
+    },
+    {
+      "subject_id": "HC38",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.10942174791443607,
+      "q1": -0.17583077593126278,
+      "q3": -0.059319587363967766
+    },
+    {
+      "subject_id": "HC38",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.07665243557361792,
+      "q1": 0.0064585038038849525,
+      "q3": 0.17254931343898802
+    },
+    {
+      "subject_id": "HC38",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.15243766912317058,
+      "q1": 0.016548738202916972,
+      "q3": 0.28459837244007957
+    },
+    {
+      "subject_id": "HC38",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.10326287047540558,
+      "q1": 0.056862373942725836,
+      "q3": 0.20165540170804286
+    },
+    {
+      "subject_id": "HC38",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.07049921975776678,
+      "q1": -0.05762865545569301,
+      "q3": 0.14420843840911263
+    },
+    {
+      "subject_id": "HC38",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3128749610258884,
+      "q1": 0.16149023068984938,
+      "q3": 0.44939404035249175
+    },
+    {
+      "subject_id": "HC38",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.21725912872089576,
+      "q1": 0.08046890327369671,
+      "q3": 0.263628799025034
+    },
+    {
+      "subject_id": "HC38",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5140835065594168,
+      "q1": 0.4081158702769248,
+      "q3": 0.5670353064333681
+    },
+    {
+      "subject_id": "HC39",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.10786143701557929,
+      "q1": -0.22323112053148572,
+      "q3": 0.010339732793632367
+    },
+    {
+      "subject_id": "HC39",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.16251419484765528,
+      "q1": -0.03152979074070142,
+      "q3": 0.24352746651300225
+    },
+    {
+      "subject_id": "HC39",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0739155141906761,
+      "q1": -0.014840316758543028,
+      "q3": 0.17867470330673635
+    },
+    {
+      "subject_id": "HC39",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5296408175960221,
+      "q1": 0.38853777163124753,
+      "q3": 0.5770217898446898
+    },
+    {
+      "subject_id": "HC39",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.04014151195565782,
+      "q1": -0.08005347546095129,
+      "q3": -0.024946734652435073
+    },
+    {
+      "subject_id": "HC39",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.33840995814690755,
+      "q1": 0.1468086676150166,
+      "q3": 0.4962384375246869
+    },
+    {
+      "subject_id": "HC39",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.24866287633215256,
+      "q1": 0.16015995670857228,
+      "q3": 0.32086936702006175
+    },
+    {
+      "subject_id": "HC39",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7221883324818555,
+      "q1": 0.6328680706776542,
+      "q3": 0.8085129085441956
+    },
+    {
+      "subject_id": "HC40",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0863283837467454,
+      "q1": -0.02401832701626074,
+      "q3": 0.1661223967681168
+    },
+    {
+      "subject_id": "HC40",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.11109737298607462,
+      "q1": 0.035101169599891784,
+      "q3": 0.17919333569823492
+    },
+    {
+      "subject_id": "HC40",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.02614863392221594,
+      "q1": -0.12062414419652556,
+      "q3": 0.05675032357757366
+    },
+    {
+      "subject_id": "HC40",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.24531701676595508,
+      "q1": 0.19593239856650457,
+      "q3": 0.3465043004796934
+    },
+    {
+      "subject_id": "HC40",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.04209087482764636,
+      "q1": -0.028776735441315735,
+      "q3": 0.12382504745744613
+    },
+    {
+      "subject_id": "HC40",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.309252132817036,
+      "q1": 0.23122524667008507,
+      "q3": 0.48498253963114424
+    },
+    {
+      "subject_id": "HC40",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.0076446527607652425,
+      "q1": -0.09667779073426781,
+      "q3": 0.029124384063731905
+    },
+    {
+      "subject_id": "HC40",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.19305626033569478,
+      "q1": 0.07044281573614264,
+      "q3": 0.3469632440805847
+    },
+    {
+      "subject_id": "HC41",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.11429758178236427,
+      "q1": -0.17827385657070327,
+      "q3": -0.017153341787506347
+    },
+    {
+      "subject_id": "HC41",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.2783171083452063,
+      "q1": 0.21534271325516535,
+      "q3": 0.36769482169193896
+    },
+    {
+      "subject_id": "HC41",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.038363599884611174,
+      "q1": -0.025676043141557296,
+      "q3": 0.12050002704805009
+    },
+    {
+      "subject_id": "HC41",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5202797292059721,
+      "q1": 0.4523363597810298,
+      "q3": 0.6690625072327967
+    },
+    {
+      "subject_id": "HC41",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.06326760087781899,
+      "q1": -0.10401485699047805,
+      "q3": 0.0034441958653783347
+    },
+    {
+      "subject_id": "HC41",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.6045060378092024,
+      "q1": 0.5315527201818884,
+      "q3": 0.6646252998962306
+    },
+    {
+      "subject_id": "HC41",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.15235429115477261,
+      "q1": -0.21648736265786117,
+      "q3": -0.07492840540123269
+    },
+    {
+      "subject_id": "HC41",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7128436722246624,
+      "q1": 0.6627895592660645,
+      "q3": 0.7666784740277619
+    },
+    {
+      "subject_id": "HC42",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.0694246238243236,
+      "q1": -0.06856714135011141,
+      "q3": 0.13624352394292308
+    },
+    {
+      "subject_id": "HC42",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3752662503183102,
+      "q1": 0.27773217712000947,
+      "q3": 0.49754377456743853
+    },
+    {
+      "subject_id": "HC42",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.00045202306311845975,
+      "q1": -0.11635066224256187,
+      "q3": 0.09470580855212471
+    },
+    {
+      "subject_id": "HC42",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.4515869024130563,
+      "q1": 0.3561687234241531,
+      "q3": 0.6343376112058527
+    },
+    {
+      "subject_id": "HC42",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.13883567396689453,
+      "q1": 0.0507168807966108,
+      "q3": 0.2523361246861356
+    },
+    {
+      "subject_id": "HC42",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.7359196743940799,
+      "q1": 0.6664940780300597,
+      "q3": 0.8268195775397224
+    },
+    {
+      "subject_id": "HC42",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.2789586832984133,
+      "q1": 0.20626679943880685,
+      "q3": 0.37838051617354973
+    },
+    {
+      "subject_id": "HC42",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8475529012906173,
+      "q1": 0.8109548853788713,
+      "q3": 0.8664342232612626
+    },
+    {
+      "subject_id": "HC44",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.05439588552520855,
+      "q1": -0.04172877671538659,
+      "q3": 0.11199549527058966
+    },
+    {
+      "subject_id": "HC44",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.45485118072562314,
+      "q1": 0.4157618536086905,
+      "q3": 0.5169036434817444
+    },
+    {
+      "subject_id": "HC44",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.05107495716971616,
+      "q1": -0.0301711213523912,
+      "q3": 0.08764147029610933
+    },
+    {
+      "subject_id": "HC44",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.37162618051660357,
+      "q1": 0.24281718960287796,
+      "q3": 0.44963319905649723
+    },
+    {
+      "subject_id": "HC44",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.04201057969000764,
+      "q1": -0.13703789021291213,
+      "q3": 0.0770312462878625
+    },
+    {
+      "subject_id": "HC44",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.26362819414696625,
+      "q1": 0.23098515242345222,
+      "q3": 0.34735316824656604
+    },
+    {
+      "subject_id": "HC44",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08818581344503751,
+      "q1": -0.061071648284018246,
+      "q3": 0.21150404710245255
+    },
+    {
+      "subject_id": "HC44",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.3624110818503545,
+      "q1": 0.1383619329103975,
+      "q3": 0.6060652954629835
+    },
+    {
+      "subject_id": "HC45",
+      "band": "4-8",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.040780773662563566,
+      "q1": -0.007025361969181141,
+      "q3": 0.12846052898980398
+    },
+    {
+      "subject_id": "HC45",
+      "band": "4-8",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.15378263414512938,
+      "q1": 0.10115030584718723,
+      "q3": 0.24805356457899394
+    },
+    {
+      "subject_id": "HC45",
+      "band": "8-13",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": -0.035328220253630124,
+      "q1": -0.0947273319623948,
+      "q3": 0.06997283972727986
+    },
+    {
+      "subject_id": "HC45",
+      "band": "8-13",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.228950184112459,
+      "q1": 0.11124676852369847,
+      "q3": 0.28483396443917564
+    },
+    {
+      "subject_id": "HC45",
+      "band": "13-30",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.08865158140758114,
+      "q1": 0.02813374766545823,
+      "q3": 0.18285679937077792
+    },
+    {
+      "subject_id": "HC45",
+      "band": "13-30",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.5356536762932927,
+      "q1": 0.3176505360291046,
+      "q3": 0.8139254729037216
+    },
+    {
+      "subject_id": "HC45",
+      "band": "30-45",
+      "feature": "oAEC_node",
+      "finite_n": 30,
+      "median": 0.15658822905020395,
+      "q1": -0.02594902169520643,
+      "q3": 0.4159433939379058
+    },
+    {
+      "subject_id": "HC45",
+      "band": "30-45",
+      "feature": "log_power_channel",
+      "finite_n": 30,
+      "median": 0.8352873624928586,
+      "q1": 0.6478420330641655,
+      "q3": 0.9008817318267772
+    }
+  ],
+  "oof_complementarity": [
+    {
+      "split": "fixed002",
+      "prediction_pearson": 0.9827121852333912,
+      "brier_change_plus_minus_control": -0.0014296325331421555,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 37,
+      "subject_auc_delta_negative_n": 30,
+      "subject_auc_delta_zero_n": 2,
+      "subject_auc_delta_median": 0.0024999999999999467
+    },
+    {
+      "split": "repeat2027",
+      "prediction_pearson": 0.9836958201182673,
+      "brier_change_plus_minus_control": 0.0002064601967611268,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 40,
+      "subject_auc_delta_negative_n": 29,
+      "subject_auc_delta_zero_n": 0,
+      "subject_auc_delta_median": 0.0025000000000000577
+    },
+    {
+      "split": "repeat2028",
+      "prediction_pearson": 0.9822024434189387,
+      "brier_change_plus_minus_control": -0.000379236759780438,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 36,
+      "subject_auc_delta_negative_n": 29,
+      "subject_auc_delta_zero_n": 4,
+      "subject_auc_delta_median": 0.0024999999999999467
+    },
+    {
+      "split": "repeat2029",
+      "prediction_pearson": 0.9822806876580729,
+      "brier_change_plus_minus_control": -0.0008439542740681372,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 31,
+      "subject_auc_delta_negative_n": 34,
+      "subject_auc_delta_zero_n": 4,
+      "subject_auc_delta_median": 0.0
+    },
+    {
+      "split": "repeat2030",
+      "prediction_pearson": 0.9817672103671545,
+      "brier_change_plus_minus_control": -0.0018869536924211172,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 40,
+      "subject_auc_delta_negative_n": 26,
+      "subject_auc_delta_zero_n": 3,
+      "subject_auc_delta_median": 0.004999999999999893
+    },
+    {
+      "split": "repeat2031",
+      "prediction_pearson": 0.9822119295547397,
+      "brier_change_plus_minus_control": -0.0018758345821325018,
+      "subject_auc_delta_finite_n": 69,
+      "subject_auc_delta_positive_n": 38,
+      "subject_auc_delta_negative_n": 25,
+      "subject_auc_delta_zero_n": 6,
+      "subject_auc_delta_median": 0.0025000000000000577
+    }
+  ],
+  "input_sha256": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\063_connectivity_reliability\\run_diagnostic.py": "dccf57648988ede742d828f5d60b3d16d58497358ddd986464c44da466aff033",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\063_connectivity_reliability\\config.json": "cef7fd9906ea35260c715715c27619a74dfea4a298876984eedb78fa8aab1a35",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\run_experiment.py": "1656bbe0a3fe491d66add8fd780bba1e7a7ba016b300acb843917c53a8b8332f",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\config.json": "54a5800d2315b22ad09774790aed5400b605481bafbc8af0a878d1af9a9b3c3c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\cache\\orthogonal_envelope_features.npz": "4a7d081e82d025eb2ddb396317f4524013e94569f0820702d178adc06844511e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_fixed002_oof.csv": "1734a91177fa2f253a17c3080e99bc27c2922b5dd88ba7a9b28de4240381ba74",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_repeat2027_oof.csv": "291eced56c2fd2f64fcdd1baa18973baf582db9a61e2dd3fd666515b5b3bf0a3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_repeat2027_oof.csv": "9f9a3898197543b5ed2c3da4b60b288ddc9309721b03b6eb995517b4786c883f",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_repeat2028_oof.csv": "bccaff3f6920641839188e419d37614ffaa81525b6db4ece819f59f9879c0e57",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_repeat2028_oof.csv": "522c90f18a7a1deca089f8a2305a96a318840040c5dae158bac0273714de1873",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_repeat2029_oof.csv": "63cf80e3f9dd8df6517375f1a7e3ebc4a9b282623e63f0b9c0cd99ca713ee30f",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_repeat2029_oof.csv": "4aab6dc87e89541e5867eefc86c6114c03e16f5592f843f35b7bfef5c101d3f5",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_repeat2030_oof.csv": "99b1d1ac7119ebf19554b2f424e2ef1fedaee55eaf38873aaff591545b147b91",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_repeat2030_oof.csv": "5bfd49705d76ebc49a3220d213feb33dbd86ef813c6508a4bc4a5a597c39ff9c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\control_pe_repeat2031_oof.csv": "b06cc25e8e53496cfe93c12f15d39fd08a441534b998b13d077761e83d0a9587",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\062_orthogonal_envelope_connectivity\\predictions\\plus_oAEC_repeat2031_oof.csv": "f14839eb05927a8ca9a5a6e0a6d9dc8ac1eb2dc51237cb9b28226e0ea0be99a1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP01.mat": "a8305f6ff0eb2eec43ce1a890161f01afadc860c634b6c57ea53f1c157dba210",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP02.mat": "05d23c1f588db0a6dae03fef9ed2adf375c94ebf6ef368c2604319183a8f1572",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP03.mat": "b9eef21d4f301ec51182179d614dae26119e743cd755d6c7356ba49398cd52df",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP04.mat": "4e239d21145300b093d31fb991831601a0a725512925d493baf1fc4c8f6b8743",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP05.mat": "b6b4a94a8b552beffca8f1ae08a1cc78830f3228552db0d34630af17e03745a4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP06.mat": "edc156be493f1a365d7ac64ddc1d6730245939b3170ebd191dfe9ff5883afb1a",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP07.mat": "9d256bd728ecc3c0fabaadc6f3967fd3b9398b484d1a25bd247ccfc2050f9da1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP08.mat": "361f52e049e1935b6d7737fe3843b0005c31359bdb5a6807df94fa39e6e55c58",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP09.mat": "30a4c3c4f45ba7adc9036b1cc9c7e702c645c18a7efb5bad63c40b128fe582f1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP10.mat": "f6b9d4474bfaf455cb94d94b874eae161c5593a6901b4d758c43f8273c82dd98",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP11.mat": "1bc147c96e1295505c1b87fde21518ce261f37dcac6169b1bc2c4f88d89fc892",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP12.mat": "6a0f0255c99850edb94b087ea20a9897f8141b88107004898d1e56a09318ff54",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP13.mat": "650890de71447c9d11dc1ecfc69372818cb05c7d8e8a810cd16cad51ce9aff61",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP14.mat": "7fee15f6f95e4b30bab1b27a68217d125e995a153ffe8f01fd825653582b02d2",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP15.mat": "01276ecde18c6626603359eef34ae5ec0b21718ec599075d8fa109b9dbe9eed0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP16.mat": "73e5188acd70d18f2a9b510688e6ba961b5869f834abbbb4688878ffc07dcd0c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP17.mat": "9b0c48f58762b6645301d55cfeb48bbce4c53cb9e6fb969ee122bce6c074c816",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP18.mat": "c38051930c0f982078e84c703c2d3fec122d336fbaaef2338cef56d4f0117213",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP19.mat": "226daa6fca7f6a789bd483df2dd5d7e6dc6e6cab176d62affcc5519dbe4581a1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP20.mat": "b9cc0daef4e706fb8a52723718eebf6e76b546bb28e2258bd1fc2bd45f6b96f5",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP21.mat": "0258fdf5c1ed60e09bce06d811df467913f2ff3e0ef54e83122a2b75c7ae0a08",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP22.mat": "7d2db045fd537ca71997c286a68f27d3f558a6e05a09242798ac9ef20becf8e1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP23.mat": "e412992199f2be009771b25b634efd331d21a996d936e495f273971f4a17ba77",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP24.mat": "e063a8aa36592ad4d94a3eb1834e4dde3cf8d803eb2cdce75d4aaad6baa1cb5b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP25.mat": "bf83516c9993805096ea5af3ce4e110c33da84004f4725fb1b8280adc1dd0ef7",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC01.mat": "6417519e641a815c07c7f0e12f639a77e144945a1d1ee484aefc327d957ff23b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC02.mat": "c0436eed4f2f0e43f3ab3007577cce591cc20155a580062af41eaca76510eefa",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC03.mat": "943d860ac5109020f4a461eb69710d7c47f18daeb9f460d830bb3f4a375756a3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC04.mat": "9524470a33ba30e66d33a1b2f49efcd1a9f031baa23956385711a3fe54f0944e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC05.mat": "b10400d40bac67af54ed79d0f2f725675177486d98d09e2dfc2281b10e8b5471",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC06.mat": "c62a9dec5d426d4a827a492098158f37461117c8eea2545bbf69434f90303440",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC07.mat": "5ee5d9a91ae3dcd39e45b06590687ebc43408241e3a1381a6032168f357d6543",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC08.mat": "611317934bf1920446c540943cbefa78749ebbd122f6525c1e8908cedbfd6a3e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC09.mat": "93d85cec68c515961aae2b26ab842630b36b373ee7278faec25a781399c5d1ee",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC10.mat": "fdcd9596c3e658a7c1ec98b066c5d14c556c41af1e11cd4619e4f0fc6eefbe21",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC11.mat": "c343b72adb20386c1bb3e553db01442ee2d983e709596d30a193d6848afc354e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC12.mat": "930d436a02cecc86a84b3d03ff9a7afb1b8116451d534014af053b112e52db10",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC13.mat": "3122af879358dd50fb9f03e2baea4cd2f9d08fffe92aac24f9d6c63a0bb9549c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC14.mat": "fdd394a9b3eab5fa235971cd750335942465a25e463bed6d5ec32d8c508aefb4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC15.mat": "65c5f286df24dbdb01a2fc960e1418e011ad43bdab04cfd2489fc54dab60838d",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC16.mat": "6c0087bef3404701c78c426426bfefdb8f1ff0c05b4c2f5654571323337105ec",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC17.mat": "c1d905600383507ab665712fbf5d69cc1656d49c37a7759eff266605c7a11617",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC18.mat": "2693ae4fdd18785fd66b874d359415c31ee30848821f2ca6f41c2c349d6ec536",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC19.mat": "66cbac012475ebe9b97c84112ac7d1cbed7f4245539a0c70191f4914813541e0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC20.mat": "e488ab17f3133a646ff373e7dd5575c4b77968002fe154ec7acb095f88865214",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC21.mat": "c53edd6bfad6606baf7251cdc20d40d0f36755c83e67bc38c1d5dabdea9ffb21",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC22.mat": "cbf3a35689a472f745e835b652cf7ffd08fb8ed1ec5c487e3f3a54a63c4c3ab1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC23.mat": "c7d6b7561b586d42ad3b9b42e7c50290d947984b7021f9ba259bc4981abef263",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC24.mat": "55675a9af12ad06aaf35be5ae198219394ba1c97297e0a86d7ba33ea2bb7d1e0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC25.mat": "81f72e0f2e4acbc3447e9a0f9b588dbfb024474becb153b4875b10ed53de9925",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC26.mat": "68e21b34350cf9c0e778d8a794374972652a003e5754951d99aecc74e6dd7753",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC27.mat": "8a6918abdb90c2fbbe5a021e93332ebae5f30499abbe42fe186623bc7d666736",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC28.mat": "117891319f498b576513acc885c338eae595d6e312deffcf0cddae70f2549eac",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC29.mat": "c64ef58b78cd6719921b3b18ad4ff37fa568f3da091a8a52e1fbcd4eea6c6e54",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC30.mat": "ac7ee6e617dc4e104e51f070acc9cd4b9918dff21e0352665a3d4fe82e647149",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC31.mat": "1066f4f15535f22938d00ca6b7fbfd40957492348a1ce341adfe322b144676e9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC32.mat": "3e0e47044d41180b3d887849ef5a31bd63a9d8ccb7367f5ef1ba40aaae28b5d0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC33.mat": "b9aa84d5d62794ef49c0230268f39f6ab8769e0522cc9e304959b3ac21e43f4d",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC34.mat": "b829c565d7eb878b0fcedb41ec7eb0ebac40c098004403add6eae89db8be0147",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC35.mat": "35d51912cc4944830707b1eb074370c83cdca41b1750a234abd38fe7eccc61a0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC36.mat": "f735c6a448a37a92ae83201104766190dc497ca0a5db2de1339ffe79a041fce8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC37.mat": "b311309079082939fc60450b6cf5e7662c2d80472124ee387811481488a7c301",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC38.mat": "850fe58ee3aa53bbf87ac8ee247872a5eeda454dd18211922aeba8c3077bf14e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC39.mat": "812f65ee196f30ad12c093b3930caa77980a0469e84261b99558e2bbc8966ad3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC40.mat": "d2959d38b8dec7eaf26337dd265cd8b0c299fa03448f278682ea0504512749f1",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC41.mat": "2d7558b6fe6bdbf459735425e656bac6ec2466d71dbaccc2f19a152c1e3ae4ef",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC42.mat": "f75a844a6264d8a494366db889abec5161cf55610f2459684a18405c33f725e7",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC43.mat": "be89d160cac5a5f6b0d36083093f32a7e024d5a8f976e4e726b4e94eb9169aba",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC44.mat": "63ae93a7bfdd50421ded411bc354b256a0f0a9b6638d366b2a61593e2e33b4c3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC45.mat": "7750e86a1f37993c4fb5f4e5ddab31b973eb663ea61aad3b0e584b00900bc44e"
+  },
+  "elapsed_seconds": 367.0492319000041,
+  "python": "3.11.9",
+  "numpy": "2.4.6"
+}
