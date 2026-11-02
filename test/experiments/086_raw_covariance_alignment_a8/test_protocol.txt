@@ -1,0 +1,13 @@
+086 frozen protocol, before training
+Only 150 spectral columns change from 070; 450 temporal + 120 PE unchanged.
+Raw loader labels and trial IDs must equal cache/reference rows per subject before transformation; no presumed ordering.
+Per subject-position 8 windows: centered covariance / (T-1), trace shrinkage .1, arithmetic mean, symmetric inverse square root; transform original signals and same extract_spectral_features log_bandpower150. GPU float64 implementation compared numerically with 084 CPU mathematical definition on every actual context.
+Then REQUIRED e070.contexts(raw, subjects, positions)[1], separate blocks 150/450/120, for both train and validation. Neither whitening nor a8 receives labels or groups. Position only simulates training OOF 8-window contexts, not public position routing.
+No public arrays read: runtime npz key allowlist and public-path/public-loader guard. Training mat allowlisted to training directory.
+Control reuse 070 p_train8: row_index/subject/group/trial/y/position/fold strictly aligned before fitting.
+Five repeats 2042..2046 and fixed002, five subject-isolated folds each: exactly 30 HGB fits. Parameters seed threshold HC43 exclusion frozen to 070. CPU HGB exception, 10 threaded jobs inside ONE global threadpool limit=1. No sweep.
+Acceptance excludes fixed002: mean delta AUC and F1 >=.005; joint nonnegative AUC/F1 >=4/5; mean HC and DEP AUC drops <=.005.
+Tests before/after: normalization actually used by fit, control and raw metadata alignment negative tests, subject isolation, regularized whitened identity, window/channel permutation equivariance, public access guard, all input/source hashes including caches/fixed/raw mat/recursive 070 dependencies/protocol/tests/new code, six OOF metric and aggregate recomputation.
+Store six OOF, fold metadata, metrics/provenance, before/after pytest logs and actual markdown report with AUC/F1.
+084 omitted a8, so is not a single-variable whitening comparison. W C_regularized W=I does not imply empirical covariance of transformed raw signals equals I. This is spectral-only EA, not all-feature EA.
+Method motivation only: https://arxiv.org/html/1808.05464v2 (MI/ERP, not this emotion set); https://arxiv.org/html/2502.09203v1 section2.1 and2.2 (after temporal filtering before spatial filtering). Same author sources are not independent validation. Transfer effectiveness determined only by 086 OOF.
