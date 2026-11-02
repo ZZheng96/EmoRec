@@ -1,0 +1,14 @@
+{
+  "experiment_id": "088_deepsets_context",
+  "repeat_seeds": [2042, 2043, 2044, 2045, 2046],
+  "excluded_subject": "HC43",
+  "positions": [0, 1, 2, 3, 4],
+  "public_access": false,
+  "threshold": 0.5,
+  "expected_stage_fits": {"A": 0, "B": 30, "C": 30},
+  "reused_control_fits": 30,
+  "training": {"epochs": 60, "batch_sets": 64, "encoder_width": 128, "embedding_width": 64, "head_width": 64, "learning_rate": 0.001, "weight_decay": 0.01, "optimizer": "AdamW", "seed_base": 2088, "dtype": "float32", "early_stopping": false, "dropout": 0.0},
+  "permutation_atol": 0.000002,
+  "acceptance": {"mean_delta_auc_min": 0.005, "mean_delta_f1_min": 0.005, "nonnegative_splits_min_each": 4, "health_group_mean_auc_drop_max": 0.005},
+  "acceptance_comparisons": ["C_minus_A", "C_minus_B"]
+}

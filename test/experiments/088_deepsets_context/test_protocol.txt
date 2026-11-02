@@ -1,0 +1,13 @@
+088 preregistered protocol, 2026-11-02
+Inputs: 070 unchanged training caches (720 features), label-free a8 within each subject-position set; exclude HC43. 69 subjects x 5 positions x 8 windows. Metadata used only for grouping, isolation and scoring; no position/trial/video/HC-group inputs to model.
+Splits: fixed002 and subject-stratified five-fold repeats 2042..2046, identical to 070. All 8 windows of a subject-position stay together; all positions of a subject remain in one fold.
+A: frozen 070 HGB p_train8 OOF, zero new fits, 30 historical fits. Verify cache hashes against 070 provenance, every metadata field and fold, finite probabilities, recomputed frozen metrics.
+B: shared phi, window head [h,0,h]. C: identical parameter dimensions and phi/head, c=mean(phi(x_j)), head [h,c,h-c]. B has no learned set context; both retain common a8 input normalization. Identical initialization seeds, set batches and optimizer schedule; no dropout/BatchNorm, position embeddings or ordering constraints.
+Training: CUDA required, deterministic PyTorch, float32, TF32 disabled, fixed seeds; 60 epochs AdamW lr=.001 weight_decay=.01 batch=64 complete sets. phi 720->128 ReLU->64 ReLU, head 192->64 ReLU->1. Per-window mean BCEWithLogits. No validation labels passed into fit/inference, no early stopping, threshold .5. No tuning after results.
+Tests before run: protocol config, real metadata/split isolation and eight-window grouping, frozen control verification, public guard, CUDA requirement, probabilities, permutation equivariance of both models, B independent of companion windows, heldout-label independence, equal parameter count. After run: exact new-fit counts A=0 B=30 C=30, six complete OOFs, hashes, permutation evidence for every fold.
+Acceptance preregistered: on five repeats only, C-minus-A AND C-minus-B mean AUC >=.005 and mean F1 >=.005; each metric nonnegative >=4/5 repeats; HC/DEP mean AUC drops <=.005. fixed002 descriptive. No inferential significance claims.
+Public guard: reuse 087 allowlist and loader/path blocking around cache access, only training arrays. Persist full SHA256 of inputs, dependency sources, config/tests/protocol, OOF/folds/metrics/report; provenance cannot hash itself.
+Commands from repo root:
+.venv\Scripts\python.exe -m pytest test/experiments/088_deepsets_context/test_088.py -q -p no:cacheprovider
+.venv\Scripts\python.exe test/experiments/088_deepsets_context/run_experiment.py
+.venv\Scripts\python.exe -m pytest test/experiments/088_deepsets_context/test_088.py -q -p no:cacheprovider
