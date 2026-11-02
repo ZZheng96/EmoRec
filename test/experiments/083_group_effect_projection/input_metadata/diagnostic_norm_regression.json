@@ -1,0 +1,27 @@
+{
+  "before": {
+    "config.json": "b4ef7aadd8dd2200101b32d421e1410308aa8b5ce73968fe63d1f4ac29bfccae",
+    "summary.csv": "9c08a467d853e704d8d122559f6d306b3cdf993438289547d136c210b6a92f6f",
+    "paired_delta.csv": "713cd75513d3b459adc69bb391b8227588b7a00fac73b544da2dfcb4aa1c6114",
+    "predictions\\fixed002_oof.csv": "18fa6308b1ec6df552acbe61ca828bf0a4496b200e008dd9a14ec0a8d7f2c854",
+    "predictions\\repeat2042_oof.csv": "fa6ee78d23c7a4be1475295724b3ced84351b98bc1a69c542ea90bc5dcb4c34b",
+    "predictions\\repeat2043_oof.csv": "408975bc24fec26c0454bd849509dd374e73bf0e48dd44d97696cbbb1e7ae856",
+    "predictions\\repeat2044_oof.csv": "e814e28e32b05f3644fd3d7296a43106226a9c374412c666394cbec5a8089eab",
+    "predictions\\repeat2045_oof.csv": "4e34e4565aac74a4191bd00316de1e0b217275896849d9ddf161416acfc2e04a",
+    "predictions\\repeat2046_oof.csv": "5e6ed69e5d80442cbc921d12b0997f4394c022813c2e659ceb7d6945881e8664"
+  },
+  "before_pytest_exit_code": 0,
+  "after": {
+    "config.json": "b4ef7aadd8dd2200101b32d421e1410308aa8b5ce73968fe63d1f4ac29bfccae",
+    "summary.csv": "9c08a467d853e704d8d122559f6d306b3cdf993438289547d136c210b6a92f6f",
+    "paired_delta.csv": "713cd75513d3b459adc69bb391b8227588b7a00fac73b544da2dfcb4aa1c6114",
+    "predictions\\fixed002_oof.csv": "18fa6308b1ec6df552acbe61ca828bf0a4496b200e008dd9a14ec0a8d7f2c854",
+    "predictions\\repeat2042_oof.csv": "fa6ee78d23c7a4be1475295724b3ced84351b98bc1a69c542ea90bc5dcb4c34b",
+    "predictions\\repeat2043_oof.csv": "408975bc24fec26c0454bd849509dd374e73bf0e48dd44d97696cbbb1e7ae856",
+    "predictions\\repeat2044_oof.csv": "e814e28e32b05f3644fd3d7296a43106226a9c374412c666394cbec5a8089eab",
+    "predictions\\repeat2045_oof.csv": "4e34e4565aac74a4191bd00316de1e0b217275896849d9ddf161416acfc2e04a",
+    "predictions\\repeat2046_oof.csv": "5e6ed69e5d80442cbc921d12b0997f4394c022813c2e659ceb7d6945881e8664"
+  },
+  "all_hashes_identical": true,
+  "after_pytest_exit_code": 0
+}

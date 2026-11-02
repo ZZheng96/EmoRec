@@ -1,0 +1,5 @@
+实验083冻结协议：复用070/082的720维（150 spectral+450 temporal+120 PE），排除HC43后69人2760行，全部5个position。fixed002及repeat2042..2046为subject-level 5-fold。控制直接读取070 predictions/*_oof.csv 的 p_train8，不重训；处理每折30 fits，HGB/seed/threshold冻结，训练和验证均为a8。
+
+每个训练折先按070相同的subject-position a8 zscore得到z；仅用z[train]的HC/DEP两类、y=0/1分别估计d0=mean(HC,y=0)-mean(DEP,y=0)、d1=mean(HC,y=1)-mean(DEP,y=1)，对[d0,d1]做数值稳定QR，按1e-12阈值丢弃退化方向，P=I-QQ.T。训练和验证直接使用z@P，不再zscore。Q只由训练折估计，同一Q用于验证折；验证标签不参与。实际rank逐fit记录；a8平衡可能使d1≈-d0而rank=1，被去除方向可能含情绪判别方向，不能称纯噪声。模型输入仍为720维，不含subject_id/group。
+
+执行顺序固定：pytest_before.txt、run_experiment.py生成OOF、pytest_after.txt。接受只看五个repeat的all_rows：平均ΔAUC和ΔF1均>=0.005，至少4/5 split两项同时非负，HC/DEP平均ΔAUC各>=-0.005；失败即停止，不调参、不挑位置。仅训练队列OOF，不能外推公开测试集或声称0.95。无公开数组读取。

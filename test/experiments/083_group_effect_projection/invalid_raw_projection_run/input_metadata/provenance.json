@@ -1,0 +1,82 @@
+{
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\fixed002_oof.csv": "3c03910805a94d68b942758ba96171285c4dc981c9aee5ba938f5fa8e2609c24",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2042_oof.csv": "6686e22d202b93ebc08af616fcd715d011e76ed51772104f0f7a45e4ede90352",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2043_oof.csv": "600662a2834903cd971190defe99553e22b05b7a164c6b370bc4eebefd8a0b6b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2044_oof.csv": "984956ff7ba54ff8578be5e5c11f30ea5ad3b216a421936b257de710ada3522a",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2045_oof.csv": "f65a34077866654179eeda76927d4caa6a79cb8482625262b2d614ae19fadc2c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2046_oof.csv": "eae5639cf1002257962c97e0d334848649c8050a6f436cb6db16651a693f7d59"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\083_group_effect_projection\\run_experiment.py": "cfdbfa7344229183956d15bb5f9e8d023f6b4e15984ff5563859e7aedf41627c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\083_group_effect_projection\\test_083.py": "dae627674a22d27be245ed0db78837d696e4fb25e955d310ae0a516e2a28ec34",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\083_group_effect_projection\\config.json": "b4ef7aadd8dd2200101b32d421e1410308aa8b5ce73968fe63d1f4ac29bfccae",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\083_group_effect_projection\\test_protocol.txt": "d0befdaf21a25e753e74e649a29253097f861f4ffeb38e7e8a4eccc8d7639416",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\config.json": "a334927b1be6dbe3e6d6f9ffeb9c707551bbb5a707f0d951298afa9cd82cfca3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\run_experiment.py": "a30ad1bba26248f973c86e276f7697a547f1489f062a9df1f1ec7b977e196250",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\normalization.py": "479ad36b298d3adb2c6a4c14ff8b37e0929223c4289113edbff282239acacbb8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1",
+  "raw_shape": [
+    2760,
+    720
+  ],
+  "treatment_shape": [
+    2760,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "control_source": "070 saved p_train8; direct reuse",
+  "projection_formula": "P=I-QQ.T; X_proj=X@P; Q from QR([d0,d1].T)",
+  "projection_y_values": [
+    0,
+    1
+  ],
+  "projection_train_only": true,
+  "threshold": 1e-12,
+  "model_fits": 30,
+  "cpu_only": "sklearn HGB has no GPU implementation",
+  "n_jobs": 10,
+  "threads_per_job": 1,
+  "started_at": "2026-11-02T12:06:03+0800",
+  "active_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 16,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 16,
+      "prefix": "vcomp",
+      "filepath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 16,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "elapsed_seconds": 127.14789999999994
+}

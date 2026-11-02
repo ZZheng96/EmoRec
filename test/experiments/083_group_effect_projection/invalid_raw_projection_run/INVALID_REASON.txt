@@ -1,0 +1,3 @@
+此目录完整保留实验083首次运行的全部产物、源码、配置、协议、测试及逐折输出。
+无效原因：run_experiment.py 先对 raw 估计投影 P，再对 raw@P 做 subject-position a8 zscore；正式要求是先按 subject-position 执行070相同的a8 zscore得到 z，再仅用 z[train] 的 HC/DEP 两类、y=0/1 估计 d0/d1 和 QR 投影，训练/验证直接 z@P 且不再 zscore。因此本目录成绩只能作为历史无效成绩，禁止作为有效假设证据。
+归档时间：2026-11-02。原目录文件未删除或覆盖。

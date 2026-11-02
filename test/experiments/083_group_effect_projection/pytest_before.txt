@@ -1,0 +1,7 @@
+Existing-artifact regression: metrics.json and corrected z@P OOF already present; NOT first-run/no-artifact testing.
+........                                                                 [100%]
+8 passed in 2.76s
+
+Updated diagnostic assertions, before regeneration (existing-artifact regression):
+........                                                                 [100%]
+8 passed in 2.68s
