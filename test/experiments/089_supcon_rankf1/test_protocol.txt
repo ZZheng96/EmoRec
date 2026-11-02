@@ -1,0 +1,31 @@
+实验089冻结协议：训练折内监督对比 + trial关系 + 排序/soft-F1联合目标
+
+1. 数据与评估
+- 输入固定为实验070的720维a8：150频谱、450时域、120熵；HC43排除；69被试、2760行。
+- a8只用每个subject-position的8个窗口做无标签z-score；训练和验证处理一致。
+- 外层分割为fixed002及repeat2042..2046；接受判断只使用五个repeat。
+- 所有同一被试样本进入同一折；验证标签只用于最终评分。
+- 不读取公开测试数组、标签或预测文件；089只输出训练OOF。
+
+2. 训练关系
+- physical_trial_key=(subject_id, original_trial_id + 4*y_true)，每个key应有5个窗口。
+- key只在当前外层训练被试中用于构造关系和批次，不作为模型输入。
+- 同一physical trial窗口为强正关系；同一情绪标签的其他trial为普通正关系；相反标签为负关系。
+- 推理函数仅依赖X，不依赖subject、position、trial、视频顺序或group。
+
+3. 模型与损失
+- GPU PyTorch MLP：720->128->64 embedding，64->64->1 head；无dropout。
+- 固定60 epoch、AdamW、lr=0.001、weight_decay=0.01、temperature=0.1。
+- 每个批次按physical trial整组拼接，随机化trial顺序；不跨外层折混合。
+- L=1.0 BCE + 0.5 supervised-contrastive + 0.25 pairwise logistic ranking + 0.25 soft-F1。所有系数运行前冻结。
+- SupCon正样本为同label，强正trial关系额外加权2；ranking仅使用批内正负样本；soft-F1使用批内软混淆矩阵。
+- 0.5为唯一预注册阈值，不在外层OOF上选阈值。
+
+4. 对照与接受线
+- A为070冻结HGB a8 OOF，不新增拟合；B为089神经联合目标。
+- 五repeat均值相对A须同时满足ΔAUC>=0.005、ΔF1>=0.005；AUC/F1至少4/5重复非负；HC/DEP平均AUC降幅不超过0.005。
+- 失败即停止本配置，不挑重复、不按结果调参。
+
+5. 审计
+- 检验trial key计数、subject隔离、验证标签独立性、模型推理不接收元数据、CUDA、拟合计数、OOF重算和概率范围。
+- 保存源码/config/输入hash、每折OOF、metrics.json和实验报告.md。

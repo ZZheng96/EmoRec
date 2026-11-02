@@ -1,0 +1,25 @@
+{
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "torch": "2.4.1+cu118",
+  "cuda": "NVIDIA GeForce RTX 3080 Laptop GPU",
+  "inputs": {
+    "spectral_cache": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "temporal_cache": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "pe_cache": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "fixed_reference": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\089_supcon_rankf1\\run_experiment.py": "56af8a3898e63636b974badff90f3cb43772238012c305cebec382b7de0568a6",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\089_supcon_rankf1\\config.json": "14fe42b2956c0bb0bf72f145c4067440bcd88304a8ab918dd0c74a4b020db8b2",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\089_supcon_rankf1\\test_protocol.txt": "82415ed7d8a109c1352c703810be165d56df76344456747042249dc974ed5975",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "public_arrays_loaded": false,
+  "model_fits": 30,
+  "train_shape": [
+    2760,
+    720
+  ]
+}
