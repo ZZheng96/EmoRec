@@ -1,0 +1,9 @@
+实验079冻结单一假设：将070控制中150维逐通道log-bandpower替换为固定解剖区域×频带均值25维，保留temporal 450维与PE 120维逐行复用，总720维。
+
+区域严格基于数据集说明的30通道顺序，未看标签挑选：frontal=[FP1,FP2,F7,F3,FZ,F4,F8]；frontocentral=[FT7,FC3,FCZ,FC4,FT8]；central=[T3,C3,CZ,C4,T4]；parietal=[TP7,CP3,CPZ,CP4,TP8,T5,P3,PZ,P4,T6]；occipital=[O1,OZ,O2]。频带顺序delta,theta,alpha,beta,gamma；每个区域内对对应通道log-bandpower取算术均值。
+
+仅读取spectral_cache中的TRAIN_KEYS并定位150列名/顺序，HC43排除后其余570列逐行复用。a8→a8被试内无标签ddof=0归一化，固定HGB、seed、阈值和070协议；fixed002+repeat2042..2046，6套被试级分层5折，60 fits。验证控制概率与070对应行最大差<=1e-12。
+
+接受标准只看五个新split的all_rows：平均ΔAUC>=0.005且ΔF1>=0.005，AUC/F1各至少4/5非负，HC/DEP平均ΔAUC各>=-0.005。失败即停止，不调参、不挑位置；不读取公开数组。
+
+执行顺序：pytest前→OOF→pytest后。保存配置、脚本、测试、缓存/特征哈希、OOF、metrics、summary.txt、实验报告.md、input_metadata/provenance及folds。
