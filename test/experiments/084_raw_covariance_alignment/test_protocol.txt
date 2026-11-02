@@ -1,0 +1,5 @@
+实验084冻结协议：仅训练数据。每个训练被试、每个物理position的8个原始10秒EEG窗，使用regularized_covariances(shrinkage=0.1)逐窗估计30x30协方差并取均值；对称特征分解构造逆平方根白化矩阵，逐窗左乘变换后重新extract_spectral_features，仅保留前150维log_bandpower。与070相同的原始temporal 450和PE 120拼接为720维。
+
+数据顺序严格沿用070缓存的subject、emotion、trial和position行顺序；原始数据只从数据/训练集读取，禁止访问数据/公开测试集。被试内position对齐不使用标签；训练折仅用于HGB模型，控制直接复用070 predictions/*_oof.csv 的p_train8。固定split fixed002及2042--2046五折，共30个处理fits，HGB参数、seed、阈值与070完全一致。
+
+检查要求：输入来源及SHA-256 provenance；协方差正定、白化近似单位阵；控制概率与070逐行一致；原始窗行置换后协方差均值/白化结果不变；源代码无公开测试数组访问。pytest在无OOF产物时只验证协议和数学性质；产物存在时严格验证30 fits、概率范围、provenance与控制复用。不得运行完整OOF作为测试步骤。
