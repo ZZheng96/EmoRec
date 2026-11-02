@@ -1,0 +1,11 @@
+实验081唯一假设：被试内、位置内median/MAD归一化是否改善070 a8→a8 z-score。
+数据依据：数据/数据集说明文档.md。70训练被试、30通道250Hz；排除HC43后69人、2760个10秒窗。
+仅复用070训练缓存720维=150 spectral+450 temporal+120 PE，不读取公开测试数组。
+每个subject/position恰8窗，逐列(x-median(x))/scale；scale=1.4826*median(abs(x-median(x)))，scale<=1e-12则为1.0。不使用标签；不跨subject/position。
+固定fixed002与repeat2042..2046共六套被试级5折。所有五position共同训练，a8训练/a8验证。HGB、seed、阈值0.5与070一致，仅处理30 fits。
+控制直接复用070 predictions/*_oof.csv的p_train8，逐行身份和概率核验；不重训控制，不引入a40对照。
+接受仅看五个新split all_rows：平均ΔAUC>=0.005且平均ΔF1>=0.005；至少4/5两项同时非负；HC和DEP平均ΔAUC分别>=-0.005。fixed002不参与接受。不达标失败并停止，不挑位置、不调参。
+前置pytest必须通过（产物测试因无metrics跳过），运行OOF，然后后置pytest复核所有产物、来源哈希和接受判定。
+验证公式、常数/极小MAD回退、排列不变性、无标签性、形状、上下文隔离、fold和公开数组访问限制。
+sklearn HGB无GPU实现，采用CPU例外；沿用NumPy缓存和指标实现，不重算特征，不保存冗余特征缓存。
+仅训练队列OOF证据，不能外推公开测试集，也不能声称达到0.95。
