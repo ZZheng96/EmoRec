@@ -1,0 +1,9 @@
+实验082冻结协议（OOF运行前固定）
+唯一处理：每个subject-position内8窗逐特征rank-Gaussian。ties=average；固定n_context=8；u=(rank-0.5)/8；z=scipy.special.ndtri(u)。不依赖标签或trial_id，不跨组，不读取公开数组。
+复用070/081 raw特征：150 spectral+450 temporal+120 PE=720维；HC43排除；69人2760行；全部5个position。
+控制直接读取070六份OOF的p_train8，逐行identity校验，不重训。处理a8训练/a8验证；fixed002和repeat2042..2046各5折，恰30次fit。HGB/seed/threshold全部与070冻结一致。
+先pytest（pytest_before.txt），再运行OOF（run_output.txt），再pytest（pytest_after.txt）。首次测试产物审计允许因OOF尚未运行而skip。
+测试覆盖公式与常量维/ties、排列不变、标签及trial无关、组隔离、形状、被试级折一致、a8训练验证、控制逐行复现、30 fits、无公开数组、指标重算、hash和接受判断。
+接受规则沿用080：仅五个新split的all_rows；平均ΔAUC和ΔF1均>=0.005；至少4/5 split两项同时非负；HC和DEP平均ΔAUC各>=-0.005；全部满足才通过。fixed002及分位置指标仅描述。
+失败即停止，不调参、不挑位置、不追加实验；不作公开测试外推或0.95声明。
+冻结sklearn HGB不支持GPU，保留CPU例外10 jobs、每job 1线程。仅在082目录写入产物。

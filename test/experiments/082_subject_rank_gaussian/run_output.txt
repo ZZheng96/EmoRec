@@ -1,0 +1,2 @@
+﻿082: 30 rank a8 fits only; official control reused from 070
+082 accepted=False; mean delta AUC=-0.013818526; mean delta F1=-0.005331016; 30 fits
