@@ -1,0 +1,9 @@
+实验085冻结协议
+
+复用070.load_data/contexts/base.make_model，输入为排除HC43后的720维特征及a8上下文；不复用084特征链。fixed002与repeat2042..2046五折，共6×5×5=150 fits。每个fold建立5个position专家，专家k仅使用外层训练被试position=k的8行/人训练，预测该fold全部验证行；五专家概率等权平均。验证位置不用于路由，所有验证行均被五个专家预测。模型参数、seed=2052+fold、HGB、全局threadpool_limits(1)、n_jobs=10冻结，不调参。
+
+严格核对并保存全部row_index/position/subject/group/trial/y/fold，控制读取070对应split的p_train8；固定协议与测试先于正式运行。保存五专家概率及均值、folds、缓存（如产生）、递归依赖源码hash/provenance、metrics、summary、paired_delta、中文实验报告。不得读取公开数组或标签，不生成公开预测；训练位置仅为已知训练结构下的8窗上下文模拟，不宣称测试位置可知。
+
+接受线仅五个新split的all_rows：重复平均ΔAUC和ΔF1各>=0.005，AUC/F1各至少4/5非负，HC/DEP平均ΔAUC>=-0.005；fixed002仅复现对照，不纳入接受判断。动机唯一引用Breiman bagging：https://www.stat.berkeley.edu/~breiman/bagging.pdf；说明本实验是等权多专家集成，不等同bootstrap，也不保证改善。
+
+测试覆盖训练被试隔离、每人8行、专家均值、无位置路由、8窗排列等变、公共数组guard、控制行对齐、产物hash及AUC/F1复算。执行顺序：先pytest，完整运行，后pytest。

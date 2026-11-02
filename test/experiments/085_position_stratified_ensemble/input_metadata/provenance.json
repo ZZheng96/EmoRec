@@ -1,0 +1,87 @@
+{
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\fixed002_oof.csv": "3c03910805a94d68b942758ba96171285c4dc981c9aee5ba938f5fa8e2609c24",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2042_oof.csv": "6686e22d202b93ebc08af616fcd715d011e76ed51772104f0f7a45e4ede90352",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2043_oof.csv": "600662a2834903cd971190defe99553e22b05b7a164c6b370bc4eebefd8a0b6b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2044_oof.csv": "984956ff7ba54ff8578be5e5c11f30ea5ad3b216a421936b257de710ada3522a",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2045_oof.csv": "f65a34077866654179eeda76927d4caa6a79cb8482625262b2d614ae19fadc2c",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\predictions\\repeat2046_oof.csv": "eae5639cf1002257962c97e0d334848649c8050a6f436cb6db16651a693f7d59",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\085_position_stratified_ensemble\\run_experiment.py": "feba3d449475ce9a1c861ed6f846db2d240e4b16305b097c9f68cf914a9f0eb7",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\085_position_stratified_ensemble\\test_085.py": "eb4144b34676ea62db6a9a60c2827b58daed8ab76ca1844cb66fdef0b751eec9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\085_position_stratified_ensemble\\config.json": "addd937dc8fd17e86abc2437f6a45449a6a19d8402d467d51dc776531b42a2ef",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\085_position_stratified_ensemble\\test_protocol.txt": "f3e3276b66d34d53c0564ecdfd60a1d451178b1a098b4b098188f98d8c484b8b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\run_experiment.py": "a30ad1bba26248f973c86e276f7697a547f1489f062a9df1f1ec7b977e196250",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\test_070.py": "57ae5e195781ac0d6861ba0a5a739b90d98457fa31f18c9b9356cc97d37ea3a3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\config.json": "a334927b1be6dbe3e6d6f9ffeb9c707551bbb5a707f0d951298afa9cd82cfca3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\test_protocol.txt": "628569470b76fee2a0f7991947a40f0e9c73391c52ec949ae411c18e0bb3803d",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\069_train_context_match_replication\\run_experiment.py": "e32ae9535f34f93f8d93ac3e8cc84bd3d5c9c19f14d9202c9937103e8352dd14",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\069_train_context_match_replication\\test_069.py": "ce8b724e9455cae0b94a3fb1e2a458956b6ebfa3a8d321f5d371699d46a24331",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\069_train_context_match_replication\\config.json": "13580be0052f68808c6a9bd23f81f403b76722183113b03d4df3fd09d98707d8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\069_train_context_match_replication\\test_protocol.txt": "a87c775a326d0628d96a821a41c037eb1a2adf42114e960cb77cc716cbf2e112",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\068_train_context_match\\run_experiment.py": "e4ad468aafd05909978bacfeb06468ab7b96e0bf151a02abc31db728d73166fa",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\068_train_context_match\\test_068.py": "a28547c865d0dfb8b3892e18392c1a3c97d00df150915e2e93bb06d51fc3f6db",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\068_train_context_match\\config.json": "c7edbd67d837031201a9d347dff295d770616a24fb7de14c251965d4b9225d07",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\068_train_context_match\\test_protocol.txt": "c65dfd7a7ed63ab14b4e731d8c7cd291d2de2a4c2e222aaaf8a0c6e11d0f48a0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\run_experiment.py": "d81ca1dc17edba5ad9c1c0ffced924eac2ac2fb08ed160c3ba539287484d87c0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\test_067.py": "3528725575ce5508522116df9ab3546e4e068031e5b2b959dd2b194a7c7a0aa6",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\config.json": "fba27d5a8f765bc10f154b3d55e737fb5f00d5a137281be75dec1944eda1d1b5",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\test_protocol.txt": "1cbf25d8d2270ceec3673a0296ee02f6d6255588e29f56b669298e2b3043db21",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\normalization.py": "479ad36b298d3adb2c6a4c14ff8b37e0929223c4289113edbff282239acacbb8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\data.py": "993eb102687057f794664c8549a4b7ecf5034eee2d7100fda390a9b8e7f4bed4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\submission.py": "e824c162163c9e2082bf413af6d416a6b81657af558cbe6bbb23e3fa4f6a6947",
+    "D:\\WORK\\BCIC2026\\EmoRec\\pyproject.toml": "3110e55a46666a6286279af19fa7d2741de03046f9c40eba6b9d1619e1c8c7aa",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "raw_shape": [
+    2760,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "model_fits": 150,
+  "n_jobs": 10,
+  "threads_per_job": 1,
+  "training_rule": "expert k trains outer-train subjects position k, predicts all validation rows; equal mean; no validation routing",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1",
+  "started_at": "2026-11-02T14:05:55+0800",
+  "active_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "elapsed_seconds": 378.5114751000001
+}
