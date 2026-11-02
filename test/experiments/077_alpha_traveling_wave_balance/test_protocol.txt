@@ -1,0 +1,3 @@
+实验077冻结协议：每个独立30×2500原始窗口内，固定左右链FP1–F3–C3–P3–O1与FP2–F4–C4–P4–O2。沿每条链将每个通道切为500 ms（125采样点）片段，250 ms（62采样点）步长；对片段序列做空间×时间二维FFT，alpha 8–12 Hz频带内以前向/后向传播象限能量计算(F-B)/(F+B+eps)，每窗输出左右链各1维。特征只依赖当前原始窗口，不访问标签、subject、trial、跨窗统计或公开数组。
+严格复用070/076：a8->a8、全位置、fixed002及repeat2042..2046六套split、subject isolation、固定sklearn HGB、每套5折、60 fits、HC43排除。控制臂逐行复现070，处理臂为070控制720维拼接2维特征，subject/position无标签ddof=0归一化。CUDA优先float64，生产要求CUDA；HGB CPU例外。
+测试覆盖公式、方向象限、形状、常数/人工传播波、独立窗口、无标签归一化、控制070逐行复现和真实产物。执行顺序：pytest前→真实OOF→pytest后。产物包括cache、六套OOF、metrics、paired_delta、summary、provenance、日志。接受线仅五新split all_rows：平均ΔAUC/F1>=0.005，至少4/5两指标同时非负，HC/DEP平均ΔAUC>=-0.005；失败停止，不调参不挑位置。
