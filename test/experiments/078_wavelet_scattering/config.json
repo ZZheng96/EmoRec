@@ -1,0 +1,16 @@
+{
+  "experiment_id": "078_wavelet_scattering",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "repeat_seeds": [2042,2043,2044,2045,2046],
+  "outer_model_seed_base": 2052,
+  "hgb": {"max_iter":200,"learning_rate":0.03,"max_leaf_nodes":15,"min_samples_leaf":20,"l2_regularization":1.0,"early_stopping":false},
+  "threshold":0.5,"excluded_subject":"HC43","n_jobs":10,"threads_per_job":1,
+  "positions":[0,1,2,3,4],"expected_model_fits":60,"train_contexts":[8],"validation_context":8,"expected_train_rows":2760,
+  "feature_device":"cuda","sampling_rate":250,"first_frequencies":[4,8,16,32],"second_frequencies":[1,2],
+  "second_pairs":[[4,1],[4,2],[8,1],[8,2],[16,1],[16,2],[32,1],[32,2]],
+  "bandwidth_ratio":0.5,"support_sigma":4,"lowpass_samples":125,"extra_dimensions":720,"treatment_dimensions":1440,
+  "acceptance":{"mean_delta_auc_min":0.005,"mean_delta_f1_min":0.005,"nonnegative_splits_min_each":4,"health_group_mean_auc_drop_max":0.005}
+}

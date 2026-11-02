@@ -1,0 +1,77 @@
+﻿CUDA scattering DEP01
+CUDA scattering DEP02
+CUDA scattering DEP03
+CUDA scattering DEP04
+CUDA scattering DEP05
+CUDA scattering DEP06
+CUDA scattering DEP07
+CUDA scattering DEP08
+CUDA scattering DEP09
+CUDA scattering DEP10
+CUDA scattering DEP11
+CUDA scattering DEP12
+CUDA scattering DEP13
+CUDA scattering DEP14
+CUDA scattering DEP15
+CUDA scattering DEP16
+CUDA scattering DEP17
+CUDA scattering DEP18
+CUDA scattering DEP19
+CUDA scattering DEP20
+CUDA scattering DEP21
+CUDA scattering DEP22
+CUDA scattering DEP23
+CUDA scattering DEP24
+CUDA scattering DEP25
+CUDA scattering HC01
+CUDA scattering HC02
+CUDA scattering HC03
+CUDA scattering HC04
+CUDA scattering HC05
+CUDA scattering HC06
+CUDA scattering HC07
+CUDA scattering HC08
+CUDA scattering HC09
+CUDA scattering HC10
+CUDA scattering HC11
+CUDA scattering HC12
+CUDA scattering HC13
+CUDA scattering HC14
+CUDA scattering HC15
+CUDA scattering HC16
+CUDA scattering HC17
+CUDA scattering HC18
+CUDA scattering HC19
+CUDA scattering HC20
+CUDA scattering HC21
+CUDA scattering HC22
+CUDA scattering HC23
+CUDA scattering HC24
+CUDA scattering HC25
+CUDA scattering HC26
+CUDA scattering HC27
+CUDA scattering HC28
+CUDA scattering HC29
+CUDA scattering HC30
+CUDA scattering HC31
+CUDA scattering HC32
+CUDA scattering HC33
+CUDA scattering HC34
+CUDA scattering HC35
+CUDA scattering HC36
+CUDA scattering HC37
+CUDA scattering HC38
+CUDA scattering HC39
+CUDA scattering HC40
+CUDA scattering HC41
+CUDA scattering HC42
+CUDA scattering HC44
+CUDA scattering HC45
+Starting frozen 60 HGB fits
+实验078：接受=False；联合非负1/5。
+平均Delta auc=-0.001727998
+平均Delta f1=-0.001800252
+平均Delta hc_auc=-0.001235795
+平均Delta dep_auc=-0.002871200
+控制720维、处理1440维；CUDA float64；60 fits；控制误差1.11e-16。
+失败即停止，不调参不挑位置；不推断公开集成绩。
