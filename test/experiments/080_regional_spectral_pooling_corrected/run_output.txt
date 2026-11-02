@@ -1,0 +1,2 @@
+﻿080: 30 regional a8 fits only; official control reused from 070
+080 accepted=False; mean delta AUC=-0.001474165; mean delta F1=-0.002200345; 30 fits

@@ -1,0 +1,10 @@
+实验080：冻结的区域频谱池化严格对照（运行前协议）
+079的+0.009比较区域模型自身a8训练与a40训练，不能证明相对070逐通道a8控制的收益。079目录不修改。
+唯一正式比较：直接复用070 p_train8 vs 新拟合p_region8。两路均a8训练/a8验证，不使用a40模型。
+固定复用079 REGIONS/CHANNELS/BANDS；对150维逐通道log-bandpower作区域内算术均值成为25维；temporal450+PE120逐值不变，总595维。先池化后按subject+position分别zscore；每个位置8窗，所有5位置保留，无标签参与统计。
+固定002及repeat2042..2046；同070 subject-level 5-fold；排除HC43；69被试2760行；同070 HGB参数、2052+fold随机种子及0.5阈值。
+30 fits = 6 splits * 5 folds，仅训练区域a8处理模型。正式控制直接复制070 p_train8，保存再读取后校验与070概率最大差<=1e-12，不重新拟合控制。不计算40窗上下文。
+接受仅使用5个新split all_rows，fixed002不参与接受：平均ΔAUC>=0.005且平均ΔF1>=0.005；至少4/5 split的AUC/F1两项同时非负；HC/DEP平均ΔAUC各>=-0.005；任一不满足即失败。Δ始终为region8减070 train8。
+所有位置必须报告，不调参、不挑位置、不读取公开数组、不作公开性能宣称。重复划分复用同一队列，不视为独立样本。
+先pytest，成功后OOF，再pytest；保存测试日志、逐行OOF、fold、metrics、summary、报告、输入及源码sha256 provenance。
+sklearn HGB无GPU实现，为冻结同一模型使用CPU例外n_jobs=10，每job 1线程。
