@@ -1,0 +1,239 @@
+﻿.\.venv\Scripts\python.exe : D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 36890 (\N{CJK
+ UNIFIED IDEOGRAPH-901A}) missing from font(s) DejaVu Sans.
+所在位置 行:15 字符: 3576
++ ... M = 'dumb'; .\.venv\Scripts\python.exe test\vis\run_visual_audit.py * ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\WORK\BCIC202...s) DejaVu Sans.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 36947 (\N{CJK UNIFIED IDEOGRAPH-9053}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 22266 (\N{CJK UNIFIED IDEOGRAPH-56FA}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 23450 (\N{CJK UNIFIED IDEOGRAPH-5B9A}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 20108 (\N{CJK UNIFIED IDEOGRAPH-4E8C}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 32500 (\N{CJK UNIFIED IDEOGRAPH-7EF4}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 36817 (\N{CJK UNIFIED IDEOGRAPH-8FD1}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 20284 (\N{CJK UNIFIED IDEOGRAPH-4F3C}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 24067 (\N{CJK UNIFIED IDEOGRAPH-5E03}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 23616 (\N{CJK UNIFIED IDEOGRAPH-5C40}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 65288 (\N{FULLWIDTH LEFT PARENTHESIS}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 38750 (\N{CJK UNIFIED IDEOGRAPH-975E}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 23454 (\N{CJK UNIFIED IDEOGRAPH-5B9E}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 27979 (\N{CJK UNIFIED IDEOGRAPH-6D4B}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 22352 (\N{CJK UNIFIED IDEOGRAPH-5750}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 26631 (\N{CJK UNIFIED IDEOGRAPH-6807}) mis
+sing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:101: UserWarning: Glyph 65289 (\N{FULLWIDTH RIGHT PARENTHESIS}) mi
+ssing from font(s) DejaVu Sans.
+  ax.set_title("30通道固定二维近似布局（非实测坐标）"); ax.axis("off"); fig.tight_layout(); fig.savefig(OUT / "channel_layout.png", dpi=
+180); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 26102 (\N{CJK UNIFIED IDEOGRAPH-65F6}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 38388 (\N{CJK UNIFIED IDEOGRAPH-95F4}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 20195 (\N{CJK UNIFIED IDEOGRAPH-4EE3}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 34920 (\N{CJK UNIFIED IDEOGRAPH-8868}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 34987 (\N{CJK UNIFIED IDEOGRAPH-88AB}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 35797 (\N{CJK UNIFIED IDEOGRAPH-8BD5}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 65306 (\N{FULLWIDTH COLON}) missing from f
+ont(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 31383 (\N{CJK UNIFIED IDEOGRAPH-7A97}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 31283 (\N{CJK UNIFIED IDEOGRAPH-7A33}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 20581 (\N{CJK UNIFIED IDEOGRAPH-5065}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 21253 (\N{CJK UNIFIED IDEOGRAPH-5305}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 32476 (\N{CJK UNIFIED IDEOGRAPH-7EDC}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 65288 (\N{FULLWIDTH LEFT PARENTHESIS}) mis
+sing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:108: UserWarning: Glyph 65289 (\N{FULLWIDTH RIGHT PARENTHESIS}) mi
+ssing from font(s) DejaVu Sans.
+  axes[-1].set_xlabel("时间 (s)"); fig.suptitle(f"代表HC被试 {rep}：neu 20窗稳健包络（10–90%）"); fig.tight_layout(); fig.savefig(OUT
+ / "representative_waveform_envelope.png", dpi=160); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 24179 (\N{CJK UNIFIED IDEOGRAPH-5E73}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 22343 (\N{CJK UNIFIED IDEOGRAPH-5747}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 65288 (\N{FULLWIDTH LEFT PARENTHESIS}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 25551 (\N{CJK UNIFIED IDEOGRAPH-63CF}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 36848 (\N{CJK UNIFIED IDEOGRAPH-8FF0}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 24615 (\N{CJK UNIFIED IDEOGRAPH-6027}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 65289 (\N{FULLWIDTH RIGHT PARENTHESIS}) mi
+ssing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+D:\WORK\BCIC2026\EmoRec\test\vis\run_visual_audit.py:115: UserWarning: Glyph 24046 (\N{CJK UNIFIED IDEOGRAPH-5DEE}) mis
+sing from font(s) DejaVu Sans.
+  fig, ax = plt.subplots(figsize=(8, 10)); im = ax.imshow(mat, aspect="auto", cmap="RdBu_r"); ax.set_yticks(range(30), 
+CHANNELS); ax.set_xticks(range(5), BANDS); ax.set_title("DEP − HC 平均 log-bandpower（描述性）"); fig.colorbar(im, ax=ax, labe
+l="log power差"); fig.tight_layout(); fig.savefig(OUT / "hc_dep_effect_heatmap.png", dpi=170); plt.close(fig)
+[1/69] HC01
+[2/69] HC02
+[3/69] HC03
+[4/69] HC04
+[5/69] HC05
+[6/69] HC06
+[7/69] HC07
+[8/69] HC08
+[9/69] HC09
+[10/69] HC10
+[11/69] HC11
+[12/69] HC12
+[13/69] HC13
+[14/69] HC14
+[15/69] HC15
+[16/69] HC16
+[17/69] HC17
+[18/69] HC18
+[19/69] HC19
+[20/69] HC20
+[21/69] HC21
+[22/69] HC22
+[23/69] HC23
+[24/69] HC24
+[25/69] HC25
+[26/69] HC26
+[27/69] HC27
+[28/69] HC28
+[29/69] HC29
+[30/69] HC30
+[31/69] HC31
+[32/69] HC32
+[33/69] HC33
+[34/69] HC34
+[35/69] HC35
+[36/69] HC36
+[37/69] HC37
+[38/69] HC38
+[39/69] HC39
+[40/69] HC40
+[41/69] HC41
+[42/69] HC42
+[43/69] HC44
+[44/69] HC45
+[45/69] DEP01
+[46/69] DEP02
+[47/69] DEP03
+[48/69] DEP04
+[49/69] DEP05
+[50/69] DEP06
+[51/69] DEP07
+[52/69] DEP08
+[53/69] DEP09
+[54/69] DEP10
+[55/69] DEP11
+[56/69] DEP12
+[57/69] DEP13
+[58/69] DEP14
+[59/69] DEP15
+[60/69] DEP16
+[61/69] DEP17
+[62/69] DEP18
+[63/69] DEP19
+[64/69] DEP20
+[65/69] DEP21
+[66/69] DEP22
+[67/69] DEP23
+[68/69] DEP24
+[69/69] DEP25

@@ -1,0 +1,54 @@
+{
+  "total_training_files": 70,
+  "excluded_subjects": [
+    "HC43"
+  ],
+  "analyzed_subjects": 69,
+  "groups": {
+    "HC": 44,
+    "DEP": 25
+  },
+  "windows_per_subject": 40,
+  "windows_total": 2760,
+  "channels": [
+    "FP1",
+    "FP2",
+    "F7",
+    "F3",
+    "FZ",
+    "F4",
+    "F8",
+    "FT7",
+    "FC3",
+    "FCZ",
+    "FC4",
+    "FT8",
+    "T3",
+    "C3",
+    "CZ",
+    "C4",
+    "T4",
+    "TP7",
+    "CP3",
+    "CPZ",
+    "CP4",
+    "TP8",
+    "T5",
+    "P3",
+    "PZ",
+    "P4",
+    "T6",
+    "O1",
+    "OZ",
+    "O2"
+  ],
+  "emotions": {
+    "neu": 20,
+    "pos": 20
+  },
+  "sampling_rate_hz": 250,
+  "public_test_accessed": false,
+  "auc": null,
+  "f1": null,
+  "interpretation": "All outputs are descriptive label diagnostics; no model fitting, tuning, public prediction, or public-test access."
+}
