@@ -1,0 +1,20 @@
+{
+  "experiment_id": "087_class_conditional_prototype",
+  "source_experiment": "070_train_context_match_new_splits",
+  "repeat_seeds": [2042, 2043, 2044, 2045, 2046],
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "threshold": 0.5,
+  "excluded_subject": "HC43",
+  "positions": [0, 1, 2, 3, 4],
+  "n_jobs": 10,
+  "threads_per_job": 1,
+  "expected_model_fits": 60,
+  "expected_stage_fits": {"first_stage_raw": 30, "second_stage_treatment": 30},
+  "public_access": false,
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "prototype": {"classes": [0, 1], "feature_mode": "raw_plus_class_residual", "pseudo_label_source": "training_only_raw_hgb"},
+  "acceptance": {"mean_delta_auc_min": 0.005, "mean_delta_f1_min": 0.005, "nonnegative_splits_min_each": 4, "health_group_mean_auc_drop_max": 0.005}
+}
