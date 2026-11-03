@@ -1,0 +1,96 @@
+{
+  "experiment_id": "114_DEP02_trial_riemann_pairs",
+  "subject": "DEP02",
+  "pooled_oof": {
+    "auc": 0.625,
+    "f1": 0.75
+  },
+  "fixed_0.5": {
+    "auc": 0.625,
+    "f1": 0.75
+  },
+  "pair_mean": {
+    "auc": 0.75,
+    "f1": 0.41666666666666663
+  },
+  "pair_metrics": [
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "feature_dimensions": {
+    "per_band": 465,
+    "all": 2325
+  },
+  "candidate_count": 60,
+  "positive_quota": 4,
+  "quota_search": false,
+  "threshold": 0.5,
+  "threshold_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 75.8641604000004
+}

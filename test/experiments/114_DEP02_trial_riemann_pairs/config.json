@@ -1,0 +1,23 @@
+{
+  "experiment_id": "114_DEP02_trial_riemann_pairs",
+  "target_subject": "DEP02",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "raw_windows": 40,
+  "windows_per_trial": 5,
+  "covariance": "per-window normalized band covariance with epsilon 1e-8",
+  "representation": "per-band affine log-Euclidean centered logm upper triangle, training-trial reference only",
+  "trial_aggregation": "mean five window covariances into 8 physical-trial samples",
+  "outer_protocol": "4x4 positive-negative trial pairs; 6 train trials / 2 validation trials",
+  "inner_protocol": "3x3 positive-negative pairs within outer train; 4 train / 2 validation",
+  "candidate_count": 60,
+  "candidate_space": "LogisticRegression/LinearSVC x all/each-band x C=(0.01,0.1,1,10,100)",
+  "directions": ["raw", "reverse"],
+  "selection_priority": ["inner OOF AUC descending", "inner OOF F1@0.5 descending", "candidate index ascending", "direction index ascending"],
+  "standard_scaler": "fit on training log-Euclidean features only",
+  "threshold": 0.5,
+  "positive_quota": 4,
+  "quota_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "threads": 1
+}

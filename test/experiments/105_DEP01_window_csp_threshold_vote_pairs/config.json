@@ -1,0 +1,23 @@
+{
+  "experiment_id": "105_DEP01_window_csp_threshold_vote_pairs",
+  "target_subject": "DEP01",
+  "source_experiment": "104_DEP01_window_csp_threshold_pairs",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "filter_order": 4,
+  "windows": 40,
+  "windows_per_trial": 5,
+  "outer_protocol": "16 positive-negative trial pairs; 30 train windows and 10 validation windows",
+  "inner_protocol": "3x3 trial pairs within six outer-train trials; 20 train windows and 10 validation windows per fold",
+  "regularization": [1e-8,1e-6,1e-4,1e-2],
+  "filters_per_end": [1,2,3],
+  "classifier": ["logistic_regression", "linear_svc"],
+  "C": [0.01,0.1,1,10,100],
+  "candidate_count": 120,
+  "aggregation": "average five window probabilities within each physical trial for AUC; threshold each pair trial probability with that pair's selected threshold and majority vote sum>=2 for F1",
+  "selection": "within each candidate/direction, inner OOF trial-aggregated F1-max threshold; ties choose threshold closest to 0.5; candidate/direction selection by AUC then F1 then candidate order",
+  "threshold_candidates": "np.linspace(0.05,0.95,19)",
+  "outer_validation_labels_used_for_selection": false,
+  "threshold_is_inner_only": true,
+  "threads": 1
+}

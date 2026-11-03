@@ -1,0 +1,10 @@
+{
+  "script_sha256": "7f9373d57e101d2e305330e273cf3538417b84f7d332cab586bb6bf28a29ed2b",
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+  },
+  "normalization": "base.load_data raw features; no pre-40-window zscore in 096; StandardScaler fit per training fold",
+  "threads": 1
+}

@@ -1,0 +1,7 @@
+实验095冻结协议
+
+仅处理DEP01；沿用091/094缓存与load_data，排除HC43并验证69被试、每被试40窗、8个物理trial、每trial 5窗、720维（150 spectral+450 temporal+120 PE）。只对DEP01的全部40窗先做无标签逐特征zscore（ddof=0），再进行外层8-fold Leave-One-Physical-Trial-Out，每次验证完整5窗、训练35窗。
+
+候选空间预先固定为：模型LinearSVC、LogisticRegression、HistGradientBoosting；正则/C或l2为0.1/1/10；特征块all/spectral/temporal/permutation_entropy；selector raw/SelectKBest(k=100)/PCA(95%方差)；分数方向raw/reverse；阈值0.3/0.5/0.7。候选按配置声明顺序展开。每个外层训练集仅在7个训练trial的inner Leave-One-Trial-Out pooled预测上选择，优先AUC，其次F1，最后固定候选顺序；外层验证标签绝不参与。选定候选在35个训练窗重训并预测5个外层窗。
+
+输出DEP01_oof.csv、逐折选择及inner分数、metrics.json、provenance.json、run_output.txt和实验报告。AUC/F1未同时达到0.95则如实记录并停止DEP01，不进入其他被试。

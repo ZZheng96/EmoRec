@@ -1,0 +1,23 @@
+{
+  "experiment_id": "108_DEP01_window_csp_topk_sensitivity_pairs",
+  "target_subject": "DEP01",
+  "source_experiment": "107_DEP01_window_csp_topk_ensemble_pairs",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "filter_order": 4,
+  "windows": 40,
+  "windows_per_trial": 5,
+  "outer_protocol": "4x4 positive-negative trial pairs; 30 train windows and 10 validation windows",
+  "inner_protocol": "3x3 positive-negative trial pairs within six outer-train trials; 20 train windows and 10 validation windows",
+  "candidate_count": 120,
+  "candidate_direction_count": 240,
+  "candidate_space": "LogisticRegression/LinearSVC x 4 reg x 3 end x 5 C",
+  "top_ks": [1,3,5,10,20,240],
+  "selection_priority": ["inner OOF trial AUC descending", "inner OOF trial F1 at fixed 0.5 descending", "candidate index ascending", "direction index ascending"],
+  "threshold": 0.5,
+  "threshold_search": false,
+  "aggregation": "five window probabilities averaged within trial; four pair pooled probabilities averaged per trial",
+  "outer_validation_labels_used_for_selection": false,
+  "k_selection": "none; every predeclared K reported",
+  "threads": 1
+}

@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\099_DEP01_trial_mean_pairs\\run_experiment.py": "30e50fd4769e465eaf82b168145e1ddfe030c5595f61026520a64f5e99b3ca53",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\099_DEP01_trial_mean_pairs\\config.json": "33f49b8b2aeace56d277b4b3bca6a687e8ba8a31c10822448a8e483ae8a4c0f9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\099_DEP01_trial_mean_pairs\\冻结协议.md": "848fef680f9c2f404559684b8ac15910f5df054dfa2c410a6d7768bec4c75f67",
+    "D:\\WORK\\BCIC2026\\EmoRec\\数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+  },
+  "python": "3.11.9",
+  "threads": 1
+}

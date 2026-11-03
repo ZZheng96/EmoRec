@@ -1,0 +1,21 @@
+{
+  "subject": "DEP01",
+  "pooled_oof": {
+    "auc": 1.0,
+    "f1": 0.6666666666666666
+  },
+  "pair_mean": {
+    "auc": 0.9375,
+    "f1": 0.6875
+  },
+  "constant_0.5": {
+    "auc": 0.5,
+    "f1": 0.6666666666666666
+  },
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "prediction_count": 4,
+  "candidate_count": 120,
+  "elapsed_seconds": 85.1409094000046
+}

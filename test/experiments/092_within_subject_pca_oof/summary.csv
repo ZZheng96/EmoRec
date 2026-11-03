@@ -1,0 +1,5 @@
+arm,scope,auc,f1
+standard_scaler_lr,pooled_overall,0.5869838269271161,0.5544768069039914
+standard_scaler_lr,macro_subject,0.5599637681159421,0.549948754768796
+standard_scaler_pca10_lr,pooled_overall,0.5929043268220962,0.5480528760271526
+standard_scaler_pca10_lr,macro_subject,0.551123188405797,0.5424476576699654

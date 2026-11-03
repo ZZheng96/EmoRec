@@ -1,0 +1,22 @@
+{
+  "experiment_id": "112_DEP02_trial_csp_quota4_pairs",
+  "target_subject": "DEP02",
+  "source_experiment": "none",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "filter_order": 4,
+  "raw_windows": 40,
+  "windows_per_trial": 5,
+  "trial_covariance_aggregation": "mean five window covariances per physical trial before any fit",
+  "outer_protocol": "4x4 positive-negative trial pairs; 6 train trials / 2 validation trials",
+  "inner_protocol": "3x3 positive-negative pairs within outer train; 4 train trials / 2 validation trials",
+  "candidate_count": 120,
+  "candidate_space": "LogisticRegression/LinearSVC x 4 reg x 3 end x 5 C",
+  "directions": ["raw", "reverse"],
+  "selection_priority": ["inner OOF AUC descending", "inner OOF F1@0.5 descending", "candidate_index ascending", "direction_index ascending"],
+  "threshold": 0.5,
+  "positive_quota": 4,
+  "quota_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "threads": 1
+}

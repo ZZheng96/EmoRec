@@ -1,0 +1,28 @@
+{
+  "source": "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP01.mat",
+  "source_sha256": "a8305f6ff0eb2eec43ce1a890161f01afadc860c634b6c57ea53f1c157dba210",
+  "script_sha256": "66307b6a160213a94ad2749c920eb5fe15e24b96ca1b644e3d89b2570eb9c88e",
+  "config_sha256": "155b69f9df46e98a77c36eb34b59de28a7750d994058453da6ee8c24192f9c71",
+  "protocol_sha256": "ff4f50aeef0c8459a88dcd086507de4302d67c6b428bca279cd0563c48a1c121",
+  "python": "3.11.9",
+  "threads": 1,
+  "device": "cpu",
+  "trial_keys": [
+    "0::1",
+    "0::2",
+    "0::3",
+    "0::4",
+    "1::1",
+    "1::2",
+    "1::3",
+    "1::4"
+  ],
+  "trial_covariance_shape": [
+    8,
+    5,
+    30,
+    30
+  ],
+  "reference_fit": "training trial arithmetic mean per band only",
+  "source_experiment": "101_DEP01_filterbank_csp_direction_pairs"
+}

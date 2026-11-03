@@ -1,0 +1,22 @@
+{
+  "experiment_id": "092_within_subject_pca_oof",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "n_subjects": 69,
+  "windows_per_subject": 40,
+  "features": {"total": 720},
+  "outer_folds": 8,
+  "train_windows_per_fold": 35,
+  "valid_windows_per_fold": 5,
+  "pca_components": 10,
+  "lr_C": 1.0,
+  "threshold": 0.5,
+  "random_state": 2026,
+  "normalization": "per_subject_all_40_windows_zscore_ddof0_before_outer_fold",
+  "arms": ["standard_scaler_lr", "standard_scaler_pca10_lr"],
+  "n_jobs": 1,
+  "threads_per_job": 1
+}

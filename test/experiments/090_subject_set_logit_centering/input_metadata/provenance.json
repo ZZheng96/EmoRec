@@ -1,0 +1,69 @@
+{
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\090_subject_set_logit_centering\\run_experiment.py": "3ed6cfeca8d074c794f4d520c5716e8d051c17884a7fad687466f8acd13d9b3e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\090_subject_set_logit_centering\\test_090.py": "743f6746ce9a5bf01c13310a38d814564fcf34839b520fe780842dc476329503",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\090_subject_set_logit_centering\\config.json": "ae83bcee0461d1494500fb07afc362f56457fdb458c021df0155784b05132d68",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\090_subject_set_logit_centering\\test_protocol.txt": "628569470b76fee2a0f7991947a40f0e9c73391c52ec949ae411c18e0bb3803d",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\run_experiment.py": "a30ad1bba26248f973c86e276f7697a547f1489f062a9df1f1ec7b977e196250",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\test_070.py": "57ae5e195781ac0d6861ba0a5a739b90d98457fa31f18c9b9356cc97d37ea3a3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\config.json": "a334927b1be6dbe3e6d6f9ffeb9c707551bbb5a707f0d951298afa9cd82cfca3",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\070_train_context_match_new_splits\\test_protocol.txt": "628569470b76fee2a0f7991947a40f0e9c73391c52ec949ae411c18e0bb3803d",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\normalization.py": "479ad36b298d3adb2c6a4c14ff8b37e0929223c4289113edbff282239acacbb8",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\data.py": "993eb102687057f794664c8549a4b7ecf5034eee2d7100fda390a9b8e7f4bed4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\src\\emo_rec\\submission.py": "e824c162163c9e2082bf413af6d416a6b81657af558cbe6bbb23e3fa4f6a6947",
+    "D:\\WORK\\BCIC2026\\EmoRec\\pyproject.toml": "3110e55a46666a6286279af19fa7d2741de03046f9c40eba6b9d1619e1c8c7aa",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "raw_shape": [
+    2760,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "model_fits": 30,
+  "cpu_only": "sklearn HGB has no GPU implementation; frozen-model CPU exception",
+  "n_jobs": 10,
+  "threads_per_job": 1,
+  "started_at": "2026-11-02T18:27:38+0800",
+  "active_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\WORK\\BCIC2026\\EmoRec\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ]
+}

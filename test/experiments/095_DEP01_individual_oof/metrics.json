@@ -1,0 +1,8 @@
+{
+  "subject": "DEP01",
+  "auc": 0.8524999999999999,
+  "f1": 0.8095238095238095,
+  "simultaneously_reached_0.95": false,
+  "elapsed_seconds": 771.812505599999,
+  "n_rows": 40
+}

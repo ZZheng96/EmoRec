@@ -1,0 +1,7 @@
+# 实验095协议
+
+在091严格数据协议上，仅检验一个可证伪假设：相同的69名被试、每人40窗、8个物理trial（每trial 5窗）、全40窗无标签逐特征z-score，以及逐被试8折 Leave-One-Physical-Trial-Out外层OOF中，在每个外层训练集内用7-trial inner CV联合选择模型与分数方向。
+
+候选固定为 LinearSVC(C=1, dual='auto', max_iter=5000)、LogisticRegression(C=1, max_iter=2000, solver='lbfgs')、HistGradientBoosting（091固定参数）；全部前置StandardScaler。每个模型的raw分数为LinearSVC的sigmoid(decision)或概率，reverse为1-raw。选择规则为inner pooled AUC→F1→候选固定顺序，外层验证标签不参与。固定对照为每个外层折重新拟合的LinearSVC raw。
+
+不读取公开测试数组；不使用HC/DEP、subject、position或外层验证标签选择模型/方向。sklearn模型按协议CPU单线程运行。

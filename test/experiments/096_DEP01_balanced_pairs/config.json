@@ -1,0 +1,14 @@
+{
+  "experiment_id": "096_DEP01_balanced_pairs",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43", "target_subject": "DEP01",
+  "features": {"spectral": 150, "temporal": 450, "PE": 120, "total": 720},
+  "outer_pairs": 16, "outer_validation_windows": 10, "inner_repeats": 3, "outer_repeats": 4,
+  "C": [0.01, 0.1, 1.0, 10.0], "blocks": ["all", "spectral", "temporal", "PE"],
+  "models": ["linear_svc", "logistic_regression"], "direction": "raw", "threshold": 0.5,
+  "selection_rule": "inner mean-of-3 prediction AUC, then F1, then fixed candidate order",
+  "normalization": "StandardScaler fit separately on each training fold only", "threads": 1
+}

@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+  },
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\092_within_subject_pca_oof\\run_experiment.py": "6921a3985e73f5f4e2bd3a6f1ae3b010c08153019a36a09edaf2a8cf70e593b4",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\092_within_subject_pca_oof\\test_092.py": "60fa007754c29b359c5ea58a2f144043d4a48292c73521ac87c11b337aea22ce",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\092_within_subject_pca_oof\\config.json": "31d3e321d1ef7f1b74e08e3ae15f23eb1aa4f4d00df4db4532bc140df4b0745e",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\092_within_subject_pca_oof\\test_protocol.txt": "c79bdb0db16e9475725e821566eb5b1369987b0ac5cd2893cb674af828fb5831",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\run_experiment.py": "d81ca1dc17edba5ad9c1c0ffced924eac2ac2fb08ed160c3ba539287484d87c0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "raw_shape": [
+    2760,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "n_subjects": 69,
+  "rows": 2760,
+  "outer_train_rows": 35,
+  "outer_valid_rows": 5,
+  "fit_policy": "each arm independently fits scaler/PCA/LR on outer 35 windows only",
+  "threads": 1,
+  "python": "3.11.9",
+  "sklearn": "1.9.1"
+}

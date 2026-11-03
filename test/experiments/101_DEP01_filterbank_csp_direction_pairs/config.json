@@ -1,0 +1,19 @@
+{
+  "experiment_id": "100_DEP01_filterbank_csp_pairs",
+  "target_subject": "DEP01",
+  "source_experiment": "043_filterbank_csp",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "filter_order": 4,
+  "regularization": [1e-8,1e-6,1e-4,1e-2],
+  "filters_per_end": [1,2,3],
+  "classifier": ["logistic_regression", "linear_svc"],
+  "C": [0.01,0.1,1,10,100],
+  "aggregation": "mean five windows within each physical trial after CSP feature extraction",
+  "outer_pairs": 16,
+  "inner_pairs": 9,
+  "selection": "inner pooled trial-level AUC, then F1, then fixed candidate order",
+  "outer_validation_labels_used_for_selection": false,
+  "threshold": 0.5,
+  "threads": 1
+}

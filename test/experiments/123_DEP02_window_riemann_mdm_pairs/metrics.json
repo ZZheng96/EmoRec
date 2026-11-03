@@ -1,0 +1,91 @@
+{
+  "experiment_id": "123_DEP02_window_riemann_mdm_pairs",
+  "subject": "DEP02",
+  "pooled_oof": {
+    "auc": 0.5,
+    "f1": 0.5
+  },
+  "fixed_0.5": {
+    "auc": 0.5,
+    "f1": 0.6666666666666666
+  },
+  "pair_mean": {
+    "auc": 0.5,
+    "f1": 0.5416666666666666
+  },
+  "pair_metrics": [
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "candidate_count": 48,
+  "candidate_direction_count": 96,
+  "positive_quota": 4,
+  "threshold": 0.5,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 2070.458568999995
+}

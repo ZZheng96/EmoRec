@@ -1,0 +1,23 @@
+{
+  "experiment_id": "099_DEP01_trial_mean_pairs",
+  "source_experiment": "097_DEP01_nonlinear_pairs",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "target_subject": "DEP01",
+  "aggregation": "mean all five windows within each physical (y, trial) before OOF",
+  "outer_pairs": 16,
+  "inner_pairs": 9,
+  "models": ["linear_svc", "logistic_regression", "rbf_svc"],
+  "blocks": ["all", "spectral", "temporal", "PE"],
+  "C": [0.01, 0.1, 1, 10, 100],
+  "gamma": ["scale", 0.01],
+  "direction": "raw",
+  "threshold": 0.5,
+  "selection": "inner pooled trial-level AUC, then F1, then fixed candidate order",
+  "normalization": "StandardScaler fitted only on training trials",
+  "outer_validation_labels_used_for_selection": false,
+  "threads": 1
+}

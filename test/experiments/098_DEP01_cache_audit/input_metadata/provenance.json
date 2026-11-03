@@ -1,0 +1,140 @@
+{
+  "subject": "DEP01",
+  "alignment": {
+    "metadata_equal": true,
+    "row_count": 40,
+    "trial_count": 8,
+    "windows_per_trial": 5
+  },
+  "cache_inventory": [
+    {
+      "cache": "spectral_cache",
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+      "sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+      "rows": 2800,
+      "features": 210,
+      "feature_names": 210
+    },
+    {
+      "cache": "temporal_cache",
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
+      "sha256": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+      "rows": 2800,
+      "features": 450,
+      "feature_names": 450
+    },
+    {
+      "cache": "pe_cache",
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz",
+      "sha256": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+      "rows": 2800,
+      "features": 120,
+      "feature_names": 120
+    }
+  ],
+  "trial_table": [
+    {
+      "y": 0,
+      "trial": 1,
+      "rows": 5
+    },
+    {
+      "y": 0,
+      "trial": 2,
+      "rows": 5
+    },
+    {
+      "y": 0,
+      "trial": 3,
+      "rows": 5
+    },
+    {
+      "y": 0,
+      "trial": 4,
+      "rows": 5
+    },
+    {
+      "y": 1,
+      "trial": 1,
+      "rows": 5
+    },
+    {
+      "y": 1,
+      "trial": 2,
+      "rows": 5
+    },
+    {
+      "y": 1,
+      "trial": 3,
+      "rows": 5
+    },
+    {
+      "y": 1,
+      "trial": 4,
+      "rows": 5
+    }
+  ],
+  "feature_row_statistics": {
+    "spectral_cache": {
+      "finite": true,
+      "global_mean": 0.4675151983161433,
+      "global_std": 0.8641248599170226,
+      "trial_means": {
+        "y0_trial1": 0.4710120643990659,
+        "y0_trial2": 0.4044348966760685,
+        "y0_trial3": 0.49786176185737063,
+        "y0_trial4": 0.4482861060547286,
+        "y1_trial1": 0.5104998429920073,
+        "y1_trial2": 0.5177664915747747,
+        "y1_trial3": 0.4524748349349839,
+        "y1_trial4": 0.43778558804014656
+      }
+    },
+    "temporal_cache": {
+      "finite": true,
+      "global_mean": 0.33655387534497255,
+      "global_std": 0.5686823631657367,
+      "trial_means": {
+        "y0_trial1": 0.3473220047611023,
+        "y0_trial2": 0.2860278737298478,
+        "y0_trial3": 0.34419522728943897,
+        "y0_trial4": 0.32186431979271146,
+        "y1_trial1": 0.3644780180723713,
+        "y1_trial2": 0.3742549254017347,
+        "y1_trial3": 0.3215508939431789,
+        "y1_trial4": 0.33273773976939525
+      }
+    },
+    "pe_cache": {
+      "finite": true,
+      "global_mean": 0.9849161790381491,
+      "global_std": 0.013600896209904104,
+      "trial_means": {
+        "y0_trial1": 0.9829382467805745,
+        "y0_trial2": 0.9842698565879308,
+        "y0_trial3": 0.9858754243484372,
+        "y0_trial4": 0.9858114665750373,
+        "y1_trial1": 0.9847570360645921,
+        "y1_trial2": 0.9857253373478867,
+        "y1_trial3": 0.9854170192302228,
+        "y1_trial4": 0.9845350453705108
+      }
+    }
+  },
+  "inputs": {
+    "spectral_cache": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+      "sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11"
+    },
+    "temporal_cache": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
+      "sha256": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb"
+    },
+    "pe_cache": {
+      "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz",
+      "sha256": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+    }
+  },
+  "python": "3.11.9",
+  "numpy": "2.4.6"
+}

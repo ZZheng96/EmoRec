@@ -1,0 +1,96 @@
+{
+  "experiment_id": "117_DEP02_centroid_distance_pairs",
+  "subject": "DEP02",
+  "pooled_oof": {
+    "auc": 0.375,
+    "f1": 0.25
+  },
+  "fixed_0.5": {
+    "auc": 0.375,
+    "f1": 0.6
+  },
+  "pair_mean": {
+    "auc": 0.375,
+    "f1": 0.35416666666666663
+  },
+  "pair_metrics": [
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "feature_dimensions": {
+    "all": 720,
+    "spectral": 150,
+    "temporal": 450,
+    "PE": 120
+  },
+  "candidate_count": 48,
+  "positive_quota": 4,
+  "outer_validation_labels_used_for_selection": false,
+  "simultaneously_reached_0.95": false,
+  "elapsed_seconds": 3.619912900001509
+}

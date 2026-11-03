@@ -1,0 +1,7 @@
+实验092冻结协议
+
+1. 仅使用现有训练缓存001 spectral、009 temporal、057 permutation entropy及091同一fixed reference；排除HC43后69名被试，每人40窗、8个物理trial、每trial 5窗，720维输入；禁止读取公开数组。
+2. 复用091的每被试无标签逐特征z-score（全部40窗，ddof=0）及物理trial key=(y, original_trial_id)；该无标签归一化不是标签泄漏。
+3. 外层固定8折 Leave-One-Physical-Trial-Out；每折训练35窗、验证5窗，两个臂完全使用同一折，验证标签不参与任何拟合或决策。
+4. 控制臂：StandardScaler+LogisticRegression(C=1)。处理臂：StandardScaler+PCA(n_components=10)+LogisticRegression(C=1)。PCA只在当前外层35个训练窗拟合，验证5窗仅transform；两臂均为LR，不调参。
+5. 每被试输出40行OOF；同时报告pooled和macro-subject AUC/F1。该实验只检验PCA10相对720维标准化LR的单一预注册假设。

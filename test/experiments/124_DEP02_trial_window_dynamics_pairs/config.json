@@ -1,0 +1,22 @@
+{
+  "experiment_id": "124_DEP02_trial_window_dynamics_pairs",
+  "target_subject": "DEP02",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "raw_windows": 40,
+  "windows_per_trial": 5,
+  "morphologies": ["mean", "full"],
+  "full_features": ["mean", "std", "slope_t=-2..2", "last-first", "mean_first2-minus-last2"],
+  "blocks": ["power", "asymmetry", "all"],
+  "pca_components": [1,2,3],
+  "C": [0.1,1,10],
+  "model": "StandardScaler then PCA then LogisticRegression",
+  "candidate_models": 54,
+  "candidate_directions": 108,
+  "outer_protocol": "4x4 positive-negative physical-trial pairs, 6 train / 2 validation",
+  "inner_protocol": "3x3 positive-negative physical-trial pairs, 4 train / 2 validation",
+  "selection_priority": ["inner OOF AUC descending", "inner OOF F1@0.5 descending", "candidate index ascending", "direction index ascending"],
+  "outer_validation_labels_used_for_selection": false,
+  "threads": 1,
+  "positive_quota": 4,
+  "threshold": 0.5
+}

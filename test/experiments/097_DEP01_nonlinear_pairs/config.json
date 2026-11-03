@@ -1,0 +1,16 @@
+{
+  "experiment_id": "097_DEP01_nonlinear_pairs",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43", "target_subject": "DEP01",
+  "C": [0.1, 1, 10, 100], "gamma": ["scale", 0.01],
+  "blocks": ["all", "spectral", "temporal", "PE"],
+  "candidate_order": "block, then C, then gamma; 32 candidates",
+  "kernel": "rbf", "direction": "raw", "threshold": 0.5,
+  "outer_pairs": 16, "inner_pairs": 9, "outer_prediction_count": 4, "inner_prediction_count": 3,
+  "selection": "pooled inner mean-prediction AUC, then F1, then fixed candidate order",
+  "normalization": "StandardScaler fitted only on training rows for every inner/outer fit",
+  "threads": 1, "compute_reason": "Small-sample sklearn libsvm CPU solver; single thread avoids overhead; no GPU implementation in this dependency stack"
+}

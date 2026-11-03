@@ -1,0 +1,6 @@
+实验094冻结协议
+
+1. 严格沿用091输入、排除HC43后的69名被试、每人40窗、trial键(y, original_trial_id)、全40窗无标签逐特征zscore(ddof=0)、8-fold Leave-One-Physical-Trial-Out。
+2. 每个外层fold仅使用7个训练trial的inner Leave-One-Trial-Out。固定两个候选：raw=LinearSVC decision score经sigmoid；reverse=1-sigmoid(score)。inner按pooled AUC→F1→固定顺序(raw优先平局)选择。
+3. 选定方向后，在外层35个训练窗重训同一StandardScaler+LinearSVC(C=1, dual='auto', max_iter=5000)，对外层5窗预测。raw控制臂使用同折同一模型的原始分数概率；direction_adaptive按inner选择是否反向。外层验证标签不参与方向选择。
+4. 输出两臂逐窗OOF、逐被试指标、pooled/macro AUC/F1、方向选择次数、fold元数据、输入与源码哈希。禁止读取公开数组，不进行额外调参或选择被试。

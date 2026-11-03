@@ -1,0 +1,8 @@
+实验091冻结协议
+
+1. 输入仅使用现有训练缓存：001 spectral、009 temporal、057 permutation entropy；禁止读取公开数组。排除HC43后69名被试，每人40窗、8个物理trial、每trial 5窗，特征150+450+120=720。
+2. 每subject先对全部40窗逐特征无标签zscore（ddof=0），该a40为唯一主方案。
+3. 物理trial key=(y, original_trial_id)，每subject恰有8个key、每key 5窗。外层8-fold Leave-One-Physical-Trial-Out：验证完整trial的5窗，训练另外35窗。
+4. 每个外层训练集内，使用其7个trial做Leave-One-Trial-Out inner CV。候选固定为StandardScaler+HGB、StandardScaler+LogisticRegression(C=1,max_iter=2000)、StandardScaler+LinearSVC(C=1)。按inner pooled AUC选择，平局按F1，再按候选声明顺序。inner只用外层训练窗，不接触外层验证标签。
+5. 选定方法在外层35窗全量重训，预测外层5窗；每subject独立OOF。LinearSVC使用decision_function sigmoid；若任何候选在小折无法产生有效概率，统一使用该规则并记录。
+6. 输出逐窗预测、每subject指标、整体pooled及宏subject指标、每subject方法选择计数、每折元数据、输入来源哈希和测试记录。

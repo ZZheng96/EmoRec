@@ -1,0 +1,22 @@
+{
+  "experiment_id": "102_DEP01_logeuclidean_pairs",
+  "target_subject": "DEP01",
+  "source_experiment": "101_DEP01_filterbank_csp_direction_pairs",
+  "bands": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "sampling_rate": 250,
+  "filter_order": 4,
+  "regularization": [0.000001, 0.01],
+  "band_sets": [[0,1,2,3,4],[0],[1],[2],[3],[4],[1,2],[2,3,4]],
+  "classifier": ["logistic_regression", "linear_svc"],
+  "C": [0.01, 1],
+  "aggregation": "arithmetic mean of five window covariances per physical trial before logm",
+  "representation": "upper triangle of log(C + epsilon I) minus log(training arithmetic mean C + epsilon I); training-only StandardScaler",
+  "outer_pairs": 16,
+  "inner_pairs": 9,
+  "directions": ["raw", "reverse"],
+  "selection": "inner pooled trial AUC, F1, fixed candidate order, raw before reverse",
+  "outer_validation_labels_used_for_selection": false,
+  "threshold": 0.5,
+  "threads": 1,
+  "seed": 2026
+}

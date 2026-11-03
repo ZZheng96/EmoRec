@@ -1,0 +1,17 @@
+{
+  "source": "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP01.mat",
+  "source_sha256": "a8305f6ff0eb2eec43ce1a890161f01afadc860c634b6c57ea53f1c157dba210",
+  "script_sha256": "66d99ecf03670b30877f9b284503a55125cafd266febebcbe7e7a3c9caa733ad",
+  "python": "3.11.9",
+  "threads": 1,
+  "protocol": "108_topk_sensitivity",
+  "top_ks": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    240
+  ],
+  "outer_validation_labels_used_for_selection": false
+}

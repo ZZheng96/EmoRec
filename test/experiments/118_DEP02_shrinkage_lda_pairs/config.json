@@ -1,0 +1,21 @@
+{
+  "experiment_id": "118_DEP02_shrinkage_lda_pairs",
+  "target_subject": "DEP02",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "aggregation": "mean five windows within each physical trial before nested pair OOF",
+  "outer_pairs": "4x4 positive/negative trial pairs (6 train, 2 valid)",
+  "inner_pairs": "3x3 positive/negative trial pairs (4 train, 2 valid)",
+  "blocks": {"all": 720, "spectral": 150, "temporal": 450, "PE": 120},
+  "models": {"lda": ["auto", 0.1, 0.5, 0.9], "logistic_regression": [1.0]},
+  "selection": ["none", "mutual_info", "f_classif"],
+  "k": [5, 10, 20, 50],
+  "direction": ["raw", "reverse"],
+  "selection_rule": "inner OOF AUC then F1@0.5 then candidate index then direction index",
+  "normalization": "StandardScaler fitted only within each training fold",
+  "positive_quota": 4,
+  "threshold": 0.5,
+  "outer_validation_labels_used_for_selection": false,
+  "threads": 1
+}

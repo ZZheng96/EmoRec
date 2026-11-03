@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\097_DEP01_nonlinear_pairs\\run_experiment.py": "f62be23190e7029018b6e0a04988440ff79dacbbfe1e16bf570ece3070d49d0f",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\097_DEP01_nonlinear_pairs\\test_097.py": "3072ef969b802cd1abf49bd07df9c1970046a347fc094c7c25d078b574e58ebd",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\097_DEP01_nonlinear_pairs\\config.json": "655bf896e15e5fdae6dfc1b2d10abad891e0c361523d8b0ceebc532f0c226ad5",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\097_DEP01_nonlinear_pairs\\\u51bb\u7ed3\u534f\u8bae.md": "6b209408563a01559b5a8f1e23caee6d38fe36a6af8883bea460ad1eb3585a71",
+    "D:\\WORK\\BCIC2026\\EmoRec\\pyproject.toml": "3110e55a46666a6286279af19fa7d2741de03046f9c40eba6b9d1619e1c8c7aa",
+    "D:\\WORK\\BCIC2026\\EmoRec\\\u6570\u636e\\\u6570\u636e\u96c6\u8bf4\u660e\u6587\u6863.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\096_DEP01_balanced_pairs\\run_experiment.py": "7f9373d57e101d2e305330e273cf3538417b84f7d332cab586bb6bf28a29ed2b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\095_DEP01_individual_oof\\run_experiment.py": "2544637d4ab62a0867260fd56e9daf866517f6eced3fb01ed7b0c8b964df322b",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\091_within_subject_trial_oof\\run_experiment.py": "5abbd1d2453b2e3f9865e8e078236d6002beeba5f89a80e1dd5cc9a774711b36",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\067_adaptation_context_size\\run_experiment.py": "d81ca1dc17edba5ad9c1c0ffced924eac2ac2fb08ed160c3ba539287484d87c0",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\032_repeated_subject_folds\\run_experiment.py": "b4bafc1c6d133bdec25a049e91e252e848dcf7fb2bf572796c79dc92bf1a2de9"
+  },
+  "inputs": {
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708",
+    "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
+  },
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "sklearn": "1.9.1",
+  "threads": 1,
+  "normalization": "StandardScaler fitted only on training rows for every inner/outer fit",
+  "compute_reason": "Small-sample sklearn libsvm CPU solver; single thread avoids overhead; no GPU implementation in this dependency stack"
+}

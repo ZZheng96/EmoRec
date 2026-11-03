@@ -1,0 +1,12 @@
+{
+  "experiment_id": "095_DEP01_individual_oof",
+  "target_subject": "DEP01",
+  "public_arrays_loaded": false,
+  "raw_shape": [2760, 720],
+  "rows_evaluated": 40,
+  "excluded_subject": "HC43",
+  "normalization": "per_subject_all_40_windows_zscore_ddof0_before_outer_split",
+  "candidate_count": 216,
+  "selection_rule": "inner pooled AUC, then F1, then fixed candidate order",
+  "sources": ["run_experiment.py", "test_095.py", "config.json", "test_protocol.txt", "../091_within_subject_trial_oof/run_experiment.py", "../../数据/数据集说明文档.md"]
+}

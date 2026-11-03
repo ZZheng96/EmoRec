@@ -1,0 +1,1 @@
+﻿{"overall_pooled": {"auc": 0.676817370300357, "f1": 0.6225736879942487}, "macro_subject": {"auc": 0.648695652173913, "f1": 0.62001244131407}, "method_selection_counts": {"hgb": 2, "logistic_regression": 5, "linear_svc": 545}, "elapsed_seconds": 1076.4437042999998}

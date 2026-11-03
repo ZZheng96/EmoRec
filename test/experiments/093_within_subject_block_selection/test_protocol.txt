@@ -1,0 +1,7 @@
+实验093冻结协议
+
+1. 仅复用091的load_data/trial_keys及三份训练缓存；排除HC43后69名被试，每人40窗、8个物理trial，每trial 5窗，输入为每被试全部40窗逐特征无标签zscore后的720维特征。
+2. 外层8折按物理trial Leave-One-Trial-Out，验证完整5窗，训练35窗。每折内部仅使用35窗的7-trial inner Leave-One-Trial-Out。
+3. 候选块固定顺序为spectral150、temporal450、permutation_entropy120、all720。每个候选均为StandardScaler+LinearSVC(C=1, dual='auto', max_iter=5000)，按inner pooled AUC→F1→固定候选顺序选择。
+4. 外层验证标签不参与选择。选中块在35窗重训并预测5窗；同时同折训练all720固定控制臂并预测相同5窗。
+5. 输出selected_block与all720_fixed两臂逐窗OOF、逐被试AUC/F1、pooled与macro subject指标、每折选择元数据、输入与源码哈希。不读取公开数组。

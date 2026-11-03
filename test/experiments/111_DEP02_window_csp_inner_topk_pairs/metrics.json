@@ -1,0 +1,95 @@
+{
+  "experiment_id": "111_DEP02_window_csp_inner_topk_pairs",
+  "subject": "DEP02",
+  "pooled_oof": {
+    "auc": 0.3125,
+    "f1": 0.25
+  },
+  "pair_metrics": [
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "pair_mean": {
+    "auc": 0.375,
+    "f1": 0.20833333333333331
+  },
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "candidate_count": 120,
+  "candidate_direction_count": 240,
+  "top_ks": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "threshold": 0.5,
+  "threshold_search": false,
+  "k_selection": "inner OOF pooled AUC then F1 then smaller K",
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 86.65444380000554
+}

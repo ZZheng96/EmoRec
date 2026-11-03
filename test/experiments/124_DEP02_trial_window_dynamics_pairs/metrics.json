@@ -1,0 +1,108 @@
+{
+  "experiment_id": "124_DEP02_trial_window_dynamics_pairs",
+  "subject": "DEP02",
+  "pooled_oof": {
+    "auc": 0.1875,
+    "f1": 0.25
+  },
+  "fixed_0.5": {
+    "auc": 0.1875,
+    "f1": 0.0
+  },
+  "pair_mean": {
+    "auc": 0.5,
+    "f1": 0.2708333333333333
+  },
+  "pair_metrics": [
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "candidate_model_count": 54,
+  "candidate_count": 108,
+  "morphologies": [
+    "mean",
+    "full"
+  ],
+  "blocks": [
+    "power",
+    "asymmetry",
+    "all"
+  ],
+  "pca_components": [
+    1,
+    2,
+    3
+  ],
+  "C": [
+    0.1,
+    1,
+    10
+  ],
+  "elapsed_seconds": 25.51092119999521,
+  "outer_validation_labels_used_for_selection": false
+}

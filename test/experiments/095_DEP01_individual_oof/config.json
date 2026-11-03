@@ -1,0 +1,21 @@
+{
+  "experiment_id": "095_DEP01_individual_oof",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "excluded_subject": "HC43",
+  "target_subject": "DEP01",
+  "features": {"spectral": 150, "temporal": 450, "permutation_entropy": 120, "total": 720},
+  "outer_folds": 8,
+  "inner_folds": 7,
+  "thresholds": [0.5],
+  "random_state": 2026,
+  "threads_per_job": 1,
+  "normalization": "per_subject_all_40_windows_zscore_ddof0_before_outer_split",
+  "blocks": ["all", "spectral", "temporal", "permutation_entropy"],
+  "selectors": ["raw", "selectkbest100", "pca095"],
+  "directions": ["raw", "reverse"],
+  "models": {"linear_svc": {"C": [0.1, 1.0, 10.0]}, "logistic_regression": {"C": [0.1, 1.0, 10.0]}, "hist_gradient_boosting": {"l2_regularization": [0.1, 1.0, 10.0]}},
+  "selection_rule": "inner pooled AUC, then F1, then fixed candidate order"
+}

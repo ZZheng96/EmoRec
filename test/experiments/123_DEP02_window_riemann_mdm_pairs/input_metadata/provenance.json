@@ -1,0 +1,21 @@
+{
+  "source": "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\抑郁症患者\\DEP02.mat",
+  "source_sha256": "05d23c1f588db0a6dae03fef9ed2adf375c94ebf6ef368c2604319183a8f1572",
+  "script_sha256": "e6bb71abf2e1e0db54fa383bd3af8471629b3ac9235732db0919b675246aca32",
+  "python": "3.11.9",
+  "threads": 1,
+  "compute": "single-thread CPU",
+  "outer_validation_labels_used_for_selection": false,
+  "prototype_fit_on_training_windows_only": true,
+  "shrinkage_fit_on_training_windows_only": true,
+  "freeze": {
+    "started_at_utc": "2026-11-03T05:15:29.780196+00:00",
+    "hashes": {
+      "run_experiment.py": "e6bb71abf2e1e0db54fa383bd3af8471629b3ac9235732db0919b675246aca32",
+      "config.json": "dc8c96bb832a2972f80abdc30ca31ce4308f925bd2c24772869c3ac200d7ca96",
+      "冻结协议.md": "f24f9eeec7c98bb00b52476d49785212834ca3a69af3d30128f3628d268d4928"
+    }
+  },
+  "completed_at_utc": "2026-11-03T05:15:29.790197+00:00",
+  "data_description_sha256": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+}
