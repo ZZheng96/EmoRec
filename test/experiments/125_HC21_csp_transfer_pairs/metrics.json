@@ -1,0 +1,36 @@
+{
+  "subject": "HC21",
+  "baseline_720_linearsvc_fixed05": {
+    "auc": 1.0,
+    "f1": 0.9523809523809523
+  },
+  "csp_window_pairs": {
+    "auc": 1.0,
+    "f1_fixed05": 1.0,
+    "f1_quota4": 1.0
+  },
+  "n_trials": 8,
+  "windows_per_trial": 5,
+  "candidate_count": 120,
+  "positive_quota": 4,
+  "quota_search": false,
+  "threshold_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 96.5818173000007,
+  "provenance": {
+    "source": "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC21.mat",
+    "source_sha256": "c53edd6bfad6606baf7251cdc20d40d0f36755c83e67bc38c1d5dabdea9ffb21",
+    "freeze": {
+      "started_at_utc": "2026-11-03T09:46:05.849288+00:00",
+      "hashes": {
+        "run_experiment.py": "b6ca50874a82aa6633dbedd869a3867a35a6aa9f136bf371e5af78dc247bb846",
+        "config.json": "35ad10245368e210be5a90278a8e3da03c964f9b813c1935d6ba747de8d409c0",
+        "冻结协议.md": "06c1931c498336628be6fa38010d3a4c2f14974b6653f0538d613c71cceab924"
+      }
+    },
+    "completed_at_utc": "2026-11-03T09:47:42.399520+00:00",
+    "python": "3.11.9",
+    "threads": 1,
+    "public_arrays_loaded": false
+  }
+}
