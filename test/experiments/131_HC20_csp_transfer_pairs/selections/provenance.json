@@ -1,0 +1,5 @@
+{
+  "selection": "inner training trials only",
+  "outer_validation_labels_used_for_selection": false,
+  "candidate_count": 120
+}
