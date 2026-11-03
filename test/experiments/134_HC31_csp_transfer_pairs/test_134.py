@@ -25,7 +25,7 @@ def test_algorithm_unchanged_from_131():
 
 
 def test_cache_metadata_matches_raw():
-    eeg, y, trial, source = e.load_hc13()
+    eeg, y, trial, source = e.load_hc31()
     x, ref = e.load_720()
     assert source.name == "HC31.mat" and eeg.shape == (40, 30, 2500)
     assert x.shape == (40, 720) and np.isfinite(x).all()
@@ -62,7 +62,7 @@ def test_nested_isolation_and_candidate_count():
 
 
 def test_real_predictions_and_metrics_recompute():
-    eeg, y, trial, _ = e.load_hc13()
+    eeg, y, trial, _ = e.load_hc31()
     cov = e.covariances(eeg)
     selections = json.loads((HERE / "input_metadata/selections.json").read_text())
     pair = pd.read_csv(HERE / "predictions/pair_predictions.csv")
