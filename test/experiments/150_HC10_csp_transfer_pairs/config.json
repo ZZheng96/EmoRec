@@ -1,0 +1,19 @@
+{
+  "experiment_id": "150_HC10_csp_transfer_pairs",
+  "subject": "HC10",
+  "source": "src/150_HC10_csp_transfer_pairs/run_experiment.py",
+  "baseline_features": "experiment091_cached_720",
+  "baseline_model": "LinearSVC_C1_fixed_threshold_0.5",
+  "bands_hz": [[1,4],[4,8],[8,13],[13,30],[30,45]],
+  "outer_protocol": "16 leave-one-positive-and-one-negative-trial-pair-out folds, NOT LOTO",
+  "inner_protocol": "within outer training trials only, all 3x3 positive-negative pairs",
+  "positive_quota": 4,
+  "threshold": 0.5,
+  "threshold_search": false,
+  "quota_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "candidate_count": 120,
+  "threads": 1,
+  "random_state": 2026
+}
+

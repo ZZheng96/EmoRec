@@ -1,0 +1,36 @@
+{
+  "subject": "HC01",
+  "baseline_720_linearsvc_fixed05": {
+    "auc": 0.7125,
+    "f1": 0.6666666666666666
+  },
+  "csp_window_pairs": {
+    "auc": 1.0,
+    "f1_fixed05": 0.8,
+    "f1_quota4": 1.0
+  },
+  "n_trials": 8,
+  "windows_per_trial": 5,
+  "candidate_count": 120,
+  "positive_quota": 4,
+  "quota_search": false,
+  "threshold_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 92.95905209999182,
+  "provenance": {
+    "source": "D:\\WORK\\BCIC2026\\EmoRec\\数据\\训练集\\正常人\\HC01.mat",
+    "source_sha256": "6417519e641a815c07c7f0e12f639a77e144945a1d1ee484aefc327d957ff23b",
+    "freeze": {
+      "started_at_utc": "2026-11-03T18:58:28.676770+00:00",
+      "hashes": {
+        "src/148_HC01_csp_transfer_pairs/run_experiment.py": "84e0d26ab59b7104a7e675df61ff1dbc8990fd1fd8a8c4ce9c8cbc9a4f0c329c",
+        "test/experiments/148_HC01_csp_transfer_pairs/config.json": "eaee3ad7493f9b2185fcd3c64f29dbbc8e62ab3f4a7fc718df83a1cff6dd4f7d",
+        "test/experiments/148_HC01_csp_transfer_pairs/冻结协议.md": "995acaad1bbac4969ddac9f05c7a125b43e0e268950fc8b2b97e71e54f34b835"
+      }
+    },
+    "completed_at_utc": "2026-11-03T19:00:01.383053+00:00",
+    "python": "3.11.9",
+    "threads": 1,
+    "public_arrays_loaded": false
+  }
+}

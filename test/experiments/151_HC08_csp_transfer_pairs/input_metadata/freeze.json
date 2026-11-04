@@ -1,0 +1,8 @@
+{
+  "started_at_utc": "2026-11-03T19:43:36.822809+00:00",
+  "hashes": {
+    "src/151_HC08_csp_transfer_pairs/run_experiment.py": "de6ee3c90878e9c78a2be915b37f63473f68beab86fcc0a698daa73cb4c29ff1",
+    "test/experiments/151_HC08_csp_transfer_pairs/config.json": "dab51e44399a672bfddd021af617ee7634b86c2d11dd0eccd10e65b94d9504dd",
+    "test/experiments/151_HC08_csp_transfer_pairs/冻结协议.md": "25e4a172a50e44c5222baf15bc80bef5f84b52c8ff8176e81dabee17c1952403"
+  }
+}
