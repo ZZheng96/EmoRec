@@ -1,0 +1,8 @@
+实验166冻结协议
+
+1. 仅使用091已生成的训练缓存（001 spectral、009 temporal、057 permutation entropy），不读取公开测试集；仅保留HC31，720维输入及091既定的逐被试40窗无标签z-score。
+2. 外层为8个物理trial的Leave-One-Trial-Out；每折验证完整5窗，训练其余35窗。外层验证标签不参与任何选择。
+3. 每个外层训练集内部执行7个trial的Leave-One-Trial-Out inner CV，比较固定候选：StandardScaler+LinearSVC、LogisticRegression、HistGradientBoosting，各自raw/reverse两个分数方向。
+4. 候选按inner pooled AUC优先、F1次之、固定候选声明索引再次之选择；选择后只在外层35窗重训并预测5窗。
+5. LinearSVC decision_function经固定sigmoid映射；reverse为1-p。所有预测固定阈值0.5。每个trial最终概率为5窗均值；禁止事后阈值搜索、quota搜索和外层标签选择。
+6. 输出逐窗OOF、trial均值OOF、每折inner评分/选择、输入与源码SHA256、metrics.json及中文实验报告。 

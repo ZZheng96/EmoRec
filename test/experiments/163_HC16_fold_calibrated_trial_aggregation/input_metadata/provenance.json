@@ -1,0 +1,8 @@
+{
+  "source": "091 cached 720 features aligned to HC16",
+  "outer_validation_labels_used_for_selection": false,
+  "calibration": "each outer training fold only, 7 leave-one-trial-out inner folds",
+  "trial_aggregation": "mean of five window probabilities",
+  "python": "3.11.9",
+  "threads": 1
+}

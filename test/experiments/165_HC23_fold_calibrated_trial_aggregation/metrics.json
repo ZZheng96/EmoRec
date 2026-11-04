@@ -1,0 +1,19 @@
+{
+  "subject": "HC23",
+  "method": "fold-inner Platt calibration + mean trial aggregation",
+  "auc": 1.0,
+  "f1": 1.0,
+  "window_auc": 0.8949999999999999,
+  "window_f1": 0.8292682926829268,
+  "threshold": 0.5,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 0.3349662000000535,
+  "provenance": {
+    "source": "091 cached 720 features aligned to HC23",
+    "outer_validation_labels_used_for_selection": false,
+    "calibration": "each outer training fold only, 7 leave-one-trial-out inner folds",
+    "trial_aggregation": "mean of five window probabilities",
+    "python": "3.11.9",
+    "threads": 1
+  }
+}

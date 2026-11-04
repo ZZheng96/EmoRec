@@ -1,0 +1,16 @@
+{
+  "experiment_id": "162_HC42_fold_calibrated_trial_aggregation",
+  "subject": "HC42",
+  "source": "src/162_HC42_fold_calibrated_trial_aggregation/run_experiment.py",
+  "features": "experiment091_cached_720",
+  "base_model": "StandardScaler+LinearSVC(C=1.0)",
+  "calibration": "Platt logistic regression C=1e6 trained on inner OOF scores",
+  "outer_protocol": "8 leave-one-physical-trial-out folds",
+  "inner_protocol": "7 leave-one-training-trial-out folds per outer fold",
+  "trial_aggregation": "mean of five window probabilities",
+  "threshold": 0.5,
+  "threshold_search": false,
+  "outer_validation_labels_used_for_selection": false,
+  "random_state": 2026,
+  "threads": 1
+}
