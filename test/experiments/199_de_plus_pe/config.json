@@ -1,0 +1,19 @@
+{
+  "experiment_id": "199_de_plus_pe",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "de_cache": "cache/de_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "plus_pe_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "graph_oof": "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv",
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "outer_model_seed_base": 2152,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "sampling_rate": 250,
+  "window_seconds": 10,
+  "excluded_subject": "HC43",
+  "threshold": 0.5,
+  "fusion": {"plus_pe_weight": 0.85, "graph_weight": 0.15, "de_weight": 0.5, "base_weight": 0.5},
+  "acceptance": {"delta_auc_min": 0.005},
+  "n_jobs": 1
+}

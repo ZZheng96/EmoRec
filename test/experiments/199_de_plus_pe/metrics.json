@@ -1,0 +1,337 @@
+{
+  "config": {
+    "experiment_id": "199_de_plus_pe",
+    "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+    "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+    "de_cache": "cache/de_features.npz",
+    "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+    "plus_pe_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+    "graph_oof": "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv",
+    "repeat_seeds": [
+      2027,
+      2028,
+      2029,
+      2030,
+      2031
+    ],
+    "outer_model_seed_base": 2152,
+    "hgb": {
+      "max_iter": 200,
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 1.0,
+      "early_stopping": false
+    },
+    "sampling_rate": 250,
+    "window_seconds": 10,
+    "excluded_subject": "HC43",
+    "threshold": 0.5,
+    "fusion": {
+      "plus_pe_weight": 0.85,
+      "graph_weight": 0.15,
+      "de_weight": 0.5,
+      "base_weight": 0.5
+    },
+    "acceptance": {
+      "delta_auc_min": 0.005
+    },
+    "n_jobs": 1
+  },
+  "provenance": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "strict_subjectwise_oof": true,
+    "validation_labels_used_for_selection": false,
+    "public_labels_used": false,
+    "elapsed_seconds": 248.1295141999144
+  },
+  "runs": {
+    "de_only": {
+      "repeats": {
+        "2027": {
+          "overall": {
+            "auc": 0.7806978575929425,
+            "f1": 0.7067342505430847,
+            "balanced_accuracy": 0.7065217391304348
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8314901859504131,
+              "f1": 0.7586206896551724,
+              "balanced_accuracy": 0.7573863636363636
+            },
+            "DEP": {
+              "auc": 0.6741160000000002,
+              "f1": 0.6143001007049346,
+              "balanced_accuracy": 0.617
+            }
+          },
+          "subject_auc_mean": 0.7671376811594204,
+          "n": 2760
+        },
+        "2028": {
+          "overall": {
+            "auc": 0.7811462927956312,
+            "f1": 0.7158351409978309,
+            "balanced_accuracy": 0.7152173913043478
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8307295971074381,
+              "f1": 0.7622298065984073,
+              "balanced_accuracy": 0.7625
+            },
+            "DEP": {
+              "auc": 0.674064,
+              "f1": 0.6349206349206349,
+              "balanced_accuracy": 0.632
+            }
+          },
+          "subject_auc_mean": 0.7680072463768116,
+          "n": 2760
+        },
+        "2029": {
+          "overall": {
+            "auc": 0.784879752152909,
+            "f1": 0.7106782106782107,
+            "balanced_accuracy": 0.7094202898550724
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8364127066115701,
+              "f1": 0.7630838491840181,
+              "balanced_accuracy": 0.7607954545454545
+            },
+            "DEP": {
+              "auc": 0.67598,
+              "f1": 0.6170854271356784,
+              "balanced_accuracy": 0.619
+            }
+          },
+          "subject_auc_mean": 0.7722826086956522,
+          "n": 2760
+        },
+        "2030": {
+          "overall": {
+            "auc": 0.7862119302667507,
+            "f1": 0.7183762232693005,
+            "balanced_accuracy": 0.7184782608695652
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8388326446280991,
+              "f1": 0.7785310734463277,
+              "balanced_accuracy": 0.7772727272727273
+            },
+            "DEP": {
+              "auc": 0.673416,
+              "f1": 0.6107178968655207,
+              "balanced_accuracy": 0.615
+            }
+          },
+          "subject_auc_mean": 0.7699275362318839,
+          "n": 2760
+        },
+        "2031": {
+          "overall": {
+            "auc": 0.7922006931316952,
+            "f1": 0.7297687861271677,
+            "balanced_accuracy": 0.7289855072463769
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8423579545454545,
+              "f1": 0.7785915492957747,
+              "balanced_accuracy": 0.7767045454545455
+            },
+            "DEP": {
+              "auc": 0.6856599999999999,
+              "f1": 0.6424974823766365,
+              "balanced_accuracy": 0.645
+            }
+          },
+          "subject_auc_mean": 0.7801449275362319,
+          "n": 2760
+        }
+      },
+      "aggregate_auc": 0.7850273051879858,
+      "aggregate_f1": 0.7162785223231188
+    },
+    "de_plus_current": {
+      "repeats": {
+        "2027": {
+          "overall": {
+            "auc": 0.7873424700693131,
+            "f1": 0.715843023255814,
+            "balanced_accuracy": 0.7166666666666666
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8388649276859504,
+              "f1": 0.764505119453925,
+              "balanced_accuracy": 0.7647727272727273
+            },
+            "DEP": {
+              "auc": 0.676912,
+              "f1": 0.6297786720321932,
+              "balanced_accuracy": 0.632
+            }
+          },
+          "subject_auc_mean": 0.7723550724637681,
+          "n": 2760
+        },
+        "2028": {
+          "overall": {
+            "auc": 0.7870793950850661,
+            "f1": 0.7173517642779192,
+            "balanced_accuracy": 0.7184782608695652
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8382231404958679,
+              "f1": 0.7700228832951945,
+              "balanced_accuracy": 0.7715909090909091
+            },
+            "DEP": {
+              "auc": 0.6746,
+              "f1": 0.6253746253746254,
+              "balanced_accuracy": 0.625
+            }
+          },
+          "subject_auc_mean": 0.769927536231884,
+          "n": 2760
+        },
+        "2029": {
+          "overall": {
+            "auc": 0.7862518378491914,
+            "f1": 0.7173756308579669,
+            "balanced_accuracy": 0.7159420289855072
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.837111311983471,
+              "f1": 0.7743764172335601,
+              "balanced_accuracy": 0.7738636363636364
+            },
+            "DEP": {
+              "auc": 0.675672,
+              "f1": 0.6178217821782178,
+              "balanced_accuracy": 0.614
+            }
+          },
+          "subject_auc_mean": 0.7691666666666667,
+          "n": 2760
+        },
+        "2030": {
+          "overall": {
+            "auc": 0.7934504305818105,
+            "f1": 0.7251547142337095,
+            "balanced_accuracy": 0.7264492753623188
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.8428925619834712,
+              "f1": 0.7729357798165137,
+              "balanced_accuracy": 0.7749999999999999
+            },
+            "DEP": {
+              "auc": 0.6877200000000001,
+              "f1": 0.6420737786640079,
+              "balanced_accuracy": 0.641
+            }
+          },
+          "subject_auc_mean": 0.7784782608695654,
+          "n": 2760
+        },
+        "2031": {
+          "overall": {
+            "auc": 0.7969990548204158,
+            "f1": 0.7243867243867244,
+            "balanced_accuracy": 0.7231884057971014
+          },
+          "health_groups": {
+            "HC": {
+              "auc": 0.844478305785124,
+              "f1": 0.7759009009009009,
+              "balanced_accuracy": 0.7738636363636364
+            },
+            "DEP": {
+              "auc": 0.6956640000000001,
+              "f1": 0.6325301204819277,
+              "balanced_accuracy": 0.634
+            }
+          },
+          "subject_auc_mean": 0.782391304347826,
+          "n": 2760
+        }
+      },
+      "aggregate_auc": 0.7902246376811595,
+      "aggregate_f1": 0.7200223714024268
+    },
+    "de_plus_fixed_base": {
+      "overall": {
+        "auc": 0.8016257088846881,
+        "f1": 0.7208121827411168,
+        "balanced_accuracy": 0.7210144927536233
+      },
+      "summary": {
+        "overall": {
+          "auc": 0.8016257088846881,
+          "f1": 0.7208121827411168,
+          "balanced_accuracy": 0.7210144927536233
+        },
+        "health_groups": {
+          "HC": {
+            "auc": 0.8529790805785123,
+            "f1": 0.7748868778280543,
+            "balanced_accuracy": 0.7738636363636364
+          },
+          "DEP": {
+            "auc": 0.69216,
+            "f1": 0.6242424242424243,
+            "balanced_accuracy": 0.628
+          }
+        },
+        "subject_auc_mean": 0.7871739130434782,
+        "n": 2760
+      }
+    },
+    "de_expert_fixed_base": {
+      "overall": {
+        "auc": 0.8016257088846881,
+        "f1": 0.7208121827411168,
+        "balanced_accuracy": 0.7210144927536233
+      },
+      "summary": {
+        "overall": {
+          "auc": 0.8016257088846881,
+          "f1": 0.7208121827411168,
+          "balanced_accuracy": 0.7210144927536233
+        },
+        "health_groups": {
+          "HC": {
+            "auc": 0.8529790805785123,
+            "f1": 0.7748868778280543,
+            "balanced_accuracy": 0.7738636363636364
+          },
+          "DEP": {
+            "auc": 0.69216,
+            "f1": 0.6242424242424243,
+            "balanced_accuracy": 0.628
+          }
+        },
+        "subject_auc_mean": 0.7871739130434782,
+        "n": 2760
+      }
+    }
+  },
+  "fixed_fusion": {
+    "plus_pe_weight": 0.85,
+    "graph_weight": 0.15
+  },
+  "stop_line": {
+    "delta_auc": 0.0,
+    "passed": false
+  }
+}

@@ -63,8 +63,8 @@ def build_cache(config, path):
     from emo_rec.data import load_train_segments, load_public_test_segments
     from emo_rec.features import CHANNEL_NAMES
     feats, ys, subs, groups, trials = [], [], [], [], []
-    files = sorted((ROOT / '数据/训练集').glob('*/*.mat'))
-    public_files = sorted((ROOT / '数据/公开测试集').glob('*.mat'), key=lambda p: int(p.stem.replace('P_test', '')))
+    files = sorted((ROOT / '数据/训练集').rglob('*.mat'))
+    public_files = sorted((ROOT / '数据/公开集/公开测试集').glob('*.mat'), key=lambda p: int(p.stem.replace('P_test', '')))
     assert len(files) == 70 and len(public_files) == 10
     for i, f in enumerate(files, 1):
         seg, y, t = load_train_segments(f)

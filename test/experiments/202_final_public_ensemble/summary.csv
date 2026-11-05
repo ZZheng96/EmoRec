@@ -1,0 +1,4 @@
+candidate,oof_auc,oof_f1,public_auc,public_f1,status
+conservative_blend_057_006_0.85_0.15,0.803836,0.726616,unknown,unknown,preferred conservative candidate
+057_plus_pe,0.799903,0.724910,unknown,unknown,candidate
+199_de_plus_fixed_base_control,0.801626,0.720812,unknown,unknown,control only; stop_line_passed=false

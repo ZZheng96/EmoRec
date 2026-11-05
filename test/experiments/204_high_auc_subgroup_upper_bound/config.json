@@ -1,0 +1,14 @@
+{
+  "experiment_id": "204_high_auc_subgroup_upper_bound",
+  "base_plus_pe_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "base_graph_oof": "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv",
+  "selection_per_subject": "../095_within_subject_model_direction/per_subject.csv",
+  "fusion": {"plus_pe_weight": 0.85, "graph_weight": 0.15},
+  "support_k": [0, 1, 2, 4],
+  "stable_hc": ["HC05", "HC13", "HC21", "HC22", "HC30"],
+  "selection_rule": "linear_svc_raw_auc > 0.90 computed from 095 per_subject.csv",
+  "threshold": 0.5,
+  "random_seed": 2026,
+  "public_labels_used": false,
+  "query_labels_for_selection": false
+}

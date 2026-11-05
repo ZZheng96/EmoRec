@@ -1,0 +1,13 @@
+{
+  "experiment_id": "198_protocol_k_adaptation",
+  "base_plus_pe_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "base_graph_oof": "../006_frequency_graph/predictions/frequency_graph_zscore_oof.csv",
+  "fusion": {"plus_pe_weight": 0.85, "graph_weight": 0.15},
+  "support_k": [0, 1, 2, 4],
+  "support_trial_policy": "fixed physical trial positions: evenly spaced, deterministic, no query labels",
+  "adaptation": "one-dimensional logistic calibration on support windows when both classes are present; otherwise frozen base probability",
+  "threshold": 0.5,
+  "query_labels_for_selection": false,
+  "public_labels_used": false,
+  "random_seed": 2026
+}

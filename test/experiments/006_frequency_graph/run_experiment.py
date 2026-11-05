@@ -60,7 +60,7 @@ def load_graph_cache(data, config):
             return cache["X_train"], cache["X_public"], cache["feature_names"]
     train, public = [], []
     actual = {key: [] for key in keys}
-    for source in sorted((ROOT / "数据" / "训练集").glob("*/*.mat")):
+    for source in sorted((ROOT / "数据" / "训练集").rglob("*.mat")):
         segments, labels, trials = load_train_segments(source)
         features, names = graph_features(segments, config["sampling_rate"])
         train.append(features)
@@ -69,7 +69,7 @@ def load_graph_cache(data, config):
         actual["y_train"].extend(labels)
         actual["original_trial_ids"].extend(trials)
         print(f"Graph features: {source.stem}", flush=True)
-    for source in sorted((ROOT / "数据" / "公开测试集").glob("*.mat"), key=lambda item: int(item.stem.replace("P_test", ""))):
+    for source in sorted((ROOT / "数据" / "公开集" / "公开测试集").glob("*.mat"), key=lambda item: int(item.stem.replace("P_test", ""))):
         segments = load_public_test_segments(source)
         features, names = graph_features(segments, config["sampling_rate"])
         public.append(features)

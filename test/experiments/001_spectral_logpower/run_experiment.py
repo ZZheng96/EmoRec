@@ -33,7 +33,7 @@ def build_feature_cache() -> None:
     original_trial_ids = []
     feature_names = None
 
-    train_files = sorted((ROOT / "数据" / "训练集").glob("*/*.mat"))
+    train_files = sorted((ROOT / "数据" / "训练集").rglob("*.mat"))
     for index, path in enumerate(train_files, start=1):
         segments, subject_labels, trial_ids = load_train_segments(path)
         features, feature_names = extract_spectral_features(segments)
@@ -47,7 +47,7 @@ def build_feature_cache() -> None:
     public_features = []
     public_user_ids = []
     public_trial_ids = []
-    test_files = sorted((ROOT / "数据" / "公开测试集").glob("*.mat"), key=numeric_test_sort_key)
+    test_files = sorted((ROOT / "数据" / "公开集" / "公开测试集").glob("*.mat"), key=numeric_test_sort_key)
     for path in test_files:
         segments = load_public_test_segments(path)
         features, _ = extract_spectral_features(segments)

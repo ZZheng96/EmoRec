@@ -70,22 +70,22 @@
     "python": "3.11.9",
     "numpy": "2.4.6",
     "scipy": "1.17.1",
-    "sklearn": "1.9.1",
+    "sklearn": "1.9.0",
     "inputs": {
       "spectral_cache": {
-        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+        "path": "D:\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
         "sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11"
       },
       "temporal_cache": {
-        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
+        "path": "D:\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz",
         "sha256": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb"
       },
       "fixed_reference": {
-        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
+        "path": "D:\\BCIC2026\\EmoRec\\test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv",
         "sha256": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456"
       },
       "pe_cache": {
-        "path": "D:\\WORK\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz",
+        "path": "D:\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz",
         "sha256": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
       }
     },
@@ -17515,13 +17515,13 @@
     "plus_pe": true
   },
   "control_reproduction_max_abs_diff_vs_056": {
-    "fixed002": 1.1102230246251565e-16,
-    "repeat2027": 1.1102230246251565e-16,
-    "repeat2028": 1.1102230246251565e-16,
-    "repeat2029": 1.1102230246251565e-16,
-    "repeat2030": 1.1102230246251565e-16,
-    "repeat2031": 1.1102230246251565e-16
+    "fixed002": 0.0,
+    "repeat2027": 0.0,
+    "repeat2028": 0.0,
+    "repeat2029": 0.0,
+    "repeat2030": 0.0,
+    "repeat2031": 0.0
   },
-  "feature_loading_seconds": 25.965231800000765,
-  "elapsed_seconds": 211.06061710001086
+  "feature_loading_seconds": 0.15129890001844615,
+  "elapsed_seconds": 411.47113119997084
 }

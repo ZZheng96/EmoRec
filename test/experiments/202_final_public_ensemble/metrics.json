@@ -1,0 +1,40 @@
+{
+  "experiment_id": "202_final_public_ensemble",
+  "protocol": "k=0 public protocol",
+  "public_labels": "unknown; public AUC/F1 cannot be computed",
+  "candidates": {
+    "conservative_blend_057_006_0.85_0.15": {
+      "source": "实验057 blend_plus_pe_graph_0.85_public + 实验006 frequency_graph_zscore",
+      "plus_pe_weight": 0.85,
+      "graph_weight": 0.15,
+      "oof_auc": 0.803836,
+      "oof_f1": 0.726616,
+      "public_auc": null,
+      "public_f1": null,
+      "status": "preferred conservative candidate"
+    },
+    "057_plus_pe": {
+      "source": "实验057 plus_pe_public",
+      "oof_auc": 0.799903,
+      "oof_f1": 0.724910,
+      "public_auc": null,
+      "public_f1": null,
+      "status": "candidate"
+    },
+    "199_de_plus_fixed_base_control": {
+      "source": "实验199 de_plus_fixed_base_public",
+      "oof_auc": 0.801626,
+      "oof_f1": 0.720812,
+      "public_auc": null,
+      "public_f1": null,
+      "stop_line_passed": false,
+      "status": "control only; not best"
+    }
+  },
+  "validation": {
+    "required_data_rows": 80,
+    "required_csv_columns": ["user_id", "trial_id", "prob. of positive emotion"],
+    "order_protocol": "P_test1..P_test10, trial_id 1..8",
+    "k": 0
+  }
+}
