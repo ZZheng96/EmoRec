@@ -1,0 +1,19 @@
+{
+  "experiment_id": "214_subjectwise_riemannian_covariance",
+  "excluded_subject": "HC43",
+  "expected_subjects": 69,
+  "expected_train_rows": 2760,
+  "n_splits": 5,
+  "repeat_seeds": [2027, 2028, 2029, 2030, 2031],
+  "sampling_rate": 250,
+  "window_samples": 2500,
+  "channels": 30,
+  "shrinkage": 0.1,
+  "device": "cuda",
+  "gpu_batch_size": 128,
+  "cpu_threads": 1,
+  "threshold": 0.5,
+  "fusion_weight_covariance": 0.2,
+  "model": {"C": 1.0, "max_iter": 2000, "solver": "lbfgs"},
+  "conditions": ["raw", "subject_zscore"]
+}
