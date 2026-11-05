@@ -58,7 +58,7 @@ def main():
     primary = load("candidate_1_consistency_spectral.csv")
     fallback = load("candidate_2_baseline_plus_pe.csv")
     records = []
-    for frame, name in ((primary, "测试结果_提交.xlsx"), (fallback, "测试结果_备选_057基线.xlsx")):
+    for frame, name in ((primary, "赞美诗_测试结果.xlsx"), (fallback, "赞美诗_测试结果_备选_057基线.xlsx")):
         path = ROOT / name
         write_xlsx(frame, path)
         records.append(digest(frame, path))
