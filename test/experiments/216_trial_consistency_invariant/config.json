@@ -1,0 +1,17 @@
+{
+  "experiment_id": "216_trial_consistency_invariant",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "plus_pe_oof_dir": "../057_multiscale_permutation_entropy/predictions",
+  "excluded_subject": "HC43",
+  "expected_train_rows": 2760,
+  "expected_subjects": 69,
+  "train_windows_per_trial": 5,
+  "random_seeds": [2027, 2028, 2029, 2030, 2031],
+  "fold_scheme": "exclude HC43 first; subject-level health-stratified shuffled 5-fold",
+  "model_seed_base": 2026,
+  "threshold": 0.5,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "fusion": {"name": "fixed_05_trial_stats_plus_pe", "trial_stats_weight": 0.5, "plus_pe_weight": 0.5, "declared_before_run": true, "source": "057 plus_pe OOF, matching repeat seed"},
+  "forbidden_predictors": ["y_true", "health_group", "subject_id", "original_trial_id", "public_labels", "window_order"],
+  "public_protocol": "unlabeled public windows grouped as deterministic 5+3 blocks per user; no public metric"
+}

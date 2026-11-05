@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "spectral_cache": "D:\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz",
+    "spectral_cache_sha256": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "plus_pe_oof_dir": "D:\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\predictions"
+  },
+  "config_sha256": "a2e03fcde7310736a30038f69169b3ae68e1121a2bec2fa7660edc1f7730a4cf",
+  "script_sha256": "44abb0dfa8b0935df1949a9d4116a86873a7e918f9c0dcd715ac6222f044d140",
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "pandas": "3.1.0",
+  "sklearn": "1.9.0",
+  "train_shape": [
+    2760,
+    452
+  ],
+  "physical_trial_groups": 552,
+  "trial_windows": 5,
+  "public_labels_read": false,
+  "subject_isolation": true
+}
