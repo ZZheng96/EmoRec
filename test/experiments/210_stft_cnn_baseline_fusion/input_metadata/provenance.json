@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "test\\experiments\\047_time_frequency_cnn\\cache\\stft_windows.npz": "4a8434c797743ea03c70521e7870b92f320b9e70bb58a3a7c1a20b61f971e92c",
+    "test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "test\\experiments\\210_stft_cnn_baseline_fusion\\config.json": "7e272d9a985666cdef1cdc05d78119121d75f7b3da9d0e05a38e7740916a53b5",
+    "test\\experiments\\210_stft_cnn_baseline_fusion\\run_experiment.py": "cbc66281586589c3d6fbb6b5ea8d6843521c02c7ebf197a5e8fd5713790ddcc0",
+    "数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "device": "cuda",
+  "cuda": "NVIDIA GeForce GTX 1660 SUPER",
+  "torch": "2.5.1+cu121",
+  "python": "3.11.9",
+  "strict_subjectwise_oof": true,
+  "physical_trial_splits_disjoint": true,
+  "training_fold_scaler_only": true,
+  "public_labels_used": false,
+  "public_prediction": false,
+  "selection": "fixed epochs and predeclared residual weights; no outer-label tuning"
+}
