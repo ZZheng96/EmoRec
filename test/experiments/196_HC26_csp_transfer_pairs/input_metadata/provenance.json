@@ -1,0 +1,16 @@
+{
+  "source": "D:\\BCIC2026\\EmoRec\\数据\\训练集\\训练集\\正常人\\HC26.mat",
+  "source_sha256": "68e21b34350cf9c0e778d8a794374972652a003e5754951d99aecc74e6dd7753",
+  "freeze": {
+    "started_at_utc": "2026-11-05T06:25:39.130720+00:00",
+    "hashes": {
+      "src/196_HC26_csp_transfer_pairs/run_experiment.py": "aed0b8109e4abd4860018e0bba0d9df128f9574030a4c52e0388189c2a89fd14",
+      "test/experiments/196_HC26_csp_transfer_pairs/config.json": "0989ed8407af85b0ea135e50bb8ad52a59171b0a57de7faea5f79a3ea22182f4",
+      "test/experiments/196_HC26_csp_transfer_pairs/冻结协议.md": "6cc69421fc26e6e058f71a858bfba558dc0e5f6e0c16ab0a9a4a630e423219e4"
+    }
+  },
+  "completed_at_utc": "2026-11-05T06:27:17.226837+00:00",
+  "python": "3.11.9",
+  "threads": 1,
+  "public_arrays_loaded": false
+}
