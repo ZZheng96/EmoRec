@@ -1,5 +1,13 @@
 # Review Competition Requirements and Progress
 
+## 2026-11-05：实验213 公开集提交候选生成
+
+已完成 `test/experiments/213_public_submission_candidates`。使用排除HC43后的69名训练被试全部2760窗口训练三种预声明seed（210/211/212）的STFT-CNN，并按固定 `0.8×057 plus_pe + 0.2×CNN均值` 生成主候选；另保留057基线和单seed210候选。三份文件均通过80行、列名顺序、P_test1–P_test10各8条trial、概率有限且位于[0,1]、STFT与基线公开键逐行一致校验。公开标签未读取，公开AUC/F1未知。
+
+- 主候选：[repeated_seed_mean_residual_0.2_public.csv](test/experiments/213_public_submission_candidates/predictions/repeated_seed_mean_residual_0.2_public.csv)
+- 保守候选：[baseline_057_plus_pe_public.csv](test/experiments/213_public_submission_candidates/predictions/baseline_057_plus_pe_public.csv)
+- 单seed备选：[seed_210_residual_0.2_public.csv](test/experiments/213_public_submission_candidates/predictions/seed_210_residual_0.2_public.csv)
+
 ## 2026-11-05：实验212 STFT残差重复种子稳定性验证
 
 已完成并运行 `test/experiments/212_stft_residual_seed_stability`。严格复用实验210协议：subject-wise固定5折、排除HC43、69人/2760窗口/552物理trial，残差权重固定0.2；预声明种子210/211/212，每折仅用训练被试拟合STFT均值/std。三种子先按 `subject_id+health_group+physical_trial_index+window_index+y_true+fold` 校验规范键集合、标签与fold完全一致，再按键平均概率；审计通过，GPU为NVIDIA GeForce GTX 1660 SUPER，公开标签未读取，未生成公开预测。

@@ -1,0 +1,7 @@
+{
+  "public_auc": null,
+  "public_f1": null,
+  "training_oof_reference_auc": 0.805494,
+  "training_oof_reference_f1": 0.723512,
+  "elapsed_seconds": 5.624980200082064
+}

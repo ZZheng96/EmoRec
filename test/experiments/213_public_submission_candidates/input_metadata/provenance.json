@@ -1,0 +1,62 @@
+{
+  "inputs": {
+    "test\\experiments\\047_time_frequency_cnn\\cache\\stft_windows.npz": "4a8434c797743ea03c70521e7870b92f320b9e70bb58a3a7c1a20b61f971e92c",
+    "test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_public.csv": "5f74792688393720c5c0e31144fb788000b8d70070abfbb69c901f7b3acfe7f4",
+    "test\\experiments\\213_public_submission_candidates\\config.json": "b753021d8c320cc65f95104a6b0ae2212e1a2e2a50c8a93bcb13e4d3a76ee36f",
+    "test\\experiments\\213_public_submission_candidates\\run_public.py": "5d875ccdc6fbb80037494b2922877db721adb4b8ce945d654097e8a348d32edd",
+    "数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542",
+    "test\\experiments\\213_public_submission_candidates\\..\\212_stft_residual_seed_stability\\config.json": "b848182619f398c61f0d025af6e7d2b798ee8666b61cb1735a7bd3bc660a12ed",
+    "test\\experiments\\213_public_submission_candidates\\..\\212_stft_residual_seed_stability\\run_experiment.py": "838519fdc9d68ab5cb9cf8266b0fc4a1889fe939af6b153aab583109f1739721",
+    "test\\experiments\\047_time_frequency_cnn\\run_experiment.py": "22cca08cb8ffc05462a66a69b7ed28dba9291df3abc3c2eb17837aa3138c9e3a",
+    "test\\experiments\\057_multiscale_permutation_entropy\\run_experiment.py": "8c1a7ac94676a211c44e1e66b82c11de8f0bca1d66b7dabce765dc3bdaa52187"
+  },
+  "device": "cuda",
+  "cuda": "NVIDIA GeForce GTX 1660 SUPER",
+  "torch": "2.5.1+cu121",
+  "python": "3.11.9",
+  "train_rows": 2760,
+  "public_rows": 80,
+  "excluded_subject": "HC43",
+  "seeds": [
+    210,
+    211,
+    212
+  ],
+  "full_training_only": true,
+  "public_labels_used": false,
+  "residual_weight": 0.2,
+  "baseline_weight": 0.8,
+  "train_subjects": 69,
+  "scaler_fit": "all eligible training rows only; no public rows",
+  "cache_arrays_read": [
+    "X_train",
+    "y_train",
+    "subject_ids",
+    "X_public",
+    "public_user_ids",
+    "public_trial_ids"
+  ],
+  "outputs_sha256": {
+    "predictions\\repeated_seed_mean_residual_0.2_public.csv": "170c83b81bf99bd9b165dd8be2bc12acc02ac3b22863fae1a5b8c7226db7e7cb",
+    "predictions\\baseline_057_plus_pe_public.csv": "0fa78ba5e827e131b5481a8107cf776c952657907aca7fd67a3d21e6b68ea97c",
+    "predictions\\seed_210_residual_0.2_public.csv": "71af7fa7d37e7eab7465400be82323c8e8d17c0f252da884b70a1a53047be6fa"
+  },
+  "public_cache_baseline_keys_equal": true,
+  "model_selection": "fixed experiment212 protocol; no public-label selection",
+  "baseline_training": "reused frozen057 plus_pe; source script fits all eligible training rows",
+  "validation": "all three candidates: 80 rows, exact columns/order, finite probabilities in [0,1]",
+  "public_order_validated": true,
+  "probability_range": {
+    "baseline_min": 0.0467373485877142,
+    "baseline_max": 0.9302626616661592,
+    "residual_min": 0.0901876322340191,
+    "residual_max": 0.8838324827836782
+  },
+  "baseline_source": "test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_public.csv",
+  "oof_reference": {
+    "experiment": "212_stft_residual_seed_stability",
+    "repeated_seed_mean_auc": 0.805494,
+    "public_auc": null,
+    "public_f1": null
+  }
+}
