@@ -1,0 +1,21 @@
+{
+  "subjects": ["DEP07", "DEP09", "DEP16", "HC10", "HC29", "DEP03", "DEP17"],
+  "lambdas": [0.0, 0.1, 0.3],
+  "components_per_end": [2, 4],
+  "blocks": ["all", "band_2", "band_3", "band_4"],
+  "models": ["linear_svc", "logistic_regression"],
+  "C": [0.1, 1, 10],
+  "directions": ["raw", "reverse"],
+  "csp_weights": [0.25, 0.5, 0.75],
+  "baseline": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "selection": "inner pair OOF averaged per physical trial; maximize trial AUC then fixed05 F1 then candidate order; select CSP first, then fusion weight",
+  "threshold": 0.5,
+  "quota": 4,
+  "seed": 2026,
+  "threads": 1,
+  "outer_validation_labels_used_for_selection": false,
+  "public_labels_used": false,
+  "baseline_scope": "frozen subject-held-out model; original unlabeled whole-subject zscore is retained, transductive not label leakage",
+  "raw_reverse_controls": "same inner-selected CSP candidate with forced raw/reverse, diagnostic only",
+  "extension": "at least 3 baseline AUC improvements and regression protection; no automatic expansion"
+}

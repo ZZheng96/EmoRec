@@ -1,0 +1,1442 @@
+[
+  {
+    "candidate_index": 0,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 1,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 2,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 3,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 4,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 5,
+    "candidate": [
+      0.0,
+      2,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 6,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 7,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 8,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 9,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 10,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 11,
+    "candidate": [
+      0.0,
+      2,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 12,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 13,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 14,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 15,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 16,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 17,
+    "candidate": [
+      0.0,
+      2,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 18,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 19,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 20,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 21,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 22,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 23,
+    "candidate": [
+      0.0,
+      2,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 24,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 25,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 26,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 27,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 28,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 29,
+    "candidate": [
+      0.0,
+      4,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 30,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 31,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 32,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 33,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 34,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 35,
+    "candidate": [
+      0.0,
+      4,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 36,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 37,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 38,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 39,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 40,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 41,
+    "candidate": [
+      0.0,
+      4,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 42,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 43,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 44,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 45,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 46,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 47,
+    "candidate": [
+      0.0,
+      4,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 48,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 49,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 50,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 51,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 52,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 53,
+    "candidate": [
+      0.1,
+      2,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 54,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 55,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 56,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 57,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 58,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 59,
+    "candidate": [
+      0.1,
+      2,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 60,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 61,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 62,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 63,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 64,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 65,
+    "candidate": [
+      0.1,
+      2,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 66,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 67,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 68,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 69,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 70,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 71,
+    "candidate": [
+      0.1,
+      2,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 72,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 73,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 74,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 75,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 76,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 77,
+    "candidate": [
+      0.1,
+      4,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 78,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 79,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 80,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 81,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 82,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 83,
+    "candidate": [
+      0.1,
+      4,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 84,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 85,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 86,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 87,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 88,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 89,
+    "candidate": [
+      0.1,
+      4,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 90,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 91,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 92,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 93,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 94,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 95,
+    "candidate": [
+      0.1,
+      4,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 96,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 97,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 98,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 99,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 100,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 101,
+    "candidate": [
+      0.3,
+      2,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 102,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 103,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 104,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 105,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 106,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 107,
+    "candidate": [
+      0.3,
+      2,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 108,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 109,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 110,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 111,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 112,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 113,
+    "candidate": [
+      0.3,
+      2,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 114,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 115,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 116,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 117,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 118,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 119,
+    "candidate": [
+      0.3,
+      2,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 120,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 121,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 122,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 123,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 124,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 125,
+    "candidate": [
+      0.3,
+      4,
+      "all",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 126,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 127,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 128,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 129,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 130,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 131,
+    "candidate": [
+      0.3,
+      4,
+      "band_2",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 132,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 133,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 134,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 135,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 136,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 137,
+    "candidate": [
+      0.3,
+      4,
+      "band_3",
+      "logistic_regression",
+      10
+    ]
+  },
+  {
+    "candidate_index": 138,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "linear_svc",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 139,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "linear_svc",
+      1
+    ]
+  },
+  {
+    "candidate_index": 140,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "linear_svc",
+      10
+    ]
+  },
+  {
+    "candidate_index": 141,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "logistic_regression",
+      0.1
+    ]
+  },
+  {
+    "candidate_index": 142,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "logistic_regression",
+      1
+    ]
+  },
+  {
+    "candidate_index": 143,
+    "candidate": [
+      0.3,
+      4,
+      "band_4",
+      "logistic_regression",
+      10
+    ]
+  }
+]

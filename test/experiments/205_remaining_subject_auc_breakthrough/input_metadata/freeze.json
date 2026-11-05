@@ -1,0 +1,8 @@
+{
+  "test\\experiments\\205_remaining_subject_auc_breakthrough\\run_experiment.py": "136258cc18adf4cc85e1106d126a21cd58d2659754433943aa032efec48f0b1f",
+  "test\\experiments\\205_remaining_subject_auc_breakthrough\\config.json": "28c373e1c7b802256382d3610cf96976e93de6281119f1c1f367250283c4550c",
+  "test\\experiments\\122_DEP02_window_regularized_csp_pairs\\run_experiment.py": "77729313deb7c0fbe76050ab258da65acec859f3ed176669fdbf91310c8c04d3",
+  "src\\141_HC16_csp_transfer_pairs\\run_experiment.py": "a6db9d0eb6be27cb211f1c44d9f538cf5d75d8f91c3851ecc47c0aeb066632ea",
+  "数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542",
+  ".trae\\documents\\剩余被试AUC优先突破实验计划.md": "71ef929714281d5ed8e18187f6949c891f7142c177273e61644e0c1588ea82c9"
+}
