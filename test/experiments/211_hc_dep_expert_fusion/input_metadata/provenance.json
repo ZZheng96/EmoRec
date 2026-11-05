@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "test\\experiments\\047_time_frequency_cnn\\cache\\stft_windows.npz": "4a8434c797743ea03c70521e7870b92f320b9e70bb58a3a7c1a20b61f971e92c",
+    "test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "test\\experiments\\210_stft_cnn_baseline_fusion\\predictions\\fixed_residual_stft_0.2_oof.csv": "3fe0e19a71fd0b94a8a53139a670317d72c76e787aaa3a877bb89d749e7de75b",
+    "test\\experiments\\211_hc_dep_expert_fusion\\config.json": "6202f617a6d252905e660484aa32e84318a0bd7afa34366cdef2e38079d6084f",
+    "test\\experiments\\211_hc_dep_expert_fusion\\run_experiment.py": "fb95eaa6ac439d66c90ca9166a1313806b30b3a4dbc8d24006c5055f62f38a1c",
+    "数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542"
+  },
+  "device": "cuda",
+  "cuda": "NVIDIA GeForce GTX 1660 SUPER",
+  "torch": "2.5.1+cu121",
+  "python": "3.11.9",
+  "strict_subjectwise_oof": true,
+  "physical_trial_splits_disjoint": true,
+  "training_fold_only_group_experts": true,
+  "public_labels_used": false,
+  "public_prediction": false,
+  "selection": "HC LogisticRegression and DEP HistGradientBoosting predeclared in config; no validation-label selection"
+}

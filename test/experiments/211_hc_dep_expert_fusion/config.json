@@ -1,0 +1,17 @@
+{
+  "experiment_id": "211_hc_dep_expert_fusion",
+  "stft_cache": "../047_time_frequency_cnn/cache/stft_windows.npz",
+  "fixed_outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "baseline_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "fixed_residual_oof": "../210_stft_cnn_baseline_fusion/predictions/fixed_residual_stft_0.2_oof.csv",
+  "excluded_subject": "HC43",
+  "expected_oof_rows": 2760,
+  "folds": 5,
+  "seed": 211,
+  "threshold": 0.5,
+  "hc_expert": {"model": "LogisticRegression", "C": 0.1, "max_iter": 2000, "feature_pool": "channel_mean_std"},
+  "dep_expert": {"model": "HistGradientBoostingClassifier", "max_iter": 100, "learning_rate": 0.05, "max_leaf_nodes": 7, "min_samples_leaf": 20, "l2_regularization": 1.0, "feature_pool": "channel_mean_std"},
+  "expert_fusion": {"HC": "hc_expert", "DEP": "dep_expert", "weights": {"hc_expert": 1.0, "dep_expert": 1.0}},
+  "public_labels_used": false,
+  "public_prediction": false
+}
