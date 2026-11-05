@@ -1,0 +1,9 @@
+subject,fold,held_out_trial_key,train_rows,valid_rows,train_positive_prior,selected_candidate,selection_status,fallback_output_degenerate,valid_candidate_count,invalid_candidate_count,outer_validation_labels_used_for_selection
+HC31,0,0::1,35,5,0.5714285714285714,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,1,0::2,35,5,0.5714285714285714,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,2,0::3,35,5,0.5714285714285714,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,3,0::4,35,5,0.5714285714285714,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,4,1::1,35,5,0.42857142857142855,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,5,1::2,35,5,0.42857142857142855,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,6,1::3,35,5,0.42857142857142855,linear_svc:raw,selected_valid_candidate,False,4,2,False
+HC31,7,1::4,35,5,0.42857142857142855,linear_svc:raw,selected_valid_candidate,False,4,2,False
