@@ -1,0 +1,20 @@
+{
+  "experiment_id": "209_lightweight_cnn_residual",
+  "de_cache": "../199_de_plus_pe/cache/de_features.npz",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "pe_cache": "../057_multiscale_permutation_entropy/cache/pe_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "baseline_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "excluded_subject": "HC43",
+  "folds": 5,
+  "seed": 209,
+  "epochs": 35,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "hidden": 32,
+  "threshold": 0.5,
+  "cnn_weights": [0.1, 0.2, 0.3],
+  "public_prediction": false
+}

@@ -1,0 +1,11 @@
+fold,model,train_subjects,valid_subjects,seconds
+0,mlp_plus_features,55,14,3.0301876000594348
+0,cnn_time_frequency,55,14,1.244442200055346
+1,mlp_plus_features,56,13,0.7548479000106454
+1,cnn_time_frequency,56,13,1.091510699945502
+2,mlp_plus_features,55,14,0.8243444000836462
+2,cnn_time_frequency,55,14,1.2155131000326946
+3,mlp_plus_features,55,14,1.0073228999972343
+3,cnn_time_frequency,55,14,1.153694499982521
+4,mlp_plus_features,55,14,0.787345000077039
+4,cnn_time_frequency,55,14,1.0729338999371976
