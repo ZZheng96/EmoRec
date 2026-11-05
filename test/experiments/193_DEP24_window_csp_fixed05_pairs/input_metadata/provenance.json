@@ -1,0 +1,7 @@
+{
+  "source": "D:\\BCIC2026\\EmoRec\\数据\\训练集\\训练集\\抑郁症患者\\DEP24.mat",
+  "source_sha256": "e063a8aa36592ad4d94a3eb1834e4dde3cf8d803eb2cdce75d4aaad6baa1cb5b",
+  "script_sha256": "8df1ff6991eed53e8a2e5b1caaf9778cec063846f4868f77f2b12876b0bc587a",
+  "python": "3.11.9",
+  "threads": 1
+}
