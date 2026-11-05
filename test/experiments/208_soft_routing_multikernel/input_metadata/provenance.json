@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "test\\experiments\\199_de_plus_pe\\cache\\de_features.npz": "ed1e6dade3f48772178ff9a80cca8f51f8c5258eabd4786e290cc2afab92ac3f",
+    "test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "test\\experiments\\002_subject_normalization\\predictions\\subject_zscore_exclude_hc43_oof.csv": "3160a791ee8209e14b4ae33804b6aa355841b867dd0aa4fec2b3cc1659f2b456",
+    "test\\experiments\\057_multiscale_permutation_entropy\\predictions\\plus_pe_fixed002_oof.csv": "6586b381e65949625b30843558f7c9986566e6cb203843cd1f3061dad3860900",
+    "test\\experiments\\208_soft_routing_multikernel\\run_experiment.py": "3115b8ca966f61998fb9d478ba9ea575d9be0aebfec592dacb9c8313f168a044",
+    "test\\experiments\\208_soft_routing_multikernel\\config.json": "9c648f7b57d35302605ef766e6a8d1ec6c13d09b98875175aea31fa211bf1a9f",
+    "排行.md": "ec6031c88a3d07017c80fd6aaa0fb9ef2a89a6d5b18c3d83deca2dc1bc646fc0",
+    "数据\\数据集说明文档.md": "a501c81670f7a32c476c23f4e83924ad0c0fc5c73a2b8323f452278395061542",
+    "test\\experiments\\207_leaderboard_method_transfer\\run_experiment.py": "462eca217f589b5a622483c942facc7e42c1616a27d1206a7c7f3f67886ca878"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6"
+  },
+  "validation_labels_used_for_routing": false,
+  "validation_labels_used_for_weights": false,
+  "strict_subjectwise_oof": true,
+  "physical_trial_splits_disjoint": true
+}

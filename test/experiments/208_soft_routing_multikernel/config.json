@@ -1,0 +1,22 @@
+{
+  "experiment_id": "208_soft_routing_multikernel",
+  "de_cache": "../199_de_plus_pe/cache/de_features.npz",
+  "spectral_cache": "../001_spectral_logpower/cache/features.npz",
+  "temporal_cache": "../009_temporal_dynamics/cache/temporal_features.npz",
+  "fixed_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "baseline_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "excluded_subject": "HC43",
+  "folds": 5,
+  "seed": 2026,
+  "threads": 1,
+  "linear_C": 0.1,
+  "max_iter": 10000,
+  "hgb": {"max_iter": 200, "learning_rate": 0.03, "max_leaf_nodes": 15, "min_samples_leaf": 20, "l2_regularization": 1.0, "early_stopping": false},
+  "prototype_clusters": 2,
+  "routing_temperature": 1.0,
+  "routing_weights": {"unified": 0.50, "prototype": 0.35, "health_expert": 0.15},
+  "score_weight_grid": [[1,0,0],[0,1,0],[0,0,1],[0.5,0.5,0],[0.5,0,0.5],[0,0.5,0.5],[0.34,0.33,0.33]],
+  "threshold": 0.5,
+  "normalization": "unlabeled per-subject zscore then training-fold StandardScaler",
+  "public_prediction": false
+}
