@@ -1,0 +1,21 @@
+{
+  "experiment_id": "212_stft_residual_seed_stability",
+  "seeds": [210, 211, 212],
+  "stft_cache": "../047_time_frequency_cnn/cache/stft_windows.npz",
+  "fixed_outer_reference": "../002_subject_normalization/predictions/subject_zscore_exclude_hc43_oof.csv",
+  "baseline_oof": "../057_multiscale_permutation_entropy/predictions/plus_pe_fixed002_oof.csv",
+  "excluded_subject": "HC43",
+  "expected_oof_rows": 2760,
+  "folds": 5,
+  "seed": 210,
+  "epochs": 2,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "threshold": 0.5,
+  "residual_weights": [0.1, 0.2],
+  "normalization": "training-fold channel-wise mean/std over STFT tensors; epsilon=1e-6",
+  "architecture": "Conv2d(30,16,3,pad=1)-BN-ReLU-MaxPool2d(2)-DepthwiseSeparable(16,32)-AdaptiveAvgPool2d(1)-Linear(32,1)",
+  "public_labels_used": false,
+  "public_prediction": false
+}
