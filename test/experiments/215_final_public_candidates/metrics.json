@@ -1,0 +1,41 @@
+{
+  "public_labels_used": false,
+  "selection": "predeclared candidates; no public score used",
+  "candidates": [
+    {
+      "file": "candidate_1_consistency_spectral.csv",
+      "rows": 80,
+      "sha256": "f94530f33b1a3d69aa25150d5a5ef4ae8d4b94960878019d762c842a063200c8",
+      "min": 0.0131770065689287,
+      "max": 0.9866065260437588
+    },
+    {
+      "file": "candidate_2_baseline_plus_pe.csv",
+      "rows": 80,
+      "sha256": "0fa78ba5e827e131b5481a8107cf776c952657907aca7fd67a3d21e6b68ea97c",
+      "min": 0.0467373485877142,
+      "max": 0.9302626616661592
+    },
+    {
+      "file": "candidate_3_stft_residual.csv",
+      "rows": 80,
+      "sha256": "7d655590ee9afe99fb6f620ba8dd6a2929abc2ce9f7ccd57a692c385167e93f8",
+      "min": 0.0901876322340191,
+      "max": 0.8838324827836782
+    },
+    {
+      "file": "candidate_4_consistency_stft_blend_0.8_0.2.csv",
+      "rows": 80,
+      "sha256": "b0d435b54a37883cb3d293ab1d1e66df2c7ef6e11199b7247509b95bcc8ceba0",
+      "min": 0.03534544590538562,
+      "max": 0.9629920786788453
+    },
+    {
+      "file": "candidate_5_fixed_quota_consistency.csv",
+      "rows": 80,
+      "sha256": "4c35f4e6acda68f5295f4658326faafcc06f774e74660ddaf987c2aad7ece6ba",
+      "min": 0.09999999999999998,
+      "max": 0.9
+    }
+  ]
+}
