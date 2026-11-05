@@ -1,26 +1,39 @@
 {
-  "source_experiment": "test/experiments/215_final_public_candidates",
-  "source_sha256": {
-    "candidate_1_consistency_spectral.csv": "f94530f33b1a3d69aa25150d5a5ef4ae8d4b94960878019d762c842a063200c8",
-    "candidate_2_baseline_plus_pe.csv": "0fa78ba5e827e131b5481a8107cf776c952657907aca7fd67a3d21e6b68ea97c"
-  },
   "submissions": [
     {
-      "file": "赞美诗_测试结果.xlsx",
+      "file": "赞美诗_测试结果_v1_一致性.xlsx",
+      "source": "test/experiments/215_final_public_candidates/predictions/candidate_1_consistency_spectral.csv",
+      "source_sha256": "f94530f33b1a3d69aa25150d5a5ef4ae8d4b94960878019d762c842a063200c8",
       "rows": 80,
-      "file_sha256": "0171de144d55bc60e083c7ec04687165cb830dc89de4e00dd08f4f52a44fb704",
+      "file_sha256": "70ae1323caf75bc3e78e7b20d7e13a9e1f484f10bf34141e22ba9f74ee0d922d",
       "content_sha256": "e2aab00f18f75404f003427add2c83efd0c1caa866bde823fe378da19eaa009c",
       "prob_min": 0.0131770065689287,
       "prob_max": 0.9866065260437588,
+      "distinct_probs": 40,
       "positives_at_0.5": 34
     },
     {
-      "file": "赞美诗_测试结果_备选_057基线.xlsx",
+      "file": "赞美诗_测试结果_v2_057加STFT.xlsx",
+      "source": "test/experiments/213_public_submission_candidates/predictions/repeated_seed_mean_residual_0.2_public.csv",
+      "source_sha256": "170c83b81bf99bd9b165dd8be2bc12acc02ac3b22863fae1a5b8c7226db7e7cb",
       "rows": 80,
-      "file_sha256": "9291698ad0d4457159d2c81d9222a4d8861973501430f00a7c7fc5871c0e250f",
+      "file_sha256": "277d3ff97d1fb08f99ca85fe046f91f672fc71d17beeb112d786e7a96915acd6",
+      "content_sha256": "6f9aeb0074d694941e3ba1b6cbc3b98629fec47a0f4ee16d4b377ec4182be890",
+      "prob_min": 0.0901876322340191,
+      "prob_max": 0.8838324827836782,
+      "distinct_probs": 80,
+      "positives_at_0.5": 41
+    },
+    {
+      "file": "赞美诗_测试结果_v3_057基线.xlsx",
+      "source": "test/experiments/215_final_public_candidates/predictions/candidate_2_baseline_plus_pe.csv",
+      "source_sha256": "0fa78ba5e827e131b5481a8107cf776c952657907aca7fd67a3d21e6b68ea97c",
+      "rows": 80,
+      "file_sha256": "e43b0cfcba23a2cea985b1069ef4f3a1354e5b3d55398710bf5f788c10160c0a",
       "content_sha256": "b2e0318f2a92ce9e8b758880c4476e4c8d1d01d27639dd4ac355f61e88141b2a",
       "prob_min": 0.0467373485877142,
       "prob_max": 0.9302626616661592,
+      "distinct_probs": 80,
       "positives_at_0.5": 42
     }
   ]

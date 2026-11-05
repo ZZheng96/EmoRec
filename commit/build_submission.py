@@ -1,7 +1,8 @@
-"""从实验215的预声明候选生成官方模板格式的提交文件。
+"""生成官方模板格式（xlsx）的公开测试集提交文件。
 
-主提交：candidate_1_consistency_spectral（严格OOF AUC 0.833320 / F1 0.749930，当前最佳）。
-备选：candidate_2_baseline_plus_pe（严格OOF AUC 0.799903 / F1 0.724910，每个trial独立预测）。
+v1：实验215 candidate_1（一致性频谱），OOF AUC 0.833320/F1 0.749930，已提交，公开 AUC 0.6875。
+v2：实验213 A（0.8×057基线 + 0.2×STFT-CNN），OOF AUC 0.805494/F1 0.723512，每个 trial 独立预测。
+v3：实验215 candidate_2（057 plus+PE 基线），OOF AUC 0.799903/F1 0.724910，最保守的对照。
 """
 import hashlib
 import json
@@ -12,13 +13,18 @@ import openpyxl
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
-SRC = ROOT.parent / "test/experiments/215_final_public_candidates/predictions"
+EXP = ROOT.parent / "test/experiments"
 COLUMNS = ["user_id", "trial_id", "prob. of positive emotion"]
 USERS = [f"P_test{i}" for i in range(1, 11)]
+SOURCES = [
+    ("v1_一致性", EXP / "215_final_public_candidates/predictions/candidate_1_consistency_spectral.csv"),
+    ("v2_057加STFT", EXP / "213_public_submission_candidates/predictions/repeated_seed_mean_residual_0.2_public.csv"),
+    ("v3_057基线", EXP / "215_final_public_candidates/predictions/candidate_2_baseline_plus_pe.csv"),
+]
 
 
-def load(name):
-    frame = pd.read_csv(SRC / name)
+def load(path):
+    frame = pd.read_csv(path)
     assert list(frame.columns) == COLUMNS, frame.columns
     assert len(frame) == 80
     assert not frame.duplicated(["user_id", "trial_id"]).any()
@@ -41,41 +47,31 @@ def write_xlsx(frame, path):
     workbook.save(path)
 
 
-def digest(frame, path):
+def digest(frame, path, source):
     content = frame[COLUMNS].to_csv(index=False, lineterminator="\n").encode()
     return {
         "file": path.relative_to(ROOT).as_posix(),
+        "source": source.relative_to(ROOT.parent).as_posix(),
+        "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
         "rows": len(frame),
         "file_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
         "content_sha256": hashlib.sha256(content).hexdigest(),
         "prob_min": float(frame[COLUMNS[-1]].min()),
         "prob_max": float(frame[COLUMNS[-1]].max()),
+        "distinct_probs": int(frame[COLUMNS[-1]].nunique()),
         "positives_at_0.5": int((frame[COLUMNS[-1]] >= 0.5).sum()),
     }
 
 
 def main():
-    primary = load("candidate_1_consistency_spectral.csv")
-    fallback = load("candidate_2_baseline_plus_pe.csv")
     records = []
-    for frame, name in ((primary, "赞美诗_测试结果.xlsx"), (fallback, "赞美诗_测试结果_备选_057基线.xlsx")):
-        path = ROOT / name
+    for label, source in SOURCES:
+        frame = load(source)
+        path = ROOT / f"赞美诗_测试结果_{label}.xlsx"
         write_xlsx(frame, path)
-        records.append(digest(frame, path))
+        records.append(digest(frame, path, source))
     (ROOT / "提交校验.json").write_text(
-        json.dumps(
-            {
-                "source_experiment": "test/experiments/215_final_public_candidates",
-                "source_sha256": {
-                    name: hashlib.sha256((SRC / name).read_bytes()).hexdigest()
-                    for name in ("candidate_1_consistency_spectral.csv", "candidate_2_baseline_plus_pe.csv")
-                },
-                "submissions": records,
-            },
-            ensure_ascii=False,
-            indent=2,
-        ),
-        encoding="utf-8",
+        json.dumps({"submissions": records}, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     for record in records:
         print(record)
