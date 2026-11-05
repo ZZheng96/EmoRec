@@ -42,10 +42,12 @@ def write_xlsx(frame, path):
 
 
 def digest(frame, path):
+    content = frame[COLUMNS].to_csv(index=False, lineterminator="\n").encode()
     return {
         "file": path.relative_to(ROOT).as_posix(),
         "rows": len(frame),
-        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "file_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "content_sha256": hashlib.sha256(content).hexdigest(),
         "prob_min": float(frame[COLUMNS[-1]].min()),
         "prob_max": float(frame[COLUMNS[-1]].max()),
         "positives_at_0.5": int((frame[COLUMNS[-1]] >= 0.5).sum()),
@@ -60,7 +62,6 @@ def main():
         path = ROOT / name
         write_xlsx(frame, path)
         records.append(digest(frame, path))
-    primary.to_csv(ROOT / "测试结果_提交.csv", index=False)
     (ROOT / "提交校验.json").write_text(
         json.dumps(
             {
