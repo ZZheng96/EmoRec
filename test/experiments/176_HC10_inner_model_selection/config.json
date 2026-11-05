@@ -1,0 +1,20 @@
+{
+  "experiment_id": "176_HC10_inner_model_selection",
+  "base_experiment": "091_within_subject_trial_oof",
+  "source_algorithm": "src/166_HC31_inner_model_selection/run_experiment.py",
+  "subject": "HC10",
+  "features": {"spectral": 150, "temporal": 450, "permutation_entropy": 120, "total": 720},
+  "outer_folds": 8,
+  "inner_folds": 7,
+  "windows_per_trial": 5,
+  "threshold": 0.5,
+  "random_state": 2026,
+  "candidates": ["linear_svc:raw", "linear_svc:reverse", "logistic_regression:raw", "logistic_regression:reverse", "hgb:raw", "hgb:reverse"],
+  "selection_order": ["inner_auc", "inner_f1", "fixed_candidate_index"],
+  "outer_validation_labels_used_for_selection": false,
+  "trial_aggregation": "mean_of_five_windows",
+  "posthoc_threshold_or_quota_search": false,
+  "normalization": "per_subject_all_40_windows_zscore_ddof0",
+  "threads": 1,
+  "public_arrays_loaded": false
+}

@@ -1,0 +1,36 @@
+{
+  "subject": "HC23",
+  "method": "fold-inner Platt calibration + mean trial aggregation",
+  "auc": 1.0,
+  "f1": 1.0,
+  "window_auc": 0.8949999999999999,
+  "window_f1": 0.8292682926829268,
+  "threshold": 0.5,
+  "outer_validation_labels_used_for_selection": false,
+  "elapsed_seconds": 0.38192429998889565,
+  "provenance": {
+    "source": "091 cached 720 features aligned to HC23",
+    "outer_validation_labels_used_for_selection": false,
+    "calibration": "each outer training fold only, 7 leave-one-trial-out inner folds",
+    "trial_aggregation": "mean of five window probabilities",
+    "python": "3.11.9",
+    "threads": 1,
+    "experiment_id": "170_HC23_calibrated_inner_only",
+    "copied_protocol": "165_HC23_fold_calibrated_trial_aggregation",
+    "started_utc": "2026-11-05T00:43:46.128550+00:00",
+    "frozen_sha256": {
+      "src\\170_HC23_calibrated_inner_only\\run_experiment.py": "c649c69b2f9a08bce06cc8fb6615c5e4a0418fc8841f02650c61aa14b9ed912a",
+      "test\\experiments\\170_HC23_calibrated_inner_only\\config.json": "45acf5c1c5806f3e12f347e442c78a244988344dec3f7f504c6bc5cee7951796"
+    },
+    "loaded_hc23_arrays_sha256": {
+      "x": "0a83e0fba7f66cbc0c9d1694897f56f56457d0ad7eb01cd792454bd4391aabdf",
+      "y": "895adb76249cdfafe1417b57a8d64375ea8ab639055cf82b85994752c955ebdf",
+      "trial": "1fbae7b45317cd94905c63abd22902ba66c6012a50b840d7b07b07d814ee0f98"
+    },
+    "experiment169_predictions_used_for_fitting_or_selection": false,
+    "oof_used_for_tuning": false,
+    "gpu_used": false,
+    "device_reason": "Reuse sklearn CPU LinearSVC/LogisticRegression on 40x720 data, one thread",
+    "dataset_description_available": false
+  }
+}

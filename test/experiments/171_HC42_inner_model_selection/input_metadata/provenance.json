@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+  },
+  "sources": {
+    "D:\\BCIC2026\\EmoRec\\src\\166_HC31_inner_model_selection\\run_experiment.py": "c2ecc60c2c509844c26c2e233c5c81ae5e2901774eb3c18da09efff6d90522d8",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\171_HC42_inner_model_selection\\run_experiment.py": "3ecaa912be36cf26bb2d6bcb69562709d8f66fd8e463a673a2a4191569a741b0",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\171_HC42_inner_model_selection\\config.json": "4dff541aea2c4fac5e6d05570e081c433b27aacbab4ab316f426e782fd2883df",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\091_within_subject_trial_oof\\run_experiment.py": "5abbd1d2453b2e3f9865e8e078236d6002beeba5f89a80e1dd5cc9a774711b36",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\091_within_subject_trial_oof\\config.json": "49a03837cb1852eb7bdf1b75a2da80ed8f2d13e1c1342f5ee02a29e7eeab73f6"
+  },
+  "raw_shape": [
+    40,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "subjects": [
+    "HC42"
+  ],
+  "rows": 40,
+  "normalization": "per_subject_all_40_windows_zscore_ddof0",
+  "threads": 1,
+  "python": "3.11.9",
+  "sklearn": "1.9.0",
+  "dataset_description": "D:/WORK/BCIC2026/EmoRec/数据/数据集说明文档.md缺失，未伪造哈希"
+}

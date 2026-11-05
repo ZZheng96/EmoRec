@@ -1,0 +1,48 @@
+{
+  "subject": "HC45",
+  "method": "inner-only model:direction selection",
+  "window": {
+    "auc": 1.0,
+    "f1": 1.0
+  },
+  "trial_mean": {
+    "auc": 1.0,
+    "f1": 1.0
+  },
+  "threshold": 0.5,
+  "outer_validation_labels_used_for_selection": false,
+  "candidate_order": [
+    "linear_svc:raw",
+    "linear_svc:reverse",
+    "logistic_regression:raw",
+    "logistic_regression:reverse",
+    "hgb:raw",
+    "hgb:reverse"
+  ],
+  "trial_aggregation": "mean of five window probabilities",
+  "elapsed_seconds": 50.33657439996023,
+  "provenance": {
+    "inputs": {
+      "D:\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+      "D:\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+      "D:\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+    },
+    "sources": {
+      "D:\\BCIC2026\\EmoRec\\src\\168_HC45_inner_model_selection\\run_experiment.py": "6e2d69cefae8fd3ea029769b163b9c27303974df1fa1ebc31bdacd7d9d698846",
+      "D:\\BCIC2026\\EmoRec\\test\\experiments\\091_within_subject_trial_oof\\run_experiment.py": "e90929ac436fc18ec0d5f81b3cb4cbdec7488d770f62cbdfcbcaf27f8c1fe659"
+    },
+    "raw_shape": [
+      40,
+      720
+    ],
+    "public_arrays_loaded": false,
+    "subjects": [
+      "HC45"
+    ],
+    "rows": 40,
+    "normalization": "per_subject_all_40_windows_zscore_ddof0",
+    "threads": 1,
+    "python": "3.11.9",
+    "sklearn": "1.9.0"
+  }
+}

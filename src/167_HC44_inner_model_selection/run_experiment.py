@@ -108,8 +108,8 @@ def subject_run(x, ref):
 def main():
     started = time.perf_counter()
     config = json.loads((HERE / "config.json").read_text(encoding="utf8"))
-    (HERE / "predictions").mkdir(exist_ok=True)
-    (HERE / "input_metadata").mkdir(exist_ok=True)
+    (HERE / "predictions").mkdir(parents=True, exist_ok=True)
+    (HERE / "input_metadata").mkdir(parents=True, exist_ok=True)
     x, ref = load_data(config)
     y, keys = ref.y.to_numpy(dtype=int), trial_keys(ref)
     with threadpool_limits(limits=1):
@@ -126,6 +126,7 @@ def main():
     pd.DataFrame(fold_meta).to_csv(HERE / "input_metadata/folds.csv", index=False)
     inputs = [(BASE_DIR / config[k]).resolve() for k in ("spectral_cache", "temporal_cache", "pe_cache")]
     sources = [SOURCE, HERE / "test_167.py", HERE / "config.json", HERE / "test_protocol.txt", BASE_DIR / "run_experiment.py", ROOT / "数据" / "数据集说明文档.md"]
+    sources = [p for p in sources if p.exists()]
     provenance = {"inputs": {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}, "sources": {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}, "raw_shape": list(x.shape), "public_arrays_loaded": False, "subjects": ["HC44"], "rows": int(len(ref)), "normalization": config["normalization"], "threads": 1, "python": platform.python_version(), "sklearn": __import__("sklearn").__version__}
     metrics["provenance"] = provenance
     (HERE / "input_metadata/provenance.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2), encoding="utf8")

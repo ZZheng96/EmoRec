@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\001_spectral_logpower\\cache\\features.npz": "22effd279212d54ff55e485b97e5a76bc1ba3156d93ae943ffc5c5158465ff11",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\009_temporal_dynamics\\cache\\temporal_features.npz": "01efaa047c3d0ddadec45f8cc110fb9923727c9282c8e176b0286781c49a41eb",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\057_multiscale_permutation_entropy\\cache\\pe_features.npz": "2cb8fcbfa19cabd4cb3bfd95d44eb966677efa02a6605f5e0f20db9caba15708"
+  },
+  "sources": {
+    "D:\\BCIC2026\\EmoRec\\src\\167_HC44_inner_model_selection\\run_experiment.py": "8577eeceff57f3f11794be526941ba5e1f6a33562427308c3c2aeafc203ecbc1",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\167_HC44_inner_model_selection\\config.json": "8137a734b4777e8b3f2c1723000ac81473a460eb65ed062337d82baf917f214a",
+    "D:\\BCIC2026\\EmoRec\\test\\experiments\\091_within_subject_trial_oof\\run_experiment.py": "e90929ac436fc18ec0d5f81b3cb4cbdec7488d770f62cbdfcbcaf27f8c1fe659"
+  },
+  "raw_shape": [
+    40,
+    720
+  ],
+  "public_arrays_loaded": false,
+  "subjects": [
+    "HC44"
+  ],
+  "rows": 40,
+  "normalization": "per_subject_all_40_windows_zscore_ddof0",
+  "threads": 1,
+  "python": "3.11.9",
+  "sklearn": "1.9.0"
+}

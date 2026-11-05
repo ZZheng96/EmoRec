@@ -1,0 +1,138 @@
+[
+  {
+    "fold": 0,
+    "valid_trial": 0,
+    "training_trials": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 4.945086373369554,
+    "calibration_intercept": 0.6804265621405581
+  },
+  {
+    "fold": 1,
+    "valid_trial": 1,
+    "training_trials": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 3.011755304948223,
+    "calibration_intercept": 0.1543269305121986
+  },
+  {
+    "fold": 2,
+    "valid_trial": 2,
+    "training_trials": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 3.441029602032116,
+    "calibration_intercept": 0.18943309215030088
+  },
+  {
+    "fold": 3,
+    "valid_trial": 3,
+    "training_trials": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 3.224102318069209,
+    "calibration_intercept": 0.44272455670887917
+  },
+  {
+    "fold": 4,
+    "valid_trial": 4,
+    "training_trials": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 27.038616985081106,
+    "calibration_intercept": -1.281539968568393
+  },
+  {
+    "fold": 5,
+    "valid_trial": 5,
+    "training_trials": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 2.963918778235382,
+    "calibration_intercept": -0.46144030874228625
+  },
+  {
+    "fold": 6,
+    "valid_trial": 6,
+    "training_trials": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 3.644432732922249,
+    "calibration_intercept": -0.7388455235482004
+  },
+  {
+    "fold": 7,
+    "valid_trial": 7,
+    "training_trials": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "training_windows": 35,
+    "validation_windows": 5,
+    "calibration_coef": 4.068304024565128,
+    "calibration_intercept": -1.1473661587297683
+  }
+]
