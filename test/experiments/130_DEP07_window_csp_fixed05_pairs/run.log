@@ -1,0 +1,105 @@
+﻿[130/16] outer pair 1/16
+[130/16] outer pair 2/16
+[130/16] outer pair 3/16
+[130/16] outer pair 4/16
+[130/16] outer pair 5/16
+[130/16] outer pair 6/16
+[130/16] outer pair 7/16
+[130/16] outer pair 8/16
+[130/16] outer pair 9/16
+[130/16] outer pair 10/16
+[130/16] outer pair 11/16
+[130/16] outer pair 12/16
+[130/16] outer pair 13/16
+[130/16] outer pair 14/16
+[130/16] outer pair 15/16
+[130/16] outer pair 16/16
+{
+  "subject": "DEP07",
+  "pooled_oof": {
+    "auc": 1.0,
+    "f1": 1.0
+  },
+  "pair_metrics": [
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 0.0,
+      "f1": 0.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    },
+    {
+      "auc": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "pair_mean": {
+    "auc": 0.9375,
+    "f1": 0.9375
+  },
+  "fixed_0.5_baseline": {
+    "auc": 0.5,
+    "f1": 0.6666666666666666
+  },
+  "n_trials": 8,
+  "n_windows": 40,
+  "windows_per_trial": 5,
+  "prediction_count": 4,
+  "candidate_count": 120,
+  "threshold": 0.5,
+  "threshold_search": false,
+  "elapsed_seconds": 93.7071187000256
+}
