@@ -20,6 +20,7 @@ SOURCES = [
     ("v1_一致性", EXP / "215_final_public_candidates/predictions/candidate_1_consistency_spectral.csv"),
     ("v2_057加STFT", EXP / "213_public_submission_candidates/predictions/repeated_seed_mean_residual_0.2_public.csv"),
     ("v3_057基线", EXP / "215_final_public_candidates/predictions/candidate_2_baseline_plus_pe.csv"),
+    ("v4_216近似", EXP / "216_trial_consistency_invariant/predictions/fixed_trial_stats_plus_pe_public_approx.csv"),
 ]
 
 
